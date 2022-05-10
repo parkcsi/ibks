@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+    <html lang="ko">
+    <head>
+        <meta charset="euc-kr">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+        <title>IBK 투자증권</title>
+        <link rel="stylesheet" href="../css/default.css">
+        <script type="text/javascript" src="./grid_sample/MW_HJCODE.js"></script>
+        <script type="text/javascript" src="./grid_sample/jquery-1.12.4.min.js"></script>
+        <script type="text/javascript" src="./grid_sample/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="./grid_sample/pqgrid.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="./grid_sample/pqgrid.dev.css"/>
+        <link rel="stylesheet" type="text/css" href="./grid_sample/pqgrid.ui.dev.css"/>
+        <script type="text/javascript" src="../js/common_ui.js"></script>
+    </head>
+    <body>
+        <div id="wrap">
+            
+        </div>
+        <div class="full_popup" style="display:block;">
+            <div class="pop_header">
+                <h2>종목검색</h2>
+            </div>
+            <div class="pop_contents search">
+                <div class="search_box">
+                    <div class="search_wrap">
+                        <input type="text" name="" id="" placeholder="종목명" title="검색할 종목명 입력" onkeyup="common_ui.recommendShow();">
+                        <button type="button" class="btn_search"><span class="hidden">검색</span></button>
+                        <button type="button" class="btn_del" onclick="common_ui.recommendReset();"><span class="hidden">입력내용초기화</span></button>
+                    </div>
+                    <div class="search_recommend">
+                        <div id="grid"></div>
+                        <!-- 
+                            단어 입력시 common_ui.recommendShow();
+                                .btn_del , .search_recommend 보여주기 및 뒷영역 스크롤 방지 처리
+                            단어 삭제,초기화버튼 클릭시 common_ui.recommendHide();
+                                .btn_del , .search_recommend 감추기 및 뒷영역 스크롤 방지 처리 해제
+                        -->
+                        <!-- <ul>
+                            <li><a href="#">삼<span>성전</span>자</a></li>
+                            <li><a href="#">삼<span>성전</span>자</a></li>
+                            <li><a href="#">삼<span>성전</span>자</a></li>
+                            <li><a href="#">삼<span>성전</span>자</a></li>
+                            <li><a href="#">삼<span>성전</span>자</a></li>
+                            <li><a href="#">삼<span>성전</span>자</a></li>
+                            <li><a href="#">삼<span>성전</span>자</a></li>
+                            <li><a href="#">삼<span>성전</span>자</a></li>
+                            <li><a href="#">삼<span>성전</span>자</a></li>
+                            <li><a href="#">남양</a></li>
+                        </ul> -->
+                    </div>
+                </div>
+                <div class="search_recent">
+                    <h3>최근검색</h3>
+                    <div class="search_recent_list">
+                        <ul>
+                            <li><a href="#">종목명</a><button type="button" class="btn_del"><span class="hidden">삭제</span></button></li>
+                            <li><a href="#">종목명</a><button type="button" class="btn_del"><span class="hidden">삭제</span></button></li>
+                            <li><a href="#">종목명</a><button type="button" class="btn_del"><span class="hidden">삭제</span></button></li>
+                            <li><a href="#">종목명</a><button type="button" class="btn_del"><span class="hidden">삭제</span></button></li>
+                            <li><a href="#">종목명</a><button type="button" class="btn_del"><span class="hidden">삭제</span></button></li>
+                            <li><a href="#">종목명</a><button type="button" class="btn_del"><span class="hidden">삭제</span></button></li>
+                            <li><a href="#">종목명</a><button type="button" class="btn_del"><span class="hidden">삭제</span></button></li>
+                            <li><a href="#">종목명</a><button type="button" class="btn_del"><span class="hidden">삭제</span></button></li>
+                            <li><a href="#">종목명</a><button type="button" class="btn_del"><span class="hidden">삭제</span></button></li>
+                            <li><a href="#">종목명</a><button type="button" class="btn_del"><span class="hidden">삭제</span></button></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="search_list">
+                    <h3>인기검색</h3>
+                    <ul class="stock_list">
+                        <li>
+                            <div class="stock_item">
+                                <a href="#" class="inner">
+                                    <span class="logo" aria-hidden="true"><img src="../images/logo/logo_none.png" alt=""></span>
+                                    <span class="name">삼성전자</span>
+                                    <div class="stock_info point_inc">
+                                        <strong>89,900원</strong>
+                                        <div class="per"><span class="hidden">상승</span>999,999 (+99.99%)</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="btns">
+                                <button type="button" class="btn_favorite"><span class="hidden">즐겨찾기</span></button><!-- 활성화시  active class 부여-->
+                            </div>
+                        </li>
+                        <li>
+                            <div class="stock_item">
+                                <a href="#" class="inner">
+                                    <span class="logo" aria-hidden="true"><img src="../images/logo/logo_naver.png" alt=""></span>
+                                    <span class="name">네이버</span>
+                                    <div class="stock_info">
+                                        <strong>89,900원</strong>
+                                        <div class="per">0 (0%)</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="btns">
+                                <button type="button" class="btn_favorite"><span class="hidden">즐겨찾기</span></button><!-- 활성화시  active class 부여-->
+                            </div>
+                        </li>
+                        <li>
+                            <div class="stock_item">
+                                <a href="#" class="inner">
+                                    <span class="logo" aria-hidden="true"><img src="../images/logo/logo_skhynix.png" alt=""></span>
+                                    <span class="name">SK하이닉스</span>
+                                    <div class="stock_info point_dec">
+                                        <strong>89,900원</strong>
+                                        <div class="per"><span class="hidden">하락</span>999,999 (-99.99%)</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="btns">
+                                <button type="button" class="btn_favorite"><span class="hidden">즐겨찾기</span></button><!-- 활성화시  active class 부여-->
+                            </div>
+                        </li>
+                        <li>
+                            <div class="stock_item">
+                                <a href="#" class="inner">
+                                    <span class="logo" aria-hidden="true"><img src="../images/logo/logo_kakaogames.png" alt=""></span>
+                                    <span class="name">카카오게임즈</span>
+                                    <div class="stock_info">
+                                        <strong>89,900원</strong>
+                                        <div class="per">999,999 (99.99%)</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="btns">
+                                <button type="button" class="btn_favorite"><span class="hidden">즐겨찾기</span></button><!-- 활성화시  active class 부여-->
+                            </div>
+                        </li>
+                        <li>
+                            <div class="stock_item">
+                                <a href="#" class="inner">
+                                    <span class="logo" aria-hidden="true"><img src="../images/logo/logo_hmm.png" alt=""></span>
+                                    <span class="name">HMM</span>
+                                    <div class="stock_info">
+                                        <strong>89,900원</strong>
+                                        <div class="per">999,999 (99.99%)</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="btns">
+                                <button type="button" class="btn_favorite"><span class="hidden">즐겨찾기</span></button><!-- 활성화시  active class 부여-->
+                            </div>
+                        </li>
+                        <!-- 2021-06-10 상한가/하한가 case 추가-->
+                        <li>
+                            <div class="stock_item">
+                                <div class="inner">
+                                    <span class="logo" aria-hidden="true"><img src="../images/logo/logo_hmm.png" alt=""></span>
+                                    <span class="name">HMM</span>
+                                    <div class="stock_info point_upper">
+                                        <strong>89,900원</strong>
+                                        <div class="per"><span class="hidden">상한가</span>999,999 (99.99%)</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btns">
+                                <button type="button" class="btn_favorite"><span class="hidden">즐겨찾기</span></button><!-- 활성화시  active class 부여-->
+                            </div>
+                        </li>
+                        <li>
+                            <div class="stock_item">
+                                <div class="inner">
+                                    <span class="logo" aria-hidden="true"><img src="../images/logo/logo_hmm.png" alt=""></span>
+                                    <span class="name">HMM</span>
+                                    <div class="stock_info point_lower">
+                                        <strong>89,900원</strong>
+                                        <div class="per"><span class="hidden">하한가</span>999,999 (99.99%)</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btns">
+                                <button type="button" class="btn_favorite"><span class="hidden">즐겨찾기</span></button><!-- 활성화시  active class 부여-->
+                            </div>
+                        </li>
+                        <!--// 2021-06-10 상한가/하한가 case 추가-->
+                    </ul>
+                </div>
+                <div class="search_result">
+                    <h3>검색결과</h3>
+                    <ul class="stock_list">
+                        <li>
+                            <div class="stock_item">
+                                <a href="#" class="inner">
+                                    <span class="logo" aria-hidden="true"><img src="../images/logo/logo_samsung.png" alt=""></span>
+                                    <span class="name">삼성전자</span>
+                                    <div class="stock_info point_inc">
+                                        <strong>89,900원</strong>
+                                        <div class="per"><span class="hidden">상승</span>999,999 (+99.99%)</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="btns">
+                                <button type="button" class="btn_favorite"><span class="hidden">즐겨찾기</span></button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="stock_item">
+                                <a href="#" class="inner">
+                                    <span class="logo" aria-hidden="true"><img src="../images/logo/logo_naver.png" alt=""></span>
+                                    <span class="name">네이버</span>
+                                    <div class="stock_info">
+                                        <strong>89,900원</strong>
+                                        <div class="per">0 (0%)</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="btns">
+                                <button type="button" class="btn_favorite"><span class="hidden">즐겨찾기</span></button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="stock_item">
+                                <a href="#" class="inner">
+                                    <span class="logo" aria-hidden="true"><img src="../images/logo/logo_skhynix.png" alt=""></span>
+                                    <span class="name">SK하이닉스</span>
+                                    <div class="stock_info point_dec">
+                                        <strong>89,900원</strong>
+                                        <div class="per"><span class="hidden">하락</span>999,999 (-99.99%)</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="btns">
+                                <button type="button" class="btn_favorite"><span class="hidden">즐겨찾기</span></button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="stock_item">
+                                <a href="#" class="inner">
+                                    <span class="logo" aria-hidden="true"><img src="../images/logo/logo_kakaogames.png" alt=""></span>
+                                    <span class="name">카카오게임즈</span>
+                                    <div class="stock_info">
+                                        <strong>89,900원</strong>
+                                        <div class="per">999,999 (99.99%)</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="btns">
+                                <button type="button" class="btn_favorite"><span class="hidden">즐겨찾기</span></button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="stock_item">
+                                <a href="#" class="inner">
+                                    <span class="logo" aria-hidden="true"><img src="../images/logo/logo_hmm.png" alt=""></span>
+                                    <span class="name">HMM</span>
+                                    <div class="stock_info">
+                                        <strong>89,900원</strong>
+                                        <div class="per">999,999 (99.99%)</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="btns">
+                                <button type="button" class="btn_favorite"><span class="hidden">즐겨찾기</span></button>
+                            </div>
+                        </li>
+                    </ul>
+                </div> 
+                <div class="search_result">
+                    <div class="nodata">
+                        <em>검색하신 결과가 없습니다.</em>
+                        <p>입력하신 종목명 또는 종목코드가 <br>정확한지 확인해 주세요.</p>
+                    </div>
+                </div> 
+            </div>
+            <button type="button" class="pop_close"><span class="hidden">팝업 닫기</span></button>
+        </div>
+    </body>
+</html>
+
+
+<script>
+        var stockMaster = [];
+        var arrMaster = MW_HJCODE;
+        var keys = [ 'CODE', 'HNAM' ];
+        for(var i=0; i<arrMaster.length; i++) {
+            var obj = {};
+            for(var k=0; k<keys.length; k++) {
+                obj[keys[k]] = arrMaster[i][k] || '';
+                if(k==0) {
+                    obj[keys[k]] = obj[keys[k]].substring(1); // 종목구분값 제거( 6자리만 사용 )
+                }
+            }
+            stockMaster.push(obj);
+        }
+        var grid = $("#grid").pqGrid({
+            sortModel : { on : true },
+            filterModel: { mode: 'OR', on: true, header: false },
+            selectionModel : { type:'row', mode:'single' },
+            scrollModel : { autoFit: true, horizontal: false },
+            numberCell: { show: false },
+            trigger : true,
+            showTop: false,
+            showBottom: false,
+            showToolbar: false,
+            showHeader: false,
+            showTitle: true,
+            virtualY: true,
+            virtualX: true,
+            editable: false,
+            collapsible: {on: false},
+            freezeRows : 0,
+            ui: {on: false},
+            bootstrap: {on: true},
+            colModel : [
+                { dataIndx: 'HNAM', title:'한글명', dataType:'string', width:'100%' }
+            ],
+            dataModel : { data : stockMaster },
+            height : '100%',
+            rowHt : 44
+        }).pqGrid('refreshDataAndView');
+</script>

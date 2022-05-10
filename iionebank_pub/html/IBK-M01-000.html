@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+	<html lang="ko">
+	<head>
+		<meta charset="euc-kr">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>IBK 투자증권</title>
+		<link rel="stylesheet" href="../css/default.css">
+		<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+		<script type="text/javascript" src="../js/common_ui.js"></script>
+	</head>
+	<body>
+		<div id="wrap">
+			<div class="contents main">
+				<div class="main_info_top">
+                    <div class="main_info">
+                        <!-- 2021-06-04 추가-->
+                        <div class="info_account">
+                            <a href="#" role="button">주식(홍길동) 123-01-123456</a>
+                        </div>
+                        <!--// 2021-06-04 추가-->
+                        <!-- 2021-06-30 추가-->
+                        <button class="btn_main_search" type="button"><span class="hidden">종목검색</span></button>
+                        <div class="info_toggle">
+                            <button type="button" onclick="test(this);"><span>국내주식</span><i></i></button>
+                            <script>
+                                function test(btntgl){
+                                    $(btntgl).toggleClass('toggle');
+                                    if($(btntgl).hasClass('toggle')){
+                                        $('span',btntgl).text('해외주식')
+                                    }else{
+                                        $('span',btntgl).text('국내주식')
+                                    }
+                                }
+                            </script>
+                            <!-- <button type="button" class="toggle"><span>해외주식</span><i></i></button> -->
+                        </div>
+                        <!--// 2021-06-30 추가-->
+                        <div class="info_title">
+                            <span>홍길동</span>님의 <br> 5월28일 총 투자자산 입니다.
+                        </div>
+                        <div class="info_num">
+                            <strong><span class="num">21,794,000</span><span class="won">원</span></strong>
+                            <button type="button" class="info_refresh"><span class="hidden">투자자산정보 재조회</span></button>
+                        </div>
+                        <div class="info_num02">
+                            <span>평가손익</span>
+                            <em class="point_inc"><span class="hidden">상승</span>100,000 (0.12%)</em>
+                            <em class="point_dec"><span class="hidden">하락</span>100,000 (0.12%)</em>
+                            <!-- 2021-06-10 상한가/하한가 case 추가-->
+                            <em class="point_upper"><span class="hidden">상한가</span>100,000 (0.12%)</em>
+                            <em class="point_lower"><span class="hidden">하한가</span>100,000 (0.12%)</em>
+                            <!--// 2021-06-10 상한가/하한가 case 추가-->
+                        </div>
+                        <div class="info_title" style="display:none;">
+                            <span>홍길동</span>님,<br> 오늘도 부자되세요~!
+                        </div>
+                        <div class="info_default" style="display:none;">
+                            <button type="button" class="">나의 투자자산 조회</button>
+                        </div>
+                    </div>
+                    <div class="inquiry_section_tab">
+                        <ul>
+                            <li><button type="button" class=""><span class="tab01">보유주식</span></button></li>
+                            <li><button type="button" class=""><span class="tab02">주문내역</span></button></li>
+                            <li><button type="button" class=""><span class="tab03">거래내역</span></button></li>
+                        </ul>
+                    </div>
+				</div>
+				<div class="main_contents01">
+                    <h2>나의 관심 기업</h2>
+                    <ul class="contents_tab">
+                        <li><button type="button" class="current">즐겨찾기</button></li>
+                        <li><button type="button">보유종목</button></li>
+                    </ul>
+                    <div class="stock_list_swipe">
+                        <div class="swiper-container main01">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <ul class="stock_list">
+                                    <li>
+                                        <div class="stock_item">
+                                            <a href="#" class="inner">
+                                                <span class="logo" aria-hidden="true"><img src="../images/logo/logo_samsung.png" alt=""></span>
+                                                <span class="name">삼성전자</span>
+                                                <div class="stock_info point_inc">
+                                                    <strong>89,900원</strong>
+                                                    <div class="per"><span class="hidden">상승</span>999,999 (+99.99%)</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="stock_item">
+                                            <a href="#" class="inner">
+                                                <span class="logo" aria-hidden="true"><img src="../images/logo/logo_naver.png" alt=""></span>
+                                                <span class="name">네이버</span>
+                                                <div class="stock_info">
+                                                    <strong>89,900원</strong>
+                                                    <div class="per">0 (0%)</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="stock_item">
+                                            <a href="#" class="inner">
+                                                <span class="logo" aria-hidden="true"><img src="../images/logo/logo_skhynix.png" alt=""></span>
+                                                <span class="name">SK하이닉스</span>
+                                                <div class="stock_info point_dec">
+                                                    <strong>89,900원</strong>
+                                                    <div class="per"><span class="hidden">하락</span>999,999 (-99.99%)</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="stock_item">
+                                            <a href="#" class="inner">
+                                                <span class="logo" aria-hidden="true"><img src="../images/logo/logo_kakaogames.png" alt=""></span>
+                                                <span class="name">카카오게임즈</span>
+                                                <div class="stock_info">
+                                                    <strong>89,900원</strong>
+                                                    <div class="per">999,999 (99.99%)</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="stock_item">
+                                            <a href="#" class="inner">
+                                                <span class="logo" aria-hidden="true"><img src="../images/logo/logo_hmm.png" alt=""></span>
+                                                <span class="name">HMM</span>
+                                                <div class="stock_info">
+                                                    <strong>89,900원</strong>
+                                                    <div class="per">999,999 (99.99%)</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="swiper-slide">
+                                <ul class="stock_list">
+                                    <li>
+                                        <div class="stock_item">
+                                            <a href="#" class="inner">
+                                                <span class="logo" aria-hidden="true"><img src="../images/logo/logo_samsung.png" alt=""></span>
+                                                <span class="name">삼성전자</span>
+                                                <div class="stock_info point_inc">
+                                                    <strong>89,900원</strong>
+                                                    <div class="per"><span class="hidden">상승</span>999,999 (+99.99%)</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="stock_item">
+                                            <a href="#" class="inner">
+                                                <span class="logo" aria-hidden="true"><img src="../images/logo/logo_naver.png" alt=""></span>
+                                                <span class="name">네이버</span>
+                                                <div class="stock_info">
+                                                    <strong>89,900원</strong>
+                                                    <div class="per">0 (0%)</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="stock_item">
+                                            <a href="#" class="inner">
+                                                <span class="logo" aria-hidden="true"><img src="../images/logo/logo_skhynix.png" alt=""></span>
+                                                <span class="name">SK하이닉스</span>
+                                                <div class="stock_info point_dec">
+                                                    <strong>89,900원</strong>
+                                                    <div class="per"><span class="hidden">하락</span>999,999 (-99.99%)</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="stock_item">
+                                            <a href="#" class="inner">
+                                                <span class="logo" aria-hidden="true"><img src="../images/logo/logo_kakaogames.png" alt=""></span>
+                                                <span class="name">카카오게임즈</span>
+                                                <div class="stock_info">
+                                                    <strong>89,900원</strong>
+                                                    <div class="per">999,999 (99.99%)</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="stock_item">
+                                            <a href="#" class="inner">
+                                                <span class="logo" aria-hidden="true"><img src="../images/logo/logo_hmm.png" alt=""></span>
+                                                <span class="name">HMM</span>
+                                                <div class="stock_info">
+                                                    <strong>89,900원</strong>
+                                                    <div class="per">999,999 (99.99%)</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="swiper-slide">
+                                <ul class="stock_list">
+                                    <li>
+                                        <div class="stock_item">
+                                            <a href="#" class="inner">
+                                                <span class="logo" aria-hidden="true"><img src="../images/logo/logo_samsung.png" alt=""></span>
+                                                <span class="name">삼성전자</span>
+                                                <div class="stock_info point_inc">
+                                                    <strong>89,900원</strong>
+                                                    <div class="per"><span class="hidden">상승</span>999,999 (+99.99%)</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="stock_item">
+                                            <a href="#" class="inner">
+                                                <span class="logo" aria-hidden="true"><img src="../images/logo/logo_naver.png" alt=""></span>
+                                                <span class="name">네이버</span>
+                                                <div class="stock_info">
+                                                    <strong>89,900원</strong>
+                                                    <div class="per">0 (0%)</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="stock_item">
+                                            <a href="#" class="inner">
+                                                <span class="logo" aria-hidden="true"><img src="../images/logo/logo_skhynix.png" alt=""></span>
+                                                <span class="name">SK하이닉스</span>
+                                                <div class="stock_info point_dec">
+                                                    <strong>89,900원</strong>
+                                                    <div class="per"><span class="hidden">하락</span>999,999 (-99.99%)</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="stock_item">
+                                            <a href="#" class="inner">
+                                                <span class="logo" aria-hidden="true"><img src="../images/logo/logo_kakaogames.png" alt=""></span>
+                                                <span class="name">카카오게임즈</span>
+                                                <div class="stock_info">
+                                                    <strong>89,900원</strong>
+                                                    <div class="per">999,999 (99.99%)</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="stock_item">
+                                            <a href="#" class="inner">
+                                                <span class="logo" aria-hidden="true"><img src="../images/logo/logo_hmm.png" alt=""></span>
+                                                <span class="name">HMM</span>
+                                                <div class="stock_info">
+                                                    <strong>89,900원</strong>
+                                                    <div class="per">999,999 (99.99%)</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="swiper-slide">
+                                <ul class="stock_list">
+                                    <li>
+                                        <div class="stock_item">
+                                            <a href="#" class="inner">
+                                                <span class="logo" aria-hidden="true"><img src="../images/logo/logo_samsung.png" alt=""></span>
+                                                <span class="name">삼성전자</span>
+                                                <div class="stock_info point_inc">
+                                                    <strong>89,900원</strong>
+                                                    <div class="per"><span class="hidden">상승</span>999,999 (+99.99%)</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                          </div>
+                          <!-- 2021-06-23 추가 . pagination 삭제-->
+                          <div class="swiper-button-next"><span>다음</span></div>
+                          <div class="swiper-button-prev"><span>이전</span></div>
+                          <!--// 2021-06-23 추가 . pagination 삭제-->
+                        </div>
+                        <a href="#" class="list_more">전체보기</a>
+
+                        <!--  즐겨찾기 목록 없음
+                        <div class="swiper-container main01">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="nodata">
+                                    <p>등록된 종목이 없습니다. <br> 즐겨찾는 종목을 추가해보세요!</p>
+                                    <button class="btn_type02 plus"><span>추가하기</span></button>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                         -->
+                        <!--  보유종목 목록 없음
+                        <div class="swiper-container main01">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="nodata">
+                                    <p>보유 종목이 없습니다. <br> 새로운 종목에 투자해보세요!</p>
+                                    <button class="btn_type02 check"><span>주문하기</span></button>
+                                </div>
+                            </div>
+                          </div>
+                        </div> -->
+                    </div>
+                    
+                   <!-- 2021-06-23 수정 swipe 할 때 맨 마지막 slide 체크해서 swipe-slide 추가-->
+                    <script>
+                      var sampleSlide = '<div class="swiper-slide">'
+                      sampleSlide += '  <ul class="stock_list">'
+                      sampleSlide += '      <li>'
+                      sampleSlide += '            <div class="stock_item">'
+                      sampleSlide += '                <a href="#" class="inner">'
+                      sampleSlide += '                    <span class="logo" aria-hidden="true"><img src="../images/logo/logo_samsung.png" alt=""></span>'
+                      sampleSlide += '                    <span class="name">삼성전자</span>'
+                      sampleSlide += '                    <div class="stock_info point_inc">'
+                      sampleSlide += '                        <strong>89,900원</strong>'
+                      sampleSlide += '                        <div class="per"><span class="hidden">상승</span>999,999 (+99.99%)</div>'
+                      sampleSlide += '                    </div>'
+                      sampleSlide += '                </a>'
+                      sampleSlide += '            </div>'
+                      sampleSlide += '        </li>'
+                      sampleSlide += '    </ul>'
+                      sampleSlide += '</div>'
+                      if($('.main01 .swiper-slide').length>1){
+                          var swiper1 = new Swiper(".main01", {
+                            autoHeight : true,
+                            spaceBetween : 10,
+                            navigation: {
+                              nextEl: ".swiper-button-next",
+                              prevEl: ".swiper-button-prev",
+                            },
+                            loop : false // true or false
+                            /*  2021-06-08 추가 */
+                           , on:{
+                                slideChangeTransitionEnd:function(){
+                                    if($('.main01 .swiper-slide').length-1 === swiper1.realIndex){
+                                        swiper1.appendSlide(sampleSlide);
+                                    }
+                                }
+                            }
+                          })
+                      }
+                    </script>
+                   <!--// 2021-06-23 수정 swipe 할 때 맨 마지막 slide 체크해서 swipe-slide 추가-->
+				</div>
+				<div class="main_contents02">
+                    <h2>오늘 HOT 섹터별 기업</h2>
+                    <div class="sector_item01">
+                        <img src="../images/main/img_main_sector01.jpg" alt="" aria-hidden="true">
+                        <a href="#">
+                            <em class="">디스플레이 5일전 대비</em>
+                            <strong class="point_inc">+28%</strong>
+                        </a>
+                    </div>
+                    <div class="sector_item02">
+                        <img src="../images/main/img_main_sector02.jpg" alt="" aria-hidden="true">
+                        <a href="#">
+                            <em class="">전기차 5일전 대비</em>
+                            <strong class="">-</strong>
+                        </a>
+                    </div>
+                    <div class="sector_item03">
+                        <img src="../images/main/img_main_sector03.jpg" alt="" aria-hidden="true">
+                        <a href="#">
+                            <em class="">가상화폐 5일전 대비</em>
+                            <strong class="point_dec">-28%</strong>
+                        </a>
+                    </div>
+				</div>
+				<div class="main_contents03">
+                    <h2>요즘 HOT 제품</h2>
+                    <div class="hot_item01">
+                        <a href="#">
+                            <span class="thumb" aria-hidden="hidden"><img src="../images/main/img_main_hot01.jpg" alt=""></span>
+                            <span class="txt">스마트폰의 혁신적 발전 갤럭시S21</span>
+                        </a>
+                    </div>
+                    <div class="hot_item02">
+                        <a href="#">
+                            <span class="thumb" aria-hidden="hidden"><img src="../images/main/img_main_hot02.jpg" alt=""></span>
+                            <span class="txt">세계 주요 OTT서비스! 넷플릭스</span>
+                        </a>
+                    </div>
+				</div>
+				<div class="main_contents04" id="scroll_target">
+                    <h2>매수 상위 종목</h2>
+                    <div class="stock_list_swipe">
+                        <div class="swiper-container main02">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <ul class="stock_list">
+                                    <li>
+                                        <div class="stock_item">
+                                            <a href="#" class="inner">
+                                                <span class="logo" aria-hidden="true"><img src="../images/logo/logo_samsung.png" alt=""></span>
+                                                <span class="name">삼성전자</span>
+                                                <div class="stock_info point_inc">
+                                                    <strong>89,900원</strong>
+                                                    <div class="per"><span class="hidden">상승</span>999,999 (+99.99%)</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="stock_item">
+                                            <a href="#" class="inner">
+                                                <span class="logo" aria-hidden="true"><img src="../images/logo/logo_naver.png" alt=""></span>
+                                                <span class="name">네이버</span>
+                                                <div class="stock_info">
+                                                    <strong>89,900원</strong>
+                                                    <div class="per">0 (0%)</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="stock_item">
+                                            <a href="#" class="inner">
+                                                <span class="logo" aria-hidden="true"><img src="../images/logo/logo_skhynix.png" alt=""></span>
+                                                <span class="name">SK하이닉스</span>
+                                                <div class="stock_info point_dec">
+                                                    <strong>89,900원</strong>
+                                                    <div class="per"><span class="hidden">하락</span>999,999 (-99.99%)</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="stock_item">
+                                            <a href="#" class="inner">
+                                                <span class="logo" aria-hidden="true"><img src="../images/logo/logo_kakaogames.png" alt=""></span>
+                                                <span class="name">카카오게임즈</span>
+                                                <div class="stock_info">
+                                                    <strong>89,900원</strong>
+                                                    <div class="per">999,999 (99.99%)</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="stock_item">
+                                            <a href="#" class="inner">
+                                                <span class="logo" aria-hidden="true"><img src="../images/logo/logo_hmm.png" alt=""></span>
+                                                <span class="name">HMM</span>
+                                                <div class="stock_info">
+                                                    <strong>89,900원</strong>
+                                                    <div class="per">999,999 (99.99%)</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="swiper-slide">
+                                <ul class="stock_list">
+                                    <li>
+                                        <div class="stock_item">
+                                            <a href="#" class="inner">
+                                                <span class="logo" aria-hidden="true"><img src="../images/logo/logo_samsung.png" alt=""></span>
+                                                <span class="name">삼성전자</span>
+                                                <div class="stock_info point_inc">
+                                                    <strong>89,900원</strong>
+                                                    <div class="per"><span class="hidden">상승</span>999,999 (+99.99%)</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="stock_item">
+                                            <a href="#" class="inner">
+                                                <span class="logo" aria-hidden="true"><img src="../images/logo/logo_naver.png" alt=""></span>
+                                                <span class="name">네이버</span>
+                                                <div class="stock_info">
+                                                    <strong>89,900원</strong>
+                                                    <div class="per">0 (0%)</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="stock_item">
+                                            <a href="#" class="inner">
+                                                <span class="logo" aria-hidden="true"><img src="../images/logo/logo_skhynix.png" alt=""></span>
+                                                <span class="name">SK하이닉스</span>
+                                                <div class="stock_info point_dec">
+                                                    <strong>89,900원</strong>
+                                                    <div class="per"><span class="hidden">하락</span>999,999 (-99.99%)</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="stock_item">
+                                            <a href="#" class="inner">
+                                                <span class="logo" aria-hidden="true"><img src="../images/logo/logo_kakaogames.png" alt=""></span>
+                                                <span class="name">카카오게임즈</span>
+                                                <div class="stock_info">
+                                                    <strong>89,900원</strong>
+                                                    <div class="per">999,999 (99.99%)</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="stock_item">
+                                            <a href="#" class="inner">
+                                                <span class="logo" aria-hidden="true"><img src="../images/logo/logo_hmm.png" alt=""></span>
+                                                <span class="name">HMM</span>
+                                                <div class="stock_info">
+                                                    <strong>89,900원</strong>
+                                                    <div class="per">999,999 (99.99%)</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="swiper-slide">
+                                <ul class="stock_list">
+                                    <li>
+                                        <div class="stock_item">
+                                            <a href="#" class="inner">
+                                                <span class="logo" aria-hidden="true"><img src="../images/logo/logo_samsung.png" alt=""></span>
+                                                <span class="name">삼성전자</span>
+                                                <div class="stock_info point_inc">
+                                                    <strong>89,900원</strong>
+                                                    <div class="per"><span class="hidden">상승</span>999,999 (+99.99%)</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="stock_item">
+                                            <a href="#" class="inner">
+                                                <span class="logo" aria-hidden="true"><img src="../images/logo/logo_naver.png" alt=""></span>
+                                                <span class="name">네이버</span>
+                                                <div class="stock_info">
+                                                    <strong>89,900원</strong>
+                                                    <div class="per">0 (0%)</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="stock_item">
+                                            <a href="#" class="inner">
+                                                <span class="logo" aria-hidden="true"><img src="../images/logo/logo_skhynix.png" alt=""></span>
+                                                <span class="name">SK하이닉스</span>
+                                                <div class="stock_info point_dec">
+                                                    <strong>89,900원</strong>
+                                                    <div class="per"><span class="hidden">하락</span>999,999 (-99.99%)</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="stock_item">
+                                            <a href="#" class="inner">
+                                                <span class="logo" aria-hidden="true"><img src="../images/logo/logo_kakaogames.png" alt=""></span>
+                                                <span class="name">카카오게임즈</span>
+                                                <div class="stock_info">
+                                                    <strong>89,900원</strong>
+                                                    <div class="per">999,999 (99.99%)</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="stock_item">
+                                            <a href="#" class="inner">
+                                                <span class="logo" aria-hidden="true"><img src="../images/logo/logo_hmm.png" alt=""></span>
+                                                <span class="name">HMM</span>
+                                                <div class="stock_info">
+                                                    <strong>89,900원</strong>
+                                                    <div class="per">999,999 (99.99%)</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="swiper-slide">
+                                <ul class="stock_list">
+                                    <li>
+                                        <div class="stock_item">
+                                            <a href="#" class="inner">
+                                                <span class="logo" aria-hidden="true"><img src="../images/logo/logo_samsung.png" alt=""></span>
+                                                <span class="name">삼성전자</span>
+                                                <div class="stock_info point_inc">
+                                                    <strong>89,900원</strong>
+                                                    <div class="per"><span class="hidden">상승</span>999,999 (+99.99%)</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                          </div>
+                          <div class="swiper-pagination"></div>
+                        </div>
+                        <a href="#" class="list_reload" title="매수상위종목 목록 새로고침">2021년 5월 6일 기준</a>
+                    </div>
+                    
+                    <script>
+                      if($('.main02 .swiper-slide').length>1){
+                          var swiper2 = new Swiper(".main02", {
+                            autoHeight : true,
+                            spaceBetween : 10,
+                            pagination: {
+                                el: '.swiper-pagination',
+                                clickable: true,
+                            },
+                            loop : false // true or false
+                            /*  2021-06-08 추가 */
+                           , on:{
+                                slideChange:function(){
+                                    $('.main02').siblings(' .swipe_loading').show();  // 데이터 로드 후  $('.main01').siblings(' .swipe_loading').hide(); 호출
+                                }
+                            }
+                          })
+                      }
+                      
+                      var scrollFlag = true;   // 최초 로딩시 scrollFlag = true 로 하여 스크롤시 이벤트를 한번만 호출 하게
+                      $(window).scroll(function(){
+                        if(scrollFlag && ($(window).scrollTop() + $(window).height()> $('#scroll_target').offset().top)) {
+                            scrollFlag = false;   // 최초 로딩시 scrollFlag = false 로 하여 스크롤시 이벤트를 호출 하지 않게
+                            console.log('스크롤 도달');
+                        }
+                      });
+                    </script>
+
+				</div>
+				<div class="main_contents05">
+                    <h2>최근 본 종목</h2>
+                    <div class="stock_list_swipe">
+                        <div class="swiper-container main03">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <ul class="stock_list">
+                                    <li>
+                                        <div class="stock_item">
+                                            <a href="#" class="inner">
+                                                <span class="logo" aria-hidden="true"><img src="../images/logo/logo_samsung.png" alt=""></span>
+                                                <span class="name">삼성전자</span>
+                                                <div class="stock_info point_inc">
+                                                    <strong>89,900원</strong>
+                                                    <div class="per"><span class="hidden">상승</span>999,999 (+99.99%)</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="stock_item">
+                                            <a href="#" class="inner">
+                                                <span class="logo" aria-hidden="true"><img src="../images/logo/logo_naver.png" alt=""></span>
+                                                <span class="name">네이버</span>
+                                                <div class="stock_info">
+                                                    <strong>89,900원</strong>
+                                                    <div class="per">0 (0%)</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="stock_item">
+                                            <a href="#" class="inner">
+                                                <span class="logo" aria-hidden="true"><img src="../images/logo/logo_skhynix.png" alt=""></span>
+                                                <span class="name">SK하이닉스</span>
+                                                <div class="stock_info point_dec">
+                                                    <strong>89,900원</strong>
+                                                    <div class="per"><span class="hidden">하락</span>999,999 (-99.99%)</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="stock_item">
+                                            <a href="#" class="inner">
+                                                <span class="logo" aria-hidden="true"><img src="../images/logo/logo_kakaogames.png" alt=""></span>
+                                                <span class="name">카카오게임즈</span>
+                                                <div class="stock_info">
+                                                    <strong>89,900원</strong>
+                                                    <div class="per">999,999 (99.99%)</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="stock_item">
+                                            <a href="#" class="inner">
+                                                <span class="logo" aria-hidden="true"><img src="../images/logo/logo_hmm.png" alt=""></span>
+                                                <span class="name">HMM</span>
+                                                <div class="stock_info">
+                                                    <strong>89,900원</strong>
+                                                    <div class="per">999,999 (99.99%)</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="swiper-slide">
+                                <ul class="stock_list">
+                                    <li>
+                                        <div class="stock_item">
+                                            <a href="#" class="inner">
+                                                <span class="logo" aria-hidden="true"><img src="../images/logo/logo_samsung.png" alt=""></span>
+                                                <span class="name">삼성전자</span>
+                                                <div class="stock_info point_inc">
+                                                    <strong>89,900원</strong>
+                                                    <div class="per"><span class="hidden">상승</span>999,999 (+99.99%)</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="stock_item">
+                                            <a href="#" class="inner">
+                                                <span class="logo" aria-hidden="true"><img src="../images/logo/logo_naver.png" alt=""></span>
+                                                <span class="name">네이버</span>
+                                                <div class="stock_info">
+                                                    <strong>89,900원</strong>
+                                                    <div class="per">0 (0%)</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="stock_item">
+                                            <a href="#" class="inner">
+                                                <span class="logo" aria-hidden="true"><img src="../images/logo/logo_skhynix.png" alt=""></span>
+                                                <span class="name">SK하이닉스</span>
+                                                <div class="stock_info point_dec">
+                                                    <strong>89,900원</strong>
+                                                    <div class="per"><span class="hidden">하락</span>999,999 (-99.99%)</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <!-- 2021-06-10 상한가/하한가 case 추가-->
+                                    <li>
+                                        <div class="stock_item">
+                                            <div class="inner">
+                                                <span class="logo" aria-hidden="true"><img src="../images/logo/logo_hmm.png" alt=""></span>
+                                                <span class="name">HMM</span>
+                                                <div class="stock_info point_upper">
+                                                    <strong>89,900원</strong>
+                                                    <div class="per">999,999 (99.99%)</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="stock_item">
+                                            <div class="inner">
+                                                <span class="logo" aria-hidden="true"><img src="../images/logo/logo_hmm.png" alt=""></span>
+                                                <span class="name">HMM</span>
+                                                <div class="stock_info point_lower">
+                                                    <strong>89,900원</strong>
+                                                    <div class="per">999,999 (99.99%)</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!--// 2021-06-10 상한가/하한가 case 추가-->
+                                </ul>
+                            </div>
+                            <div class="swiper-slide">
+                                <ul class="stock_list">
+                                    <li>
+                                        <div class="stock_item">
+                                            <a href="#" class="inner">
+                                                <span class="logo" aria-hidden="true"><img src="../images/logo/logo_samsung.png" alt=""></span>
+                                                <span class="name">삼성전자</span>
+                                                <div class="stock_info point_inc">
+                                                    <strong>89,900원</strong>
+                                                    <div class="per"><span class="hidden">상승</span>999,999 (+99.99%)</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="stock_item">
+                                            <a href="#" class="inner">
+                                                <span class="logo" aria-hidden="true"><img src="../images/logo/logo_naver.png" alt=""></span>
+                                                <span class="name">네이버</span>
+                                                <div class="stock_info">
+                                                    <strong>89,900원</strong>
+                                                    <div class="per">0 (0%)</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="stock_item">
+                                            <a href="#" class="inner">
+                                                <span class="logo" aria-hidden="true"><img src="../images/logo/logo_skhynix.png" alt=""></span>
+                                                <span class="name">SK하이닉스</span>
+                                                <div class="stock_info point_dec">
+                                                    <strong>89,900원</strong>
+                                                    <div class="per"><span class="hidden">하락</span>999,999 (-99.99%)</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <!-- 2021-06-10 상한가/하한가 case 추가-->
+                                    <li>
+                                        <div class="stock_item">
+                                            <div class="inner">
+                                                <span class="logo" aria-hidden="true"><img src="../images/logo/logo_hmm.png" alt=""></span>
+                                                <span class="name">HMM</span>
+                                                <div class="stock_info point_upper">
+                                                    <strong>89,900원</strong>
+                                                    <div class="per">999,999 (99.99%)</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="stock_item">
+                                            <div class="inner">
+                                                <span class="logo" aria-hidden="true"><img src="../images/logo/logo_hmm.png" alt=""></span>
+                                                <span class="name">HMM</span>
+                                                <div class="stock_info point_lower">
+                                                    <strong>89,900원</strong>
+                                                    <div class="per">999,999 (99.99%)</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!--// 2021-06-10 상한가/하한가 case 추가-->
+                                </ul>
+                            </div>
+                            <div class="swiper-slide">
+                                <ul class="stock_list">
+                                    <li>
+                                        <div class="stock_item">
+                                            <a href="#" class="inner">
+                                                <span class="logo" aria-hidden="true"><img src="../images/logo/logo_samsung.png" alt=""></span>
+                                                <span class="name">삼성전자</span>
+                                                <div class="stock_info point_inc">
+                                                    <strong>89,900원</strong>
+                                                    <div class="per"><span class="hidden">상승</span>999,999 (+99.99%)</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <!-- 2021-06-10 상한가/하한가 case 추가-->
+                                    <li>
+                                        <div class="stock_item">
+                                            <div class="inner">
+                                                <span class="logo" aria-hidden="true"><img src="../images/logo/logo_hmm.png" alt=""></span>
+                                                <span class="name">HMM</span>
+                                                <div class="stock_info point_upper">
+                                                    <strong>89,900원</strong>
+                                                    <div class="per">999,999 (99.99%)</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="stock_item">
+                                            <div class="inner">
+                                                <span class="logo" aria-hidden="true"><img src="../images/logo/logo_hmm.png" alt=""></span>
+                                                <span class="name">HMM</span>
+                                                <div class="stock_info point_lower">
+                                                    <strong>89,900원</strong>
+                                                    <div class="per">999,999 (99.99%)</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!--// 2021-06-10 상한가/하한가 case 추가-->
+                                </ul>
+                            </div>
+                          </div>
+                          <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    
+                    <script>
+                      if($('.main03 .swiper-slide').length>1){
+                          var swiper3 = new Swiper(".main03", {
+                            autoHeight : true,
+                            spaceBetween : 10,
+                            pagination: {
+                                el: '.swiper-pagination',
+                                clickable: true,
+                            },
+                            loop : false // true or false
+                            /*  2021-06-08 추가 */
+                           , on:{
+                                slideChange:function(){
+                                    $('.main03').siblings(' .swipe_loading').show();  // 데이터 로드 후  $('.main03').siblings(' .swipe_loading').hide(); 호출
+                                }
+                            }
+                          })
+                      }
+                    </script>
+
+				</div>
+				<div class="main_contents06">
+                    <h2>증권사 리서치</h2>
+                    <div class="research_item">
+                        <a href="#">
+                            <span>상향 목표가</span>
+                        </a>
+                        <a href="#">
+                            <span>하향 목표가</span>
+                        </a>
+                    </div>
+                    <div class="event_banner">
+                        
+                        <div class="swiper-container main_event">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#"><img src="../images/main/img_main_event01.jpg" alt=""></a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#"><img src="../images/main/img_main_event01.jpg" alt=""></a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#"><img src="../images/main/img_main_event01.jpg" alt=""></a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#"><img src="../images/main/img_main_event01.jpg" alt=""></a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#"><img src="../images/main/img_main_event01.jpg" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        
+                        <script>
+                          if($('.main_event .swiper-slide').length>1){
+                              var swiper4 = new Swiper(".main_event", {
+                                autoHeight : true,
+                                pagination: {
+                                    el: '.swiper-pagination',
+                                    clickable: true,
+                                },
+                                loop : true // true or false
+                              })
+                          }
+                        </script>
+                    </div>
+                    <div class="main_notice">
+                        <div class="swiper-container main_noti">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#">1IBK투자증권 서비스 이용약관 변경 안내 IBK투자증권 뭐머무머머머머머모마마뫄뫔</a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">2IBK투자증권 서비스 이용약관 변경 안내 IBK투자증권 뭐머무머머머머머모마마뫄뫔</a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">3IBK투자증권 서비스 이용약관 변경 안내 IBK투자증권 뭐머무머머머머머모마마뫄뫔</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <script>
+                          if($('.main_noti .swiper-slide').length>1){
+                              var swiper4 = new Swiper(".main_noti", {
+                                autoHeight : true,
+                                allowTouchMove : false,
+                                direction : 'vertical',
+                                autoplay : {
+                                    delay : 2500  
+                                },
+                                loop : true // true or false
+                              })
+                          }
+                        </script>
+                    </div>
+				</div>
+			</div>
+			<div class="util_menu">
+                <button type="button" class="opener"><span class="hidden">주요 메뉴 열기</span><span class="icon"></span></button>
+                <div class="inner">
+                    <a href="#" class="util01"><span class="hidden">홈</span></a>
+                    <a href="#" class="util02"><span class="hidden">종목검색</span></a>
+                    <a href="#" class="util03"><span class="hidden">내자산</span></a>
+                    <a href="#" class="util04"><span class="hidden">더보기</span></a>
+                </div>
+			</div>
+			<footer class="footer">
+				<p class="tel">고객센터 1544-0050 / 1588-0030 <a href="#" class="foot_link">공지사항</a></p>
+				<p class="copyright">ⓒ IBK SECURITIES CO LTD</p>
+			</footer>
+		</div>
+	</body>
+</html>

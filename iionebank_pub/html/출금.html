@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+	<html lang="ko">
+	<head>
+		<meta charset="euc-kr">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>IBK 투자증권</title>
+		<link rel="stylesheet" href="../css/default.css">
+		<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="../js/common_ui.js"></script>
+	</head>
+	<body>
+		<div id="wrap">
+			<div class="contents sub">
+                <div class="account_info">
+                    <div class="title_area">
+                        <h2>출금</h2>
+                        <div class="title_etc">
+                            <a href="./출금_출금안내.html" target="_blank" role="button" class="btn_link">안내</a>
+                        </div>
+                    </div>
+                    <button type="button" class="account_sel" title="계좌 선택">홍길동님의 주식계좌 <span>(123-01-123456)</span></button>
+                    <div class="account_txt">
+                        <div class="acc_txt01">출금가능 : 1,000,000,000원</div>
+                        <div class="acc_txt02">1회 한도 (1천만원)</div>
+                    </div>
+                </div>
+                <div class="entry_box">
+                    <!--  숫자패드 누르기전 -->
+                    <div class="entry_info02">
+                        <h3>입금계좌</h3>
+                        <button type="button" class="account_sel02" title="입금 계좌 선택">기업은행 123-01-123456</button>
+                    </div>
+                    <div class="entry_info02">
+                        <h3>출금액</h3>
+                        <input type="text" name="" id="" readonly="readonly" placeholder="얼마를 출금 할까요?"  onclick="common_ui.slideOpen('#popWin01');">
+                    </div>
+                    <!--  //숫자패드 누르기전 -->
+                    
+                    <!--  숫자패드  누른 후
+                    <div class="entry_info02">
+                        <h3>출금액</h3>
+                        <input type="text" name="" id="" readonly="readonly" placeholder="몇주를 구매할까요?" value="100,000원" class="input_active">
+                        <div class="info_txt">
+                            <div class="i_txt02">일십만원</div>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="btn_fixed">
+                    <div class="btn_area">
+                        <span class="btn_color02"><button type="button" onclick="common_ui.slideOpen('#popWin02');">출금하기</button></span>
+                    </div>
+                </div>
+			</div>
+		</div>
+        <div class="slide" id="popWin01">
+			<div class="slide_inner">
+				<div class="slide_header">
+					<h2>금액 입력</h2>
+				</div>
+				<div class="slide_cont">
+                    <div class="input_box won">
+                        <input type="text" name="" id="" readonly="readonly" value="58,000">
+                        <span class="txt">원</span>
+                    </div>
+					<div class="number_pad_wrap">
+                        <div class="count_btns">
+                            <span class=""><button type="button">+1만</button></span>
+                            <span class=""><button type="button">+5만</button></span>
+                            <span class=""><button type="button">+10만</button></span>
+                            <span class=""><button type="button">+100만</button></span>
+                            <span class=""><button type="button">전액</button></span>
+                        </div>
+						<div class="number_pad">
+							<span class="num"><button type="button">1</button></span>
+							<span class="num"><button type="button">2</button></span>
+							<span class="num"><button type="button">3</button></span>
+							<span class="num"><button type="button">4</button></span>
+							<span class="num"><button type="button">5</button></span>
+							<span class="num"><button type="button">6</button></span>
+							<span class="num"><button type="button">7</button></span>
+							<span class="num"><button type="button">8</button></span>
+							<span class="num"><button type="button">9</button></span>
+							<span class="text"><button type="button">정정</button></span>
+							<span class="num"><button type="button">0</button></span>
+							<span class="del"><button type="button"></button></span>
+						</div>
+					</div>
+				</div>
+				<div class="slide_btns">
+					<div class="btn_area">
+						<span class="btn_color02"><button type="button" onclick="common_ui.slideClose();">확인</button></span><!-- slide 팝업 닫을때 common_ui.slideClose(); 호출-->
+					</div>
+				</div>
+				<button type="button" class="slide_close"><span class="hidden">닫기</span></button>
+			</div>
+		</div>
+        
+        <div class="slide" id="popWin02">
+			<div class="slide_inner">
+				<div class="slide_cont entry_result">
+                    <strong class="result_title">"IBK투자증권" → "<span class="point02">기업은행</span>"<br>계좌로 아래와 같이 <span class="point02">출금</span>합니다.</strong>
+                    <div class="result_table">
+                        <table>
+                            <colgroup>
+                                <col style="width:70px;">
+                                <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">출금계좌</th>
+                                    <td>123-01-12345</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">입금계좌</th>
+                                    <td>기업은행 123-01-12345</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">이체금액</th>
+                                    <td>84,800 원</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">예상수수료</th>
+                                    <td>848,000 원</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+				</div>
+				<div class="slide_btns">
+					<div class="btn_area">
+						<span class="btn_color02"><button type="button">출금하기</button></span>
+					</div>
+				</div>
+				<button type="button" class="slide_close"><span class="hidden">닫기</span></button>
+			</div>
+		</div>
+
+		<div class="modal" id="msg01">
+			<div class="modal_inner">
+				<div class="modal_header">
+					<h2>출금완료</h2>
+				</div>
+				<div class="modal_cont">
+					<p class="noti"><span class="emp">"IBK투자증권" → "기업은행"</span><br>계좌로 <span class="point02">100,000원</span> <br> 입금이 완료되었습니다.</p>
+				</div>
+				<div class="modal_btns">
+					<button type="button">확인</button>
+				</div>
+				<button type="button" class="modal_close"><span class="hidden">닫기</span></button>
+			</div>
+		</div>
+	</body>
+</html>

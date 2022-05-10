@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+	<html lang="ko">
+	<head>
+		<meta charset="euc-kr">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>IBK 투자증권</title>
+		<link rel="stylesheet" href="../css/default.css">
+		<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="../js/common_ui.js"></script>
+		<script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+	</head>
+	<body>
+		<div id="wrap">
+			<div class="contents sub">
+                <div class="swipe_area sector">
+                    <p class="sub_title">요즘 HOT 섹터별 기업?</p>
+                    <div class="swiper-container mySwiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <strong>전기차</strong>
+                            <div class="area_img" aria-hidden="true">
+                                <img src="../images/temp/tmp_swipe01.png" alt="">
+                            </div>
+                            <dl class="area_info01">
+                                <dt>어제보다</dt>
+                                <dd><div class="up">2.5%<span class="hidden">상승</span></div></dd>
+                                <dt>5일 전보다</dt>
+                                <dd><div class="down">2.5%<span class="hidden">하락</span></div></dd>
+                            </dl>
+                        </div>
+                        <div class="swiper-slide">
+                            <strong>전기차</strong>
+                            <div class="area_img" aria-hidden="true">
+                                <img src="../images/temp/tmp_swipe01.png" alt="">
+                            </div>
+                            <dl class="area_info01">
+                                <dt>어제보다</dt>
+                                <dd><div class="up">2.5%<span class="hidden">상승</span></div></dd>
+                                <dt>5일 전보다</dt>
+                                <dd><div class="">-<span class="hidden">변동 없음</span></div></dd>
+                            </dl>
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                      <div class="swiper-button-next"></div>
+                      <div class="swiper-button-prev"></div>
+                    </div>
+                    <!--
+                        2개 이상일때만 하단 swiper 호출
+                    -->
+                    <script>
+                      if($('.mySwiper .swiper-slide').length>1){
+                          var swiper2 = new Swiper(".mySwiper", {
+                            navigation: {
+                              nextEl: ".swiper-button-next",
+                              prevEl: ".swiper-button-prev",
+                            },
+                            pagination: {
+                                el: '.swiper-pagination',
+                                clickable: true,
+                            },
+                            loop : false // true or false
+                           , on:{
+                                slideChange:function(){
+                                    $('.swipe_area .swipe_loading').show();  // 데이터 로드 후  $('.swipe_area .swipe_loading').hide(); 호출
+                                    console.log(this.realIndex);   // slide 변경시 console 출력
+                                }
+                            }
+                          });
+                      }
+                    </script>
+                </div>
+                <div>
+                    <h2>주요기업</h2>
+                    <ul class="stock_list">
+                        <li>
+                            <div class="stock_item">
+                                <a href="#" class="inner">
+                                    <span class="logo" aria-hidden="true"><img src="../images/logo/logo_samsung.png" alt=""></span>
+                                    <span class="name">삼성전자</span>
+                                    <div class="stock_info point_inc">
+                                        <strong>89,900원</strong>
+                                        <div class="per"><span class="hidden">상승</span>999,999 (+99.99%)</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="stock_item">
+                                <a href="#" class="inner">
+                                    <span class="logo" aria-hidden="true"><img src="../images/logo/logo_naver.png" alt=""></span>
+                                    <span class="name">네이버</span>
+                                    <div class="stock_info">
+                                        <strong>89,900원</strong>
+                                        <div class="per">0 (0%)</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="stock_item">
+                                <a href="#" class="inner">
+                                    <span class="logo" aria-hidden="true"><img src="../images/logo/logo_skhynix.png" alt=""></span>
+                                    <span class="name">SK하이닉스</span>
+                                    <div class="stock_info point_dec">
+                                        <strong>89,900원</strong>
+                                        <div class="per"><span class="hidden">하락</span>999,999 (-99.99%)</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="stock_item">
+                                <a href="#" class="inner">
+                                    <span class="logo" aria-hidden="true"><img src="../images/logo/logo_kakaogames.png" alt=""></span>
+                                    <span class="name">카카오게임즈</span>
+                                    <div class="stock_info">
+                                        <strong>89,900원</strong>
+                                        <div class="per">999,999 (99.99%)</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="stock_item">
+                                <a href="#" class="inner">
+                                    <span class="logo" aria-hidden="true"><img src="../images/logo/logo_hmm.png" alt=""></span>
+                                    <span class="name">HMM</span>
+                                    <div class="stock_info">
+                                        <strong>89,900원</strong>
+                                        <div class="per">999,999 (99.99%)</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <!-- 2021-06-10 상한가/하한가 case 추가-->
+                        <li>
+                            <div class="stock_item">
+                                <div class="inner">
+                                    <span class="logo" aria-hidden="true"><img src="../images/logo/logo_hmm.png" alt=""></span>
+                                    <span class="name">HMM</span>
+                                    <div class="stock_info point_upper">
+                                        <strong>89,900원</strong>
+                                        <div class="per"><span class="hidden">상한가</span>999,999 (99.99%)</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="stock_item">
+                                <div class="inner">
+                                    <span class="logo" aria-hidden="true"><img src="../images/logo/logo_hmm.png" alt=""></span>
+                                    <span class="name">HMM</span>
+                                    <div class="stock_info point_lower">
+                                        <strong>89,900원</strong>
+                                        <div class="per"><span class="hidden">하한가</span>999,999 (99.99%)</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!--// 2021-06-10 상한가/하한가 case 추가-->
+                    </ul>
+					<button type="button" class="btn_type01">더보기(1/32)</button>
+                </div>
+                <div class="">
+                    <h2>관련 ETF 보기</h2>
+                    <ul class="stock_list">
+                        <li>
+                            <div class="stock_item">
+                                <a href="#" class="inner">
+                                    <span class="logo" aria-hidden="true"><img src="../images/logo/logo_etf.png" alt=""></span>
+                                    <span class="name">KODEX 자동차</span>
+                                    <div class="stock_info point_inc">
+                                        <strong>89,900원</strong>
+                                        <div class="per"><span class="hidden">상승</span>999,999 (+99.99%)</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="stock_item">
+                                <a href="#" class="inner">
+                                    <span class="logo" aria-hidden="true"><img src="../images/logo/logo_etf.png" alt=""></span>
+                                    <span class="name">KODEX 자동차</span>
+                                    <div class="stock_info">
+                                        <strong>89,900원</strong>
+                                        <div class="per">0 (0%)</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <!-- 2021-06-10 상한가/하한가 case 추가-->
+                        <li>
+                            <div class="stock_item">
+                                <div class="inner">
+                                    <span class="logo" aria-hidden="true"><img src="../images/logo/logo_hmm.png" alt=""></span>
+                                    <span class="name">HMM</span>
+                                    <div class="stock_info point_upper">
+                                        <strong>89,900원</strong>
+                                        <div class="per"><span class="hidden">상한가</span>999,999 (99.99%)</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="stock_item">
+                                <div class="inner">
+                                    <span class="logo" aria-hidden="true"><img src="../images/logo/logo_hmm.png" alt=""></span>
+                                    <span class="name">HMM</span>
+                                    <div class="stock_info point_lower">
+                                        <strong>89,900원</strong>
+                                        <div class="per"><span class="hidden">하한가</span>999,999 (99.99%)</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!--// 2021-06-10 상한가/하한가 case 추가-->
+                    </ul>
+                </div>
+                <div class="">
+                    <h2>테마개요</h2>
+                    <p class="txt01">전기자동차는 화석연료와 엔진을 사용하지 않고, 전기 배터리와 전기 모터를 사용하는 자동차로 저렴한 유지비와 무공해, 무소음 등의 장점을 갖고 있어 향후 기존 자동차를 대체할 미래형 친환경차로 손꼽히고 있음. 친환경을 추구하는 세계적 추세와 더불어 관련 기술개발이 꾸준히 이루어지고 있고, 도로주행 허용과 상용화 추진 등 정부의 정책지원 역시 구체화되고 있어 관련업체들의 중장기적인 수혜가 예상됨.</p>
+                </div>
+			</div>
+			<footer class="footer">
+				<p class="tel">고객센터 <a href="tel:1544-0050">1544-0050</a> / <a href="tel:1588-0030">1588-0030</a> <a href="#" class="foot_link">공지사항</a></p>
+				<p class="copyright">ⓒ IBK SECURITIES CO LTD</p>
+			</footer>
+		</div>
+	</body>
+</html>

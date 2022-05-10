@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+    <script type="text/javascript" src="./MW_HJCODE.js"></script>
+    <script type="text/javascript" src="./jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="./jquery-ui.min.js"></script>
+    <script type="text/javascript" src="./pqgrid.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./pqgrid.dev.css"/>
+    <link rel="stylesheet" type="text/css" href="./pqgrid.ui.dev.css"/>
+	<title></title>
+</head>
+<body>
+    <div id="grid"></div>
+</body>
+</html>
+
+<script>
+    var stockMaster = [];
+    var arrMaster = MW_HJCODE;
+    var keys = [ 'CODE', 'HNAM' ];
+    for(var i=0; i<arrMaster.length; i++) {
+        var obj = {};
+        for(var k=0; k<keys.length; k++) {
+            obj[keys[k]] = arrMaster[i][k] || '';
+            if(k==0) {
+                obj[keys[k]] = obj[keys[k]].substring(1); // 종목구분값 제거( 6자리만 사용 )
+            }
+        }
+        stockMaster.push(obj);
+    }
+    var grid = $("#grid").pqGrid({
+        sortModel : { on : true },
+        filterModel: { mode: 'OR', on: true, header: false },
+        selectionModel : { type:'row', mode:'single' },
+        scrollModel : { autoFit: true, horizontal: false },
+        numberCell: { show: false },
+        trigger : true,
+        showTop: false,
+        showBottom: false,
+        showToolbar: false,
+        showHeader: false,
+        showTitle: true,
+        virtualY: true,
+        virtualX: true,
+        editable: false,
+        collapsible: {on: false},
+        ui: {on: false},
+        bootstrap: {on: true},
+        colModel : [
+            { dataIndx: 'HNAM', title:'한글명', dataType:'string', width:'100%' }
+        ],
+        dataModel : { data : stockMaster }
+    }).pqGrid('refreshDataAndView');
+</script>

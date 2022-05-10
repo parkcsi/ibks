@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+	<html lang="ko">
+	<head>
+		<meta charset="euc-kr">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>html 템플릿</title>
+		<link rel="stylesheet" href="../css/default.css">
+		<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="../js/common_ui.js"></script>
+        <style>
+            .guide h2{margin-top:20px;padding:0 20px;}
+            .guide div:not(.btn_area){padding:0 20px;}
+        </style>
+	</head>
+	<body>
+		<div id="wrap" class="guide">
+            <h2>버튼 1개</h2>
+			<div class="btn_area">
+				<span><button type="button" onclick="">Button  기본형</button></span>
+			</div>
+            <h2>버튼 확인/취소형</h2>
+			<div class="btn_area">
+				<span><button type="button" onclick="">Button  취소</button></span>
+				<span><button type="button" onclick="">Button  기본형</button></span>
+			</div>
+            <h2>버튼 반반</h2>
+			<div class="btn_area half">
+				<span><button type="button" onclick="">Button  반반</button></span>
+				<span><button type="button" onclick="">Button  반반</button></span>
+			</div>
+            <h2>버튼 color </h2>
+			<div class="btn_area">
+				<span class="btn_color01"><button type="button" onclick="">구매하기</button></span>
+			</div>
+			<div class="btn_area">
+				<span class="btn_color02"><button type="button" onclick="">판매하기</button></span>
+			</div>
+			<div class="btn_area">
+				<span class="btn_color03"><button type="button" onclick="">정정하기</button></span>
+			</div>
+			<div class="btn_area">
+				<span class="btn_color04"><button type="button" onclick="">취소하기</button></span>
+			</div>
+            <h2>버튼들</h2>
+            <div>
+                <h3>버튼 타입1</h3>
+                <button type="button" class="btn_type01">더보기(1/32)</button>
+                <button type="button" class="btn_type01">목록</button>
+
+                <h3>버튼 타입2</h3>
+                <button class="btn_type02 plus"><span>추가하기</span></button>
+                <button class="btn_type02 check"><span>주문하기</span></button> <br> <br>
+
+                <h3>링크</h3>
+                <button type="button" class="btn_link">IBK투자증권 모바일 앱 바로가기</button> <br>
+                <a href="#" target="_blank" role="button" class="btn_link">안내</a> <br>
+                <h3>계좌선택</h3>
+                <button type="button" class="account_sel" title="계좌 선택">홍길동님의 주식계좌 <span>(123-01-123456)</span></button>
+
+                <h3>기타</h3>
+                <button type="button" class="btn_favorite"><span class="hidden">즐겨찾기</span></button><!-- 활성화시  active class 부여-->
+                <button type="button" class="btn_favorite active"><span class="hidden">즐겨찾기</span></button><!-- 활성화시  active class 부여-->
+            </div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+	<html lang="ko">
+	<head>
+		<meta charset="euc-kr">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>IBK 투자증권</title>
+		<link rel="stylesheet" href="../css/default.css">
+		<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="../js/common_ui.js"></script>
+	</head>
+	<body>
+		<div id="wrap">
+        <div id="wrap">
+            <div class="contents inquiry">
+                <div class="inquiry_section_top">
+                    <a href="#" class="inquiry_account_sel">
+                        <em>내자산</em>
+                        <span class="acc_num">주식(홍길동) 123-01-12345</span>
+                    </a>
+                </div>
+                <div class="inquiry_section_tab_global">
+                    <ul>
+                        <li><button type="button" class=""><span class="tab01">보유주식</span></button></li>
+                        <li><button type="button" class=""><span class="tab02">주문내역</span></button></li>
+                        <li><button type="button" class=""><span class="tab03">거래내역</span></button></li>
+                        <li><button type="button" class="current"><span class="tab04">거래손익</span></button></li>
+                    </ul>
+                </div>
+                <script>
+                    $('.inquiry_section_tab_global').scrollLeft($('.inquiry_section_tab_global .tab04').offset().left);
+                </script>
+                <div>
+                    <div class="inquiry_section_list">
+                        <div class="list_top">
+                            <div class="date">
+                                <input type="text" name="" id="" readonly="readonly" value="2021-05-25 ~ 2021-05-27" onclick="common_ui.slideOpen('#datepick02');">
+                            </div>
+                        </div>
+                        <ul class="stock_list">
+                            <li>
+                                <div class="stock_item">
+                                    <a href="#" class="inner">
+                                        <span class="logo" aria-hidden="true"><img src="../images/logo/a032830.png" alt=""></span>
+                                        <span class="name">APPL<span class="ko">애플</span></span>
+                                        <div class="stock_info">
+                                            <strong class="point_inc">+89,900 USD</strong>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="stock_item">
+                                    <a href="#" class="inner">
+                                        <span class="logo" aria-hidden="true"><img src="../images/logo/a034730.png" alt=""></span>
+                                        <span class="name">APPL<span class="ko">애플</span></span>
+                                        <div class="stock_info">
+                                            <strong class="point_dec">-89,900 USD</strong>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="list_btns">
+                            <button type="button" class="btn_type01">더보기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="datepicker_customize slide" id="datepick02" style="display: none;">
+            <div class="slide_inner">
+                <div class="date_range_input">
+                    <div class="input">
+                        <label for="st_val">시작일</label>
+                        <input type="text" name="" id="st_val" title="시작일 입력" readonly="readonly" placeholder="시작일 선택">
+                    </div>
+                    <div class="txt">~</div>
+                    <div class="input">
+                        <label for="ed_val">종료일</label>
+                        <input type="text" name="" id="ed_val" title="종료일 입력" readonly="readonly" placeholder="종료일 선택">
+                    </div>
+                </div>
+                <div id="datepick2"></div>
+				<div class="slide_btns">
+					<div class="btn_area">
+						<span><button type="button">확인</button></span><!-- 닫을때 common_ui.slideClose(selector);-->
+					</div>
+				</div>
+				<button type="button" class="slide_close"><span class="hidden">닫기</span></button>
+            </div>
+        </div>
+        
+        <script>
+            common_ui.datePickerDefault(); // 날짜 출력방식,한글 표기 기본 set
+            $('#datepick2').datepicker();
+        </script>
+		</div>
+	</body>
+</html>

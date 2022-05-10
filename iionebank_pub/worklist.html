@@ -1,0 +1,668 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="euc-kr">
+  <title>IBK 투자증권</title>
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi" />
+	<link rel="stylesheet" href="./pub_temp/css/worklist.css" >
+	<script src="./pub_temp/js/jquery-1.12.4.min.js"></script>
+	<script src="./pub_temp/js/pub.worklist.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			pubGuide.init('[data-role="filelist"]');
+		});
+	</script>
+ </head>
+ <body>
+	<div id="wrap">
+		<h1 id="title"></h1>
+		<div class="guide_link">
+			<h2>Guide</h2>
+			<a href="./pub_guide/slide_popup.html" target="_blank">Slide popup</a>
+			<a href="./pub_guide/modal_popup.html" target="_blank">Modal popup</a>
+			<a href="./pub_guide/full_popup.html" target="_blank">Full popup</a>
+			<a href="./pub_guide/message_popup.html" target="_blank">Message popup</a>
+			<a href="./pub_guide/button.html" target="_blank">Button</a>
+			<a href="./pub_guide/form.html" target="_blank">Form</a>
+			<a href="./pub_guide/list.html" target="_blank">List</a>
+		</div>
+
+		<div class="note" style="display:none;">
+			<h2>작업 순서</h2>
+			<ol>
+				<li>현재가 <small>(commit)</small></li>
+				<li>종목검색 <small>(commit)</small></li>
+				<li>즐겨찾기 <small>(commit)</small></li>
+				<li>섹터 <small>(commit)</small></li>
+				<li>HOT종목 <small>(commit)</small></li>
+				<li>주문 <small>(디자인 수정 대기중)</small></li>
+				<li>내자산</li>
+				<li>입출금</li>
+				<li>공지/이벤트</li>
+				<li>메인/인증/동의/기타</li>
+			</ol>
+		</div>
+		<div class="filelist" data-role="filelist" >
+			<table>
+				<thead>
+					<tr>
+						<th scope="col">구분</th>
+						<th scope="col">1depth</th>
+						<th scope="col">2depth</th>
+						<th scope="col">Main View</th>
+						<th scope="col">Sub View</th>
+						<th scope="col">View Type</th>
+						<th scope="col">파일명</th>
+						<th scope="col">완료일</th>
+						<th scope="col">비고</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>국내주식</td>
+						<td>공통</td>
+						<td>인증/동의</td>
+						<td>인증안내</td>
+						<td></td>
+						<td>Body</td>
+						<td class="html">./html/인증안내.html</td>
+						<td class="date">2021-06-02</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>서비스이용동의</td>
+						<td></td>
+						<td>Body</td>
+						<td class="html">./html/서비스이용동의.html</td>
+						<td class="date">2021-06-10</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>이중접속안내</td>
+						<td>이중접속안내</td>
+						<td></td>
+						<td>Popup</td>
+						<td class="html">./html/이중접속안내.html</td>
+						<td class="date">2021-06-10</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>CDD등록안내</td>
+						<td>CDD등록안내</td>
+						<td></td>
+						<td>Popup</td>
+						<td class="html">./html/CDD등록안내.html</td>
+						<td class="date">2021-06-10</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>FATCA 및 CRS 등록</td>
+						<td>FATCA 및 CRS 등록</td>
+						<td></td>
+						<td>Popup</td>
+						<td class="html">./html/FATCA및CRS등록.html</td>
+						<td class="date">2021-06-10</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>서비스이용해지</td>
+						<td>서비스이용해지</td>
+						<td></td>
+						<td>Popup</td>
+						<td class="html">./html/이용해지.html</td>
+						<td class="date">2021-06-23</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>종목검색</td>
+						<td>종목검색</td> 
+						<td></td>
+						<td>Popup</td>
+						<td class="html">./html/IBK-M01-900.html</td>
+						<td class="date">2021-05-06</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>계좌선택</td>
+						<td>계좌선택</td>
+						<td></td>
+						<td>Popup</td>
+						<td class="html">./html/계좌선택.html</td>
+						<td class="date">2021-05-06</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>메인</td>
+						<td></td>
+						<td>국내주식메인</td>
+						<td></td>
+						<td>Body</td>
+						<td class="html">./html/IBK-M01-000.html</td>
+						<td class="date">2021-05-25</td>
+						<td>2021-06-04 추가</td>
+					</tr>
+					<tr class="delete">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>한경컨센서스</td>
+						<td>Link</td>
+						<td class="html"></td>
+						<td class="date"></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>현재가</td>
+						<td></td>
+						<td>현재가(종목상세)</td>
+						<td></td>
+						<td>Body</td>
+						<td class="html">./html/IBK-M01-100.html</td>
+						<td class="date">2021-05-04</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>기업소식</td>
+						<td>Body</td>
+						<td class="html">./html/IBK-M01-120.html</td>
+						<td class="date">2021-05-04</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>기업소식상세</td>
+						<td>Popup</td>
+						<td class="html">./html/IBK-M01-121.html</td>
+						<td class="date">2021-05-04</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>섹터</td>
+						<td></td>
+						<td>오늘HOT섹터기업</td>
+						<td></td>
+						<td>Body</td>
+						<td class="html">./html/IBK-M01-200.html</td>
+						<td class="date">2021-05-11</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>HOT제품</td>
+						<td></td>
+						<td>요즘HOT제품은</td>
+						<td></td>
+						<td>Popup</td>
+						<td class="html">./html/IBK-M01-001.html</td>
+						<td class="date">2021-05-11</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>즐겨찾기</td>
+						<td></td>
+						<td>즐겨찾기</td>
+						<td></td>
+						<td>Body</td>
+						<td class="html">./html/즐겨찾기.html</td>
+						<td class="date">2021-05-06</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>주문</td>
+						<td>간편주문</td>
+						<td>구매</td>
+						<td></td>
+						<td>Body</td>
+						<td class="html">./html/구매.html</td>
+						<td class="date">2021-05-17</td>
+						<td>주석참조 <br>  2021-05-20 수정 </td>
+					</tr>
+					<tr class="">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>(공통)가격선택</td>
+						<td>Popup</td>
+						<td class="html"></td>
+						<td class="date">2021-05-17</td>
+						<td>본 페이지에 작업</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>판매</td>
+						<td></td>
+						<td>Body</td>
+						<td class="html">./html/판매.html</td>
+						<td class="date">2021-05-17</td>
+						<td>주석참조 <br>  2021-05-20 수정 </td>
+					</tr>
+					<tr class="">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>(공통)가격선택</td>
+						<td>Popup</td>
+						<td class="html"></td>
+						<td class="date">2021-05-17</td>
+						<td>본 페이지에 작업</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>정정</td>
+						<td></td>
+						<td>Body</td>
+						<td class="html">./html/정정.html</td>
+						<td class="date">2021-05-17</td>
+						<td>주석참조 <br>  2021-05-20 수정 </td>
+					</tr>
+					<tr class="">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>(공통)가격선택</td>
+						<td>Popup</td>
+						<td class="html"></td>
+						<td class="date">2021-05-17</td>
+						<td>본 페이지에 작업</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>취소</td>
+						<td></td>
+						<td>Popup</td>
+						<td class="html">./html/취소.html</td>
+						<td class="date">2021-05-17</td>
+						<td>주석참조 <br>  2021-05-20 수정 </td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>입/출금</td>
+						<td></td>
+						<td>출금</td>
+						<td></td>
+						<td>Body</td>
+						<td class="html">./html/출금.html</td>
+						<td class="date">2021-05-18</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>입금</td>
+						<td></td>
+						<td>Body</td>
+						<td class="html">./html/입금.html</td>
+						<td class="date">2021-05-18</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>내자산</td>
+						<td>보유주식</td>
+						<td>보유주식</td>
+						<td></td>
+						<td>Tab</td>
+						<td class="html">./html/보유주식.html</td>
+						<td class="date">2021-05-26</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>보유주식상세</td>
+						<td>Popup</td>
+						<td class="html">./html/보유주식상세.html</td>
+						<td class="date">2021-05-26</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>주문내역</td>
+						<td>주문내역</td>
+						<td></td>
+						<td>Tab</td>
+						<td class="html">./html/주문내역.html</td>
+						<td class="date">2021-05-26</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>주문내역상세</td>
+						<td>Popup</td>
+						<td class="html">./html/주문내역상세.html</td>
+						<td class="date">2021-05-26</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>거래내역</td>
+						<td>거래내역</td>
+						<td></td>
+						<td>Tab</td>
+						<td class="html">./html/거래내역.html</td>
+						<td class="date">2021-05-26</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>거래내역상세</td>
+						<td>Popup</td>
+						<td class="html">./html/거래내역상세.html</td>
+						<td class="date">2021-05-26</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>공지사항</td>
+						<td></td>
+						<td>공지사항</td>
+						<td></td>
+						<td>Body</td>
+						<td class="html">./html/공지사항.html</td>
+						<td class="date">2021-05-21</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>공지상세</td>
+						<td>Popup</td>
+						<td class="html">./html/공지상세.html</td>
+						<td class="date">2021-05-21</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>이벤트</td>
+						<td></td>
+						<td>이벤트</td>
+						<td></td>
+						<td>Body</td>
+						<td class="html">./html/이벤트.html</td>
+						<td class="date">2021-05-21</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>이벤트상세</td>
+						<td>Popup</td>
+						<td class="html">./html/이벤트상세.html</td>
+						<td class="date">2021-05-21</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>더보기</td>
+						<td></td>
+						<td>더보기</td>
+						<td></td>
+						<td>Body</td>
+						<td class="html">./html/더보기.html</td>
+						<td class="date">2021-05-26</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>해외주식</td>
+						<td>주문</td>
+						<td></td>
+						<td>구매</td>
+						<td></td>
+						<td>Body</td>
+						<td class="html">./html/해외주식_구매.html</td>
+						<td class="date">2021-06-14</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>판매</td>
+						<td></td>
+						<td>Body</td>
+						<td class="html">./html/해외주식_판매.html</td>
+						<td class="date">2021-06-14</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>취소</td>
+						<td></td>
+						<td>Body</td>
+						<td class="html">./html/해외주식_취소.html</td>
+						<td class="date">2021-06-14</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>내자산</td>
+						<td>보유주식</td>
+						<td>보유주식</td>
+						<td></td>
+						<td>Body</td>
+						<td class="html">./html/해외주식_보유주식.html</td>
+						<td class="date">2021-06-14</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>보유주식상세</td>
+						<td>Popup</td>
+						<td class="html">./html/해외주식_보유주식상세.html</td>
+						<td class="date">2021-06-14</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>주문내역</td>
+						<td>주문내역</td>
+						<td></td>
+						<td>Body</td>
+						<td class="html">./html/해외주식_주문내역.html</td>
+						<td class="date">2021-06-14</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>주문내역상세</td>
+						<td>Popup</td>
+						<td class="html">./html/해외주식_주문내역상세.html</td>
+						<td class="date">2021-06-14</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>거래내역</td>
+						<td>거래내역</td>
+						<td></td>
+						<td>Body</td>
+						<td class="html">./html/해외주식_거래내역.html</td>
+						<td class="date">2021-06-14</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>거래내역상세</td>
+						<td>Popup</td>
+						<td class="html">./html/해외주식_거래내역상세.html</td>
+						<td class="date">2021-06-14</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>거래손익</td>
+						<td>거래손익</td>
+						<td></td>
+						<td>Body</td>
+						<td class="html">./html/해외주식_거래손익.html</td>
+						<td class="date">2021-06-14</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>서비스신청</td>
+						<td></td>
+						<td>외화증권거래신청</td>
+						<td></td>
+						<td>Body</td>
+						<td class="html">./html/해외주식_외화증권거래신청.html</td>
+						<td class="date">2021-06-11</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>해외주식ETP거래신청</td>
+						<td></td>
+						<td>Body</td>
+						<td class="html">./html/해외주식_해외주식ETP거래신청.html</td>
+						<td class="date">2021-06-11</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>해외주식원화증거금서비스신청</td>
+						<td></td>
+						<td>Body</td>
+						<td class="html">./html/해외주식_해외주식원화증거금서비스신청.html</td>
+						<td class="date">2021-06-11</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>해외주식 시장안내</td>
+						<td></td>
+						<td>거래절차</td>
+						<td></td>
+						<td>Body</td>
+						<td class="html">./html/해외주식_시장안내_거래절차.html</td>
+						<td class="date">2021-06-17</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>미국시장</td>
+						<td></td>
+						<td>Body</td>
+						<td class="html">./html/해외주식_시장안내_미국시장.html</td>
+						<td class="date">2021-06-17</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>홍콩시장</td>
+						<td></td>
+						<td>Body</td>
+						<td class="html">./html/해외주식_시장안내_홍콩시장.html</td>
+						<td class="date">2021-06-17</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>중국시장</td>
+						<td></td>
+						<td>Body</td>
+						<td class="html">./html/해외주식_시장안내_중국시장.html</td>
+						<td class="date">2021-06-17</td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div class="frame_wrap">
+		<div class="frame_view">
+			<div class="window"></div>
+			<div class="frame_area">
+				<span class="file_name"></span>
+				<select name="" id="oh" style="width:100%;">
+				</select>
+				<iframe src="" frameborder="0" style="width:100%;height:100%;"></iframe>
+			</div>
+			<div class="frame_btn">
+				<button type="button" class="prev"></button>
+				<button type="button" class="next"></button>
+			</div>
+			<span class="resize e"></span>
+			<span class="resize es"></span>
+			<span class="resize s"></span>
+		</div>
+		<div class="dimmed"></div>
+	</div>
+ </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+	<html lang="ko">
+	<head>
+		<meta charset="euc-kr">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>html 템플릿</title>
+		<link rel="stylesheet" href="../css/default.css">
+		<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="../js/common_ui.js"></script>
+	</head>
+	<body>
+		<div id="wrap">
+			<div class="btn_area">
+				<span><button type="button" onclick="common_ui.modalOpen('#sample1');">modal팝업 sample 1 열기</button></span>
+			</div>
+		</div>
+		<div class="modal" style="display:none;">
+			<div class="modal_inner">
+				<div class="modal_header">
+					<h2>안내</h2>
+				</div>
+				<div class="modal_cont">
+				</div>
+				<div class="modal_btns">
+					<button type="button">취소</button>
+					<button type="button">확인</button>
+				</div>
+				<button type="button" class="modal_close"><span class="hidden">닫기</span></button>
+			</div>
+		</div>
+
+		<div class="modal" id="sample1">
+			<div class="modal_inner">
+				<div class="modal_header">
+					<h2>안내</h2>
+				</div>
+				<div class="modal_cont">
+					<p class="noti emp">주문 금액 30억 초과 알림</p>
+					<p class="noti">주문가능 금액이 부족입니다. <br>잔액 확인 후 다시 주문하시기 바랍니다.</p>
+				</div>
+				<div class="modal_btns">
+					<button type="button">확인</button>
+				</div>
+				<button type="button" class="modal_close"><span class="hidden">닫기</span></button>
+			</div>
+		</div>
+	</body>
+</html>

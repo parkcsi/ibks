@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+	<html lang="ko">
+	<head>
+		<meta charset="euc-kr">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>IBK 투자증권</title>
+		<link rel="stylesheet" href="../css/default.css">
+		<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="../js/common_ui.js"></script>
+	</head>
+	<body>
+		<div id="wrap">
+			<div class="contents sub">
+                <div class="account_info">
+                    <button type="button" class="account_sel" title="계좌 선택">홍길동님의 주식계좌 <span>(123-01-123456)</span></button>
+                </div>
+                <div class="entry_box">
+                    <!-- 2021-06-01 수정-->
+                    <div class="info_box">
+						<em class="info_name">삼성전자 판매</em>
+					</div>
+                    <!-- // 2021-06-01 수정-->
+                    <div class="entry_info02">
+                        <h3>구매가격</h3>
+                        <div class="info_price">
+                            <em>시장가</em>
+                        </div>
+                    </div>
+
+                    <div class="entry_info02">
+                        <h3>구매수량</h3>
+                        <input type="text" name="" id="" readonly="readonly" placeholder="몇주를 구매할까요?" value="10주"  class="input_active">
+                        <div class="info_txt">
+                            <div class="i_txt02">840,000원</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn_fixed">
+                    <div class="btn_area">
+						<span class="btn_color04"><button type="button"  onclick="common_ui.slideOpen('#popWin02');">취소하기</button></span>
+                    </div>
+                </div>
+			</div>
+		</div>
+        <div class="slide" id="popWin02">
+			<div class="slide_inner">
+				<div class="slide_cont entry_result">
+                    <strong class="result_title"><span class="point02">삼성전자</span> 주식을 <br> 아래와 같이 <span class="point02">구매취소</span>합니다.</strong>
+                    <div class="result_table">
+                        <table>
+                            <colgroup>
+                                <col style="width:70px;">
+                                <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">계좌번호</th>
+                                    <td>123-01-12345</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">수량</th>
+                                    <td>10주</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1주가격</th>
+                                    <td>현재가 84,800 원</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">주문금액</th>
+                                    <td>848,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+				</div>
+				<div class="slide_btns">
+					<div class="btn_area">
+						<span class="btn_color04"><button type="button">취소하기</button></span>
+					</div>
+				</div>
+				<button type="button" class="slide_close"><span class="hidden">닫기</span></button>
+			</div>
+		</div>
+
+        <!-- common_ui.modalOpen(selector) ; -->
+		<div class="modal" id="msg01">
+			<div class="modal_inner">
+				<div class="modal_header">
+					<h2>주문완료</h2>
+				</div>
+				<div class="modal_cont">
+					<p class="noti"><span class="emp">삼성전자</span> 주식 <span class="emp">10주</span>를 <br>지정가 <span class="point02">848,000원</span>으로 <br>구매를 취소했습니다.</p>
+				</div>
+				<div class="modal_btns">
+					<button type="button">확인</button>
+				</div>
+				<button type="button" class="modal_close"><span class="hidden">닫기</span></button>
+			</div>
+		</div>
+	</body>
+</html>
