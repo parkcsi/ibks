@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-    <html lang="ko">
+	<html lang="ko">
 	<head>
 		<meta charset="euc-kr">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
@@ -8,41 +8,27 @@
 		<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
 		<script type="text/javascript" src="../js/common_ui.js"></script>
 	</head>
-    <body>
-        <div id="wrap">
-            <div class="contents sub">
-                <div class="toplank_contents">
-                    <div class="toplank_top">
-                        <div class="toplank_tip_area active" data-role="tooltip">
-                            <h2>종목랭킹 TOP 10</h2>
-                            <button type="button" class="toplank_ttbtn"><span class="hidden">설명 보기</span></button>
-                            <div class="tip_cont" data-role="tooltip-cont">
-                                <ul class="tip_cont_list">
-                                    <li>각 항목별 랭킹 TOP 10 종목을 조회하여 시장 참여자들의 관심종목을 확인할 수 있습니다.</li>
-                                    <li>종목랭킹 TOP 10은 현재가 조회건수, 관심종목 신규등록건수, 당사 고객 매수건수, 외국인/기관 동시순매수 등의 상위 랭킹 종목을 보여주는 화면입니다. 각 항목별 구체적인 작성기준은 상기 화면의 하단 안내사항을 참고하시기 바랍니다.</li>
-                                    <li>본 화면은 투자참고정보로서 향후 주가 움직임을 제시하는 자료가 아니며, 수익성을 보장하지 않습니다. 따라서 투자판단의 최종 책임은 투자자 본인에게 있으며 투자시기와 방법에 대해서는 스스로 결정하시기 바랍니다.</li>
-                                    <li>당사는 금융투자상품의 위험성에 관하여 충분히 설명할 의무가 있으며, 반드시 그러한 설명을 충분히 듣고 투자결정을 내리시기 바랍니다.</li>
-                                    <li>주식 등 금융투자상품은 예금자보호법에 따라 예금보험공사가 보호하지 않으며, 원금손실 위험이 높습니다.</li>
-                                </ul>
-                                <button type="button" class="tip_close"><span class="hidden">툴팁 닫기</span></button>
-                            </div>
-                        </div>
-                        <a href="javascript:;" class="list_reload" title="매수상위종목 목록 새로고침">5월 17일 09:30 기준</a>
-                        <div class="toplank_tab">
-                            <div class="scroll">
-                                <ul class="contents_tab">
-                                    <li><button type="button">외인/기관 동시 순매수</button></li>
-                                    <li><button type="button">매수건수</button></li>
-                                    <li><button type="button">인기검색</button></li>
-                                    <li><button type="button" class="current">관심종목</button></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="toplank_date">
-                            <p class="toplank_date_txt">2022.05.17</p>
-                            <button type="button" class="toplank_date_btn"><span class="hidden">날짜 선택</span></button>
-                        </div>
+	<body>
+		<div id="wrap">
+			<div class="contents sub">
+                <div>
+                    <div class="title_area">
+                        <h2>고수 Pick</h2>
+                        <a href="#" class="list_reload" title="고수 Pick 목록 새로고침">5월 17일 09:30 기준</a>
                     </div>
+                    <div class="hash_list">
+                        <ul>
+                            <li>#수량기준</li>
+                            <li>#연령대_50대이상</li>
+                            <li>#자산규모_3천만원미만</li>
+                        </ul>
+                        <button class="hash_pop" onclick="common_ui.slideOpen('#popWin00');">설정</button>
+                    </div>
+                    <ul class="contents_tab">
+                        <li><button type="button" class="current">보유종목</button></li>
+                        <li><button type="button">당일매수</button></li>
+                        <li><button type="button">당일매도</button></li>
+                    </ul>
                     <ul class="stock_list">
                         <li>
                             <div class="stock_item">
@@ -104,7 +90,6 @@
                                 </a>
                             </div>
                         </li>
-                        <!-- 2021-06-10 상한가/하한가 case 추가-->
                         <li>
                             <div class="stock_item">
                                 <div class="inner">
@@ -129,41 +114,71 @@
                                 </div>
                             </div>
                         </li>
-                        <li>
-                            <div class="stock_item">
-                                <div class="inner">
-                                    <span class="logo" aria-hidden="true"><img src="../images/logo/logo_hmm.png" alt=""></span>
-                                    <span class="name">HMM</span>
-                                    <div class="stock_info point_upper">
-                                        <strong>89,900원</strong>
-                                        <div class="per"><span class="hidden">상한가</span>999,999 (99.99%)</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="stock_item">
-                                <div class="inner">
-                                    <span class="logo" aria-hidden="true"><img src="../images/logo/logo_hmm.png" alt=""></span>
-                                    <span class="name">HMM</span>
-                                    <div class="stock_info point_lower">
-                                        <strong>89,900원</strong>
-                                        <div class="per"><span class="hidden">하한가</span>999,999 (99.99%)</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <!--// 2021-06-10 상한가/하한가 case 추가-->
                     </ul>
                 </div>
-                <div class="toplank_point">
-                    <p class="toplank_point_txt">꼭 알아두세요!</p> 
-                    <ul class="toplank_point_list">
-                        <li>IBK투자증권 고객들이 전영업일 기준 신규로 관심종목으로 많이 등록한 종목입니다.</li>
-                        <li>고객 개별 투자성향 또는 당사 의견과는 무관한 단순 정보이며, 수익달성을 보장하지 않습니다. 또한, 투자결과에 대한 책임은 고객 본인에게 있습니다.</li>
+                <div>
+                    <h3>꼭 알아두세요!</h3>
+                    <ul class="info_dot01">
+                        <li>위 정보는 IBK투자증권 전월 투자수익률 상위 1,000계좌의 전일 보유종목, 당일 매수/매도 종목을 기준으로 제공됩니다.</li>
+                        <li>고객 개별 투자성향 또는 당사 의견과는 무관한 단순정보이며, 수익달성을 보장하지 않습니다.<br />또한, 투자결과에 대한 책임은 고객 본인에게 있습니다.</li>
                     </ul>
                 </div>
-            </div>
-        </div>
-    </body>
+			</div>
+		</div>
+
+        <div class="slide" id="popWin00">
+			<div class="slide_inner">
+				<div class="slide_header">
+					<h2>필터 설정</h2>
+				</div>
+				<div class="slide_cont">
+                    <div class="filter_list">
+                        <dl class="line1">
+                            <dt>조회기준</dt>
+                            <dd>
+                                <div class="form_type">
+                                    <input type="radio" name="rd1" id="rd01" checked="">
+                                    <label for="rd01">수량</label>
+                                </div>
+                                <div class="form_type">
+                                    <input type="radio" name="rd1" id="rd02">
+                                    <label for="rd02">금액</label>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>연령대</dt>
+                            <dd>
+                                <ul class="sort_list type2">
+                                    <li class="active"><button type="button">전체</button></li>
+                                    <li><button type="button">30대 이하</button></li>
+                                    <li><button type="button">40대</button></li>
+                                    <li><button type="button">50대 이상</button></li>
+                                </ul>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>자산규모</dt>
+                            <dd>
+                                <ul class="sort_list type3">
+                                    <li class="active"><button type="button">전체</button></li>
+                                    <li><button type="button">1천만원 미만</button></li>
+                                    <li><button type="button">3천만원 미만</button></li>
+                                    <li><button type="button">1억 미만</button></li>
+                                    <li><button type="button">1억 이상</button></li>
+                                    <li></li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </div>
+				</div>
+				<div class="slide_btns">
+					<div class="btn_area">
+						<span class="btn_color02"><button type="button">확인</button></span><!-- slide 팝업 닫을때 common_ui.slideClose(); 호출-->
+					</div>
+				</div>
+				<button type="button" class="slide_close"><span class="hidden">닫기</span></button>
+			</div>
+		</div>
+	</body>
 </html>
