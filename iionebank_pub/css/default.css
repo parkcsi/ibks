@@ -1050,6 +1050,7 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
 .toplank_date input[type="text"] { padding: 0; border: none; background: url(../images/btn_date.png) no-repeat center right / 16px auto; }
 .toplank_contents .stock_list { padding: 0 20px; }
 
+.contents.sub .info_wrap { padding: 20px 20px 10px; }
 .tab_bord { position: relative; width: 100%; margin-bottom: 26px; }
 .tab_bord:before { position: absolute; bottom: 0; left: -20px; content: ''; display: block; width: calc(100% + 40px); height: 2px; background: #d9d9d9; }
 .tab_bord:after { display: block; content: ""; clear: both; }
