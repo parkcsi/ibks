@@ -988,6 +988,7 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
 .pick_banner.swiper-container-horizontal > .swiper-pagination-bullets{bottom: 8px;}
 .pick_banner .swiper-pagination-bullet{border: 1px solid #333333;}
 .pick_banner .swiper-pagination-bullet-active{background: #333333;}
+.pick_banner .swiper-slide img{width: 100%;}
 
 .title_area .list_reload{position:absolute; right:0; top:15px; padding-right:15px; font-size: 12px; color:#9599a1; background:url(../images/main/btn_list_refresh.png) no-repeat right center; background-size:11px auto;}
 .hash_list{position: relative; margin-top: -5px; margin-bottom: 20px;}
@@ -1027,15 +1028,25 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
 .sort_list.type3 li:nth-child(4){border-bottom-left-radius: 5px;}
 .sort_list.type3 li:nth-child(6){border-bottom-right-radius: 5px;}
 
+.entry_box .entry_info02 .input_btns button.repeat_btn{width: 68px; height: 28px; line-height: 26px; font-size: 13px; text-align: center;}
+.entry_box .account_info + .entry_info02{margin-top: 20px;}
+.entry_box .agree_box{margin-bottom: 30px;}
+
+.modal .modal_cont .list{padding: 0 8px;}
+.modal .modal_cont .list dl{display: flex; align-items: center; padding-top:12px; margin-top: 0;}
+.modal .modal_cont .list dl dt{margin-right: 10px; color: #757575;}
+.modal .modal_cont .list dl dd{flex: 1; margin-top: 0; text-align: right;}
+
 /* 220525 */
-.main .main_contents01_1 { padding: 35px 0 16px; }
-.main_contents01_1 .main_contents011_banner a { display: block; width: 100%; height: 97px; }
+.main .main_contents01_1 { padding: 40px 0 20px; }
+.main_contents01_1 .main_etf_banner img{width: 100%;}
 .etf_content { padding: 30px 20px 0; }
-.etf_content .etf_listbox { border-top: 2px solid #ececec; }
-.etf_content .etf_list > a { display: block; height: 40px; padding: 20px 0; background: url(../images/icon_arrow03.png) no-repeat center right / auto 11px; border-bottom: 2px solid #ececec; overflow: hidden; }
-.etf_list .etf_list_img { float: left; margin-right: 20px; width: auto; height: 100%; }
-.etf_list .etf_list_txt { float: left; font-size: 13px; line-height: 20px; color: #333; }
-.etf_list .etf_list_txt > p { font-size: 14px; color: #333; font-weight: bold; }
+.etf_content .etf_listbox { border-top: 1px solid #ececec; }
+.etf_content .etf_list > a { display: flex; align-items: center; padding: 20px 0; background: url(../images/icon_arrow03.png) no-repeat center right / auto 11px; border-bottom: 1px solid #ececec; overflow: hidden; }
+.etf_list .etf_list_img { margin-right: 20px; width: 40px; height: 40px; }
+.etf_list .etf_list_img img { width: 100%; height: 40px; }
+.etf_list .etf_list_txt { float: left; font-size: 13px; line-height: 20px; color: #666; }
+.etf_list .etf_list_txt > p { margin-top: 5px; font-size: 14px; color: #333; }
 
 .contents.sub > .toplank_contents { padding: 20px 0 36px; }
 .toplank_contents .title_area { padding: 0 20px; }

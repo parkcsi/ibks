@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+    <html lang="ko">
+	<head>
+		<meta charset="euc-kr">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>IBK 투자증권</title>
+		<link rel="stylesheet" href="../css/default.css">
+		<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="../js/common_ui.js"></script>
+	</head>
+    <body>
+        <div id="wrap">
+            <div class="contents sub">
+                <div class="entry_box global">
+                    <div class="account_info">
+                        <div class="title_area">
+                            <h2>참가신청</h2>
+                        </div>
+                        <button type="button" class="account_sel" title="계좌 선택">주식(홍길동) <span>123-01-123456</span></button>
+                    </div>
+                    <div class="entry_info02">
+                        <h3>프로젝트명</h3>
+                        <div class="entry_input">
+                            <input type="text" name="" id="" readonly="readonly" value="에어팟 프로 프로젝트">
+                        </div>
+                    </div>
+                    <div class="entry_info02">
+                        <h3>필명 입력</h3>
+                        <div class="entry_input">
+                            <input type="text" name="" id="" placeholder="8자리까지 입력 가능합니다.">
+                            <div class="input_btns">
+                                <button type="button" class="repeat_btn" onclick="common_ui.modalOpen('#msg00')">중복확인</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="agree_box">
+                        <div class="form_type">
+                            <input type="checkbox" name="" id="ck01">
+                            <label for="ck01">전체동의</label>
+                        </div>
+                        <div class="agree_box_inner">
+                            <ul class="agree_list">
+                                <li><a href="#" class="checked">[필수] 프로젝트 중계 동의</a></li>
+                                <li><a href="#">[필수] 대회 규정 및 시상 규정 동의</a></li>
+                                <li><a href="#">[필수] 마케팅 동의</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h2>투자 유의사항</h2>
+                    <ul class="info_dot01">
+                        <li>대회 시작 후 참가 취소를 한 경우, 대회 재참가 신청은 불가합니다. (대회 재참가&재도전 불허)</li>
+                        <li>‘필명’은 대회 참가자를 구분하기 위해 사용되는 이름이며, 대회 중계 등에 사용됩니다. 필명은 추후 변경이 절대 불가능합니다.</li>
+                        <li>대회 참가신청을 하셨더라도 프로젝트 참가 기간 동안 거래가 발생하지 않으면 시상 대상에서 제외됩니다.</li>
+                        <li>대회참여계좌 외의 계좌와 연계하여 매매 관여 시, 공정거래 질서 저해 행위 유무와 관계없이 입상자격이 박탈됩니다.</li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="txt01">본인은 본 동의서를 충분히 이해하고 동의하며, 개인(신용)정보 수집·이용·제공에 관한 권리 안내문을 확인하고 이해했습니다.</p>
+                </div>
+                <div class="btn_fixed">
+                    <div class="btn_area">
+                        <span><button type="button" onclick="common_ui.modalOpen('#msg02')">신청하기</button></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="msg00" style="display: none;">
+			<div class="modal_inner">
+				<div class="modal_header">
+					<h2>중복확인</h2>
+				</div>
+				<div class="modal_cont">
+					<p class="noti"><span class="emp">카페인홀릭</span> 필명은 사용이 가능합니다.</p>
+				</div>
+				<div class="modal_btns">
+					<button type="button">확인</button>
+				</div>
+				<button type="button" class="modal_close"><span class="hidden">닫기</span></button>
+			</div>
+		</div>
+        <div class="modal" id="msg01" style="display: none;">
+			<div class="modal_inner">
+				<div class="modal_header">
+					<h2>중복확인</h2>
+				</div>
+				<div class="modal_cont">
+					<p class="noti"><span class="emp">카페인홀릭</span> 필명은 중복으로 인해<br />사용할 수 없습니다.</p>
+				</div>
+				<div class="modal_btns">
+					<button type="button">확인</button>
+				</div>
+				<button type="button" class="modal_close"><span class="hidden">닫기</span></button>
+			</div>
+		</div>
+        <div class="modal" id="msg02" style="display: none;">
+			<div class="modal_inner">
+				<div class="modal_header">
+					<h2>신청완료</h2>
+				</div>
+				<div class="modal_cont">
+					<p class="noti">참가신청이 완료되었습니다.</p>
+                    <div class="list">
+                        <dl>
+                            <dt>신청계좌</dt>
+                            <dd>123-01-123456</dd>
+                        </dl>
+                        <dl>
+                            <dt>프로젝트</dt>
+                            <dd>에어팟 프로 프로젝트</dd>
+                        </dl>
+                        <dl>
+                            <dt>신청필명</dt>
+                            <dd>카페인홀릭</dd>
+                        </dl>
+                    </div>
+				</div>
+				<div class="modal_btns">
+					<button type="button">확인</button>
+				</div>
+				<button type="button" class="modal_close"><span class="hidden">닫기</span></button>
+			</div>
+		</div>
+    </body>
+</html>
