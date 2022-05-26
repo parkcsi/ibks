@@ -1041,7 +1041,7 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
 .toplank_contents .title_area { padding: 0 20px; }
 .toplank_contents h2 { display: inline-block; }
 .toplank_contents .toplank_ttbtn { margin: 17px 0 0 -8px; }
-.toplank_contents .list_reload {position:absolute; right:0;top:15px;padding-right:15px;color:#666;;background:url(../images/main/btn_list_refresh.png) no-repeat right center;background-size:11px auto;}
+.toplank_contents div[data-role="tooltip"].title_tip.active div[data-role="tooltip-cont"] { width: 100%; top: 35px; left: 0; }
 .toplank_tab { position: relative; padding: 0 20px 0 0; }
 .toplank_tab > .scroll { padding: 0 0 0 20px; overflow-x: scroll; overflow-y: hidden; position: relative; }
 .toplank_tab::after { position: absolute; display: block; content: ''; top: 0; right: 0; width: 40px; height: 100%; background: linear-gradient(to left, rgba(255,255,255,1) 50%,  rgba(255,255,255,0)); }
@@ -1049,6 +1049,10 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
 .toplank_date { display: inline-block; margin: 10px 20px 4px; padding: 0 9px; width: 154px; height: 30px; line-height: 26px; border: 2px solid #ececec; border-radius: 5px; box-sizing: border-box; }
 .toplank_date input[type="text"] { padding: 0; border: none; background: url(../images/btn_date.png) no-repeat center right / 16px auto; }
 .toplank_contents .stock_list { padding: 0 20px; }
-.toplank_point .toplank_point_txt { margin: 0 0 20px; font-size: 16px; font-weight: bold; }
-.toplank_contents div[data-role="tooltip"].title_tip.active > button:after { top: 24px; }
-.toplank_contents div[data-role="tooltip"].title_tip.active div[data-role="tooltip-cont"] { width: 100%; top: 46px; left: 0; }
+
+.tab_bord { position: relative; width: 100%; margin-bottom: 26px; }
+.tab_bord:before { position: absolute; bottom: 0; left: -20px; content: ''; display: block; width: calc(100% + 40px); height: 2px; background: #d9d9d9; }
+.tab_bord:after { display: block; content: ""; clear: both; }
+.tab_bord li { float: left; width: 50%; position: relative; }
+.tab_bord li.active_bord:after { position: absolute; bottom: 0; left: 0; content: ''; display: block; width: 100%; height: 4px; background: #333; }
+.tab_bord button { display: block; width: 100%; padding: 18px 0 18px; text-align: center; box-sizing: border-box; }
