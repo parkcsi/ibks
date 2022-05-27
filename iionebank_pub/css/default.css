@@ -1063,8 +1063,9 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
 
 .contents.sub .info_wrap { padding: 20px 20px 10px; }
 .tab_bord { position: relative; width: 100%; margin-bottom: 26px; }
-.tab_bord:before { position: absolute; bottom: 0; left: -20px; content: ''; display: block; width: calc(100% + 40px); height: 2px; background: #d9d9d9; }
+.tab_bord:before { position: absolute; bottom: 0; left: -20px; content: ''; display: block; width: calc(100% + 40px); height: 1px; background: #d9d9d9; }
 .tab_bord:after { display: block; content: ""; clear: both; }
 .tab_bord li { float: left; width: 50%; position: relative; }
-.tab_bord li.active_bord:after { position: absolute; bottom: 0; left: 0; content: ''; display: block; width: 100%; height: 4px; background: #333; }
-.tab_bord button { display: block; width: 100%; padding: 18px 0 18px; text-align: center; box-sizing: border-box; }
+.tab_bord li.active_bord:after { position: absolute; bottom: 0; left: 0; content: ''; display: block; width: 100%; height: 2px; background: #333; }
+.tab_bord li button { display: block; width: 100%; padding: 18px 0 18px; text-align: center; box-sizing: border-box; }
+.tab_bord li.active_bord button{ font-weight: bold; }
