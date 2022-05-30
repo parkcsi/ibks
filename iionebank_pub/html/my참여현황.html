@@ -20,59 +20,62 @@
                     <li><button type="button" class="current">MY 참여현황</button></li>
                     <li><button type="button">대회중계</button></li>
                 </ul>
-                <div class="my-tlist-box">
-                    <ul class="my-tlist">
+                <div class="my_tlist_box">
+                    <ul class="my_tlist">
                         <li>
-                            <div class="pj-cont">
-                                <div class="pj-cont-img">
+                            <div class="pj_cont">
+                                <div class="pj_cont_img">
                                     <img src="../images/target/t_prod_img01.png" alt="">
                                 </div>
-                                <div class="pj-cont-more">
-                                    <p>에어팟 프로 프로젝트</p>
-                                    <ul class="pj-myinfo">
-                                        <li>
-                                            <p class="text-between"><span>계</span><span>좌</span></p>
-                                            <span>123-12-123456</span>
-                                        </li>
-                                        <li><p>신청일</p><span>2022.03.15</span></li>
-                                    </ul>
-                                    <button class="ti-btn" type="button">해지하기</button>
+                                <div class="pj_cont_more">
+                                    <p class="pj_maint">에어팟 프로 프로젝트</p>
+                                    <dl class="pj_info">
+                                        <dt>계좌</dt>
+                                        <dd>123-12-123456</dd>
+                                    </dl>
+                                    <dl class="pj_info">
+                                        <dt>신청일</dt>
+                                        <dd>2022.03.15</dd>
+                                    </dl>
+                                    <button class="btn_link" type="button" onclick="common_ui.modalOpen('#sample1');">해지하기</button>
                                 </div>
                             </div>
                         </li>
                         <li>
-                            <div class="pj-cont">
-                                <div class="pj-cont-img">
+                            <div class="pj_cont">
+                                <div class="pj_cont_img">
                                     <img src="../images/target/t_prod_img02.png" alt="">
                                 </div>
-                                <div class="pj-cont-more">
-                                    <p>LG그램 프로젝트</p>
-                                    <ul class="pj-myinfo">
-                                        <li>
-                                            <p class="text-between"><span>계</span><span>좌</span></p>
-                                            <span>123-12-123456</span>
-                                        </li>
-                                        <li><p>신청일</p><span>2022.03.15</span></li>
-                                    </ul>
-                                    <button class="ti-btn" type="button">해지하기</button>
+                                <div class="pj_cont_more">
+                                    <p class="pj_maint">LG그램 프로젝트</p>
+                                    <dl class="pj_info">
+                                        <dt>계좌</dt>
+                                        <dd>123-12-123456</dd>
+                                    </dl>
+                                    <dl class="pj_info">
+                                        <dt>신청일</dt>
+                                        <dd>2022.03.15</dd>
+                                    </dl>
+                                    <button class="btn_link" type="button" onclick="common_ui.modalOpen('#sample1');">해지하기</button>
                                 </div>
                             </div>
                         </li>
                         <li>
-                            <div class="pj-cont">
-                                <div class="pj-cont-img">
+                            <div class="pj_cont">
+                                <div class="pj_cont_img">
                                     <img src="../images/target/t_prod_img03.png" alt="">
                                 </div>
-                                <div class="pj-cont-more">
-                                    <p>아이패드 프로젝트</p>
-                                    <ul class="pj-myinfo">
-                                        <li>
-                                            <p class="text-between"><span>계</span><span>좌</span></p>
-                                            <span>123-12-123456</span>
-                                        </li>
-                                        <li><p>신청일</p><span>2022.03.15</span></li>
-                                    </ul>
-                                    <button class="ti-btn" type="button">해지하기</button>
+                                <div class="pj_cont_more">
+                                    <p class="pj_maint">아이패드 프로젝트</p>
+                                    <dl class="pj_info">
+                                        <dt>계좌</dt>
+                                        <dd>123-12-123456</dd>
+                                    </dl>
+                                    <dl class="pj_info">
+                                        <dt>신청일</dt>
+                                        <dd>2022.03.15</dd>
+                                    </dl>
+                                    <button class="btn_link" type="button" onclick="common_ui.modalOpen('#sample1');">해지하기</button>
                                 </div>
                             </div>
                         </li>
@@ -80,5 +83,20 @@
                 </div>
             </div>
         </div>
+        <div class="modal" id="sample1" style="display: none;">
+			<div class="modal_inner">
+				<div class="modal_header">
+					<h2>안내</h2>
+				</div>
+				<div class="modal_cont">
+					<p class="noti"><span class="noti emp">신청기간</span> 중 프로젝트 참가신청을 해지하셔도 대회기간 전까지는 재참여가 가능합니다. 해지하시겠습니까?</p>
+				</div>
+				<div class="modal_btns">
+                    <button type="button">아니요</button>
+					<button type="button">예</button>
+				</div>
+				<button type="button" class="modal_close"><span class="hidden">닫기</span></button>
+			</div>
+		</div>
     </body>
 </html>
