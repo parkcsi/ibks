@@ -1037,6 +1037,9 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
 .modal .modal_cont .list dl dt{margin-right: 10px; color: #757575;}
 .modal .modal_cont .list dl dd{flex: 1; margin-top: 0; text-align: right;}
 
+.pop_top_banner{margin: -15px -20px 0; padding-bottom: 10px;}
+.pop_top_banner img{width: 100%;}
+
 /* 220525 */
 .main .main_contents01_1 { padding: 40px 0 20px; }
 .main_contents01_1 .main_etf_banner img{width: 100%;}
