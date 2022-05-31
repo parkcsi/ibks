@@ -1040,6 +1040,21 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
 .pop_top_banner{margin: -15px -20px 0; padding-bottom: 10px;}
 .pop_top_banner img{width: 100%;}
 
+.contents.target .relay_cont{padding: 20px 0 40px;}
+.relay_cont .account_info{padding: 0 20px;}
+.relay_cont .account_info .account_txt{display: block; margin-top: 0; margin-bottom: 12px;}
+.relay_cont .account_info .account_txt .acc_txt01{margin-bottom: 20px;}
+
+.rank_list{padding: 0 20px; margin-top: 8px;}
+.rank_list ul li{display: flex; align-items: center;}
+.rank_list ul li .rank{width: 30px; font-weight: bold; text-align: center;}
+.rank_list ul li .detail{display: flex; justify-content: space-between; width: calc(100% - 29px); padding: 16px 0; border-bottom: 1px solid #ececec;}
+.rank_list ul li .detail .name{font-size: 16px;}
+.rank_list ul li .detail .stock_info{display: inline-block; margin-left: 10px;}
+.rank_list ul li .detail .stock_info .per{padding-left: 0;}
+.rank_list ul li .detail .stock_info[class*="point_"] .per{padding-left: 8px;}
+.rank_list ul li .detail > .per{font-size: 16px; font-weight: bold;}
+
 /* 220525 */
 .main .main_contents01_1 { padding: 40px 0 20px; }
 .main_contents01_1 .main_etf_banner img{width: 100%;}
