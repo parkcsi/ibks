@@ -1133,17 +1133,11 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
 .project_info dd { display: inline-block; }
 .my_tlist .btn_link { margin: 12px 0 0; }
 
-.project_detail { border-bottom: 1px solid #ececec; }
-.project_detail.border_none { border: none; }
 
-/* ???? */
-.project_detail .project_lk:after { display: block; content: ""; clear: both; }
-.project_detail .project_lk > p { display: inline-block; margin: 0 10px 0 0; color: #333333; }
-.project_detail .project_nn { font-size: 16px; }
-.project_detail .project_num { font-weight: bold; margin: 0 12px 0 0; }
-.project_detail .target_stock_percent { float: right; width: auto; }
-
-.project_detail.title_area { padding: 0; }
+.project_detail .rank_list { padding: 0; margin: 0; }
+.project_detail .rank_list ul li .rank { text-align: left; }
+.project_detail .rank_list ul li .detail { border: none; padding: 0; }
+.project_detail.title_area { padding: 0; border-bottom: 1px solid #ececec; }
 .project_detail.title_area:after { display: block; content: ""; clear: both; }
 .project_detail.title_area > .list_reload { float: right; position: static; right: auto; top: auto; margin: 20px 0; }
 .target_stock_list { padding: 14px 0 65px; }
