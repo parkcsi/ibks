@@ -1114,3 +1114,26 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
 .pj_info dt { display: inline-block; width: 36px; margin: 0 6px 0 0; color: #757575; }
 .pj_info dd { display: inline-block; }
 .my_tlist .btn_link { margin: 12px 0 0; }
+
+.contents.target > div.pj_detail { padding: 20px; }
+.pj_detail > .pj_maint { margin: 0; line-height: 40px; text-align: center; }
+.pj_detail .pj_lk { margin: 20px 0 0 0; }
+.pj_detail .pj_lk:after { display: block; content: ""; clear: both; }
+.pj_detail .pj_lk > p { display: inline-block; margin: 0 10px 0 0; color: #333333; }
+.pj_detail .pj_nn { font-size: 16px; }
+.pj_detail .pj_num { font-weight: bold; margin: 0 12px 0 0; }
+.pj_detail .tg_spc { float: right; width: auto; }
+.strock_info02 { margin: 20px 0 0 0; padding: 8px 20px 20px; border-radius: 8px; background: #f4f4f4; }
+.pj_detail .pj_info { padding: 12px 0 0 0; font-size: 13px; }
+.pj_detail .pj_info.pj_info01 { position: relative; padding: 12px 0 20px 0; font-size: 13px; }
+.pj_detail .pj_info.pj_info01:after { position: absolute; display: block; content: ''; width: 100%; height: 1px; bottom: 4px; left: 0; background: #d9d9d9; }
+.pj_detail .pj_info dt { width: 60px; margin: 0; }
+.pj_detail .pj_info dd { width: calc(100% - 64px); padding: 0 0 0 55px; text-align: right; }
+.pj_detail .pj_reload { padding: 20px 0; text-align: right; border-bottom: 1px solid #ececec;  }
+.contents.target > .title_area .list_reload { position: static; right: auto; top: auto; }
+.contents.target > div.tg_stock_list { padding: 14px 20px 40px; }
+.tg_stock_list .tg_stock_tit { flex-grow: 1; }
+.tg_stock_list .per, .tg_stock_list .stock_info > .tg_snum { font-size: 12px; }
+.tg_stock_list .stock_list li .stock_item .inner .stock_info { font-size: 16px; padding: 0 14px 0 0; }
+.tg_spc { display: block; width: 60px; font-size: 16px; text-align: right; }
+.contents.target .btn_area { padding: 0; }
