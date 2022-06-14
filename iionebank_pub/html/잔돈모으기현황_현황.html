@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+    <html lang="ko">
+	<head>
+		<meta charset="euc-kr">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>IBK 투자증권</title>
+		<link rel="stylesheet" href="../css/default.css">
+		<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="../js/common_ui.js"></script>
+	</head>
+    <body>
+        <div id="wrap">
+            <div class="contents change">
+                <div class="change_status_top">
+                    <div class="inquiry_section_top">
+                        <a href="javascript:;">
+                            <em>잔돈모으기 현황</em>
+                            <span class="acc_num">주식(홍길동) 123-01-12345</span>
+                        </a>
+                    </div>
+                    <div class="info_box">
+                        <div class="info_acc">현재까지 모은 잔돈은?</div>
+                        <strong class="info_price">1,215,313원</strong>
+                    </div>
+                </div>
+                <div class="change_status_cont">
+                    <div class="list_top">
+                        <div class="date">
+                            <input type="text" name="" id="" readonly="readonly" value="2022-04-17 ~ 2022-05-17" onclick="common_ui.slideOpen('#datepick02');">
+                        </div>
+                        <div class="sort">
+                            <select name="" id="">
+                                <option value="">기간선택</option>
+                                <option value="">당일</option>
+                                <option value="">7일</option>
+                                <option value="">1개월</option>
+                                <option value="">3개월</option>
+                                <option value="">6개월</option>
+                            </select>
+                        </div>
+                    </div>
+                    <ul class="bubble_list">
+                        <li class="bubble_list_cont">
+                            <div>
+                                <span class="bubble_list_date">2022.05.17</span>
+                                <p class="bubble_list_price"><strong class="point_inc">+900</strong>원</p>
+                            </div>
+                        </li>
+                        <li class="bubble_list_cont">
+                            <div>
+                                <span class="bubble_list_date">2022.05.10</span>
+                                <p class="bubble_list_price"><strong class="point_inc">+10</strong>원</p>
+                            </div>
+                        </li>
+                        <li class="bubble_list_cont">
+                            <div>
+                                <span class="bubble_list_date">2022.05.03</span>
+                                <p class="bubble_list_price"><strong class="point_inc">+25</strong>원</p>
+                            </div>
+                        </li>
+                        <li class="bubble_list_cont">
+                            <div>
+                                <span class="bubble_list_date">2022.04.26</span>
+                                <p class="bubble_list_price"><strong class="point_inc">+750</strong>원</p>
+                            </div>
+                        </li>
+                        <li class="bubble_list_cont">
+                            <div>
+                                <span class="bubble_list_date">2022.04.19</span>
+                                <p class="bubble_list_price"><strong class="point_inc">+200</strong>원</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <button type="button" class="btn_type01">더보기</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="datepicker_customize slide" id="datepick02" style="display: none;">
+            <div class="slide_inner">
+                <div class="date_range_input">
+                    <div class="input">
+                        <label for="st_val">시작일</label>
+                        <input type="text" name="" id="st_val" title="시작일 입력" readonly="readonly" placeholder="시작일 선택">
+                    </div>
+                    <div class="txt">~</div>
+                    <div class="input">
+                        <label for="ed_val">종료일</label>
+                        <input type="text" name="" id="ed_val" title="종료일 입력" readonly="readonly" placeholder="종료일 선택">
+                    </div>
+                </div>
+                <div id="datepick2"></div>
+				<div class="slide_btns">
+					<div class="btn_area">
+						<span><button type="button">확인</button></span><!-- 닫을때 common_ui.slideClose(selector);-->
+					</div>
+				</div>
+				<button type="button" class="slide_close"><span class="hidden">닫기</span></button>
+            </div>
+        </div>
+        
+        <script>
+            common_ui.datePickerDefault(); // 날짜 출력방식,한글 표기 기본 set
+            $('#datepick2').datepicker();
+        </script>
+    </body>
+</html>

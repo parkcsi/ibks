@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+    <html lang="ko">
+	<head>
+		<meta charset="euc-kr">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>IBK 투자증권</title>
+		<link rel="stylesheet" href="../css/default.css">
+		<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="../js/common_ui.js"></script>
+	</head>
+    <body>
+        <div id="wrap">
+            <div class="contents change">
+                <div class="inquiry_section_top">
+                    <a href="javascript:;">
+                        <em>잔돈모으기 시작</em>
+                        <span class="acc_num">주식(홍길동) 123-01-12345</span>
+                    </a>
+                </div>
+                <div class="change_table">
+                    <div class="table_type02">
+                        <table>
+                            <colgroup>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">잔돈모으기</th>
+                                    <td><span>등록</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">CMA계좌</th>
+                                    <td><span>주식(홍길동) 123-01-123456</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">등록일</th>
+                                    <td><span>2022. 05. 12</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">SMS발송여부</th>
+                                    <td><span>발송함</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p class="txt03">※ SMS는 매주 수요일에 발송됩니다.</p>
+                    </div>
+                </div>
+                <div class="btn_fixed">
+                    <div class="btn_area">
+                        <span><button type="button" onclick="common_ui.modalOpen('#sample1');">해지하기</button></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="sample1">
+			<div class="modal_inner">
+				<div class="modal_header">
+					<h2>안내</h2>
+				</div>
+				<div class="modal_cont">
+					<p class="noti">잔돈모으기 서비스를 해지하시겠습니까?</p>
+				</div>
+				<div class="modal_btns">
+                    <button type="button">아니요</button>
+					<button type="button">예</button>
+				</div>
+				<button type="button" class="modal_close"><span class="hidden">닫기</span></button>
+			</div>
+		</div>
+        <div class="modal" id="sample2">
+			<div class="modal_inner">
+				<div class="modal_header">
+					<h2>안내</h2>
+				</div>
+				<div class="modal_cont">
+					<p class="noti">잔돈모으기 서비스 해지가 완료되었습니다.</p>
+				</div>
+				<div class="modal_btns">
+					<button type="button">확인</button>
+				</div>
+				<button type="button" class="modal_close"><span class="hidden">닫기</span></button>
+			</div>
+		</div>
+    </body>
+</html>

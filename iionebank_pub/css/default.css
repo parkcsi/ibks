@@ -1,14 +1,14 @@
 @charset "euc-kr";
 
 /*
-	@@ IBK ÅõÀÚÁõ±Ç ¸ð¹ÙÀÏ °Å·¡ ¼­ºñ½º
+	@@ IBK ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Å·ï¿½ ï¿½ï¿½ï¿½ï¿½
 */
 
 /* === Reset === */
 html{-webkit-text-size-adjust: none;background:#fff;}
 body {line-height:1;background:#fff;}
 body * { -webkit-overflow-scrolling:touch;}
-body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select,menu,footer,blockquote,optargetroup{margin:0;padding:0;box-sizing:border-box;font-family:'¸¼Àº °íµñ','Malgun Gothic','Apple SD Gothic Neo','Apple SD »êµ¹°íµñ Neo',Sans-serif;color:inherit;font-size:100%;}
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select,menu,footer,blockquote,optargetroup{margin:0;padding:0;box-sizing:border-box;font-family:'ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½','Malgun Gothic','Apple SD Gothic Neo','Apple SD ï¿½êµ¹ï¿½ï¿½ï¿½ï¿½ Neo',Sans-serif;color:inherit;font-size:100%;}
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display: block;margin:0;padding:0;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;}
 div{box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;}
 audio:not([controls]){display: none;  height: 0;}
@@ -936,7 +936,7 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
 	.hoga_table tbody td:nth-child(2) > div{letter-spacing:-1px;}
 }
 
-/*transkey ¼öÁ¤*/
+/*transkey ï¿½ï¿½ï¿½ï¿½*/
 [class*="transkey"] {
 	box-sizing:content-box;
 }
@@ -976,13 +976,13 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
 	position: absolute;
 	border: 0 solid;
 	width:100%!important;
-	background-color: rgb(255, 255, 255);/*Å°º¸µå ÀüÃ¼ ¹è°æ»ö*/
-	border-color: rgb(217, 218, 226);/*Å°º¸µå ¿Ü°û ¶óÀÎ»ö*/
+	background-color: rgb(255, 255, 255);/*Å°ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼ ï¿½ï¿½ï¿½ï¿½*/
+	border-color: rgb(217, 218, 226);/*Å°ï¿½ï¿½ï¿½ï¿½ ï¿½Ü°ï¿½ ï¿½ï¿½ï¿½Î»ï¿½*/
 	z-index: 9999;
 	display: none;
 }
 
-/* ½Å±Ô css */
+/* ï¿½Å±ï¿½ css */
 .contents.sub > div ~ .none_line{padding-top: 30px; border-top: 0;}
 .contents.sub > .pick_banner{padding: 0;}
 .pick_banner.swiper-container-horizontal > .swiper-pagination-bullets{bottom: 8px;}
@@ -1153,3 +1153,55 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
 .gray_box .gray_list.gray_list01 { position: relative; margin: 0 0 8px 0; padding: 0 0 16px 0; font-size: 13px; border-bottom: 1px solid #d9d9d9; }
 .gray_box dt { float: left; }
 .gray_box dd { float: right; }
+
+.contents.change .info_box { padding: 20px 20px 0; }
+.contents.change .info_box > .change_main { word-break: keep-all; padding: 10px 0 137px 16px; background: url(../images/change/change_img.png) no-repeat bottom right / contain; }
+.contents.change .info_box > .info_name { padding: 0 84px 0 0; }
+.contents.change .info_box > p { padding: 0 84px 0 0; }
+.contents.change .change_table { padding: 4px 20px 0; }
+.contents.change .change_table th { width: 121px; }
+.contents.change .change_table .txt03 { margin-top: 16px; font-size: 12px; }
+.contents.change .agree_list_more li .form_type { position: absolute; display: block; padding: 0; width: 19px; height: 100%; top: 0; right: 0; }
+.contents.change .agree_list_more li .form_type:before { display: none; }
+.contents.change .agree_list_more li .form_type:after { top: calc(100% - 15px); }
+
+.contents.change .btn_fixed { margin: 24px 0 0; }
+
+.contents.change .change_info { margin: -10px 0 0; }
+.contents.change .change_info > div { padding: 28px 20px 0; }
+.contents.change .change_info .txt03 { margin: 0; font-size: 13px; }
+.contents.change .change_info .agree_account { margin: 10px 0 0; }
+.contents.change .change_info .agree_list { margin: 18px 0 0; display: flex; width: 100%; }
+.contents.change .change_info .agree_list > li { width: 50%; }
+.contents.change .change_info .form_type { padding: 0; }
+.contents.change .change_info div.form_type input[type="radio"] { top: 0; left: 0;}
+.contents.change .change_info div.form_type input[type="radio"] ~ label { line-height: 24px; }
+
+.contents.change > .change_status_top { padding: 18px 0 0; }
+.contents.change > .change_status_top .info_box { padding: 0 20px 28px; }
+.contents.change > .change_status_top .info_acc { font-size: 12px; }
+.contents.change > .change_status_top .info_price { font-size: 29px; }
+.contents.change > .change_status_cont { background: #f4f4f4; padding: 0 20px 40px; }
+.contents.change > .change_status_cont .list_top { padding: 0; }
+
+.bubble_list {  margin: 18px 0 0; }
+.bubble_list .bubble_list_cont { position: relative; padding: 0 0 18px 0; overflow: hidden; }
+.bubble_list .bubble_list_cont:last-child { padding: 0; }
+.bubble_list .bubble_list_cont:before { position: absolute; display: block; content : ''; width: 1px; height: calc(100% - 16px); top: 14px; left: 5px; background: url(../images/img_dotline02.png) no-repeat center center / 100%; }
+.bubble_list .bubble_list_cont:after { position: absolute; display: block; content: ''; width: 12px; height: 12px; top: 0; left: 0; border: 2px solid #666; border-radius: 50%; box-sizing: border-box; background: #fff; }
+.bubble_list .bubble_list_cont > div { display: flex; align-items: center; justify-content: space-between; width: calc(100% - 32px); margin-left: auto; padding: 15px 16px; background: #fff; border-radius: 0 12px 12px 12px; }
+.bubble_list .bubble_list_cont .bubble_list_date { font-size: 13px; color: #9599a1; }
+.bubble_list .bubble_list_cont .bubble_list_price { font-size: 12px; line-height: 20px; }
+.bubble_list .bubble_list_cont .bubble_list_price > strong { font-size: 16px; } 
+
+.ellips_list { margin: 16px 0 0 0; }
+.ellips_list > li { position: relative;  padding: 0 0 28px 0; line-height: 20px; z-index: 1; overflow: hidden; }
+.ellips_list > li:before { position: absolute; display: block; content : ''; width: 1px; height: 100%; top: 0; left: 10px; background: url(../images/img_dotline01.png) no-repeat center center / 100%; z-index: -1; }
+.ellips_list > li ~ li { padding: 0 0 32px 0; }
+.ellips_list > li:last-child { padding: 0; }
+.ellips_list > li:last-child:before { background: none; }
+.ellips_list > li > p { float: left; }
+.ellips_list > li > .elist_txt { width: calc(100% - 42px); padding: 0 50px 0 0; }
+.ellips_list > li > .elist_num { margin: 0 20px 0 0; width: 22px; height: 22px; font-weight: bold; color: #fff; background: #479bfb; border-radius: 50%; text-align: center; line-height: 20px; }
+
+.txt_only .txt01 { margin: 16px 0 0; color: #666; line-height: 22px; }
