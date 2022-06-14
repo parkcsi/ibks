@@ -1,7 +1,7 @@
 @charset "euc-kr";
 
 /*
-	@@ IBK �������� ����� �ŷ� ����
+	@@ IBK �������� �����? �ŷ� ����
 */
 
 /* === Reset === */
@@ -1159,7 +1159,6 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
 .contents.change .info_box > .info_name { padding: 0 84px 0 0; }
 .contents.change .info_box > p { padding: 0 84px 0 0; }
 .contents.change .change_table { padding: 4px 20px 0; }
-.contents.change .change_table th { width: 121px; }
 .contents.change .change_table .txt03 { margin-top: 16px; font-size: 12px; }
 .contents.change .agree_list_more li .form_type { position: absolute; display: block; padding: 0; width: 19px; height: 100%; top: 0; right: 0; }
 .contents.change .agree_list_more li .form_type:before { display: none; }
@@ -1178,7 +1177,7 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
 .contents.change .change_info div.form_type input[type="radio"] ~ label { line-height: 24px; }
 
 .contents.change > .change_status_top { padding: 18px 0 0; }
-.contents.change > .change_status_top .info_box { padding: 0 20px 28px; }
+.contents.change > .change_status_top .info_box { padding: 18px 20px 28px; }
 .contents.change > .change_status_top .info_acc { font-size: 12px; }
 .contents.change > .change_status_top .info_price { font-size: 29px; }
 .contents.change > .change_status_cont { background: #f4f4f4; padding: 0 20px 40px; }
