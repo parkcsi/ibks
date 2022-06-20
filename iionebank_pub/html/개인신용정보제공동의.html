@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+    <html lang="ko">
+    <head>
+        <meta charset="euc-kr">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+        <title>IBK 투자증권</title>
+        <link rel="stylesheet" href="../css/default.css">
+        <script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+        <script type="text/javascript" src="../js/common_ui.js"></script>
+    </head>
+    <body>
+        <div id="wrap">
+            <div class="contents sub">
+                <div class="inquiry_section_top">
+                    <a href="#" class="inquiry_account_sel">
+                        <em>개인신용정보 제공동의</em>
+                        <span class="acc_num">주식(홍길동) 123-01-12345</span>
+                    </a>
+                    <p class="txt03">개인(신용)정보 이용 동의 여부는 실명번호 기준으로 보유한 모든 계좌에 동일하게 적용됩니다.</p>
+                </div>
+                <div class="inquiry_inner">
+                    <div class="agree">
+                        <p class="tit02">필수 동의서 [금융거래 설정용]</p>
+                        <p class="txt03">
+                            개인(신용)정보 동의고객 중 
+                            <strong>미수거래를 원치 않는 고객님</strong>께서는 
+                            반드시 계좌증거금률 변경화면에서 
+                            <strong>100% 증거금제로 변경</strong>하여 주시기 바랍니다.
+                        </p>
+                        <div class="agree_box">
+                            <div class="form_type">
+                                <input type="checkbox" name="" id="ck01">
+                                <label for="ck01">[필수] 수집 &middot; 이용에 관한 사항</label>
+                            </div>
+                            <div class="agree_box_inner">
+                                <p class="txt03">E1, E3조항은(공통) 필수 항목으로 <strong>미동의 시 계좌개설, 상품 가입 등이 불가</strong>합니다.</p>
+                                <ul class="agree_list">
+                                    <li><a href="#" class="checked">E1 개인정보 수집 &middot; 이용</a></li>
+                                    <li><a href="#">E3 고유식별정보 수집 &middot; 이용</a></li>
+                                </ul>
+                            </div>
+                            <div class="agree_box_inner">
+                                <p class="txt03">E6 조항에 미동의 시 <strong>세금우대 상품의 가입이 불가</strong>하며, 동의 후 가입하실 수 있습니다.</p>
+                                <ul class="agree_list">
+                                    <li><a href="#">E6 민감정보 수집 &middot; 이용</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="agree_box">
+                            <div class="form_type">
+                                <input type="checkbox" name="" id="ck02">
+                                <label for="ck02">[필수] 제공 &middot; 조회에 관한 사항</label>
+                            </div>
+                            <div class="agree_box_inner">
+                                <p class="txt03">
+                                    <span class="emp">신용/대출/미수거래/파생상품/ELW 거래용</span>
+                                </p>
+                                <ul class="agree_list">
+                                    <li><a href="#" class="checked">E1 개인정보 수집 &middot; 이용</a></li>
+                                    <li><a href="#">E3 고유식별정보 수집 &middot; 이용</a></li>
+                                    <li><a href="#">G2 개인(신용)정보 조회</a></li>
+                                    <li><a href="#">H1 고유식별정보 제공 동의</a></li>
+                                </ul>
+                            </div>
+                            <div class="agree_box_inner">
+                                <p class="txt03">
+                                    <span class="emp">제휴(신용 &middot; 체크)카드 발급 관리</span>
+                                </p>
+                                <ul class="agree_list">
+                                    <li><a href="#">G1 개인(신용)정보 제공 동의</a></li>
+                                    <li><a href="#">HI 고유식별정보 제공 동의</a></li>
+                                </ul>
+                            </div>
+                            <div class="agree_box_inner">
+                                <p class="txt03">
+                                    <span class="emp">자동납부(CMS)</span>
+                                </p>
+                                <ul class="agree_list">
+                                    <li><a href="#">GP 개인(신용)정보 제공 동의</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="agree">
+                        <p class="tit02">선택 동의서 [고객편의서비스 제공용]</p>
+                        <ul class="info_dot01">
+                            <li><strong>마케팅 동의 시 신규상품 서비스 안내 및 경품/사은품 등의 부가서비스 혜택을 받으실 수 있습니다.</strong></li>
+                            <li>미동의 시 신규상품(서비스) 소개 및 이벤트 안내 등 다양한 혜택이 제한됩니다. 또한 동의하시더라도 추후 언제든지 본 화면에서 동의 철회가 가능합니다.</li>
+                        </ul>
+                        <div class="agree_box">
+                            <div class="form_type">
+                                <input type="checkbox" name="" id="ck03">
+                                <label for="ck03">[선택] 마케팅 활용 동의<span class="badge">안심</span></label>
+                            </div>
+                            <div class="agree_box_inner">
+                                <ul class="agree_list">
+                                    <li><input type="checkbox" name="" id="ck011"><label for="ck011">F1 상품, 서비스 안내에 필요한 개인 (신용)정보 수집 &middot; 이용 동의</label></li>
+                                </ul>
+                            </div>
+                            <div class="agree_box_inner">
+                                <ul class="agree_list inline">
+                                    <li><input type="checkbox" name="" id="ck021"><label for="ck021">SMS</label></li>
+                                    <li><input type="checkbox" name="" id="ck022"><label for="ck022">이메일</label></li>
+                                    <li><input type="checkbox" name="" id="ck023"><label for="ck023">전화</label></li>
+                                    <li><input type="checkbox" name="" id="ck024"><label for="ck024">우편</label></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="agree">
+                        <div class="agree_btn">
+                            <p class="tit02">동의서 확인</p>
+                            <ul class="btn_list">
+                                <li class="on"><a href="#">요약</a></li>
+                                <li><a href="#">상세</a></li>
+                            </ul>
+                        </div>
+                        <p class="txt03">아래 제공되는 동의서는 요약 동의서이며, 요청하면 상세내용이 기재된 동의서를 확인하실 수 있습니다.</p>
+                        <div class="agree_box">
+                            <a href="#" role="button" class="form_type"><span>[요약] 수집 &middot; 이용 &middot; 제공 &middot; 조회 동의서(금융거래 설정용)</span></a>
+                        </div>
+                        <div class="agree_box">
+                            <a href="#" role="button" class="form_type"><span>[요약] 수집 &middot; 이용 &middot; 제공 동의서(고객 편의 서비스 제공용)</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="form_type last">
+                        <input type="checkbox" name="" id="ck11">
+                        <label for="ck11">본인은 개인(신용)정보 수집 &middot; 이용 &middot; 제공 &middot; 조회에 대한 동의서를 확인했으며, 충분히 이해하였습니다.</label>
+                    </div>
+                    <div class="form_type last">
+                        <input type="checkbox" name="" id="ck12">
+                        <label for="ck12">미수거래를 원치 않는 고객님께서는 서비스 신청 메뉴에서 증거금 100% 계좌로 변경하시기 바랍니다.(고객지원>서비스신청>계좌증거금율 변경 메뉴)</label>
+                    </div>
+                </div>
+                <div class="btn_fixed">
+                    <div class="btn_area">
+                        <span><button type="button" onclick="common_ui.modalOpen('#msg01')">등록하기</button></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="msg01">
+			<div class="modal_inner">
+				<div class="modal_header">
+					<h2>안내</h2>
+				</div>
+				<div class="modal_cont">
+					<p class="noti">동의 내용을 확인 후 등록 가능합니다.</p>
+				</div>
+				<div class="modal_btns">
+					<button type="button">확인</button>
+				</div>
+				<button type="button" class="modal_close"><span class="hidden">닫기</span></button>
+			</div>
+		</div>
+    </body>
+</html>

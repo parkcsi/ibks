@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+    <html lang="ko">
+    <head>
+        <meta charset="euc-kr">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+        <title>IBK 투자증권</title>
+        <link rel="stylesheet" href="../css/default.css">
+        <script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+        <script type="text/javascript" src="../js/common_ui.js"></script>
+    </head>
+    <body>
+        <div id="wrap">
+            <div class="contents sub">
+                <div class="inquiry_section_top">
+                    <a href="#" class="inquiry_account_sel">
+                        <em>SMS 주문체결 알림 신청</em>
+                        <span class="acc_num">주식(홍길동) 123-01-12345</span>
+                    </a>
+                </div>
+                <div class="inquiry_inner">
+                    <div class="entry_box">
+                        <div class="entry_info02">
+                            <h3>알림 휴대전화번호</h3>
+                            <div class="entry_input">
+                                <input type="text" name="" id="" readonly="readonly" value="010-1234-1234">
+                            </div>
+                        </div>
+                        <div class="entry_info02">
+                            <h3>신청 서비스 선택</h3>
+                            <div class="agree_box">
+                                <div class="form_type">
+                                    <input type="radio" name="rd" id="rd01" checked="">
+                                    <label for="rd01">체결 건마다 발송</label>
+                                </div>
+                                <div class="form_type">
+                                    <input type="radio" name="rd" id="rd02">
+                                    <label for="rd02">전량 체결 시 발송</label>
+                                </div>
+                                <div class="form_type">
+                                    <input type="radio" name="rd" id="rd03">
+                                    <label for="rd03">장 종료 후 일괄 발송</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>참고사항</h3>
+                    <ul class="info_dot01">
+                        <li>IBK투자증권 주문체결 내역을 휴대폰 문자메시지(SMS)로 알림받는 서비스입니다.</li>
+                        <li>문자메시지 발송 수수료는 무료입니다.</li>
+                        <li>해외주식은 체결 건마다 발송됩니다.</li>
+                        <li>휴대전화번호 변경 시 즉시 당사에 등록된 정보를 변경하여 주시기 바랍니다.</li>
+                    </ul>
+                </div>
+                <div class="btn_fixed">
+                    <div class="btn_area">
+                        <span><button type="button" onclick="common_ui.modalOpen('#msg03')">해지하기</button></span>
+                        <span><button type="button" onclick="common_ui.modalOpen('#msg02')">신청하기</button></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="msg01">
+			<div class="modal_inner">
+				<div class="modal_header">
+					<h2>안내</h2>
+				</div>
+				<div class="modal_cont">
+					<p class="noti">신청 서비스를 선택해주세요.</p>
+				</div>
+				<div class="modal_btns">
+					<button type="button">확인</button>
+				</div>
+				<button type="button" class="modal_close"><span class="hidden">닫기</span></button>
+			</div>
+		</div>
+        <div class="modal" id="msg02">
+			<div class="modal_inner">
+				<div class="modal_header">
+					<h2>안내</h2>
+				</div>
+				<div class="modal_cont">
+					<p class="noti">주문관련 SMS알림 신청을 하시겠습니까?</p>
+				</div>
+				<div class="modal_btns">
+					<button type="button">아니요</button>
+					<button type="button">예</button>
+				</div>
+			</div>
+		</div>
+        <div class="modal" id="msg03">
+			<div class="modal_inner">
+				<div class="modal_header">
+					<h2>안내</h2>
+				</div>
+				<div class="modal_cont">
+					<p class="noti">주문관련 SMS알림을 해지하시겠습니까?</p>
+				</div>
+				<div class="modal_btns">
+					<button type="button">아니요</button>
+					<button type="button">예</button>
+				</div>
+			</div>
+		</div>
+    </body>
+</html>
