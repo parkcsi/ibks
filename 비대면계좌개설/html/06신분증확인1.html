@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+	<html lang="ko">
+	<head>
+		<meta charset="euc-kr">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>IBK 투자증권</title>
+		<link rel="stylesheet" href="../css/default.css">
+		<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="../js/common_ui.js"></script>
+	</head>
+	<body>
+		<div id="wrap">
+			<div class="contents">
+				<div class="tit_cont">
+                    <p class="paging_number">4 <span class="total">/ 7</span></p>
+                    <h2>신분증 확인</h2>
+                    <p class="txt01">주민등록증 또는 운전면허증을 선택하여<br/>신분증 촬영으로 본인임을 확인합니다.</p>
+                    <div class="id_img">
+                        <img src="../images/content/img_idcard.png" alt="주민등록증">
+                    </div>
+				</div>
+                <p class="tit03">신분증 촬영 TIP을 알려드려요!</p>
+                <ul class="dot_list">
+                    <li>빛이 반사되지 않도록 해주시고 어두운 배경에서 촬영해주세요.</li>
+                    <li>훼손이 심한 신분증은 No! 신분증 원본으로 촬영하세요. 정보식별이 어려울 경우 계좌개설이 어려울 수 있어요</li>
+                    <li>신분증은 운전면허증 또는 주민등록증만 가능해요.(주민등록증이 운전면허증보다 인식률이 더 좋아요.)</li>
+                </ul>
+                <div class="btn_fixed">
+                    <div class="btn_area">
+                        <span class="btn_color01"><button type="button">이전</button></span>
+                        <span><button type="button" onclick="common_ui.modalOpen('#sample1')">촬영하기</button></span>
+                    </div>
+                </div>
+			</div>
+		</div>
+		<div class="modal" id="sample1">
+			<div class="modal_inner">
+				<div class="modal_cont">
+					<div class="noti">
+						Camera이(가) 사진 및 동영상을<br/>촬영을(를) 할 수 있도록 허용하 시겠습니까?
+                    </div>
+				</div>
+				<div class="modal_btns">
+					<button type="button">거부</button>
+					<button type="button">허용</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

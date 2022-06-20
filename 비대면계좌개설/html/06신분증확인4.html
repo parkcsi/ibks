@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+	<html lang="ko">
+	<head>
+		<meta charset="euc-kr">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>IBK 투자증권</title>
+		<link rel="stylesheet" href="../css/default.css">
+		<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="../js/common_ui.js"></script>
+	</head>
+	<body>
+		<div id="wrap">
+			<div class="contents">
+				<div class="tit_cont">
+                    <p class="paging_number">4 <span class="total">/ 7</span></p>
+                    <h2>신분증 확인</h2>
+                    <p class="txt01">입력된 정보를 확인해주세요. 실제 정보와 차이가 나는 경우 다시 촬영하기 또는 정보를 수정해주세요.</p>
+                    <div class="id_check_img">
+                        <img src="../images/temp/@sample_idcard.png" alt="신분증이미지">
+                    </div>
+				</div>
+                <div class="from_area gap">
+                    <div class="from_line">
+                        <dl>
+                            <dt>이름</dt>
+                            <dd>
+                                <div class="from_ipt">
+                                    <input type="text" title="이름" readonly value="홍길동">
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="from_line">
+                        <dl>
+                            <dt>주민등록번호</dt>
+                            <dd>
+                                <div class="from_ipt">
+                                    <input type="text" title="주민번호 앞 6자리" readonly value="920101">
+                                </div>
+                                <span>-</span>
+                                <div class="from_ipt">
+                                    <input type="text" title="주민번호 뒷 7자리" placeholder="주민번호 뒷 7자리">
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="from_line license">
+                        <dl>
+                            <dt>면허번호</dt>
+                            <dd>
+                                <div class="from_ipt">
+                                    <input type="text" title="면허번호 앞 2자리" readonly value="01">
+                                </div>
+                                <span>-</span>
+                                <div class="from_ipt">
+                                    <input type="text" title="면허번호 중간 2자리" readonly value="01">
+                                </div>
+                                <span>-</span>
+                                <div class="from_ipt" style="flex:2.5">
+                                    <input type="text" title="면허번호 중간 6자리" readonly value="******">
+                                </div>
+                                <span>-</span>
+                                <div class="from_ipt" style="flex:1.5">
+                                    <input type="text" title="면허번호 뒷 2자리" placeholder="뒷 2자리">
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="from_line">
+                        <dl>
+                            <dt>발급일자</dt>
+                            <dd>
+                                <div class="from_ipt">
+                                    <input type="text" title="발급일자" readonly value="20110101">
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="btn_fixed">
+                    <div class="btn_area">
+                        <span class="btn_color01"><button type="button">이전</button></span>
+                        <span><button type="button">다음</button></span>
+                    </div>
+                </div>
+			</div>
+		</div>
+		<div class="modal" id="sample1">
+			<div class="modal_inner">
+				<div class="modal_cont">
+					<div class="noti">
+						신분증 사진 전송에 실패했습니다.<br/>신분증을 재촬영해주세요.
+                    </div>
+				</div>
+				<div class="modal_btns">
+					<button type="button">계좌개설 취소</button>
+					<button type="button">신분증 재촬영</button>
+				</div>
+			</div>
+		</div>
+		<div class="modal" id="sample2">
+			<div class="modal_inner">
+				<div class="modal_cont">
+					<div class="noti">
+                        <p class="success">신분증 확인이 완료되었습니다.</p>
+                    </div>
+				</div>
+				<div class="modal_btns">
+					<button type="button">확인</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

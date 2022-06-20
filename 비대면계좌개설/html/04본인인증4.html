@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+	<html lang="ko">
+	<head>
+		<meta charset="euc-kr">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>IBK 투자증권</title>
+		<link rel="stylesheet" href="../css/default.css">
+		<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="../js/common_ui.js"></script>
+	</head>
+	<body>
+		<div id="wrap">
+			<div class="contents">
+			</div>
+		</div>
+        <div class="full_popup" style="display:block;">
+			<div class="pop_header">
+				<h2>이벤트</h2>
+			</div>
+			<div class="pop_contents">
+                <p class="tit03">
+                    휴대폰 인증결과 고객님은 현재 다른 계좌도 보유하고 계신 것으로 확인이 됩니다.<br/>
+                    신규로 진행하시려면 ‘신규 계좌’를, 기존 계좌에서 해당 상품을 추가하려면 ‘기존 계좌’를 선택하시고 ‘확인’을 눌러 주세요.
+                </p>
+                <div class="radio_list">
+                    <div class="form_type">
+                        <input type="radio" id="radio01" name="radio01" title="신규 계좌" checked>
+                        <label for="radio01">
+                            <dl>
+                                <dt>신규 계좌</dt>
+                                <dd>신규로 종합계좌를 추가하여 만들게요.</dd>
+                            </dl>
+                        </label>
+                    </div>
+                    <div class="form_type">
+                        <input type="radio" id="radio02" name="radio01" title="기존 계좌">
+                        <label for="radio02">
+                            <dl>
+                                <dt>기존 계좌</dt>
+                                <dd>
+                                    기존 계좌에 해당 상품계좌만 추가할게요.
+                                    <button type="button" class="select_btn on" onclick="common_ui.slideOpen('#sample1');">123-12-123456</button>
+                                </dd>
+                            </dl>
+                        </label>
+                    </div>
+                </div>
+				<div class="btn_fixed">
+					<div class="btn_area">
+						<span><button type="button">확인</button></span>
+					</div>
+				</div>
+			</div>
+			<button type="button" class="pop_close"><span class="hidden">팝업 닫기</span></button>
+		</div>
+		<div class="slide" id="sample1">
+			<div class="slide_inner">
+				<div class="slide_header">
+					<h2>계좌 선택</h2>
+				</div>
+				<div class="slide_cont">
+                    <ul class="agree_list">
+                        <li>
+							<div class="agree_ipt">
+								<input type="checkbox" id="agree11" checked>
+								<label for="agree11">123-12-123456</label>
+							</div>
+						</li>
+                        <li>
+							<div class="agree_ipt">
+								<input type="checkbox" id="agree12" >
+								<label for="agree12">123-12-123456</label>
+							</div>
+						</li>
+                        <li>
+							<div class="agree_ipt">
+								<input type="checkbox" id="agree13" >
+								<label for="agree13">123-12-123456</label>
+							</div>
+						</li>
+                        <li>
+							<div class="agree_ipt">
+								<input type="checkbox" id="agree14" >
+								<label for="agree14">123-12-123456</label>
+							</div>
+						</li>
+                        <li>
+							<div class="agree_ipt">
+								<input type="checkbox" id="agree15" >
+								<label for="agree15">123-12-123456</label>
+							</div>
+						</li>
+                    </ul>
+				</div>
+				<button type="button" class="slide_close"><span class="hidden">닫기</span></button>
+			</div>
+		</div>
+	</body>
+</html>

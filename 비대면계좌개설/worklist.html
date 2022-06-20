@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="euc-kr">
+  <title>IBK 비대면계좌개설</title>
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi" />
+	<link rel="stylesheet" href="./pub_temp/css/worklist.css" >
+	<script src="./pub_temp/js/jquery-1.12.4.min.js"></script>
+	<script src="./pub_temp/js/pub.worklist.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			pubGuide.init('[data-role="filelist"]');
+		});
+	</script>
+ </head>
+ <body>
+	<div id="wrap">
+		<h1 id="title"></h1>
+		<div class="guide_link">
+			<h2>Guide</h2>
+			<a href="./pub_guide/slide_popup.html" target="_blank">Slide popup</a>
+		</div>
+
+		<div class="note" style="display:none;">
+			<h2>작업 순서</h2>
+			<ol>
+				<li>현재가 <small>(commit)</small></li>
+			</ol>
+		</div>
+		<div class="filelist" data-role="filelist" >
+			<table>
+				<thead>
+					<tr>
+						<th scope="col">구분</th>
+						<th scope="col">1depth</th>
+						<th scope="col">2depth</th>
+						<th scope="col">Main View</th>
+						<th scope="col">Sub View</th>
+						<th scope="col">View Type</th>
+						<th scope="col">파일명</th>
+						<th scope="col">완료일</th>
+						<th scope="col">비고</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>국내주식</td>
+						<td>공통</td>
+						<td>인증/동의</td>
+						<td>인증안내</td>
+						<td></td>
+						<td>Body</td>
+						<td class="html">./html/인증안내.html</td>
+						<td class="date">2021-06-02</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>이중접속안내</td>
+						<td>이중접속안내</td>
+						<td></td>
+						<td>Popup</td>
+						<td class="html">./html/이중접속안내.html</td>
+						<td class="date">2021-06-10</td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div class="frame_wrap">
+		<div class="frame_view">
+			<div class="window"></div>
+			<div class="frame_area">
+				<span class="file_name"></span>
+				<select name="" id="oh" style="width:100%;">
+				</select>
+				<iframe src="" frameborder="0" style="width:100%;height:100%;"></iframe>
+			</div>
+			<div class="frame_btn">
+				<button type="button" class="prev"></button>
+				<button type="button" class="next"></button>
+			</div>
+			<span class="resize e"></span>
+			<span class="resize es"></span>
+			<span class="resize s"></span>
+		</div>
+		<div class="dimmed"></div>
+	</div>
+ </body>
+</html>
