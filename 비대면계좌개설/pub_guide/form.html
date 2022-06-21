@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+	<html lang="ko">
+	<head>
+		<meta charset="euc-kr">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>html 템플릿</title>
+		<link rel="stylesheet" href="../css/default.css">
+		<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="../js/common_ui.js"></script>
+        <style>
+            .guide h2{margin-top:20px;padding:0 20px;}
+            .guide > p{padding-left:20px;color:#666;}
+            .guide>div:not(.btn_area){padding:0 20px;}
+        </style>
+	</head>
+	<body>
+		<div id="wrap" class="guide">
+            <h2>체크박스 Input[type="checkbox"]</h2>
+            <div>
+                <div class="form_type">
+                    <input type="checkbox" name="" id="ck01">
+                    <label for="ck01">전체동의</label>
+                </div>
+            </div>
+            <h2>체크박스 링크형</h2>
+            <p>약관 내용 확인 후 check 적용시 사용</p>
+            <div>
+                <a href="#" role="button" class="form_type"><span>[필수] 전자금융거래 기본약관 및 세부사항</span></a>
+            </div>
+            <h2>라디오 Input[type="radio"]</h2>
+            <div>
+                <div class="form_type">
+                    <input type="radio" name="rd1" id="rd01" checked>
+                    <label for="rd01">선택1</label>
+                </div>
+                <div class="form_type">
+                    <input type="radio" name="rd1" id="rd02">
+                    <label for="rd02">선택2</label>
+                </div>
+                <div class="form_type">
+                    <input type="radio" name="rd1" id="rd03">
+                    <label for="rd03">선택3</label>
+                </div>
+            </div>
+            <h2>체크박스 Input[type="checkbox"] small</h2>
+            <div>
+                <ul class="agree_list">
+                    <li>
+                        <div class="agree_ipt">
+                            <input type="checkbox" id="agree01" checked="">
+                            <label for="agree01">주식(국내/해외)거래</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="agree_ipt">
+                            <input type="checkbox" id="agree02">
+                            <label for="agree02">CMA</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <h2>체크박스 링크형 small</h2>
+            <div>
+                <ul class="agree_list">
+                    <li><a href="#" class="checked">[필수] 전자금융거래 기본약관 및 세부사항</a></li>
+                    <li><a href="#">[필수] 매매거래 계좌설정약관</a></li>
+                </ul>
+            </div>
+            <h2>라디오 Input[type="radio"] small</h2>
+            <div>
+                <ul class="agree_list">
+                    <li>
+                        <div class="agree_ipt">
+                            <input type="radio" id="agree11" name="agree11" checked="">
+                            <label for="agree11">주식(국내/해외)거래</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="agree_ipt">
+                            <input type="radio" id="agree12" name="agree11">
+                            <label for="agree12">CMA</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+		</div>
+	</body>
+</html>

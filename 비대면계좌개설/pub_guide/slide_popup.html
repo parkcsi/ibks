@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+	<html lang="ko">
+	<head>
+		<meta charset="euc-kr">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>html 템플릿</title>
+		<link rel="stylesheet" href="../css/default.css">
+		<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="../js/common_ui.js"></script>
+	</head>
+	<body>
+		<div id="wrap">
+			<div class="btn_area">
+				<span><button type="button" onclick="common_ui.slideOpen('#sample1');">slide팝업[계좌선택] 열기</button></span>
+			</div>
+			<div class="btn_area">
+				<span class="btn_color01"><button type="button" onclick="common_ui.slideOpen('#sample2');">slide팝업[자금원천 선택] 열기</button></span>
+			</div>
+		</div>
+		<div class="slide" id="sample1">
+			<div class="slide_inner">
+				<div class="slide_header">
+					<h2>계좌 선택</h2>
+				</div>
+				<div class="slide_cont">
+                    <ul class="agree_list">
+                        <li>
+							<div class="agree_ipt">
+								<input type="checkbox" id="agree11" checked>
+								<label for="agree11">123-12-123456</label>
+							</div>
+						</li>
+                        <li>
+							<div class="agree_ipt">
+								<input type="checkbox" id="agree12" >
+								<label for="agree12">123-12-123456</label>
+							</div>
+						</li>
+                        <li>
+							<div class="agree_ipt">
+								<input type="checkbox" id="agree13" >
+								<label for="agree13">123-12-123456</label>
+							</div>
+						</li>
+                        <li>
+							<div class="agree_ipt">
+								<input type="checkbox" id="agree14" >
+								<label for="agree14">123-12-123456</label>
+							</div>
+						</li>
+                        <li>
+							<div class="agree_ipt">
+								<input type="checkbox" id="agree15" >
+								<label for="agree15">123-12-123456</label>
+							</div>
+						</li>
+                    </ul>
+				</div>
+				<button type="button" class="slide_close"><span class="hidden">닫기</span></button><!-- slide 팝업 닫을때 common_ui.slideClose(); 호출-->
+			</div>
+		</div>
+		<div class="slide" id="sample2">
+			<div class="slide_inner">
+				<div class="slide_header">
+					<h2>
+                        <button type="button" class="slide_prev" onclick="common_ui.depthPrev()"><span class="hidden">뒤로</span></button>
+                        자금원천 선택
+                    </h2>
+				</div>
+				<div class="slide_cont">
+                    <ul class="agree_list">
+                        <li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree31" name="agree31" checked>
+								<label for="agree31">일반 회사원</label>
+							</div>
+						</li>
+                        <li>
+							<a href="javascript:common_ui.depthOpen('#depth2_1');" class="agree_ipt">
+								<span>전문직 회사원</span>
+                            </a>
+						</li>
+                        <li>
+							<a href="javascript:common_ui.depthOpen('#depth2_2');" class="agree_ipt">
+								<span>일반 자영업자</span>
+                            </a>
+						</li>
+                        <li>
+							<a href="javascript:common_ui.depthOpen('#depth2_3');" class="agree_ipt">
+								<span>전문직 자영업자</span>
+                            </a>
+						</li>
+                        <li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree32" name="agree31">
+								<label for="agree32">공무원</label>
+							</div>
+						</li>
+                        <li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree33" name="agree31">
+								<label for="agree33">연금생활자</label>
+							</div>
+						</li>
+                        <li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree34" name="agree31">
+								<label for="agree34">학생</label>
+							</div>
+						</li>
+                        <li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree35" name="agree31">
+								<label for="agree35">주부</label>
+							</div>
+						</li>
+                        <li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree36" name="agree31">
+								<label for="agree36">카지노 사업자, 대부업자, 환전상</label>
+							</div>
+						</li>
+                        <li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree37" name="agree31">
+								<label for="agree37">고가의 귀금속 판매상</label>
+							</div>
+						</li>
+                        <li>
+							<a href="javascript:common_ui.depthOpen('#depth2_4');" class="agree_ipt">
+								<span>기타</span>
+                            </a>
+						</li>
+                    </ul>
+                    <div class="slide_depth2" id="depth2_1">
+                        <ul class="agree_list">
+                            <li>
+                                <div class="agree_ipt">
+                                    <input type="radio" id="agree41" name="agree41" checked>
+                                    <label for="agree41">변호사(급여소득자)</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="agree_ipt">
+                                    <input type="radio" id="agree42" name="agree41" >
+                                    <label for="agree42">회계사(급여소득자)</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="agree_ipt">
+                                    <input type="radio" id="agree43" name="agree41" >
+                                    <label for="agree43">세무사(급여소득자)</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="agree_ipt">
+                                    <input type="radio" id="agree44" name="agree41" >
+                                    <label for="agree44">부동산중계인(급여소득자)</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="agree_ipt">
+                                    <input type="radio" id="agree45" name="agree41" >
+                                    <label for="agree45">투자자문가(급여소득자)</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="agree_ipt">
+                                    <input type="radio" id="agree46" name="agree41" >
+                                    <label for="agree46">기타급여소득을받는전문직종사자</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="slide_depth2" id="depth2_2">
+                        <ul class="agree_list">
+                            <li>
+                                <div class="agree_ipt">
+                                    <input type="radio" id="agree51" name="agree51" checked>
+                                    <label for="agree51">일반자영업자</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="agree_ipt">
+                                    <input type="radio" id="agree52" name="agree51" >
+                                    <label for="agree52">일반자영업자-경매사(농수축산물 경매사), 골동품 및 예술품 판매업</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="agree_ipt">
+                                    <input type="radio" id="agree53" name="agree51" >
+                                    <label for="agree53">일반자영업자-현금 집중거래사업자(편의점,음식점,소매상,자산기운영업,담배도소매상,주차장운영업,자판기운영업,여행업</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="agree_ipt">
+                                    <input type="radio" id="agree54" name="agree51" >
+                                    <label for="agree54">일반자영업자-부패위험이 높은 사업자(건설업관련 사업자)</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="slide_depth2" id="depth2_3">
+                        <ul class="agree_list">
+                            <li>
+                                <div class="agree_ipt">
+                                    <input type="radio" id="agree61" name="agree61" checked>
+                                    <label for="agree61">변호사(자영업자)</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="agree_ipt">
+                                    <input type="radio" id="agree62" name="agree61" >
+                                    <label for="agree62">회계사(자영업자)</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="agree_ipt">
+                                    <input type="radio" id="agree63" name="agree61" >
+                                    <label for="agree63">세무사(자영업자)</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="agree_ipt">
+                                    <input type="radio" id="agree64" name="agree61" >
+                                    <label for="agree64">부동산중계인(자영업자)</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="agree_ipt">
+                                    <input type="radio" id="agree65" name="agree61" >
+                                    <label for="agree65">투자자문가(자영업자)</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="agree_ipt">
+                                    <input type="radio" id="agree66" name="agree61" >
+                                    <label for="agree66">기타자영업을영위하는전문직종사자</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="slide_depth2" id="depth2_4">
+                        <ul class="agree_list">
+                            <li>
+                                <div class="agree_ipt">
+                                    <input type="radio" id="agree71" name="agree71" checked>
+                                    <label for="agree71">가상자산사업자(EDD대상)</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="agree_ipt">
+                                    <input type="radio" id="agree72" name="agree71" >
+                                    <label for="agree72">기타</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+				</div>
+				<button type="button" class="slide_close"><span class="hidden">닫기</span></button>
+			</div>
+		</div>
+	</body>
+</html>
