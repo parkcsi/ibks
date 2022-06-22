@@ -66,6 +66,22 @@ var common_ui = {
 		_this.hide();
 		_this.closest(".slide_cont").find("> .agree_list").show();
 		_this.closest(".slide_inner").find(".slide_prev").css('display', 'none');
+	},
+	tabToggle : function(el){
+		var _this = $(el);
+		var tab_cont = _this.closest(".tab_wrap").find(".tab_cont");
+		var num = _this.parent().index();
+		_this.parent().addClass("tab_on").siblings().removeClass("tab_on");
+		tab_cont.eq(num).show().siblings(".tab_cont").hide();
+	},
+	listToggle : function(el){
+		var _this = $(el);
+		var list = _this.closest(".row");
+		if(list.hasClass("show")){
+			list.removeClass("show");
+		}else{
+			list.addClass("show");
+		}
 	}
 }
 

@@ -35,10 +35,122 @@
                         <div class="form_type tit">
                             <input type="checkbox" id="agree02">
                             <label for="agree02">개인(신용) 정보 동의</label>
+                            <ul class="btn_list">
+                                <li class="on"><a href="#">요약</a></li>
+                                <li><a href="#">상세</a></li>
+                            </ul>
                         </div>
                         <ul class="agree_list">
-                            <li class="row"><a href="#" class="checked">[필수] 개인(신용)정보 처리 동의</a></li>
-                            <li class="row"><a href="#">[선택] 수집 &middot; 이용 &middot; 제공 동의서</a></li>
+                            <li class="row show">
+                                <div class="agree_ipt">
+                                    <input type="checkbox" id="agree11" checked>
+                                    <label for="agree11">[필수] 개인(신용)정보 처리 동의</label>
+                                    <button type="button" class="toggle_arrow" onclick="common_ui.listToggle(this);"><span class="hidden">열기/닫기</span></button>
+                                </div>
+                                <div class="toggle_box">
+                                    <p class="tit">수집 &middot; 이용에 관한 사항</p>
+                                    <div class="form_area">
+                                        <div class="form_line">
+                                            <dl>
+                                                <dt>
+                                                    <p class="tit03">고유식별정보 수집 &middot; 이용</p>
+                                                </dt>
+                                                <dd>
+                                                    <div class="form_type">
+                                                        <input type="radio" id="rdo01" name="rdo01" checked>
+                                                        <label for="rdo01">동의</label>
+                                                    </div>
+                                                    <div class="form_type">
+                                                        <input type="radio" id="rdo02" name="rdo01">
+                                                        <label for="rdo02">동의안함</label>
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                        <div class="form_line">
+                                            <dl>
+                                                <dt>
+                                                    <p class="tit03">개인(신용)정보 수집 &middot; 이용</p>
+                                                </dt>
+                                                <dd>
+                                                    <div class="form_type">
+                                                        <input type="radio" id="rdo11" name="rdo11" checked>
+                                                        <label for="rdo11">동의</label>
+                                                    </div>
+                                                    <div class="form_type">
+                                                        <input type="radio" id="rdo12" name="rdo11">
+                                                        <label for="rdo12">동의안함</label>
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="row">
+                                <div class="agree_ipt">
+                                    <input type="checkbox" id="agree12" checked>
+                                    <label for="agree12">[선택] 개인(신용)정보 선택 동의<span class="badge">등급:안심</span></label>
+                                    <button type="button" class="toggle_arrow" onclick="common_ui.listToggle(this);"><span class="hidden">열기/닫기</span></button>
+                                </div>
+                                <div class="toggle_box">
+                                    <p class="tit">수집 &middot; 이용에 관한 사항</p>
+                                    <div class="form_area">
+                                        <div class="form_line">
+                                            <dl>
+                                                <dt>
+                                                    <p class="tit03">개인(신용)정보 수집 &middot; 이용</p>
+                                                </dt>
+                                                <dd>
+                                                    <div class="form_type">
+                                                        <input type="radio" id="rdo21" name="rdo21" checked>
+                                                        <label for="rdo21">동의</label>
+                                                    </div>
+                                                    <div class="form_type">
+                                                        <input type="radio" id="rdo22" name="rdo21">
+                                                        <label for="rdo22">동의안함</label>
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                        <div class="form_line">
+                                            <dl>
+                                                <dt>
+                                                    <p class="tit03">상품서비스 안내(광고성 정보 수신 동의)</p>
+                                                </dt>
+                                                <dd>
+                                                    <div class="form_type">
+                                                        <input type="radio" id="rdo31" name="rdo31" checked>
+                                                        <label for="rdo31">동의</label>
+                                                    </div>
+                                                    <div class="form_type">
+                                                        <input type="radio" id="rdo32" name="rdo31">
+                                                        <label for="rdo32">동의안함</label>
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                        <div class="form_line inline">
+                                            <div class="form_type">
+                                                <input type="checkbox" id="agree21" checked>
+                                                <label for="agree21">문자</label>
+                                            </div>
+                                            <div class="form_type">
+                                                <input type="checkbox" id="agree22" checked>
+                                                <label for="agree22">이메일</label>
+                                            </div>
+                                            <div class="form_type">
+                                                <input type="checkbox" id="agree23" checked>
+                                                <label for="agree23">전화</label>
+                                            </div>
+                                            <div class="form_type">
+                                                <input type="checkbox" id="agree24" checked>
+                                                <label for="agree24">DM</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
                     </div>
 				</div>
