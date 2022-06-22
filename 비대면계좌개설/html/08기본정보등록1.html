@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+	<html lang="ko">
+	<head>
+		<meta charset="euc-kr">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>IBK 투자증권</title>
+		<link rel="stylesheet" href="../css/default.css">
+		<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="../js/common_ui.js"></script>
+	</head>
+	<body>
+		<div id="wrap">
+			<div class="contents">
+				<div class="tit_cont">
+                    <p class="paging_number">6 <span class="total">/ 7</span></p>
+                    <h2>기본정보 등록</h2>
+				</div>
+                <div class="from_area">
+                    <div class="from_line">
+                        <div class="from_ipt">
+                            <input type="text" title="이름" readonly value="홍길동">
+                        </div>
+                    </div>
+                    <div class="from_line address">
+                        <div class="from_ipt">
+                            <input type="text" title="주소 검색을 선택하세요." placeholder="주소 검색을 선택하세요.">
+                            <button type="button" class="ipt_btn" onclick="common_ui.modalOpen('#sample1')">주소 검색</button>
+                        </div>
+                    </div>
+                    <div class="from_line">
+                        <div class="from_ipt">
+                            <input type="text" title="상세주소 입력" placeholder="상세주소 입력">
+                        </div>
+                    </div>
+                </div>
+                <div class="from_area mg">
+                    <div class="from_line">
+                        <dl>
+                            <dt>
+                                <p class="tit03">원장 통보지</p>
+                            </dt>
+                            <dd>
+                                <div class="form_type">
+                                    <input type="radio" id="rdo01" name="rdo01" checked>
+                                    <label for="rdo01">온라인 조회</label>
+                                </div>
+                                <div class="form_type">
+                                    <input type="radio" id="rdo02" name="rdo02">
+                                    <label for="rdo02">이메일</label>
+                                </div>
+                                <div class="form_type">
+                                    <input type="radio" id="rdo02" name="rdo02">
+                                    <label for="rdo02">우편</label>
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="form_info">
+                        <p class="form_txt">HTS 또는 MTS에서 확인 하겠습니다.</p>
+                        <div class="from_line">
+                            <div class="from_ipt">
+                                <input type="text" title="이메일 앞자리" placeholder="이메일 앞자리">
+                            </div>
+                            <span>@</span>
+                            <div class="from_ipt">
+                                <!-- 선택 후 'on'클래스 추가 -->
+                                <button type="button" class="select_btn">선택</button>
+                            </div>
+                        </div>
+                        <p class="form_txt">기본정보에서 등록한 주소로 받겠습니다.</p>
+                    </div>
+                </div>
+                <div class="btn_fixed">
+                    <div class="btn_area">
+                        <span class="btn_color01"><button type="button">이전</button></span>
+                        <span><button type="button">다음</button></span>
+                    </div>
+                </div>
+			</div>
+		</div>
+        <div class="modal" id="sample1">
+			<div class="modal_inner">
+				<div class="modal_cont">
+					<div class="noti">
+						이름을 입력해주세요.
+                    </div>
+				</div>
+				<div class="modal_btns">
+					<button type="button">확인</button>
+				</div>
+			</div>
+		</div>
+        <div class="modal" id="sample2">
+			<div class="modal_inner">
+				<div class="modal_cont">
+					<div class="noti">
+						주소를 입력해주세요.
+                    </div>
+				</div>
+				<div class="modal_btns">
+					<button type="button">확인</button>
+				</div>
+			</div>
+		</div>
+        <div class="modal" id="sample3">
+			<div class="modal_inner">
+				<div class="modal_cont">
+					<div class="noti">
+						주민등록번호, 동일숫자, 연속숫자, 전화번호 등은 사용이 불가합니다. 다시 입력해 주세요. 계좌비밀번호를 4자리 초과하여 입력하는 경우 은행 CD기를 이용한 업무가 제한됩니다.
+                    </div>
+				</div>
+				<div class="modal_btns">
+					<button type="button">확인</button>
+				</div>
+			</div>
+		</div>
+        <div class="modal" id="sample4">
+			<div class="modal_inner">
+				<div class="modal_cont">
+					<div class="noti">
+						입력하신 비밀번호가 일치하지 않습니다. 신규 등록할 계좌비밀번호 4자리를 다시 확인하시고 입력하시기 바랍니다.
+                    </div>
+				</div>
+				<div class="modal_btns">
+					<button type="button">확인</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

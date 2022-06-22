@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+	<html lang="ko">
+	<head>
+		<meta charset="euc-kr">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>IBK 투자증권</title>
+		<link rel="stylesheet" href="../css/default.css">
+		<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="../js/common_ui.js"></script>
+	</head>
+	<body>
+		<div id="wrap">
+			<div class="contents">
+				<div class="tit_cont">
+					<p class="paging_number">7 <span class="total">/ 7</span></p>
+                    <h2>금융기관 계좌인증</h2>
+                    <p class="txt01">실명확인을 위해 고객님의 타행계좌로<br />
+					1원을 송금합니다.</p>
+				</div>
+                <div class="white_border_box white_border_box02">
+                    <p class="gray02 txt01">입금</p>
+					<div class="amount">
+                        <div class="amount_num">IBK
+							<p><span>1</span><span>2</span><span>3</span></p>
+						</div>
+						<div class="amount_price"><span>1</span>원</div>
+					</div>
+                </div>
+				<div class="exp_include">
+					<p class="desc_txt">인증번호(IBK뒤 숫자 3자리)와 1원을 본인명의 기관에
+						보내드립니다.
+					</p>
+                </div>
+                <div class="from_area gray_border">
+                    <div class="from_line">
+                        <dl>
+                            <dt>
+                                <p class="tit03">연간 납입한도</p>
+                            </dt>
+                            <dd>
+                                <div class="from_ipt amount_ipt">
+                                    <button type="button" class="input_btn" onclick="common_ui.slideOpen('#sample');">100</button>
+                                    <p class="amount_ipt_txt gray03">만원</p>
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="from_line">
+                        <!-- 선택 후 'on'클래스 추가 -->
+                        <button type="button" class="select_btn" onclick="common_ui.slideOpen('#sample1');">계약기간 선택</button>
+                    </div>
+                </div>
+                <p class="info_txt2">연금저축계좌 개설후 최초 가입일은 납입액이 최초 입금된 날로서, 최초 입금시 적립기간만료일 및  연금 개시 가능일이 확정됩니다.</p>
+                <p class="info_txt2">연금저축계좌 개설시 입출금을 위한 CMA계좌가 동시 개설됩니다.</p>
+                <div class="from_area mg">
+                    <div class="from_line">
+                        <dl>
+                            <dt class="gray02">
+                                <strong>연금저축계좌 ETF 거래 서비스 신청</strong>
+                                <p class="tit03">서비스 신청 시 ‘연금저축ETF거래 전용’ 계좌가 추가로 개설됩니다.</p>
+                            </dt>
+                            <dd>
+                                <div class="form_type">
+                                    <input type="radio" id="rdo01" name="rdo01">
+                                    <label for="rdo01">미신청</label>
+                                </div>
+                                <div class="form_type">
+                                    <input type="radio" id="rdo02" name="rdo02" checked="">
+                                    <label for="rdo02">신청</label>
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="btn_fixed">
+                    <div class="btn_area">
+                        <span class="btn_color01"><button type="button">이전</button></span>
+                        <span><button type="button">다음</button></span>
+                    </div>
+                </div>
+			</div>
+		</div>
+		<div class="slide" id="sample1">
+			<div class="slide_inner">
+				<div class="slide_header">
+					<h2>계약기간 선택</h2>
+				</div>
+				<div class="slide_cont">
+                    <ul class="agree_list">
+                        <li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree11" name="agree11" checked>
+								<label for="agree11">5년</label>
+							</div>
+						</li>
+                        <li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree12" name="agree11">
+								<label for="agree11">6년</label>
+							</div>
+						</li>
+                        <li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree13" name="agree11">
+								<label for="agree11">7년</label>
+							</div>
+						</li>
+                        <li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree14" name="agree11">
+								<label for="agree11">8년</label>
+							</div>
+						</li>
+                        <li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree15" name="agree11">
+								<label for="agree11">9년</label>
+							</div>
+						</li>
+                        <li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree16" name="agree11">
+								<label for="agree11">10년</label>
+							</div>
+						</li>
+                        <li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree17" name="agree11">
+								<label for="agree11">11년</label>
+							</div>
+						</li>
+                        <li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree18" name="agree11">
+								<label for="agree11">12년</label>
+							</div>
+						</li>
+                        <li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree19" name="agree11">
+								<label for="agree11">13년</label>
+							</div>
+						</li>
+                    </ul>
+				</div>
+				<button type="button" class="slide_close"><span class="hidden">닫기</span></button>
+			</div>
+		</div>
+        <div class="modal" id="sample1">
+			<div class="modal_inner">
+				<div class="modal_cont">
+					<div class="noti">
+						연금저축 가입을 위한 연간 납입 가능금액이 부족하여 계좌개설이 불가합니다.
+                    </div>
+				</div>
+				<div class="modal_btns">
+					<button type="button">확인</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
