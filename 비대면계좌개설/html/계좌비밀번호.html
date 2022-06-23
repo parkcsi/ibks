@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+	<html lang="ko">
+	<head>
+		<meta charset="euc-kr">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>IBK 투자증권</title>
+		<link rel="stylesheet" href="../css/default.css">
+		<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="../js/common_ui.js"></script>
+	</head>
+	<body>
+		<div id="wrap">
+			<div class="contents">
+			</div>
+		</div>
+		<div class="slide" id="sample1">
+			<div class="slide_inner">
+				<div class="slide_header">
+					<h2>계좌 비밀번호</h2>
+				</div>
+				<div class="slide_cont pw">
+                    <div class="pw_wrap">
+                        <p class="pw_ipt">
+                            <input type="text" readonly placeholder="계좌비밀번호를 입력해주세요.">
+                        </p>
+                        <div class="pw_keypad">
+                            <p style="background:#ccc; height:200px;">키패드영역</p>
+                        </div>
+                    </div>
+				</div>
+				<button type="button" class="slide_close"><span class="hidden">닫기</span></button>
+			</div>
+		</div>
+        <script>
+            $(function(){
+                common_ui.slideOpen('#sample1');
+            });
+        </script>
+	</body>
+</html>

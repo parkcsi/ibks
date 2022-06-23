@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+	<html lang="ko">
+	<head>
+		<meta charset="euc-kr">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>IBK 투자증권</title>
+		<link rel="stylesheet" href="../css/default.css">
+		<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="../js/common_ui.js"></script>
+	</head>
+	<body>
+		<div id="wrap">
+			<div class="contents">
+			</div>
+		</div>
+        <div class="full_popup" style="display:block;">
+			<div class="pop_header">
+				<h2>전담 투자상담사 등록</h2>
+			</div>
+			<div class="pop_contents">
+                <div class="form_area">
+                    <div class="form_line">
+                        <dl>
+                            <dt class="gray02">
+                                <strong>전담 투자상담사</strong>
+                            </dt>
+                            <dd>
+                                <div class="form_ipt">
+                                    <input type="text" title="전담 투자상담사 입력" value="홍길동" readonly>
+                                    <button type="button" class="ipt_btn">상담사 조회</button>
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <p class="desc_txt point02">전담 투자상담사 선택 시 해당 영업점으로 관리점이 변경되며, 비대면 계좌개설 우대조건은 적용되지 않습니다.</p>
+				<div class="btn_fixed">
+					<div class="btn_area">
+						<span><button type="button" onclick="common_ui.modalOpen('#sample1')">등록</button></span>
+					</div>
+				</div>
+			</div>
+			<button type="button" class="pop_close"><span class="hidden">팝업 닫기</span></button>
+		</div>
+		<div class="modal" id="sample1">
+			<div class="modal_inner">
+				<div class="modal_cont">
+					<div class="noti">
+						고객님의 전담 투자상담사가 정상적으로 등록되었습니다.
+                    </div>
+				</div>
+				<div class="modal_btns">
+					<button type="button">확인</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
