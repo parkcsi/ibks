@@ -15,69 +15,73 @@
 		</div>
         <div class="full_popup" style="display:block;">
 			<div class="pop_header">
-				<h2>투자자정보확인서</h2>
+				<h2>투자자정보확인서<button type="button" class="tool_btn" onclick="common_ui.modalOpen('#sample1');"><span class="hidden">설명보기</span></button></h2>
 			</div>
 			<div class="pop_contents investor_info">
                 <div>
-					<ul class="defin_list gray_info_box">
-						<li>
-							<dl>
-								<dt>고객투자성향(최종)</dt>
-								<dd>위험중립형</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>만료일</dt>
-								<dd>2022년 5월 31일</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>온라인채널 변경가능횟수</dt>
-								<dd>1회</dd>
-							</dl>
-						</li>
-					</ul>
-					<ul class="dot_list">
-						<li>본 확인서는 「금융소비자보호에 관한 법률」에 따라 고객의 투자정보를 파악하여, 그에 적합한 투자권유를 해드리기 위한 기초 자료로 활용됩니다. 고객님의 상황에 부합하거나 가장 가까운 항목을 정확히 선택하여 주시기 바랍니다.</li>
-						<li>투자자정보확인서는 「금융소비자보호에 관한 법률」제18조 및 「금융소비자보호에 관한 법률 시행령」 제12조 제1항에 따라 적정성 원칙 대상 상품을 거래하고자하는 경우에는 반드시 작성하여야 합니다.</li>
-						<li>투자자정보확인서는 1일 최대 3회까지 등록/변경 가능합니다.</li>
-					</ul>
-					<div class="form_area">
-						<div class="form_line">
-							<dl>
-								<dt>
-									<p class="tit03">투자권유 희망 여부</p>
-								</dt>
-								<dd>
-									<div class="form_type">
-										<input type="radio" id="rdo01" name="rdo01" checked="">
-										<label for="rdo01">예</label>
-									</div>
-									<div class="form_type">
-										<input type="radio" id="rdo02" name="rdo01">
-										<label for="rdo02">아니오</label>
-									</div>
-								</dd>
-							</dl>
+					<div class="investor_topbox">
+						<div class="defin_list">
+							<ul class="gray_info_box">
+								<li>
+									<dl>
+										<dt>고객투자성향(최종)</dt>
+										<dd>위험중립형</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt>만료일</dt>
+										<dd>2022년 5월 31일</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt>온라인채널 변경가능횟수</dt>
+										<dd>1회</dd>
+									</dl>
+								</li>
+							</ul>
 						</div>
-						<div class="form_line">
-							<dl>
-								<dt>
-									<p class="tit03">투자자정보 제공 여부</p>
-								</dt>
-								<dd>
-									<div class="form_type">
-										<input type="radio" id="rdo01" name="rdo02" checked="">
-										<label for="rdo01">제공</label>
-									</div>
-									<div class="form_type">
-										<input type="radio" id="rdo02" name="rdo02">
-										<label for="rdo02">제공하지 않음</label>
-									</div>
-								</dd>
-							</dl>
+						<ul class="dot_list">
+							<li>본 확인서는 「금융소비자보호에 관한 법률」에 따라 고객의 투자정보를 파악하여, 그에 적합한 투자권유를 해드리기 위한 기초 자료로 활용됩니다. 고객님의 상황에 부합하거나 가장 가까운 항목을 정확히 선택하여 주시기 바랍니다.</li>
+							<li>투자자정보확인서는 「금융소비자보호에 관한 법률」제18조 및 「금융소비자보호에 관한 법률 시행령」 제12조 제1항에 따라 적정성 원칙 대상 상품을 거래하고자하는 경우에는 반드시 작성하여야 합니다.</li>
+							<li>투자자정보확인서는 1일 최대 3회까지 등록/변경 가능합니다.</li>
+						</ul>
+						<div class="form_area">
+							<div class="form_line radio_opt_wrap">
+								<dl>
+									<dt>
+										<p class="tit03">투자권유 희망 여부</p>
+									</dt>
+									<dd>
+										<div class="form_type">
+											<input type="radio" id="rdo01" name="rdo01" checked="">
+											<label for="rdo01">예</label>
+										</div>
+										<div class="form_type">
+											<input type="radio" id="rdo02" name="rdo01">
+											<label for="rdo02">아니오</label>
+										</div>
+									</dd>
+								</dl>
+							</div>
+							<div class="form_line radio_opt_wrap">
+								<dl>
+									<dt>
+										<p class="tit03">투자자정보 제공 여부</p>
+									</dt>
+									<dd>
+										<div class="form_type">
+											<input type="radio" id="rdo01" name="rdo02" checked="">
+											<label for="rdo01">제공</label>
+										</div>
+										<div class="form_type">
+											<input type="radio" id="rdo02" name="rdo02">
+											<label for="rdo02">제공하지 않음</label>
+										</div>
+									</dd>
+								</dl>
+							</div>
 						</div>
 					</div>
 					<div class="survey_box gray_border">
@@ -287,7 +291,11 @@
 												</div>
 												<div class="form_type">
 													<input type="radio" id="rdo03" name="rdo07">
-													<label for="rdo03">파생상품을 포함한 대부분의 금융투자상품의 구조 및 위험을 이해하고 있음</label>
+													<label for="rdo03">널리 알려진 금융투자상품(주식, 채권 및 펀드 등) 의 구조 및 위험을 깊이 있게 이해하고 있음</label>
+												</div>
+												<div class="form_type">
+													<input type="radio" id="rdo04" name="rdo07">
+													<label for="rdo04">파생상품을 포함한 대부분의 금융투자상품의 구조 및 위험을 이해하고 있음</label>
 												</div>
 											</dd>
 										</dl>
@@ -470,12 +478,14 @@
 						<p class="desc_txt">취약한 금융소비자(예, 고령자,은퇴자,주부 등) 여부에 대한 동의는 강화된 투자자보호를 위한 것으로 금융상품 구매 시 불이익 사항을 다른 정보보다 우선 설명 받기위해 수집하는 것입니다.</p>
 						<p class="desc_txt">고객님께서 취약한 금융소비자에 해당되나, 투자자정보확인서 투자자유형 중 취약금융소비자 항목 수집에 동의하지 않은 경우 강화된 적합성 원칙 및 설명 의무 적용이 배제됩니다.</p>
 					</div>
-					<h3 class="tit03">고객 확인 사항</h3>
-					<ul class="dot_list">
-						<li>본 확인서는 「금융소비자보호에 관한 법률」에 따라 고객의 투자정보를 파악하여, 그에 적합한 투자권유를 해드리기 위한 기초 자료로 활용됩니다. 고객님의 상황에 부합하거나 가장 가까운 항목을 정확히 선택하여 주시기 바랍니다.</li>
-						<li>투자자정보확인서는 「금융소비자보호에 관한 법률」제18조 및 「금융소비자보호에 관한 법률 시행령」 제12조 제1항에 따라 적정성 원칙 대상 상품을 거래하고자하는 경우에는 반드시 작성하여야 합니다.</li>
-						<li>투자자정보확인서는 1일 최대 3회까지 등록/변경 가능합니다.</li>
-					</ul>
+					<div class="gray_border">
+						<h3 class="info_txt02">고객 확인 사항</h3>
+						<ul class="dot_list">
+							<li>귀사에 제공한 투자자정보는 본인의 연소득현황, 투자목적, 재산상황 및 투자경험 등의 정보를 정확히 알려드린 것입니다.</li>
+							<li>향후 24개월 동안에는 본인의 투자자정보를 변경되지 않은 것으로 귀사가 간주함을 동의합니다. 단, 투자일임계약/신탁계약(운용대상을 특정 종목과 비중 등 구체적으로 지정하는 특정금전신탁은 제외)의 경우에는 매 분기(3개월) 1회 이상 투자자정보를 재확인함에 동의합니다.</li>
+							<li>본인의 투자자정보에 변경사항이 발생한 경우에는 이를 귀사에 통지하여야 귀사가 본인에게 적합한 투자권유를 할 수 있다는 점을 확인합니다.</li>
+						</ul>
+					</div>
 					<div class="btn_fixed">
 						<div class="btn_area">
 							<span><button type="button">등록하기</button></span>
@@ -484,6 +494,86 @@
                 </div>
 			</div>
 			<button type="button" class="pop_close"><span class="hidden">팝업 닫기</span></button>
+		</div>
+		<div class="modal" id="sample1">
+			<div class="modal_inner">
+				<div class="modal_header">
+					<h2>투자자정보확인서란?</h2>
+				</div>
+				<div class="modal_cont">
+					<p class="noti">
+						고객님의 <span class="point02">투자성향을 파악</span>하여<br /> <span class="point02">적합한 상품</span>을 권유하기 위한 기초 자료이며, 고객님을 위한 보호 장치입니다.
+					</p>
+					<div class="tendency_info">
+						<p class="noti">투자성향별 등급 분류는 다음과 같습니다.</p>
+						<img src="../images/content/img_tendency_graph.png" alt="">
+						<p class="desc_txt">투자자정보확인서를 등록하시면 고객님의 투자성향에 적합한 상품 거래와 상담이 가능합니다.</p>
+					</div>
+				</div>
+				<div class="modal_btns">
+					<button type="button">확인</button>
+				</div>
+			</div>
+		</div>
+		<div class="modal" id="sample2">
+			<div class="modal_inner">
+				<div class="modal_cont">
+					<div class="noti">
+						<p class="success">등록이 완료되었습니다.</p>
+					</div>
+				</div>
+				<div class="modal_btns">
+					<button type="button">확인</button>
+				</div>
+			</div>
+		</div>
+		<div class="slide" id="sample1">
+			<div class="slide_inner">
+				<div class="slide_header">
+					<h2>고객 투자성향 진단결과</h2>
+				</div>
+				<div class="slide_cont">
+                    <div class="tendency_result">
+						<p class="tendency_result_tit gray02">위헙중립형</p>
+						<ul class="defin_list">
+							<li>
+								<dl>
+									<dt>진단일자</dt>
+									<dd>2022년 05월 06일</dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>투자권유 여부</dt>
+									<dd>희망</dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>정보제공 여부</dt>
+									<dd>제공</dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>취약 금융소비자</dt>
+									<dd>해당하지 않음</dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>진단점수</dt>
+									<dd>90점</dd>
+								</dl>
+							</li>
+						</ul>
+						<div class="btn_area">
+							<span><button type="button" onclick="">확인</button></span>
+						</div>
+					</div>
+				</div>
+				<button type="button" class="slide_close"><span class="hidden">닫기</span></button>
+			</div>
 		</div>
 	</body>
 </html>

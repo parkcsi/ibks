@@ -146,6 +146,7 @@ div.form_type{overflow:hidden;}
 div.form_type input[type="checkbox"]{position:absolute;left:2px;top:14px;width:24px;height:24px;background:url(../images/icon/bg_checkbox_big.png) no-repeat 0 0;background-size:24px 48px;-webkit-appearance:none;outline:none;}
 div.form_type input[type="checkbox"]:checked{background-position:0 -24px;}
 div.form_type input[type="checkbox"] ~ label{display:inline-block;padding-left:38px;font-size:16px;}
+div.form_type.only input[type="checkbox"] ~ label { font-size: 18px; }
 div.form_type.tit input[type="checkbox"] ~ label{font-size:18px; font-weight:bold;}
 div.form_type input[type="radio"]{position:absolute;left:2px;top:14px;width:24px;height:24px;background:url(../images/icon/bg_radio_big.png) no-repeat 0 0;background-size:24px 48px;content:'';-webkit-appearance:none;outline:none;}
 div.form_type input[type="radio"]:checked{background-position:0 -24px;}
@@ -205,6 +206,9 @@ div.form_type input[type="radio"] ~ label{display:inline-block;padding-left:38px
 
 .info_txt{font-size:15px; color:#484b51;}
 .info_txt:before{content:''; display:inline-block; width:20px; height:20px; margin-top:-3px; margin-right:8px; background:url(../images/icon/ico_info_tit.png) no-repeat center center; background-size:19px auto; vertical-align:middle;}
+.info_txt02 { font-size: 16px; color: #191919; }
+.info_txt02:before{content:''; display:inline-block; width:20px; height:20px; margin-top:-3px; margin-right:8px; background:url(../images/icon/ico_info_tit02.png) no-repeat center center; background-size:19px auto; vertical-align:middle;}
+.info_txt02 + .dot_list > li { font-size: 16px; }
 
 .paging_number{font-size:17px; font-weight:bold;}
 .paging_number .total{color:#8c949e}
@@ -278,7 +282,7 @@ div.form_type input[type="radio"] ~ label{display:inline-block;padding-left:38px
 .id_check_img{margin:0 -24px; margin-top:30px; padding:15px 0; text-align:center; background:#eeeff1;}
 .id_check_img img{width:240px;}
 
-.exp_include > .desc_txt{margin-top:8px; color: #8c949e; }
+.exp_include > .desc_txt{ margin-top:8px; color: #8c949e; }
 
 .form_area.mg { margin-top: 40px; }
 .form_area .form_info { margin-top: 12px; font-size: 16px; color: #666666; }
@@ -298,8 +302,8 @@ div.form_type input[type="radio"] ~ label{display:inline-block;padding-left:38px
 .address_srch .search { position: absolute; top: 50%; right: 8px; transform: translateY(-50%); width: 28px; height: 28px; background: url(../images/icon/btn_search.png) no-repeat center center / 22px auto; }
 .address_srch .remove { position: absolute; top: 50%; right: 46px; transform: translateY(-50%); width: 28px; height: 28px; background: url(../images/icon/btn_remove.png) no-repeat center center / 17px auto; }
 
-.info_txt2 { margin-top: 30px; font-size: 16px; color: #484b51; }
-.info_txt2 ~ .info_txt2 { margin-top: 20px; }
+.form_info_txt { margin-top: 30px; font-size: 16px; color: #484b51; }
+.form_info_txt ~ .form_info_txt { margin-top: 20px; }
 
 .contents.isa .tit_cont {padding-bottom: 0; } 
 .contents.isa .form_line { margin-top: 30px; }
@@ -328,16 +332,45 @@ div.form_type input[type="radio"] ~ label{display:inline-block;padding-left:38px
 
 .investor_info .gray_info_box { margin: 0 -24px; padding: 20px 24px; background: #ebeef0; }
 .investor_info .gray_border { padding: 30px 24px 0; margin: 30px -24px 0 -24px; }
-.investor_info .dot_list { margin-bottom: 30px; padding-bottom: 30px; border-bottom: 1px solid #ebeef0; }
+.investor_info .gray_border h3, .global h3 { margin: 0; }
+.investor_info .investor_topbox > .dot_list { margin-bottom: 30px; padding-bottom: 30px; border-bottom: 1px solid #ebeef0; }
+.investor_info .form_area > .form_line .form_type { flex: auto; width: 100%; }
+.investor_info .form_area > .form_line dl dd { flex-wrap: wrap; }
 .investor_info .form_area > .form_line.radio_opt_wrap dl dd { gap: 0; }
 .investor_info .form_area > .form_line.radio_opt_wrap .form_type { width: 50%; margin-top: 5px; }
 .investor_info .form_area > .form_line.radio_opt_wrap .form_type ~ .form_type { margin-top: 9px; }
-.investor_info .form_area > .form_line dl dd { flex-wrap: wrap; }
-.investor_info .form_area > .form_line .form_type { flex: auto; width: 100%; }
-.survey_box h3 { margin: 0; }
+.investor_info .form_area.gray_border .desc_txt { margin: 24px 0 0; color: #8c949e; }
+.investor_info .form_area.gray_border .desc_txt ~ .desc_txt { margin: 16px 0 0; }
+
 .survey_box .survey_list > li { margin-top: 24px; padding-bottom: 40px; border-bottom: 1px solid #ebeef0; }
 .survey_box .survey_list > li ~ li { margin-top: 40px; }
 .survey_box .survey_list > li:last-child { border: 0px; padding: 0; }
 
-.investor_info .form_area.gray_border .desc_txt { margin: 24px 0 0; color: #8c949e; }
-.investor_info .form_area.gray_border .desc_txt ~ .desc_txt { margin: 16px 0 0; }
+.tool_btn { margin-left: 8px; width: 24px; height: 24px; background:url(../images/icon/ico_info_tool.png) no-repeat center center / 19px auto; vertical-align: text-top; }
+
+.modal_inner .tendency_info { margin: 12px 0 0;}
+.modal_inner .tendency_info .noti { min-height: auto;}
+.modal_inner .tendency_info img { margin: 24px 0 20px; }
+
+.tendency_result > .tendency_result_tit { padding: 136px 0 36px; font-size: 18px; font-weight: bold; text-align: center; border-bottom: 1px solid #8c949e; background: url(../images/content/img_tendency_03.png) no-repeat center top / 200px auto; }
+.tendency_result > .defin_list { margin: 20px 0; }
+.tendency_result > .btn_area { margin: 12px 0 0; }
+
+.agree_list.account_list { margin: 16px 0 0; border-top: 1px solid #ebeef0; }
+.agree_list.account_list > li { padding: 20px 0; border-bottom: 1px solid #ebeef0; }
+.agree_list.account_list > li ~ li { margin: 0; }
+.agree_list.account_list > li .agree_ipt { padding-left: 0; }
+.agree_list.account_list > li .agree_ipt input[type="radio"] { top: 50%; left: auto; right: 0; transform: translateY(-50%); }
+.agree_list.account_list > li .account_num { color: #191919; }
+.agree_list.account_list > li .account_name { font-size: 14px; color: #696e76; }
+
+.slide_cont .password { padding: 24px 24px 16px; }
+.password > .form_area { margin: 16px 0 20px; }
+.password .form_ipt > input { text-align: center; }
+.password .pw_keypad { margin: 16px -24px 0; min-height: 208px; background: #ebeef0; }
+
+.global .defin_list { margin: 30px 0 0; }
+.global .defin_list li ~ li { margin-top: 10px; }
+.global .exp_include > .desc_txt { margin-top: 20px; color: #696e76; }
+.global .exp_include > .desc_txt > .btn_link { margin-top: 12px; }
+.global .gray_border { margin: 40px -24px 0 -24px; padding: 30px 24px 0; }
