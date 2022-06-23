@@ -33,49 +33,25 @@
                 </div>
                 <div class="form_area gray_border">
                     <div class="form_line">
-                        <dl>
-                            <dt>
-                                <p class="tit03">연간 납입한도</p>
-                            </dt>
-                            <dd>
-                                <div class="form_ipt amount_ipt">
-                                    <button type="button" class="input_btn" onclick="common_ui.slideOpen('#sample');">100</button>
-                                    <p class="amount_ipt_txt gray03">만원</p>
-                                </div>
-                            </dd>
-                        </dl>
-                    </div>
-                    <div class="form_line">
                         <!-- 선택 후 'on'클래스 추가 -->
-                        <button type="button" class="select_btn" onclick="common_ui.slideOpen('#sample1');">계약기간 선택</button>
+                        <button type="button" class="select_btn" onclick="common_ui.slideOpen('#sample1');">입금기관 선택</button>
                     </div>
-                </div>
-                <p class="info_txt2">연금저축계좌 개설후 최초 가입일은 납입액이 최초 입금된 날로서, 최초 입금시 적립기간만료일 및  연금 개시 가능일이 확정됩니다.</p>
-                <p class="info_txt2">연금저축계좌 개설시 입출금을 위한 CMA계좌가 동시 개설됩니다.</p>
-                <div class="form_area mg">
                     <div class="form_line">
-                        <dl>
-                            <dt class="gray02">
-                                <strong>연금저축계좌 ETF 거래 서비스 신청</strong>
-                                <p class="tit03">서비스 신청 시 ‘연금저축ETF거래 전용’ 계좌가 추가로 개설됩니다.</p>
-                            </dt>
-                            <dd>
-                                <div class="form_type">
-                                    <input type="radio" id="rdo01" name="rdo01">
-                                    <label for="rdo01">미신청</label>
-                                </div>
-                                <div class="form_type">
-                                    <input type="radio" id="rdo02" name="rdo02" checked="">
-                                    <label for="rdo02">신청</label>
-                                </div>
-                            </dd>
-                        </dl>
+                        <div class="form_ipt exp_include">
+                            <input type="text" title="본인명의 계좌번호 입력(’-’제외)" placeholder="본인명의 계좌번호 입력(’-’제외)">
+							<p class="desc_txt">평생계좌, 가상계좌, 보안계좌는 사용할 수 없습니다.</p>
+                        </div>
+                    </div>
+					<div class="form_line">
+                        <div class="form_ipt">
+                            <input type="text" title="인증번호 숫자 3자리" placeholder="인증번호 숫자 3자리">
+                        </div>
                     </div>
                 </div>
                 <div class="btn_fixed">
                     <div class="btn_area">
                         <span class="btn_color01"><button type="button">이전</button></span>
-                        <span><button type="button">다음</button></span>
+                        <span><button type="button">1원 보내기</button></span>
                     </div>
                 </div>
 			</div>
@@ -83,65 +59,63 @@
 		<div class="slide" id="sample1">
 			<div class="slide_inner">
 				<div class="slide_header">
-					<h2>계약기간 선택</h2>
+					<h2>입금기관 선택</h2>
 				</div>
-				<div class="slide_cont">
-                    <ul class="agree_list">
-                        <li>
-							<div class="agree_ipt">
-								<input type="radio" id="agree11" name="agree11" checked>
-								<label for="agree11">5년</label>
-							</div>
-						</li>
-                        <li>
-							<div class="agree_ipt">
-								<input type="radio" id="agree12" name="agree11">
-								<label for="agree11">6년</label>
-							</div>
-						</li>
-                        <li>
-							<div class="agree_ipt">
-								<input type="radio" id="agree13" name="agree11">
-								<label for="agree11">7년</label>
-							</div>
-						</li>
-                        <li>
-							<div class="agree_ipt">
-								<input type="radio" id="agree14" name="agree11">
-								<label for="agree11">8년</label>
-							</div>
-						</li>
-                        <li>
-							<div class="agree_ipt">
-								<input type="radio" id="agree15" name="agree11">
-								<label for="agree11">9년</label>
-							</div>
-						</li>
-                        <li>
-							<div class="agree_ipt">
-								<input type="radio" id="agree16" name="agree11">
-								<label for="agree11">10년</label>
-							</div>
-						</li>
-                        <li>
-							<div class="agree_ipt">
-								<input type="radio" id="agree17" name="agree11">
-								<label for="agree11">11년</label>
-							</div>
-						</li>
-                        <li>
-							<div class="agree_ipt">
-								<input type="radio" id="agree18" name="agree11">
-								<label for="agree11">12년</label>
-							</div>
-						</li>
-                        <li>
-							<div class="agree_ipt">
-								<input type="radio" id="agree19" name="agree11">
-								<label for="agree11">13년</label>
-							</div>
-						</li>
-                    </ul>
+				<div class="slide_cont agency_tab">
+					<div class="tab_wrap">
+						<ul class="tab_list">
+							<li class="tab_on"><button type="button" onclick="common_ui.tabToggle(this)">은행</button></li>
+							<li><button type="button" onclick="common_ui.tabToggle(this)">증권</button></li>
+						</ul>
+						<div class="tab_cont" id="tabCont01">
+							<ul class="agency_thum_list">
+								<li><button type="button"><img src="../images/logo/logo01.png" alt="IBK기업은행">IBK기업은행</button></li>
+								<li><button type="button"><img src="../images/logo/logo11.png" alt="KDB산업은행">KDB산업은행</button></li>
+								<li><button type="button"><img src="../images/logo/logo02.png" alt="신한은행">신한은행</button></li>
+								<li><button type="button"><img src="../images/logo/logo25.png" alt="국민은행">국민은행</button></li>
+								<li><button type="button"><img src="../images/logo/logo03.png" alt="수협은행">수협은행</button></li>
+								<li><button type="button"><img src="../images/logo/logo04.png" alt="NH농협은행">NH농협은행</button></li>
+								<li><button type="button"><img src="../images/logo/logo04.png" alt="지역농축협">지역농축협</button></li>
+								<li><button type="button"><img src="../images/logo/logo12.png" alt="우리은행">우리은행</button></li>
+								<li><button type="button"><img src="../images/logo/logo12.png" alt="SC은행">SC은행</button></li>
+								<li><button type="button"><img src="../images/logo/logo13.png" alt="한국씨티은행">한국씨티은행</button></li>
+								<li><button type="button"><img src="../images/logo/logo06.png" alt="대구은행">대구은행</button></li>
+								<li><button type="button"><img src="../images/logo/logo14.png" alt="BNK부산은행">BNK부산은행</button></li>
+								<li><button type="button"><img src="../images/logo/logo07.png" alt="전북은행">전북은행</button></li>
+								<li><button type="button"><img src="../images/logo/logo14.png" alt="BNK경남은행">BNK경남은행</button></li>
+								<li><button type="button"><img src="../images/logo/logo08.png" alt="저축은행">저축은행</button></li>
+								<li><button type="button"><img src="../images/logo/logo15.png" alt="하나은행">하나은행</button></li>
+								<li><button type="button"><img src="../images/logo/logo09.png" alt="신협">신협</button></li>
+								<li><button type="button"><img src="../images/logo/logo16.png" alt="산립조합중앙회">산립조합중앙회</button></li>
+								<li><button type="button"><img src="../images/logo/logo10.png" alt="새마을금고중앙회">새마을금고중앙회</button></li>
+								<li><button type="button"><img src="../images/logo/logo17.png" alt="정보통신부우체국">정보통신부우체국</button></li>
+							</ul>
+						</div>
+						<div class="tab_cont" id="tabCont02" style="display: none;">
+							<ul class="agency_thum_list">
+								<li><button type="button"><img src="../images/logo/logo18.png" alt="DB증권">DB증권</button></li>
+								<li><button type="button"><img src="../images/logo/logo25.png" alt="KB증권">KB증권</button></li>
+								<li><button type="button"><img src="../images/logo/logo14.png" alt="BNK투자증권">BNK투자증권</button></li>
+								<li><button type="button"><img src="../images/logo/logo26.png" alt="다올투자증권">다올투자증권</button></li>
+								<li><button type="button"><img src="../images/logo/logo19.png" alt="미래에셋대우">미래에셋대우</button></li>
+								<li><button type="button"><img src="../images/logo/logo27.png" alt="삼성증권">삼성증권</button></li>
+								<li><button type="button"><img src="../images/logo/logo20.png" alt="한국투자증권">한국투자증권</button></li>
+								<li><button type="button"><img src="../images/logo/logo04.png" alt="NH투자증권">NH투자증권</button></li>
+								<li><button type="button"><img src="../images/logo/logo21.png" alt="교보증권">교보증권</button></li>
+								<li><button type="button"><img src="../images/logo/logo28.png" alt="하이투자증권">하이투자증권</button></li>
+								<li><button type="button"><img src="../images/logo/logo22.png" alt="현대차증권">현대차증권</button></li>
+								<li><button type="button"><img src="../images/logo/logo29.png" alt="키움증권">키움증권</button></li>
+								<li><button type="button"><img src="../images/logo/logo23.png" alt="이베스트투자증권">이베스트투자증권</button></li>
+								<li><button type="button"><img src="../images/logo/logo30.png" alt="SK증권">SK증권</button></li>
+								<li><button type="button"><img src="../images/logo/logo24.png" alt="대신증권">대신증권</button></li>
+								<li><button type="button"><img src="../images/logo/logo31.png" alt="한화투자증권">한화투자증권</button></li>
+								<li><button type="button"><img src="../images/logo/logo15.png" alt="하나금융투자">하나금융투자</button></li>
+								<li><button type="button"><img src="../images/logo/logo32.png" alt="토스증권">토스증권</button></li>
+								<li><button type="button"><img src="../images/logo/logo02.png" alt="신한금융투자">신한금융투자</button></li>
+								<li><button type="button"><img src="../images/logo/logo33.png" alt="유안타증권">유안타증권</button></li>
+							</ul>
+						</div>
+					</div>
 				</div>
 				<button type="button" class="slide_close"><span class="hidden">닫기</span></button>
 			</div>
@@ -150,7 +124,87 @@
 			<div class="modal_inner">
 				<div class="modal_cont">
 					<div class="noti">
-						연금저축 가입을 위한 연간 납입 가능금액이 부족하여 계좌개설이 불가합니다.
+						고객님이 입력하신 계좌번호로 1원과 본인인증번호 3자리를 보내드렸습니다.
+                    </div>
+				</div>
+				<div class="modal_btns">
+					<button type="button">확인</button>
+				</div>
+			</div>
+		</div>
+		<div class="modal" id="sample2">
+			<div class="modal_inner">
+				<div class="modal_cont">
+					<div class="noti">
+						인증번호가 잘못 입력되었습니다. 다시 확인하시고 입력해 주시기 바랍니다.
+                    </div>
+				</div>
+				<div class="modal_btns">
+					<button type="button">확인</button>
+				</div>
+			</div>
+		</div>
+		<div class="modal" id="sample3">
+			<div class="modal_inner">
+				<div class="modal_cont">
+					<div class="noti">
+						고객님께서 입력하신 인증번호 검증이 5회 초과되어 재검증을 진행합니다.
+                    </div>
+				</div>
+				<div class="modal_btns">
+					<button type="button">확인</button>
+				</div>
+			</div>
+		</div>
+		<div class="modal" id="sample4">
+			<div class="modal_inner">
+				<div class="modal_cont">
+					<div class="noti">
+						고객님이 신청하신 상품에 대한 계좌개설이 <span class="point01">성공</span>하였습니다.<br />
+						투자자정보확인서를 작성하시려면 ‘예’를, 다음에 하시려면 ‘다음에’ 버튼을 눌러주세요.
+
+                    </div>
+				</div>
+				<div class="modal_btns">
+					<button type="button">다음에</button>
+					<button type="button">예</button>
+				</div>
+			</div>
+		</div>
+		<div class="modal" id="sample5">
+			<div class="modal_inner">
+				<div class="modal_cont">
+					<div class="noti">
+						고객님이 신청하신 상품에 대한 계좌개설이 <span class="point01">성공</span>하였습니다.<br />
+						'확인’을 눌러주시면 개설된 계좌의 내역을 확인하실 수 있습니다.
+                    </div>
+				</div>
+				<div class="modal_btns">
+					<button type="button">확인</button>
+				</div>
+			</div>
+		</div>
+		<div class="modal" id="sample6">
+			<div class="modal_inner">
+				<div class="modal_cont">
+					<div class="noti">
+						고객님이 신청하신 상품에 대한 계좌개설이 <span class="point01">성공</span>하였습니다.<br />
+						고객님은 이미 투자자정보확인서에 참여해 주셨습니다.<br />
+						해외주식 거래등록을 하시려면 ‘예’를, 개설완료를 하시려면 ‘아니요’를 눌러주세요.
+                    </div>
+				</div>
+				<div class="modal_btns">
+					<button type="button">아니요</button>
+					<button type="button">예</button>
+				</div>
+			</div>
+		</div>
+		<div class="modal" id="sample7">
+			<div class="modal_inner">
+				<div class="modal_cont">
+					<div class="noti">
+						고객님이 신청하신 상품에 대한 계좌개설이 <span class="point02">실패</span>하였습니다.<br />
+						계좌개설을 원하시는 경우 다시 진행해 주세요.
                     </div>
 				</div>
 				<div class="modal_btns">
