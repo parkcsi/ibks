@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+	<html lang="ko">
+	<head>
+		<meta charset="euc-kr">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>IBK 투자증권</title>
+		<link rel="stylesheet" href="../css/default.css">
+		<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="../js/common_ui.js"></script>
+		<script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+	</head>
+	<body>
+		<div id="wrap">
+			<div class="contents sub">
+                <div class="swipe_area hot">
+                    <p class="sub_title">고객님의 취향저격 테마 </p>
+                    <div class="swiper-container mySwiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <strong>여행</strong>
+                            <div class="area_img" aria-hidden="true">
+                                <img src="../images/portfolio/portfolio_img02.png" alt="">
+                            </div>
+                            <p class="area_info02">미뤄왔던 여행을 떠나요~<br />준비된 당신을 위한 PICK</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <strong>여행</strong>
+                            <div class="area_img" aria-hidden="true">
+                                <img src="../images/portfolio/portfolio_img02.png" alt="">
+                            </div>
+                            <p class="area_info02">미뤄왔던 여행을 떠나요~<br />준비된 당신을 위한 PICK</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <strong>여행</strong>
+                            <div class="area_img" aria-hidden="true">
+                                <img src="../images/portfolio/portfolio_img02.png" alt="">
+                            </div>
+                            <p class="area_info02">미뤄왔던 여행을 떠나요~<br />준비된 당신을 위한 PICK</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <strong>여행</strong>
+                            <div class="area_img" aria-hidden="true">
+                                <img src="../images/portfolio/portfolio_img02.png" alt="">
+                            </div>
+                            <p class="area_info02">미뤄왔던 여행을 떠나요~<br />준비된 당신을 위한 PICK</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <strong>여행</strong>
+                            <div class="area_img" aria-hidden="true">
+                                <img src="../images/portfolio/portfolio_img02.png" alt="">
+                            </div>
+                            <p class="area_info02">미뤄왔던 여행을 떠나요~<br />준비된 당신을 위한 PICK</p>
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                      <div class="swiper-button-next"></div>
+                      <div class="swiper-button-prev"></div>
+                    </div>
+                    <!--
+                        2개 이상일때만 하단 swiper 호출
+                    -->
+                    <script>
+                      if($('.mySwiper .swiper-slide').length>1){
+                          var swiper2 = new Swiper(".mySwiper", {
+                            autoHeight : true,
+                            navigation: {
+                              nextEl: ".swiper-button-next",
+                              prevEl: ".swiper-button-prev",
+                            },
+                            pagination: {
+                                el: '.swiper-pagination',
+                                clickable: true,
+                            },
+                            loop : false // true or false
+                           , on:{
+                                slideChange:function(){
+                                    $('.swipe_area .swipe_loading').show();  // 데이터 로드 후  $('.swipe_area .swipe_loading').hide(); 호출
+                                    console.log(this.realIndex);   // slide 변경시 console 출력
+                                }
+                            }
+                          })
+                      }
+                    </script>
+                </div>
+                <div>
+                    <h2>여행 관련주</h2>
+                    <ul class="stock_list">
+                        <li>
+                            <div class="stock_item">
+                                <a href="#" class="inner">
+                                    <span class="logo" aria-hidden="true"><img src="../images/logo/logo_samsung.png" alt=""></span>
+                                    <span class="name">삼성전자</span>
+                                    <div class="stock_info point_inc">
+                                        <strong>89,900원</strong>
+                                        <div class="per"><span class="hidden">상승</span>999,999 (+99.99%)</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="stock_item">
+                                <a href="#" class="inner">
+                                    <span class="logo" aria-hidden="true"><img src="../images/logo/logo_naver.png" alt=""></span>
+                                    <span class="name">네이버</span>
+                                    <div class="stock_info">
+                                        <strong>89,900원</strong>
+                                        <div class="per">0 (0%)</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="stock_item">
+                                <a href="#" class="inner">
+                                    <span class="logo" aria-hidden="true"><img src="../images/logo/logo_skhynix.png" alt=""></span>
+                                    <span class="name">SK하이닉스</span>
+                                    <div class="stock_info point_dec">
+                                        <strong>89,900원</strong>
+                                        <div class="per"><span class="hidden">하락</span>999,999 (-99.99%)</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="stock_item">
+                                <a href="#" class="inner">
+                                    <span class="logo" aria-hidden="true"><img src="../images/logo/logo_kakaogames.png" alt=""></span>
+                                    <span class="name">카카오게임즈</span>
+                                    <div class="stock_info">
+                                        <strong>89,900원</strong>
+                                        <div class="per">999,999 (99.99%)</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="stock_item">
+                                <a href="#" class="inner">
+                                    <span class="logo" aria-hidden="true"><img src="../images/logo/logo_hmm.png" alt=""></span>
+                                    <span class="name">HMM</span>
+                                    <div class="stock_info">
+                                        <strong>89,900원</strong>
+                                        <div class="per">999,999 (99.99%)</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <!-- 2021-06-10 상한가/하한가 case 추가-->
+                        <li>
+                            <div class="stock_item">
+                                <div class="inner">
+                                    <span class="logo" aria-hidden="true"><img src="../images/logo/logo_hmm.png" alt=""></span>
+                                    <span class="name">HMM</span>
+                                    <div class="stock_info point_upper">
+                                        <strong>89,900원</strong>
+                                        <div class="per"><span class="hidden">상한가</span>999,999 (99.99%)</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="stock_item">
+                                <div class="inner">
+                                    <span class="logo" aria-hidden="true"><img src="../images/logo/logo_hmm.png" alt=""></span>
+                                    <span class="name">HMM</span>
+                                    <div class="stock_info point_lower">
+                                        <strong>89,900원</strong>
+                                        <div class="per"><span class="hidden">하한가</span>999,999 (99.99%)</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!--// 2021-06-10 상한가/하한가 case 추가-->
+                        <li>
+                            <div class="stock_item">
+                                <div class="inner">
+                                    <span class="logo" aria-hidden="true"><img src="../images/logo/logo_hmm.png" alt=""></span>
+                                    <span class="name">HMM</span>
+                                    <div class="stock_info point_lower">
+                                        <strong>89,900원</strong>
+                                        <div class="per"><span class="hidden">하한가</span>999,999 (99.99%)</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!--// 2021-06-10 상한가/하한가 case 추가-->
+                        <li>
+                            <div class="stock_item">
+                                <div class="inner">
+                                    <span class="logo" aria-hidden="true"><img src="../images/logo/logo_hmm.png" alt=""></span>
+                                    <span class="name">HMM</span>
+                                    <div class="stock_info point_lower">
+                                        <strong>89,900원</strong>
+                                        <div class="per"><span class="hidden">하한가</span>999,999 (99.99%)</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!--// 2021-06-10 상한가/하한가 case 추가-->
+                        <li>
+                            <div class="stock_item">
+                                <div class="inner">
+                                    <span class="logo" aria-hidden="true"><img src="../images/logo/logo_hmm.png" alt=""></span>
+                                    <span class="name">HMM</span>
+                                    <div class="stock_info point_lower">
+                                        <strong>89,900원</strong>
+                                        <div class="per"><span class="hidden">하한가</span>999,999 (99.99%)</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!--// 2021-06-10 상한가/하한가 case 추가-->
+                    </ul>
+                </div>
+                <div>
+                    <h3>꼭 알아두세요!</h3>
+                    <ul class="info_dot01">
+                        <li>취향저격 PICK은 고객에게 맞는 투자 또는 투자성과를 보장하지 않습니다.</li>
+                        <li>기업은행을 통해 결제된 내역(상품/서비스) 관련 상장기업으로 고객 소비기반 포트폴리오를 제시하는 서비스 입니다.</li>
+                        <li>예금상품과 달리 원금의 일부 또는 전부 손실이 발생할 수 있으며, 투자로 인한 손실은 투자자 본인에게 귀속됩니다.</li>
+                        <li>취향저격 PICK을 통하여 매수한 금융투자상품은 예금자보호법에 따라 예금보험공사가 보호하지 않습니다.</li>
+                    </ul>
+                </div>
+			</div>
+		</div>
+	</body>
+</html>

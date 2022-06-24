@@ -1219,3 +1219,14 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
 .agree_btn .btn_list li.on a{color:#ffffff; font-weight:bold; background:#4c9df8; border:1px solid #4c9df8;}
 .agree_btn .btn_list li:first-child a{border-right:0;}
 .agree_btn .btn_list li:last-child a{border-radius:0 5px 5px 0; border-left:0;}
+
+.portfolio > div { padding: 18px 20px 60px; }
+.portfolio_list > li ~ li { margin: 20px 0 0; }
+.portfolio_box { padding: 20px 17.5px 22px; background: #fff; border: 1px solid #ececec; border-radius: 10px; box-shadow: 0 5px 5px -2px rgb(0 0 0 / 10%); }
+.portfolio_box > div ~ div { padding: 20px 0 0; margin: 20px 0 0; border-top: 1px solid #ececec; }
+.portfolio_box .portfolio_info:after { display: block; content: ""; clear: both; } 
+.portfolio_info .portfolio_info_img { float: left; width: 90px; height: 80px; }
+.portfolio_info .portfolio_info_txt { float: right; margin: 5px 0 0; width: calc(100% - 105px); word-break: keep-all; }
+.portfolio_info_txt > p { font-size: 16px; line-height: 22px; }
+.portfolio_box .btn_link.btn_link_gray { margin: 7px 0 0; color: #666666; }
+.portfolio_box .btn_link.btn_link_gray:after { border-color: #666666; }
