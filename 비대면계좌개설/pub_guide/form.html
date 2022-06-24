@@ -21,6 +21,33 @@
                     <input type="checkbox" name="" id="ck01">
                     <label for="ck01">전체동의</label>
                 </div>
+                <div class="form_area">
+                    <div class="form_line inline">
+                        <dl>
+                            <dt>
+                                <p class="tit03">가로정렬</p>
+                            </dt>
+                            <dd>
+                                <div class="form_type">
+                                    <input type="checkbox" id="agree21" checked="">
+                                    <label for="agree21">문자</label>
+                                </div>
+                                <div class="form_type">
+                                    <input type="checkbox" id="agree22" checked="">
+                                    <label for="agree22">이메일</label>
+                                </div>
+                                <div class="form_type">
+                                    <input type="checkbox" id="agree23" checked="">
+                                    <label for="agree23">전화</label>
+                                </div>
+                                <div class="form_type">
+                                    <input type="checkbox" id="agree24" checked="">
+                                    <label for="agree24">DM</label>
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
             </div>
             <h2>체크박스 링크형</h2>
             <p>약관 내용 확인 후 check 적용시 사용</p>
@@ -40,6 +67,37 @@
                 <div class="form_type">
                     <input type="radio" name="rd1" id="rd03">
                     <label for="rd03">선택3</label>
+                </div>
+                <div class="form_area">
+                    <div class="form_line">
+                        <dl>
+                            <dt>
+                                <p class="tit03">가로정렬</p>
+                            </dt>
+                            <dd>
+                                <div class="form_type">
+                                    <input type="radio" id="rdo01" name="rdo06">
+                                    <label for="rdo01">채무상환</label>
+                                </div>
+                                <div class="form_type">
+                                    <input type="radio" id="rdo02" name="rdo06">
+                                    <label for="rdo02">생활비</label>
+                                </div>
+                                <div class="form_type">
+                                    <input type="radio" id="rdo03" name="rdo06" checked="">
+                                    <label for="rdo03">주택마련</label>
+                                </div>
+                                <div class="form_type">
+                                    <input type="radio" id="rdo04" name="rdo06">
+                                    <label for="rdo04">여유자금</label>
+                                </div>
+                                <div class="form_type">
+                                    <input type="radio" id="rdo05" name="rdo06">
+                                    <label for="rdo05">자산증식</label>
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
                 </div>
             </div>
             <h2>체크박스 Input[type="checkbox"] small</h2>
@@ -82,6 +140,95 @@
                         </div>
                     </li>
                 </ul>
+            </div>
+            <h2>입력형 Input</h2>
+            <div>
+                <div class="form_area">
+                    <div class="form_line">
+                        <div class="form_ipt">
+                            <input type="text" title="이름" placeholder="이름">
+                        </div>
+                    </div>
+                    <div class="form_line">
+                        <div class="form_ipt">
+                            <input type="text" title="주민번호 앞 6자리" placeholder="주민번호 앞 6자리">
+                        </div>
+                        <span>-</span>
+                        <div class="form_ipt">
+                            <input type="text" title="주민번호 뒷 7자리" placeholder="주민번호 뒷 7자리">
+                        </div>
+                    </div>
+                    <div class="form_line phone">
+                        <div class="form_ipt">
+                            <!-- 선택 후 'on'클래스 추가 -->
+                            <button type="button" class="select_btn">선택</button>
+                        </div>
+                        <div class="form_ipt">
+                            <input type="text" title="휴대전화번호" placeholder="휴대전화번호">
+                            <button type="button" class="ipt_btn">인증번호 받기</button>
+                        </div>
+                    </div>
+                    <div class="form_line">
+                        <div class="form_ipt">
+                            <input type="text" title="인증번호 입력" placeholder="인증번호 입력">
+                            <span class="timer">03:00</span>
+                        </div>
+                    </div>
+                    <div class="form_line license">
+                        <dl>
+                            <dt>면허번호</dt>
+                            <dd>
+                                <div class="form_ipt">
+                                    <input type="text" title="면허번호 앞 2자리" readonly="" value="01">
+                                </div>
+                                <span>-</span>
+                                <div class="form_ipt">
+                                    <input type="text" title="면허번호 중간 2자리" readonly="" value="01">
+                                </div>
+                                <span>-</span>
+                                <div class="form_ipt" style="flex:2.5">
+                                    <input type="text" title="면허번호 중간 6자리" readonly="" value="******">
+                                </div>
+                                <span>-</span>
+                                <div class="form_ipt" style="flex:1.5">
+                                    <input type="text" title="면허번호 뒷 2자리" placeholder="뒷 2자리">
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="form_line address">
+                        <div class="form_ipt">
+                            <input type="text" title="주소 검색을 선택하세요." placeholder="주소 검색을 선택하세요.">
+                            <button type="button" class="ipt_btn" onclick="common_ui.modalOpen('#sample1')">주소 검색</button>
+                        </div>
+                        <div class="form_ipt">
+                            <input type="text" title="상세주소 입력" placeholder="상세주소 입력">
+                        </div>
+                    </div>
+                    <div class="form_line">
+                        <div class="form_ipt">
+                            <input type="text" title="이메일 앞자리" placeholder="이메일 앞자리">
+                        </div>
+                        <span>@</span>
+                        <div class="form_ipt">
+                            <!-- 선택 후 'on'클래스 추가 -->
+                            <button type="button" class="select_btn">선택</button>
+                        </div>
+                    </div>
+                    <div class="form_line">
+                        <dl>
+                            <dt>
+                                <p class="tit03">연간 납입한도</p>
+                            </dt>
+                            <dd>
+                                <div class="form_ipt amount_ipt">
+									<input type="text" title="연간 납입한도 입력" placeholder="연간 납입한도 입력" value="100">
+                                    <p class="amount_ipt_txt gray03">만원</p>
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
             </div>
 		</div>
 	</body>
