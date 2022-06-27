@@ -444,6 +444,59 @@
                         </a>
                     </div>
 				</div>
+                <!-- 2022-06-27 수정 -->
+				<div class="main_contents03">
+                    <div class="title_tip " data-role="tooltip">
+                        <h2>취향저격 PICK</h2>
+                        <button type="button"><span class="hidden">취향저격 PICK에 대한 도움말</span></button>
+                        <div class="tip_cont" data-role="tooltip-cont">
+                            <strong>취향저격 PICK</strong>
+                            <p class="txt02">기업은행을 통해 결제된 내역(상품/서비스) 관련 상장기업으로 고객 소비기반 포트폴리오를 제시하는 서비스 입니다.</p>
+                            <button type="button" class="tip_close"><span class="hidden">툴팁 닫기</span></button>
+                        </div>
+                    </div>
+                    <div class="pickSwiper">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="hot_item">
+                                        <a href="#">
+                                            <span class="thumb" aria-hidden="hidden"><img src="../images/main/img_main_pick01.png" alt=""></span>
+                                            <span class="txt">커피로 아침을 시작하고 SNS를 즐겨하는 당신~</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="hot_item">
+                                        <a href="#">
+                                            <span class="thumb" aria-hidden="hidden"><img src="../images/main/img_main_pick02.png" alt=""></span>
+                                            <span class="txt">미뤄왔던 여행을 떠나요~ 준비된 당신을 위한 PICK</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="hot_item">
+                                        <a href="#">
+                                            <span class="thumb" aria-hidden="hidden"><img src="../images/main/img_main_pick03.png" alt=""></span>
+                                            <span class="txt">환경을 아껴주며 무해한 하루를 보내는 당신~</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="list_more">전체보기</a>
+                    </div>
+                    <script>
+                        if($('.pickSwiper .swiper-container .swiper-slide').length>1){
+                              var swiper5 = new Swiper(".pickSwiper .swiper-container", {
+                                slidesPerView: 2,
+                                spaceBetween: 12,
+                                loop : false // true or false
+                              })
+                          }
+                      </script>
+				</div>
+                <!-- // 2022-06-27 수정 -->
 				<div class="main_contents04" id="scroll_target">
                     <h2>매수 상위 종목</h2>
                     <div class="stock_list_swipe">
@@ -665,7 +718,7 @@
                     
                     <script>
                       if($('.main02 .swiper-slide').length>1){
-                          var swiper2 = new Swiper(".main02", {
+                          var swiper6 = new Swiper(".main02", {
                             autoHeight : true,
                             spaceBetween : 10,
                             pagination: {
@@ -942,7 +995,7 @@
                     
                     <script>
                       if($('.main03 .swiper-slide').length>1){
-                          var swiper3 = new Swiper(".main03", {
+                          var swiper6 = new Swiper(".main03", {
                             autoHeight : true,
                             spaceBetween : 10,
                             pagination: {
@@ -996,7 +1049,7 @@
                         
                         <script>
                           if($('.main_event .swiper-slide').length>1){
-                              var swiper4 = new Swiper(".main_event", {
+                              var swiper6 = new Swiper(".main_event", {
                                 autoHeight : true,
                                 pagination: {
                                     el: '.swiper-pagination',
@@ -1024,7 +1077,7 @@
                         
                         <script>
                           if($('.main_noti .swiper-slide').length>1){
-                              var swiper4 = new Swiper(".main_noti", {
+                              var swiper6 = new Swiper(".main_noti", {
                                 autoHeight : true,
                                 allowTouchMove : false,
                                 direction : 'vertical',

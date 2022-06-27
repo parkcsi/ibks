@@ -747,6 +747,15 @@ div[data-role="tooltip"].title_tip.active > button:after{width:11.5px;height:6px
 .main_contents03 div[class*="hot_item"] .txt{display:block;margin-top:10px;color:#666;}
 .main_contents03 .hot_item01{float:left;width:48%;}
 .main_contents03 .hot_item02{float:right;width:48%;}
+.main_contents03 .title_tip > h2{display:inline-block;}
+.main_contents03 .title_tip > button{margin:27px 0 0 0;}
+.main_contents03 div[data-role="tooltip"].title_tip.active div[data-role="tooltip-cont"]{top:45px;}
+.main_contents03 .pickSwiper{position:relative; margin:0 -20px;}
+.main_contents03 .pickSwiper .swiper-container{padding:0 20px;}
+.main_contents03 .pickSwiper .hot_item{width:100%;}
+.main_contents03 .pickSwiper .hot_item .txt{text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;white-space: normal;}
+.main_contents03 .list_more{position: absolute; right: 20px; top: -46px; padding-right: 10px; color: #666;}
+.main_contents03 .list_more:after{position:absolute;right:0;top:calc(50% - 3px);width:5px;height:5px;border-right:1px solid #666;border-bottom:1px solid #666;transform:rotate(-45deg);content:'';}
 
 .main_contents06 .research_item{overflow:hidden;}
 .main_contents06 .research_item a{width:calc(50% - 5px);padding:15px 20px 0;height:100px;box-sizing:border-box;border-radius:10px;}
