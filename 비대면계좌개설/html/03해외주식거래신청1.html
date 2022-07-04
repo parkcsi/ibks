@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+	<html lang="ko">
+	<head>
+		<meta charset="euc-kr">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>IBK 투자증권</title>
+		<link rel="stylesheet" href="../css/default.css">
+		<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="../js/common_ui.js"></script>
+	</head>
+	<body>
+		<div id="wrap">
+			<div class="contents online">
+				<div class="white_border_box">
+					<p class="tit03">투자자정보확인서</p>
+					<ul class="defin_list">
+						<li>
+							<dl>
+								<dt>등록상태</dt>
+								<dd>미등록</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>투자자정보확인서</dt>
+								<dd>부적합</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>고객투자성향</dt>
+								<dd>위험중립형</dd>
+							</dl>
+						</li>
+					</ul>
+				</div>
+				<dl class="tit_dot_list">
+					<dt><p class="tit03">참고사항</p></dt>
+					<dd>
+						<ul class="dot_list">
+							<li>외화증권 거래는 초고위험 상품으로 투자자정보확인서 미등록 고객은 등록하여 주시기 바랍니다.<button type="button" class="btn_link point01">투자자정보확인서 등록하기</button></li>
+							<li>고객투자 성향이 공격투자형이 아닌 경우 부적합금융상품 거래확인서를 작성 후 해외주식 거래가 가능합니다.</li>
+						</ul>
+					</dd>
+				</dl>
+				<div class="agree_box gray_border">
+					<div class="form_type tit">
+						<input type="checkbox" id="agree01">
+						<label for="agree01">전체 동의</label>
+					</div>
+					<ul class="agree_list">
+						<li><a href="#" class="checked">[필수] 외화증권매매거래계좌설정약관 동의</a></li>
+						<li><a href="#">[필수] 외화증권거래설명서</a></li>
+						<li><a href="#">[필수] 해외주식 직접투자위험 고지</a></li>
+						<li><a href="#">[필수] 개인(신용)정보 수집, 이용, 제공 동의</a></li>
+						<li><a href="#">[필수] 한미조세협약상 제한세율적용 본인확인서</a></li>
+					</ul>
+				</div>
+				<div class="btn_fixed">
+                    <div class="btn_area">
+                        <span><button type="button">등록</button></span>
+                    </div>
+                </div>
+			</div>
+		</div>
+		<div class="modal" id="sample1">
+			<div class="modal_inner">
+				<div class="modal_cont">
+					<div class="noti">
+						외화증권 거래신청을 위해서 투자자정보 확인서 등록이 되어 있어야 진행이 가능합니다.
+                    </div>
+				</div>
+				<div class="modal_btns">
+					<button type="button">확인</button>
+				</div>
+			</div>
+		</div>
+		<div class="modal" id="sample2">
+			<div class="modal_inner">
+				<div class="modal_cont">
+					<div class="noti">
+						외화증권 거래신청을 위해서 모든 약관, 설명서, 위험고지, 본인확인서 동의 확인 및 동의가 필요합니다.
+                    </div>
+				</div>
+				<div class="modal_btns">
+					<button type="button">확인</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

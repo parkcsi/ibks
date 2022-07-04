@@ -26,7 +26,7 @@
                             <div class="acc_txt01">각 프로젝트별 순위는 전일 단순손익 기준으로 산정됩니다.</div>
                             <div class="acc_txt02">2022년 5월 17일 기준</div>
                         </div>
-                        <button type="button" class="account_sel" title="프로젝트 선택">에어팟프로 프로젝트</button>
+                        <button type="button" class="account_sel" title="프로젝트 선택" onclick="common_ui.slideOpen('#sample1');">에어팟프로 프로젝트</button>
                     </div>
                     <div class="rank_list">
                         <ul>
@@ -108,5 +108,38 @@
                 </div>
             </div>
         </div>
+        <div class="slide" id="sample1">
+			<div class="slide_inner" style="transform: translateY(0px);">
+				<div class="slide_header">
+					<h2>프로젝트 선택</h2>
+				</div>
+				<div class="slide_cont">
+                    <ul class="agree_list">
+                        <li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree11" name="agree11" checked="">
+								<label for="agree11">에어팟프로 프로젝트</label>
+							</div>
+						</li>
+                        <li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree12" name="agree11">
+								<label for="agree11">LG그램 프로젝트</label>
+							</div>
+						</li>
+                        <li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree13" name="agree11">
+								<label for="agree11">아이패드 프로젝트</label>
+							</div>
+						</li>
+                    </ul>
+                    <div class="btn_area">
+                        <span><button type="button">확인</button></span>
+                    </div>
+				</div>
+				<button type="button" class="slide_close"><span class="hidden">닫기</span></button>
+			</div>
+		</div>
     </body>
 </html>

@@ -1239,3 +1239,21 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
 .portfolio_info_txt > p { font-size: 16px; line-height: 22px; }
 .portfolio_box .btn_link.btn_link_gray { margin: 7px 0 0; color: #666666; }
 .portfolio_box .btn_link.btn_link_gray:after { border-color: #666666; }
+
+.agree_list > li .agree_ipt{position:relative; padding-left:30px;}
+.agree_list > li .agree_ipt input[type="checkbox"]{position:absolute; top:2px; left:0; width:20px; height:20px; background:url(../images/ico_checkbox2.png) no-repeat center center; background-size:14px auto;-webkit-appearance:none;outline:none;}
+.agree_list > li .agree_ipt input[type="checkbox"]:checked{background:url(../images/ico_checkbox2_on.png) no-repeat center center; background-size:14px auto;}
+.agree_list > li .agree_ipt input[type="checkbox"] ~ label{font-size:16px;}
+.agree_list > li .agree_ipt input[type="radio"]{position:absolute; top:2px; left:0; width:20px; height:20px; background:url(../images/ico_checkbox2.png) no-repeat center center; background-size:14px auto;-webkit-appearance:none;outline:none;}
+.agree_list > li .agree_ipt input[type="radio"]:checked{background:url(../images/ico_checkbox2_on.png) no-repeat center center; background-size:14px auto;}
+.agree_list > li .agree_ipt input[type="radio"] ~ label{font-size:16px;}
+.agree_list > li .agree_ipt .badge{display:inline-block; margin-left:5px; padding:0 3px; font-size:11px; line-height:20px; color:#ffffff; background:#16a1c9; border-radius:3px; vertical-align:bottom;;}
+
+.slide .slide_cont .agree_list > li { text-align: left; }
+.slide .slide_cont .agree_list > li ~ li{margin-top:24px; }
+.slide .slide_cont .agree_list > li .agree_ipt{padding-left:0; padding-right:30px;}
+.slide .slide_cont .agree_list > li .agree_ipt input[type="checkbox"]{left:auto; right:0;}
+.slide .slide_cont .agree_list > li .agree_ipt input[type="checkbox"] ~ label{display:block;}
+.slide .slide_cont .agree_list > li .agree_ipt input[type="radio"]{left:auto; right:0;}
+.slide .slide_cont .agree_list > li .agree_ipt input[type="radio"] ~ label{display:block;}
+.slide .slide_cont .btn_area { margin: 18px 0 0; }
