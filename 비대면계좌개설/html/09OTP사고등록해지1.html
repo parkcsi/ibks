@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+	<html lang="ko">
+	<head>
+		<meta charset="euc-kr">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>IBK 투자증권</title>
+		<link rel="stylesheet" href="../css/default.css">
+		<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="../js/common_ui.js"></script>
+	</head>
+	<body>
+		<div id="wrap">
+			<div class="contents">
+				<div class="tab_wrap otp_tab">
+					<ul class="tab_list">
+						<li class="tab_on"><button type="button" onclick="common_ui.tabToggle(this)">OTP사고등록</button></li>
+						<li><button type="button" onclick="common_ui.tabToggle(this)">OTP사고해지</button></li>
+					</ul>
+					<div class="tab_cont" id="tabCont01">
+						<div class="form_area form_area_mg">
+							<div class="form_line">
+								<dl>
+									<dt>고객명</dt>
+									<dd>
+										<div class="form_ipt">
+											<input type="text" title="고객명" readonly="" disabled value="홍길동">
+										</div>
+									</dd>
+								</dl>
+							</div>
+							<div class="form_line">
+								<dl>
+									<dt>제조사</dt>
+									<dd>
+										<button type="button" class="select_btn gray01" onclick="common_ui.slideOpen('#sample1');">바스코</button>
+									</dd>
+								</dl>
+							</div>
+							<div class="form_line">
+								<dl>
+									<dt>OTP 일련번호(S/N)</dt>
+									<dd>
+										<div class="form_ipt">
+											<input type="text" title="OTP 등록코드 입력" placeholder="OTP 등록코드 입력">
+										</div>
+									</dd>
+								</dl>
+							</div>
+						</div>
+						<ul class="dot_list">
+							<li>본 화면에서 OTP분실 사고등록을 하면, 사용 중인 전 금융기관에 사고가 등록되며, 해당 금융기관 사고를 전부 해지하셔야 사용이 가능합니다.</li>
+							<li>OTP사고해지는 이용등록 금융사 지점에 내점하여 본인확인 후 가능합니다.</li>
+						</ul>
+						<div class="btn_fixed">
+							<div class="btn_area">
+								<span><button type="button">사고등록 신청</button></span>
+							</div>
+						</div>
+					</div>
+					<div class="tab_cont" id="tabCont02" style="display: none;">
+						<div class="form_area">
+							<div class="form_line">
+								<dl>
+									<dt>고객명</dt>
+									<dd>
+										<div class="form_ipt">
+											<input type="text" title="고객명" readonly="" disabled value="홍길동">
+										</div>
+									</dd>
+								</dl>
+							</div>
+							<div class="form_line">
+								<dl>
+									<dt>제조사</dt>
+									<dd>
+										<button type="button" class="select_btn gray01" onclick="common_ui.slideOpen('#sample2');">바스코</button>
+									</dd>
+								</dl>
+							</div>
+							<div class="form_line">
+								<dl>
+									<dt>OTP 일련번호(S/N)</dt>
+									<dd>
+										<div class="form_ipt">
+											<input type="text" title="OTP 등록코드 입력" placeholder="OTP 등록코드 입력">
+										</div>
+									</dd>
+								</dl>
+							</div>
+						</div>
+						<ul class="dot_list">
+							<li>본 화면에서 OTP분실 사고등록을 하면, 사용 중인 전 금융기관에 사고가 등록되며, 해당 금융기관 사고를 전부 해지하셔야 사용이 가능합니다.</li>
+							<li>OTP사고해지는 이용등록 금융사 지점에 내점하여 본인확인 후 가능합니다.</li>
+						</ul>
+						<div class="btn_fixed">
+							<div class="btn_area">
+								<span><button type="button">사고해지 신청</button></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="slide" id="sample1">
+			<div class="slide_inner">
+				<div class="slide_header">
+					<h2>제조사 선택</h2>
+				</div>
+				<div class="slide_cont">
+                    <ul class="agree_list">
+                        <li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree11" name="agree11" checked="">
+								<label for="agree11">바스코</label>
+							</div>
+						</li>
+                        <li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree12" name="agree11">
+								<label for="agree11">한국정보인증(구 미래테크)</label>
+							</div>
+						</li>
+                        <li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree13" name="agree11">
+								<label for="agree11">코마스(RSA)</label>
+							</div>
+						</li>
+                        <li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree14" name="agree11">
+								<label for="agree11">인터넷시큐리티</label>
+							</div>
+						</li>
+                        <li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree15" name="agree11">
+								<label for="agree11">인카드</label>
+							</div>
+						</li>
+                        <li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree16" name="agree11">
+								<label for="agree11">시큐어컴퓨팅</label>
+							</div>
+						</li>
+                        <li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree17" name="agree11">
+								<label for="agree11">액티브아이덴티티</label>
+							</div>
+						</li>
+                        <li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree18" name="agree11">
+								<label for="agree11">토판폼즈</label>
+							</div>
+						</li>
+						<li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree19" name="agree11">
+								<label for="agree11">스마트크리에이티브</label>
+							</div>
+						</li>
+						<li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree20" name="agree11">
+								<label for="agree11">㈜스마트이노베이션</label>
+							</div>
+						</li>
+						<li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree21" name="agree11">
+								<label for="agree11">㈜아톤</label>
+							</div>
+						</li>
+						<li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree22" name="agree11">
+								<label for="agree11">코나아이</label>
+							</div>
+						</li>
+						<li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree23" name="agree11">
+								<label for="agree11">이트리즈시스템</label>
+							</div>
+						</li>
+						<li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree24" name="agree11">
+								<label for="agree11">한국정보인증㈜(스마트OTP)</label>
+							</div>
+						</li>
+						<li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree25" name="agree11">
+								<label for="agree11">스마트크리에이티브(스마트OTP)</label>
+							</div>
+						</li>
+						<li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree26" name="agree11">
+								<label for="agree11">아톤</label>
+							</div>
+						</li>
+						<li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree27" name="agree11">
+								<label for="agree11">㈜에이티솔루션즈(하나은행)</label>
+							</div>
+						</li>
+						<li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree28" name="agree11">
+								<label for="agree11">엠파이브카드형OTP</label>
+							</div>
+						</li>
+                    </ul>
+				</div>
+				<button type="button" class="slide_close"><span class="hidden">닫기</span></button>
+			</div>
+		</div>
+		<div class="slide" id="sample2">
+			<div class="slide_inner">
+				<div class="slide_header">
+					<h2>제조사 선택</h2>
+				</div>
+				<div class="slide_cont">
+                    <ul class="agree_list">
+                        <li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree11" name="agree11" checked="">
+								<label for="agree11">바스코</label>
+							</div>
+						</li>
+                        <li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree12" name="agree11">
+								<label for="agree11">한국정보인증(구 미래테크)</label>
+							</div>
+						</li>
+                        <li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree13" name="agree11">
+								<label for="agree11">코마스(RSA)</label>
+							</div>
+						</li>
+                        <li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree14" name="agree11">
+								<label for="agree11">인터넷시큐리티</label>
+							</div>
+						</li>
+                        <li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree15" name="agree11">
+								<label for="agree11">인카드</label>
+							</div>
+						</li>
+                        <li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree16" name="agree11">
+								<label for="agree11">시큐어컴퓨팅</label>
+							</div>
+						</li>
+                        <li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree17" name="agree11">
+								<label for="agree11">액티브아이덴티티</label>
+							</div>
+						</li>
+                        <li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree18" name="agree11">
+								<label for="agree11">토판폼즈</label>
+							</div>
+						</li>
+						<li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree19" name="agree11">
+								<label for="agree11">스마트크리에이티브</label>
+							</div>
+						</li>
+						<li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree20" name="agree11">
+								<label for="agree11">㈜스마트이노베이션</label>
+							</div>
+						</li>
+						<li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree21" name="agree11">
+								<label for="agree11">㈜아톤</label>
+							</div>
+						</li>
+						<li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree22" name="agree11">
+								<label for="agree11">코나아이</label>
+							</div>
+						</li>
+						<li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree23" name="agree11">
+								<label for="agree11">이트리즈시스템</label>
+							</div>
+						</li>
+						<li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree24" name="agree11">
+								<label for="agree11">한국정보인증㈜(스마트OTP)</label>
+							</div>
+						</li>
+						<li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree25" name="agree11">
+								<label for="agree11">스마트크리에이티브(스마트OTP)</label>
+							</div>
+						</li>
+						<li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree26" name="agree11">
+								<label for="agree11">아톤</label>
+							</div>
+						</li>
+						<li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree27" name="agree11">
+								<label for="agree11">㈜에이티솔루션즈(하나은행)</label>
+							</div>
+						</li>
+						<li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree28" name="agree11">
+								<label for="agree11">엠파이브카드형OTP</label>
+							</div>
+						</li>
+                    </ul>
+				</div>
+				<button type="button" class="slide_close"><span class="hidden">닫기</span></button>
+			</div>
+		</div>
+	</body>
+</html>

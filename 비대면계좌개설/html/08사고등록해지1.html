@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+	<html lang="ko">
+	<head>
+		<meta charset="euc-kr">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>IBK 투자증권</title>
+		<link rel="stylesheet" href="../css/default.css">
+		<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="../js/common_ui.js"></script>
+	</head>
+	<body>
+		<div id="wrap">
+			<div class="contents">
+				<ul class="dot_list gray02">
+					<li><span class="point02">사고 등록 해지</span>는 가까운 IBK투자증권 지점에 내점하여 처리 가능합니다. (신분증 지참)</li>
+					<li>인증서가 유출되었을 경우 <span class="point02">인증서 재발급을 통해 기발급 된 인증서를 폐기</span>할 수 있습니다.</li>
+					<li>은행개설계좌 <span class="point02">제휴IC카드를 분실하였을 경우에는 은행에 사고 등록</span>을 해주시기 바랍니다.</li>
+					<li><span class="point02">ARS(1500-0030)</span> 사고등록 가능 시간 : <span class="point02">24시간 가능</span> (단, 23:40~익일  00:40 사고 등록 시 다음 영업일에 처리결과 확인 가능)</li>
+				</ul>
+				<div class="form_area gray_border02">
+                    <div class="form_line">
+                        <!-- 선택 후 'on'클래스 추가 -->
+                        <button type="button" class="select_btn gray01" onclick="common_ui.slideOpen('#sample1');">사고유형 선택</button>
+                    </div>
+                </div>
+				<div class="btn_fixed">
+                    <div class="btn_area">
+                        <span><button type="button">사고 등록</button></span>
+                    </div>
+                </div>
+			</div>
+		</div>
+		<div class="slide" id="sample1">
+			<div class="slide_inner">
+				<div class="slide_header">
+					<h2>사고유형 선택</h2>
+				</div>
+				<div class="slide_cont">
+                    <ul class="agree_list">
+                        <li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree11" name="agree11" checked="">
+								<label for="agree11">출금(고)정지 (출금,출고가 불가능합니다.)</label>
+							</div>
+						</li>
+                        <li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree12" name="agree11">
+								<label for="agree11">현금매도 거래정지</label>
+							</div>
+						</li>
+                        <li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree13" name="agree11">
+								<label for="agree11">현물매수 거래정지</label>
+							</div>
+						</li>
+                        <li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree14" name="agree11">
+								<label for="agree11">선물옵션 청산 거래정지</label>
+							</div>
+						</li>
+                        <li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree15" name="agree11">
+								<label for="agree11">선물옵션 신규 거래정지</label>
+							</div>
+						</li>
+                        <li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree16" name="agree11">
+								<label for="agree11">카드분실</label>
+							</div>
+						</li>
+                        <li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree17" name="agree11">
+								<label for="agree11">통장분실</label>
+							</div>
+						</li>
+                        <li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree18" name="agree11">
+								<label for="agree11">인감분실</label>
+							</div>
+						</li>
+                    </ul>
+				</div>
+				<button type="button" class="slide_close"><span class="hidden">닫기</span></button>
+			</div>
+		</div>
+	</body>
+</html>

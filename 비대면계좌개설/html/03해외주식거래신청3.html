@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+	<html lang="ko">
+	<head>
+		<meta charset="euc-kr">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>IBK 투자증권</title>
+		<link rel="stylesheet" href="../css/default.css">
+		<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="../js/common_ui.js"></script>
+	</head>
+	<body>
+		<div id="wrap">
+			<div class="contents">
+			</div>
+		</div>
+        <div class="full_popup" style="display:block;">
+			<div class="pop_header">
+				<h2>부적합(부적정)금융투자상품 거래 확인서</h2>
+			</div>
+			<div class="pop_contents">
+                <dl class="join_goods line_dot_list">
+					<dt><p class="join_goods_cate gray03">가입상품</p><strong class="join_goods_name gray01">해외주식 거래신청</strong></dt>
+					<dd>
+						<ul class="dot_list gray02">
+							<li>본 확인서는 고객님의 투자성향보다 높은 위험도를 가진 금융투자상품을 거래하기 위해 등록하는 것 입니다.</li>
+							<li>투자성향 대비 위험도가 높은 금융투자상품은 회사가 투자 권유를 할 수 없으므로 <strong class="point02">본인 판단하에 투자여부를 결정</strong>하시기 바랍니다.</li>
+							<li>투자 시 원금손실이 발생할 수 있으며, <strong class="point02">투자 손해에 대한 책임은 모두 고객에게 귀속</strong>됩니다.</li>
+							<li>특히, 고객님의 투자성향에 비해 고위험 상품에 투자하는 경우에는 <strong class="point02">예상보다 큰 폭의 손실이 발생</strong>할 수 있습니다.</li>
+						</ul>
+					</dd>
+				</dl>
+				<div class="form_type gray01">
+					<input type="checkbox" id="agree01">
+					<label for="agree01">본인의 투자성향에 적합하지 않는 거래임을 확인하였고, IBK투자증권으로부터 투자권유를 받지 않았으며, 본인의 판단으로 가입합니다.</label>
+				</div>
+				<div class="btn_fixed">
+                    <div class="btn_area">
+                        <span class="btn_color01"><button type="button">다음에</button></span>
+                        <span><button type="button">가입신청</button></span>
+                    </div>
+                </div>
+			</div>
+			<button type="button" class="pop_close"><span class="hidden">팝업 닫기</span></button>
+		</div>
+		<div class="modal" id="sample1">
+			<div class="modal_inner">
+				<div class="modal_cont">
+					<div class="noti">
+						위의 내용을 읽고 확인란에 체크하셔야 합니다.
+                    </div>
+				</div>
+				<div class="modal_btns">
+					<button type="button">확인</button>
+				</div>
+			</div>
+		</div>
+		<div class="modal" id="sample2">
+			<div class="modal_inner">
+				<div class="modal_cont">
+					<div class="noti">
+						4505 현지 증권사 사정으로 해외주식거래 신청이 불가합니다.
+                    </div>
+				</div>
+				<div class="modal_btns">
+					<button type="button">확인</button>
+				</div>
+			</div>
+		</div>
+		<div class="modal" id="sample3">
+			<div class="modal_inner">
+				<div class="modal_cont">
+					<div class="noti">
+						해외주식 거래신청이 완료되었습니다.
+                    </div>
+				</div>
+				<div class="modal_btns">
+					<button type="button">확인</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

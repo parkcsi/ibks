@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+	<html lang="ko">
+	<head>
+		<meta charset="euc-kr">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>IBK 투자증권</title>
+		<link rel="stylesheet" href="../css/default.css">
+		<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="../js/common_ui.js"></script>
+	</head>
+	<body>
+		<div id="wrap">
+			<div class="contents investor_info">
+				<div class="form_area sms_form">
+                    <div class="form_line">
+                        <dl>
+                            <dt>알림 휴대전화번호</dt>
+                            <dd>
+                                <div class="form_ipt">
+                                    <input type="text" title="휴대전화번호" readonly="" disabled value="010-1234-4678">
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="form_line">
+                        <dl>
+                            <dt>신청서비스 선택</dt>
+                            <dd>
+								<div class="form_type">
+									<input type="radio" id="rdo01" name="rdo04">
+									<label for="rdo01">체결 건마다 발송</label>
+								</div>
+								<div class="form_type">
+									<input type="radio" id="rdo02" name="rdo04">
+									<label for="rdo02">전량체결시 발송</label>
+								</div>
+								<div class="form_type">
+									<input type="radio" id="rdo03" name="rdo04">
+									<label for="rdo03">장종료 후 일괄 발송</label>
+								</div>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+				<dl class="tit_dot_list">
+					<dt><p class="tit03">참고사항</p></dt>
+					<dd>
+						<ul class="dot_list">
+							<li>IBK투자증권 주문체결 내역을 휴대폰 문자메시지(SMS) 알림받는 서비스입니다.</li>
+							<li>수수료 : 무료</li>
+							<li>해외주식은 체결 건마다 발송됩니다.</li>
+							<li>휴대전화번호 변경 시 즉시 당사에 등록된 정보를 변경하여 주시기 바랍니다.</li>
+						</ul>
+					</dd>
+				</dl>
+				<div class="btn_fixed">
+					<div class="btn_area btn_area02">
+						<span class="btn_color01"><button type="button">해지</button></span>
+						<span><button type="button">신청</button></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal" id="sample1">
+			<div class="modal_inner">
+				<div class="modal_cont">
+					<div class="noti">
+						주문 관련 SMS 알림을 신청하시겠습니까?
+                    </div>
+				</div>
+				<div class="modal_btns">
+					<button type="button">아니요</button>
+					<button type="button">예</button>
+				</div>
+			</div>
+		</div>
+		<div class="modal" id="sample2">
+			<div class="modal_inner">
+				<div class="modal_cont">
+					<div class="noti">
+						주문 관련 SMS 알림을 해지하시겠습니까?
+                    </div>
+				</div>
+				<div class="modal_btns">
+					<button type="button">아니요</button>
+					<button type="button">예</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
