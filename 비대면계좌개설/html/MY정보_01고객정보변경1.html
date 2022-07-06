@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+	<html lang="ko">
+	<head>
+		<meta charset="euc-kr">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>IBK 투자증권</title>
+		<link rel="stylesheet" href="../css/default.css">
+		<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="../js/common_ui.js"></script>
+	</head>
+	<body>
+		<div id="wrap">
+            <div class="header">
+                <button type="button" class="back_btn"><span class="hidden">뒤로가기</span></button>
+                <h2>고객정보변경</h2>
+                <button type="button" class="gnb_btn"><span class="hidden">전체메뉴 열기</span></button>
+            </div>
+			<div class="contents">
+                <div class="tit_cont">
+                    <div class="top_select">
+                        <button type="button" class="select_btn">510-00-123456 [종합] 홍길동</button>
+                    </div>
+                    <p class="txt03">계좌 개설할 상품을 선택해 주세요.</p>
+                </div>
+                <div class="form_area gap">
+                    <div class="form_line phone">
+                        <dl>
+                            <dt>휴대폰</dt>
+                            <dd>
+                                <div class="form_ipt">
+                                    <!-- 선택 후 'on'클래스 추가 -->
+                                    <button type="button" class="select_btn on">SKT</button>
+                                </div>
+                                <div class="form_ipt">
+                                    <input type="text" title="휴대전화번호" placeholder="휴대전화번호" value="010-1234-1234">
+                                    <button type="button" class="ipt_btn" onclick="common_ui.modalOpen('#sample1')">인증번호 받기</button>
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="form_line">
+                        <dl>
+                            <dt>이메일</dt>
+                            <dd>
+                                <div class="form_ipt">
+                                    <input type="text" title="이메일 앞자리" placeholder="이메일 앞자리" value="IBK12345">
+                                </div>
+                                <span>@</span>
+                                <div class="form_ipt">
+                                    <!-- 선택 후 'on'클래스 추가 -->
+                                    <button type="button" class="select_btn on">naver.com</button>
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="investor_info">
+                    <div class="gray_border">
+                        <h3>자택정보</h3>
+                        <div class="form_area gap">
+                            <div class="form_line address">
+                                <dl>
+                                    <dt>자택주소</dt>
+                                    <dd>
+                                        <div class="form_ipt">
+                                            <!-- 검색된 주소의 우편번호 -->
+                                            <input type="text" title="주소 검색을 선택하세요." placeholder="주소 검색을 선택하세요." value="07330" readonly="">
+                                            <button type="button" class="ipt_btn">주소 검색</button>
+                                        </div>
+                                        <div class="form_ipt">
+                                            <!-- 검색된 주소의 기본주소 -->
+                                            <input type="text" title="기본주소" placeholder="기본주소" value="서울 영등포구 국제금융로 6길 11" readonly="">
+                                        </div>
+                                        <div class="form_ipt">
+                                            <!-- 나머지 상세주소 입력 -->
+                                            <input type="text" title="상세주소 입력" placeholder="상세주소 입력" value="삼덕빌딩 1층">
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="form_line">
+                                <dl>
+                                    <dt>자택 전화번호</dt>
+                                    <dd>
+                                        <div class="form_ipt">
+                                            <input type="text" title="자택 전화번호 입력" placeholder="자택 전화번호 입력" value="02-123-1234">
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gray_border">
+                        <h3>직장정보</h3>
+                        <div class="form_area gap">
+                            <div class="form_line address">
+                                <dl>
+                                    <dt>직장주소</dt>
+                                    <dd>
+                                        <div class="form_ipt">
+                                            <!-- 검색된 주소의 우편번호 -->
+                                            <input type="text" title="주소 검색을 선택하세요." placeholder="주소 검색을 선택하세요." value="07330" readonly="">
+                                            <button type="button" class="ipt_btn">주소 검색</button>
+                                        </div>
+                                        <div class="form_ipt">
+                                            <!-- 검색된 주소의 기본주소 -->
+                                            <input type="text" title="기본주소" placeholder="기본주소" value="서울 영등포구 국제금융로 6길 11" readonly="">
+                                        </div>
+                                        <div class="form_ipt">
+                                            <!-- 나머지 상세주소 입력 -->
+                                            <input type="text" title="상세주소 입력" placeholder="상세주소 입력" value="삼덕빌딩 1층">
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="form_line">
+                                <dl>
+                                    <dt>자택 전화번호</dt>
+                                    <dd>
+                                        <div class="form_ipt">
+                                            <input type="text" title="자택 전화번호 입력" placeholder="자택 전화번호 입력" value="02-123-1234" disabled>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gray_border">
+                        <div class="form_type">
+                            <input type="checkbox" id="chk01">
+                            <label for="chk01">모든 계좌의 정보 한 번에 변경하기</label>
+                        </div>
+                    </div>
+                </div>
+				<div class="btn_fixed">
+					<div class="btn_area">
+						<span><button type="button" onclick="common_ui.modalOpen('#sample1')">다음</button></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal" id="sample1">
+			<div class="modal_inner">
+				<div class="modal_cont">
+					<div class="noti">
+						휴대폰 번호를 입력해주세요
+						<!-- 이메일 주소를 입력해주세요 -->
+						<!-- 자택주소를 입력해주세요 -->
+						<!-- 직장주소를 입력해주세요 -->
+                        <!-- 변경하신 고객정보가 저장되었습니다. -->
+                    </div>
+				</div>
+				<div class="modal_btns">
+					<button type="button">확인</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -23,13 +23,18 @@
                     </div>
                     <div class="form_line address">
                         <div class="form_ipt">
-                            <input type="text" title="주소 검색을 선택하세요." placeholder="주소 검색을 선택하세요.">
+                            <!-- 검색된 주소의 우편번호 -->
+                            <input type="text" title="주소 검색을 선택하세요." placeholder="주소 검색을 선택하세요." readonly>
                             <button type="button" class="ipt_btn" onclick="common_ui.modalOpen('#sample1')">주소 검색</button>
                         </div>
+                        <!-- 2022-07-06 수정 -->
                         <div class="form_ipt">
-                            <input type="text" title="기본주소" placeholder="기본주소">
+                            <!-- 검색된 주소의 기본주소 -->
+                            <input type="text" title="기본주소" placeholder="기본주소" readonly>
                         </div>
+                        <!-- // 2022-07-06 수정 -->
                         <div class="form_ipt">
+                            <!-- 나머지 상세주소 입력 -->
                             <input type="text" title="상세주소 입력" placeholder="상세주소 입력">
                         </div>
                     </div>

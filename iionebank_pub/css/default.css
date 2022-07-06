@@ -1,14 +1,14 @@
 @charset "euc-kr";
 
 /*
-	@@ IBK ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿? ï¿½Å·ï¿½ ï¿½ï¿½ï¿½ï¿½
+	@@ IBK ÅõÀÚÁõ±Ç
 */
 
 /* === Reset === */
 html{-webkit-text-size-adjust: none;background:#fff;}
 body {line-height:1;background:#fff;}
 body * { -webkit-overflow-scrolling:touch;}
-body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select,menu,footer,blockquote,optargetroup{margin:0;padding:0;box-sizing:border-box;font-family:'ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½','Malgun Gothic','Apple SD Gothic Neo','Apple SD ï¿½êµ¹ï¿½ï¿½ï¿½ï¿½ Neo',Sans-serif;color:inherit;font-size:100%;}
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select,menu,footer,blockquote,optargetroup{margin:0;padding:0;box-sizing:border-box;font-family:'¸¼Àº °íµñ','Malgun Gothic','Apple SD Gothic Neo','Apple SD »êµ¹°íµñ Neo',Sans-serif;color:inherit;font-size:100%;}
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display: block;margin:0;padding:0;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;}
 div{box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;}
 audio:not([controls]){display: none;  height: 0;}

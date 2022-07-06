@@ -10,14 +10,22 @@
 	</head>
 	<body>
 		<div id="wrap">
+            <div class="header">
+                <button type="button" class="back_btn"><span class="hidden">뒤로가기</span></button>
+                <h2>사고 등록/해지</h2>
+                <button type="button" class="gnb_btn"><span class="hidden">전체메뉴 열기</span></button>
+            </div>
 			<div class="contents">
+				<div class="top_select">
+					<button type="button" class="select_btn">510-00-123456 [종합] 홍길동</button>
+				</div>
 				<ul class="dot_list gray02">
 					<li><span class="point02">사고 등록 해지</span>는 가까운 IBK투자증권 지점에 내점하여 처리 가능합니다. (신분증 지참)</li>
 					<li>인증서가 유출되었을 경우 <span class="point02">인증서 재발급을 통해 기발급 된 인증서를 폐기</span>할 수 있습니다.</li>
 					<li>은행개설계좌 <span class="point02">제휴IC카드를 분실하였을 경우에는 은행에 사고 등록</span>을 해주시기 바랍니다.</li>
 					<li><span class="point02">ARS(1500-0030)</span> 사고등록 가능 시간 : <span class="point02">24시간 가능</span> (단, 23:40~익일  00:40 사고 등록 시 다음 영업일에 처리결과 확인 가능)</li>
 				</ul>
-				<div class="form_area gray_border02">
+				<div class="form_area gray_border">
                     <div class="form_line">
                         <!-- 선택 후 'on'클래스 추가 -->
                         <button type="button" class="select_btn gray01" onclick="common_ui.slideOpen('#sample1');">사고유형 선택</button>

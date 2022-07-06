@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+	<html lang="ko">
+	<head>
+		<meta charset="euc-kr">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>IBK 투자증권</title>
+		<link rel="stylesheet" href="../css/default.css">
+		<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="../js/common_ui.js"></script>
+	</head>
+	<body>
+		<div id="wrap">
+            <div class="header">
+                <button type="button" class="back_btn"><span class="hidden">뒤로가기</span></button>
+                <h2>추가인증</h2>
+                <button type="button" class="gnb_btn"><span class="hidden">전체메뉴 열기</span></button>
+            </div>
+			<div class="contents">
+                <p class="tit03">원하시는 인증 방법을 선택해주세요.</p>
+                <div class="line2">
+                    <div class="btn_area">
+                        <span class="btn_line01"><button type="button" class="on" onclick="common_ui.modalOpen('#sample1');">SMS 인증</button></span>
+                        <span class="btn_line01"><button type="button" onclick="common_ui.modalOpen('#sample3');">ARS 인증</button></span>
+                    </div>
+                    <p class="desc_txt">단일 상품계좌인 경우 기존 계좌가 있으신 고객님의 경우에 추가 개설 또는 신규 개설 여부를 선택하실 수 있습니다.</p>
+                </div>
+                <div class="form_area">
+                    <div class="form_line sms">
+                        <!-- sms 인증 -->
+                        <!-- <dl>
+                            <dt>
+                                <p class="tit03">SMS 인증 받을 전화번호를 선택해주세요.</p>
+                            </dt>
+                            <dd>
+                                <button type="button" class="select_btn on">이동 010-1234-1234</button>
+                            </dd>
+                        </dl> -->
+                        <!-- // sms 인증 -->
+                        <!-- ars 인증 -->
+                        <dl>
+                            <dt>
+                                <p class="tit03">ARS 인증 받을 전화번호를 선택해주세요.</p>
+                            </dt>
+                            <dd>
+                                <button type="button" class="select_btn on">이동 010-1234-1234</button>
+                                <button type="button" class="select_btn on">자택 02-1234-1234</button>
+                            </dd>
+                        </dl>
+                        <!-- // ars 인증 -->
+                    </div>
+                </div>
+                <div class="investor_info">
+                    <div class="gray_border">
+                        <h3 class="info_txt02">이용안내</h3>
+                        <div class="table_box">
+                            <table>
+                                <colgroup>
+                                    <col style="width: 110px;">
+                                    <col>
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">SMS 인증</th>
+                                        <td>무료</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" rowspan="2">ARS 인증</th>
+                                        <td>유선전화 1건당 40원</td>
+                                    </tr>
+                                    <tr>
+                                        <td>무선전화 10초당 20원</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <ul class="dot_list">
+                            <li>연락처 변경 후 인증업무 처리 시 별도의 명의 인증 절차가 필요합니다.</li>
+                            <li>OTP를 이용하시면 이체 시 추가인증이 제외되오니 보안강화를 위해 타 기관에서 받은 OTP를 당사에 등록 후 사용하여 주시기 바랍니다.</li>
+                        </ul>
+                    </div>
+                </div>
+			</div>
+		</div>
+		<div class="modal" id="sample1">
+			<div class="modal_inner">
+				<div class="modal_header">
+					<h2>SMS 인증</h2>
+				</div>
+				<div class="modal_cont">
+					<p class="noti">아래 번호로 SMS 인증문자가 발송되었습니다.</p>
+                    <p class="sms_txt">010-1234-1234</p>
+					<div class="form_area">
+                        <div class="form_line">
+                            <dl>
+                                <dt>인증번호 입력</dt>
+                                <dd>
+                                    <div class="form_ipt">
+                                        <input type="text" title="인증번호 6자리 입력" placeholder="숫자 6자리 입력">
+                                        <button type="button" class="ipt_btn">재발송</button>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+				</div>
+				<div class="modal_btns">
+					<button type="button" onclick="common_ui.modalOpen('#sample2');">확인</button>
+				</div>
+			</div>
+		</div>
+		<div class="modal" id="sample2">
+			<div class="modal_inner">
+				<div class="modal_cont">
+					<p class="noti">인증번호가 맞지 않습니다.
+                        다시 확인하신 후 입력해 주세요.</p>
+				</div>
+				<div class="modal_btns">
+					<button type="button">확인</button>
+				</div>
+			</div>
+		</div>
+		<div class="modal" id="sample3">
+			<div class="modal_inner">
+				<div class="modal_header">
+					<h2>ARS 인증</h2>
+				</div>
+				<div class="modal_cont">
+					<p class="noti">ARS 인증을 위하여 전화를 발신 중입니다.</p>
+                    <p class="sms_txt">010-1234-1234</p>
+					<p class="noti">전화를 받으신 후 안내에 따라<br/>인증번호를 전화기에 입력해주세요.</p>
+				</div>
+				<div class="modal_btns">
+					<button type="button">확인</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

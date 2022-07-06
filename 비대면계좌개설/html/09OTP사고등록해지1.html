@@ -10,14 +10,19 @@
 	</head>
 	<body>
 		<div id="wrap">
+            <div class="header">
+                <button type="button" class="back_btn"><span class="hidden">뒤로가기</span></button>
+                <h2>OTP사고등록/해지</h2>
+                <button type="button" class="gnb_btn"><span class="hidden">전체메뉴 열기</span></button>
+            </div>
 			<div class="contents">
-				<div class="tab_wrap otp_tab">
+				<div class="tab_wrap">
 					<ul class="tab_list">
 						<li class="tab_on"><button type="button" onclick="common_ui.tabToggle(this)">OTP사고등록</button></li>
 						<li><button type="button" onclick="common_ui.tabToggle(this)">OTP사고해지</button></li>
 					</ul>
 					<div class="tab_cont" id="tabCont01">
-						<div class="form_area form_area_mg">
+						<div class="form_area">
 							<div class="form_line">
 								<dl>
 									<dt>고객명</dt>
