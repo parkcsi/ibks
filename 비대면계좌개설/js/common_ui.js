@@ -1,5 +1,6 @@
 var common_ui = {
 	init : function(){  // 페이지 로드 시 발생할 이벤트 호출 함수 기재
+		common_ui.tabScroll();
 	},
 	reload : function(){   // 동적으로 생성되는 요소에 대한 이벤트 재호출 함수 기재
 	},
@@ -81,6 +82,13 @@ var common_ui = {
 			list.removeClass("show");
 		}else{
 			list.addClass("show");
+		}
+	},
+	tabScroll : function(el){
+		var _this = $(".tab_list.scroll_list");
+		var list = _this.find(".tab_on");
+		if(_this.length>0){
+			_this.scrollLeft(list.offset().left - 24)
 		}
 	}
 }

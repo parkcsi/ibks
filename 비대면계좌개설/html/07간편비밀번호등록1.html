@@ -17,7 +17,7 @@
             </div>
 			<div class="contents simple">
 				<div class="progress">
-					<div class="progress_bar"><span class="hidden">진행률</span></div>
+					<div class="progress_bar" style="width:80%"><span class="hidden">진행률</span></div>
 				</div>
 				<div class="tit_cont">
 					<p class="txt03">고객님이 보유한 다른 금융계좌를 입력해주세요. 본인확인을 위해 해당 계좌로 1원을 입금해드립니다.</p>
@@ -143,7 +143,7 @@
 				<button type="button" class="slide_close"><span class="hidden">닫기</span></button>
 			</div>
 		</div>
-		<div class="modal" id="sample1">
+		<div class="modal" id="sample3">
 			<div class="modal_inner">
 				<div class="modal_cont">
 					<div class="noti">
@@ -155,7 +155,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="modal" id="sample2">
+		<div class="modal" id="sample4">
 			<div class="modal_inner">
 				<div class="modal_cont">
 					<div class="noti">
@@ -167,5 +167,10 @@
 				</div>
 			</div>
 		</div>
+		<script>
+			$(function(){
+				common_ui.slideOpen('#sample2');
+			})
+		</script>
 	</body>
 </html>

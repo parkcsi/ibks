@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+	<html lang="ko">
+	<head>
+		<meta charset="euc-kr">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>IBK 투자증권</title>
+		<link rel="stylesheet" href="../css/default.css">
+		<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+		<script type="text/javascript" src="../js/common_ui.js"></script>
+	</head>
+	<body>
+		<div id="wrap">
+            <div class="header">
+                <button type="button" class="back_btn"><span class="hidden">뒤로가기</span></button>
+                <h2>리서치</h2>
+                <button type="button" class="gnb_btn"><span class="hidden">전체메뉴 열기</span></button>
+            </div>
+			<div class="contents">
+				<div class="tab_wrap">
+					<ul class="tab_list scroll_list">
+						<li class="tab_on"><button type="button" onclick="common_ui.tabToggle(this)">전략/시황</button></li>
+						<li><button type="button" onclick="common_ui.tabToggle(this)">기업분석</button></li>
+						<li><button type="button" onclick="common_ui.tabToggle(this)">산업분석</button></li>
+						<li><button type="button" onclick="common_ui.tabToggle(this)">결제/채권</button></li>
+						<li><button type="button" onclick="common_ui.tabToggle(this)">해외리서치</button></li>
+						<li><button type="button" onclick="common_ui.tabToggle(this)">동영상 자료</button></li>
+					</ul>
+					<div class="tab_cont" id="tabCont01">
+						<div class="address_srch">
+							<input type="text" title="검색어입력" placeholder="검색어를 입력하세요">
+							<!-- <button type="button" class="remove"><span class="hidden">검색어삭제</span></button> -->
+							<button type="button" class="search"><span class="hidden">검색</span></button>
+						</div>
+                        <div class="swiper-container research_banner">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="../images/content/img_tendency_01.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="../images/content/img_tendency_graph.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="../images/content/img_tendency_03.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <script>
+                            if($('.research_banner .swiper-slide').length>1){
+                                var swiper1 = new Swiper(".research_banner", {
+                                autoHeight : true,
+                                pagination: {
+                                    el: '.swiper-pagination',
+                                    clickable: true,
+                                },
+                                loop : false // true or false
+                                })
+                            }
+                        </script>
+                        <ul class="board_list">
+                            <li>
+                                <a class="text">
+                                    <p class="tit">[Daily] Start with IBKS(2022.07.01)</p>
+                                    <p class="txt">
+                                        <span class="name">투자분석부</span>
+                                        <span class="date">2022.07.01</span>
+                                    </p>
+                                </a>
+                                <button type="button" class="down"><span class="hidden">파일 다운로드</span></button>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="tit">[전략] 7월 LONG SHORT Portfolio</p>
+                                    <p class="txt">
+                                        <span class="name">홍길동</span>
+                                        <span class="date">2022.06.30</span>
+                                    </p>
+                                </a>
+                                <button type="button" class="down"><span class="hidden">파일 다운로드</span></button>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="tit">[Daily] Start with IBKS(2022.06.30)</p>
+                                    <p class="txt">
+                                        <span class="name">투자분석부</span>
+                                        <span class="date">2022.06.30</span>
+                                    </p>
+                                </a>
+                                <button type="button" class="down"><span class="hidden">파일 다운로드</span></button>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="tit">[Daily] Start with IBKS(2022.06.29)</p>
+                                    <p class="txt">
+                                        <span class="name">투자분석부</span>
+                                        <span class="date">2022.06.29</span>
+                                    </p>
+                                </a>
+                                <button type="button" class="down"><span class="hidden">파일 다운로드</span></button>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="tit">[Daily] Start with IBKS(2022.06.28)</p>
+                                    <p class="txt">
+                                        <span class="name">투자분석부</span>
+                                        <span class="date">2022.06.28</span>
+                                    </p>
+                                </a>
+                                <button type="button" class="down"><span class="hidden">파일 다운로드</span></button>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="tit">[Daily] Start with IBKS(2022.06.27)</p>
+                                    <p class="txt">
+                                        <span class="name">투자분석부</span>
+                                        <span class="date">2022.06.27</span>
+                                    </p>
+                                </a>
+                                <button type="button" class="down"><span class="hidden">파일 다운로드</span></button>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="tit">[Daily] Start with IBKS(2022.06.24)</p>
+                                    <p class="txt">
+                                        <span class="name">투자분석부</span>
+                                        <span class="date">2022.06.24</span>
+                                    </p>
+                                </a>
+                                <button type="button" class="down"><span class="hidden">파일 다운로드</span></button>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="tit">[Daily] Start with IBKS(2022.06.23)</p>
+                                    <p class="txt">
+                                        <span class="name">투자분석부</span>
+                                        <span class="date">2022.06.23</span>
+                                    </p>
+                                </a>
+                                <button type="button" class="down"><span class="hidden">파일 다운로드</span></button>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="tit">[Daily] Start with IBKS(2022.06.22)</p>
+                                    <p class="txt">
+                                        <span class="name">투자분석부</span>
+                                        <span class="date">2022.06.22</span>
+                                    </p>
+                                </a>
+                                <button type="button" class="down"><span class="hidden">파일 다운로드</span></button>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="tit">[Quantiful Weekly] 유럽 경기 둔화 리스크도 가시권</p>
+                                    <p class="txt">
+                                        <span class="name">투자분석부</span>
+                                        <span class="date">2022.06.27</span>
+                                    </p>
+                                </a>
+                                <button type="button" class="down"><span class="hidden">파일 다운로드</span></button>
+                            </li>
+                        </ul>
+                        <button type="button" class="btn_type02">더보기<span>(10/1000)</span></button>
+					</div>
+					<div class="tab_cont" id="tabCont02" style="display: none;">
+						2
+					</div>
+					<div class="tab_cont" id="tabCont03" style="display: none;">
+						3
+					</div>
+					<div class="tab_cont" id="tabCont04" style="display: none;">
+						4
+					</div>
+					<div class="tab_cont" id="tabCont05" style="display: none;">
+						5
+					</div>
+					<div class="tab_cont" id="tabCont06" style="display: none;">
+						6
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
