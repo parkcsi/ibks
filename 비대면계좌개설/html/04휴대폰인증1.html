@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+	<html lang="ko">
+	<head>
+		<meta charset="euc-kr">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>IBK 투자증권</title>
+		<link rel="stylesheet" href="../css/default.css">
+		<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="../js/common_ui.js"></script>
+	</head>
+	<body>
+		<div id="wrap">
+            <div class="header">
+                <button type="button" class="back_btn"><span class="hidden">뒤로가기</span></button>
+                <h2>휴대폰 인증</h2>
+                <button type="button" class="gnb_btn"><span class="hidden">전체메뉴 열기</span></button>
+            </div>
+			<div class="contents simple">
+				<div class="progress">
+					<div class="progress_bar"><span class="hidden">진행률</span></div>
+				</div>
+				<div class="agree_box">
+					<div class="form_type tit">
+						<input type="checkbox" id="agree01">
+						<label for="agree01">약관 전체 동의</label>
+					</div>
+					<ul class="agree_list">
+						<li><a href="#" class="checked">본인확인서비스 이용약관 동의</a></li>
+						<li><a href="#">개인정보 수집/이용 동의</a></li>
+						<li><a href="#">고유식별 정보처리 동의</a></li>
+						<li><a href="#">통신사 이용약관</a></li>
+					</ul>
+				</div>
+				<div class="form_area">
+                    <div class="form_line">
+                        <div class="form_ipt">
+                            <input type="text" title="이름" placeholder="이름">
+                        </div>
+                    </div>
+                    <div class="form_line">
+                        <div class="form_ipt">
+                            <input type="text" title="주민번호 앞 6자리" placeholder="주민번호 앞 6자리">
+                        </div>
+                        <span>-</span>
+                        <div class="form_ipt">
+                            <input type="text" title="주민번호 뒷 7자리" placeholder="주민번호 뒷 7자리">
+                        </div>
+                    </div>
+                    <div class="form_line phone">
+                        <div class="form_ipt">
+                            <!-- 선택 후 'on'클래스 추가 -->
+                            <button type="button" class="select_btn" onclick="common_ui.slideOpen('#sample1');">선택</button>
+                        </div>
+                        <div class="form_ipt">
+                            <input type="text" title="휴대전화번호" placeholder="휴대전화번호">
+                            <button type="button" class="ipt_btn" onclick="common_ui.modalOpen('#sample1')">인증번호 받기</button>
+                            <!-- <button type="button" class="ipt_btn">재발송</button> -->
+                        </div>
+                    </div>
+                    <div class="form_line">
+                        <div class="form_ipt">
+                            <input type="text" title="인증번호 입력" placeholder="인증번호 입력">
+                            <span class="timer">03:00</span>
+                        </div>
+                    </div>
+                </div>
+			</div>
+			<div class="btn_fixed">
+				<div class="btn_area">
+					<span class="btn_color01"><button type="button">취소</button></span>
+					<span><button type="button">다음</button></span>
+				</div>
+			</div>
+		</div>
+		<div class="slide" id="sample1">
+			<div class="slide_inner">
+				<div class="slide_header">
+					<h2>통신사 선택</h2>
+				</div>
+				<div class="slide_cont">
+                    <ul class="agree_list">
+                        <li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree11" name="agree11" checked="">
+								<label for="agree11">SKT</label>
+							</div>
+						</li>
+                        <li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree12" name="agree11">
+								<label for="agree11">KT</label>
+							</div>
+						</li>
+                        <li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree13" name="agree11">
+								<label for="agree11">LG U+</label>
+							</div>
+						</li>
+                        <li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree14" name="agree11">
+								<label for="agree11">SKT 알뜰폰</label>
+							</div>
+						</li>
+                        <li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree15" name="agree11">
+								<label for="agree11">KT 알뜰폰</label>
+							</div>
+						</li>
+                        <li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree16" name="agree11">
+								<label for="agree11">LG U+ 알뜰폰</label>
+							</div>
+						</li>
+                    </ul>
+				</div>
+				<button type="button" class="slide_close"><span class="hidden">닫기</span></button>
+			</div>
+		</div>
+		<div class="modal" id="sample1">
+			<div class="modal_inner">
+				<div class="modal_cont">
+					<div class="noti">
+						인증번호가 전송되었습니다.
+					</div>
+				</div>
+				<div class="modal_btns">
+					<button type="button">확인</button>
+				</div>
+			</div>
+		</div>
+		<div class="modal" id="sample2">
+			<div class="modal_inner">
+				<div class="modal_cont">
+					<div class="noti">
+						인증번호 불일치 또는 인증불가로 확인 후 재입력하시기 바랍니다.
+					</div>
+				</div>
+				<div class="modal_btns">
+					<button type="button">확인</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

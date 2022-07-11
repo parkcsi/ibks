@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+	<html lang="ko">
+	<head>
+		<meta charset="euc-kr">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>IBK 투자증권</title>
+		<link rel="stylesheet" href="../css/default.css">
+		<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="../js/common_ui.js"></script>
+	</head>
+	<body>
+		<div id="wrap">
+            <div class="header">
+                <button type="button" class="back_btn"><span class="hidden">뒤로가기</span></button>
+                <h2>간편인증 해지</h2>
+                <button type="button" class="gnb_btn"><span class="hidden">전체메뉴 열기</span></button>
+            </div>
+			<div class="contents">
+				<div class="simple_ico">
+					<p class="simple_ico_main unlock">간편인증을 해지하시겠습니까?</p>
+				</div>
+			</div>
+			<div class="btn_fixed">
+				<div class="bottom_info_txt">
+					<h3 class="info_txt02">고객 확인 사항</h3>
+					<p class="txt02">
+						간편비밀번호로 로그인하실 수 없으며,<br />
+						이후 온라인 금융거래 시 공동인증서가 필요합니다.
+					</p>
+				</div>
+				<div class="btn_area">
+					<span><button type="button">해지하기</button></span>
+				</div>
+			</div>
+		</div>
+		<div class="modal" id="sample1">
+			<div class="modal_inner">
+				<div class="modal_cont">
+					<div class="noti">
+						정말 간편인증을 해지하시겠습니까?
+                    </div>
+				</div>
+				<div class="modal_btns">
+					<button type="button">아니오</button>
+					<button type="button">예</button>
+				</div>
+			</div>
+		</div>
+		<div class="modal" id="sample2">
+			<div class="modal_inner">
+				<div class="modal_cont">
+					<div class="noti">
+						간편비밀번호 1회 오류입니다.<br />
+						5회 오류 시 간편비밀번호를 통한 인증이 제한됩니다.
+                    </div>
+				</div>
+				<div class="modal_btns">
+					<button type="button">확인</button>
+				</div>
+			</div>
+		</div>
+		<div class="slide" id="sample1">
+			<div class="slide_inner">
+				<div class="slide_header">
+					<h2>간편 비밀번호</h2>
+				</div>
+				<div class="slide_cont password">
+					<div class="form_area">
+						<div class="form_line">
+							<div class="form_ipt">
+								<input type="text" title="간편비밀번호 6자리를 입력하세요." placeholder="간편비밀번호 6자리를 입력하세요." readonly="">
+							</div>
+						</div>
+					</div>
+					<div class="pw_keypad">
+
+					</div>
+				</div>
+				<button type="button" class="slide_close"><span class="hidden">닫기</span></button>
+			</div>
+		</div>
+	</body>
+</html>

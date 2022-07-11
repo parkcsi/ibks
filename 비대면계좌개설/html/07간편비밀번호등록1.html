@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+	<html lang="ko">
+	<head>
+		<meta charset="euc-kr">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>IBK 투자증권</title>
+		<link rel="stylesheet" href="../css/default.css">
+		<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="../js/common_ui.js"></script>
+	</head>
+	<body>
+		<div id="wrap">
+            <div class="header">
+                <button type="button" class="back_btn"><span class="hidden">뒤로가기</span></button>
+                <h2>금융기관 계좌인증</h2>
+                <button type="button" class="gnb_btn"><span class="hidden">전체메뉴 열기</span></button>
+            </div>
+			<div class="contents simple">
+				<div class="progress">
+					<div class="progress_bar"><span class="hidden">진행률</span></div>
+				</div>
+				<div class="tit_cont">
+					<p class="txt03">고객님이 보유한 다른 금융계좌를 입력해주세요. 본인확인을 위해 해당 계좌로 1원을 입금해드립니다.</p>
+				</div>
+				<div class="white_border_box">
+                    <p class="gray02 txt01">입금</p>
+					<div class="amount">
+                        <div class="amount_num">IBK
+							<p><span>*</span><span>*</span><span>*</span></p>
+						</div>
+						<div class="amount_price"><span>1</span>원</div>
+					</div>
+                </div>
+				<p class="desc_txt mt">인증번호(IBK뒤 숫자 3자리)와 1원을 본인명의 기관에
+					보내드립니다.
+				</p>
+				<div class="form_area">
+                    <div class="form_line">
+                        <!-- 선택 후 'on'클래스 추가 -->
+                        <button type="button" class="select_btn" onclick="common_ui.slideOpen('#sample1');">입금기관 선택</button>
+                    </div>
+                    <div class="form_line">
+                        <div class="form_ipt">
+                            <input type="text" title="본인명의 계좌번호 입력(’-’제외)" placeholder="본인명의 계좌번호 입력(’-’제외)">
+							<p class="desc_txt mt">평생계좌, 가상계좌, 보안계좌는 사용할 수 없습니다.</p>
+                        </div>
+                    </div>
+					<div class="form_line">
+                        <div class="form_ipt">
+                            <input type="text" title="인증번호 숫자 3자리" placeholder="인증번호 숫자 3자리">
+                        </div>
+                    </div>
+                </div>
+			</div>
+			<div class="btn_fixed">
+				<div class="btn_area">
+					<span class="btn_color01"><button type="button">취소</button></span>
+					<span><button type="button">1원 보내기</button></span>
+				</div>
+			</div>
+		</div>
+		<div class="slide" id="sample1">
+			<div class="slide_inner">
+				<div class="slide_header">
+					<h2>입금기관 선택</h2>
+				</div>
+				<div class="slide_cont agency_tab">
+					<div class="tab_wrap">
+						<ul class="tab_list">
+							<li class="tab_on"><button type="button" onclick="common_ui.tabToggle(this)">은행</button></li>
+							<li><button type="button" onclick="common_ui.tabToggle(this)">증권</button></li>
+						</ul>
+						<div class="tab_cont" id="tabCont01">
+							<ul class="agency_thum_list">
+								<li><button type="button"><img src="../images/logo/logo01.png" alt="IBK기업은행">IBK기업은행</button></li>
+								<li><button type="button"><img src="../images/logo/logo11.png" alt="KDB산업은행">KDB산업은행</button></li>
+								<li><button type="button"><img src="../images/logo/logo02.png" alt="신한은행">신한은행</button></li>
+								<li><button type="button"><img src="../images/logo/logo25.png" alt="국민은행">국민은행</button></li>
+								<li><button type="button"><img src="../images/logo/logo03.png" alt="수협은행">수협은행</button></li>
+								<li><button type="button"><img src="../images/logo/logo04.png" alt="NH농협은행">NH농협은행</button></li>
+								<li><button type="button"><img src="../images/logo/logo04.png" alt="지역농축협">지역농축협</button></li>
+								<li><button type="button"><img src="../images/logo/logo12.png" alt="우리은행">우리은행</button></li>
+								<li><button type="button"><img src="../images/logo/logo12.png" alt="SC은행">SC은행</button></li>
+								<li><button type="button"><img src="../images/logo/logo13.png" alt="한국씨티은행">한국씨티은행</button></li>
+								<li><button type="button"><img src="../images/logo/logo06.png" alt="대구은행">대구은행</button></li>
+								<li><button type="button"><img src="../images/logo/logo14.png" alt="BNK부산은행">BNK부산은행</button></li>
+								<li><button type="button"><img src="../images/logo/logo07.png" alt="전북은행">전북은행</button></li>
+								<li><button type="button"><img src="../images/logo/logo14.png" alt="BNK경남은행">BNK경남은행</button></li>
+								<li><button type="button"><img src="../images/logo/logo08.png" alt="저축은행">저축은행</button></li>
+								<li><button type="button"><img src="../images/logo/logo15.png" alt="하나은행">하나은행</button></li>
+								<li><button type="button"><img src="../images/logo/logo09.png" alt="신협">신협</button></li>
+								<li><button type="button"><img src="../images/logo/logo16.png" alt="산립조합중앙회">산립조합중앙회</button></li>
+								<li><button type="button"><img src="../images/logo/logo10.png" alt="새마을금고중앙회">새마을금고중앙회</button></li>
+								<li><button type="button"><img src="../images/logo/logo17.png" alt="정보통신부우체국">정보통신부우체국</button></li>
+							</ul>
+						</div>
+						<div class="tab_cont" id="tabCont02" style="display: none;">
+							<ul class="agency_thum_list">
+								<li><button type="button"><img src="../images/logo/logo18.png" alt="DB증권">DB증권</button></li>
+								<li><button type="button"><img src="../images/logo/logo25.png" alt="KB증권">KB증권</button></li>
+								<li><button type="button"><img src="../images/logo/logo14.png" alt="BNK투자증권">BNK투자증권</button></li>
+								<li><button type="button"><img src="../images/logo/logo26.png" alt="다올투자증권">다올투자증권</button></li>
+								<li><button type="button"><img src="../images/logo/logo19.png" alt="미래에셋대우">미래에셋대우</button></li>
+								<li><button type="button"><img src="../images/logo/logo27.png" alt="삼성증권">삼성증권</button></li>
+								<li><button type="button"><img src="../images/logo/logo20.png" alt="한국투자증권">한국투자증권</button></li>
+								<li><button type="button"><img src="../images/logo/logo04.png" alt="NH투자증권">NH투자증권</button></li>
+								<li><button type="button"><img src="../images/logo/logo21.png" alt="교보증권">교보증권</button></li>
+								<li><button type="button"><img src="../images/logo/logo28.png" alt="하이투자증권">하이투자증권</button></li>
+								<li><button type="button"><img src="../images/logo/logo22.png" alt="현대차증권">현대차증권</button></li>
+								<li><button type="button"><img src="../images/logo/logo29.png" alt="키움증권">키움증권</button></li>
+								<li><button type="button"><img src="../images/logo/logo23.png" alt="이베스트투자증권">이베스트투자증권</button></li>
+								<li><button type="button"><img src="../images/logo/logo30.png" alt="SK증권">SK증권</button></li>
+								<li><button type="button"><img src="../images/logo/logo24.png" alt="대신증권">대신증권</button></li>
+								<li><button type="button"><img src="../images/logo/logo31.png" alt="한화투자증권">한화투자증권</button></li>
+								<li><button type="button"><img src="../images/logo/logo15.png" alt="하나금융투자">하나금융투자</button></li>
+								<li><button type="button"><img src="../images/logo/logo32.png" alt="토스증권">토스증권</button></li>
+								<li><button type="button"><img src="../images/logo/logo02.png" alt="신한금융투자">신한금융투자</button></li>
+								<li><button type="button"><img src="../images/logo/logo33.png" alt="유안타증권">유안타증권</button></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<button type="button" class="slide_close"><span class="hidden">닫기</span></button>
+			</div>
+		</div>
+		<div class="slide" id="sample2">
+			<div class="slide_inner">
+				<div class="slide_header">
+					<h2>간편 비밀번호</h2>
+				</div>
+				<div class="slide_cont password">
+					<div class="form_area">
+						<div class="form_line">
+							<div class="form_ipt">
+								<input type="text" title="신규 등록할 간편비밀번호 6자리를 입력하세요." placeholder="신규 등록할 간편비밀번호 6자리를 입력하세요." readonly="">
+							</div>
+						</div>
+					</div>
+					<div class="pw_keypad">
+
+					</div>
+				</div>
+				<button type="button" class="slide_close"><span class="hidden">닫기</span></button>
+			</div>
+		</div>
+		<div class="modal" id="sample1">
+			<div class="modal_inner">
+				<div class="modal_cont">
+					<div class="noti">
+						<span class="point02">주민등록번호, 동일숫자, 연속숫자, 전화번호 등은 사용이 불가합니다. 다시 입력해 주세요.</span> 계좌비밀번호를 4자리 초과하여 입력하는 경우 은행 CD기를 이용한 업무가 제한됩니다.
+                    </div>
+				</div>
+				<div class="modal_btns">
+					<button type="button">확인</button>
+				</div>
+			</div>
+		</div>
+		<div class="modal" id="sample2">
+			<div class="modal_inner">
+				<div class="modal_cont">
+					<div class="noti">
+						간편비밀번호가 일치하지 않습니다. 다시 입력해주세요.
+                    </div>
+				</div>
+				<div class="modal_btns">
+					<button type="button">확인</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

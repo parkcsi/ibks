@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+	<html lang="ko">
+	<head>
+		<meta charset="euc-kr">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>IBK 투자증권</title>
+		<link rel="stylesheet" href="../css/default.css">
+		<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="../js/common_ui.js"></script>
+	</head>
+	<body>
+		<div id="wrap">
+            <div class="header">
+                <button type="button" class="back_btn"><span class="hidden">뒤로가기</span></button>
+                <h2>계좌 확인</h2>
+                <button type="button" class="gnb_btn"><span class="hidden">전체메뉴 열기</span></button>
+            </div>
+			<div class="contents simple">
+				<div class="progress">
+					<div class="progress_bar"><span class="hidden">진행률</span></div>
+				</div>
+				<div class="form_area only_form">
+					<div class="form_line">
+						<dl>
+							<dt>계좌선택</dt>
+							<dd>
+								<button type="button" class="select_btn gray01" onclick="common_ui.slideOpen('#sample1');">123-100-123456 [종합] 홍길동</button>
+							</dd>
+						</dl>
+					</div>
+					<div class="form_line">
+						<dl>
+							<dt>계좌비밀번호</dt>
+							<dd>
+								<div class="form_ipt">
+									<input type="text" title="비밀번호 입력" placeholder="비밀번호">
+								</div>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<div class="btn_fixed">
+				<div class="btn_area">
+					<span class="btn_color01"><button type="button">취소</button></span>
+					<span><button type="button">다음</button></span>
+				</div>
+			</div>
+		</div>
+		<div class="slide" id="sample1">
+			<div class="slide_inner">
+				<div class="slide_header">
+					<h2>계좌 선택</h2>
+				</div>
+				<div class="slide_cont">
+                    <ul class="agree_list">
+                        <li>
+							<div class="agree_ipt">
+								<input type="radio" id="agree11" name="agree11" checked="">
+								<label for="agree11">123-100-123456 [종합] 홍길동</label>
+							</div>
+                    </ul>
+				</div>
+				<button type="button" class="slide_close"><span class="hidden">닫기</span></button>
+			</div>
+		</div>
+		<div class="modal" id="sample1">
+			<div class="modal_inner">
+				<div class="modal_cont">
+					<div class="noti">
+						비밀번호 오류입니다.<br />
+						(5회 중 4회 남았습니다.)
+					</div>
+				</div>
+				<div class="modal_btns">
+					<button type="button">확인</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

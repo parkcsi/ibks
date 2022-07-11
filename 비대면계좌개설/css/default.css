@@ -474,10 +474,41 @@ div.form_type input[type="radio"] ~ label{display:inline-block;padding-left:38px
 .sms_form + .tit_dot_list { margin: 45px 0 0; }
 
 .tab_cont .form_area { margin-top: 30px; }
-.tab_cont .form_area .form_line ~ .form_line { margin-top: 30px; }
+.tab_cont .form_area .form_line ~ .form_line, .simple .form_area.only_form > .form_line ~ .form_line { margin-top: 30px; }
 
 .line2 .desc_txt{margin-top:16px;}
 
 .gray_border .info_txt02{margin-top:0;}
 
 .sms_txt{height:45px; margin:12px 0 24px; background:#ebeef0; line-height:45px; font-size:18px; color:#696e76; font-weight:bold; text-align:center;}
+
+.tit_cont .btn_link { margin-top: 20px; }
+.simple_start { margin-top: 20px; padding-top: 229px; font-size: 18px; background: url(../images/content/simple_img01.png) no-repeat center top / 222px auto; text-align: center; }
+
+.simple_info { padding: 28px 24px; margin: -20px -24px 0; background: #f0f6ff; }
+.simple_info_txt { padding-right: 113px; background: url(../images/content/simple_img01.png) no-repeat center right / 113px auto; }
+.simple_info_txt > .spinfo_main { font-size: 20px; font-weight: bold; }
+.simple_info_txt > .spinfo_sub { margin-top: 7px; font-size: 16px; }
+.simple_info ~ .dot_tit_list { margin-top: 40px; }
+.simple_info ~ .dot_tit_list dt { font-size: 18px; }
+.simple_info ~ .dot_tit_list dd { margin-top: 20px; font-size: 16px; color: #484b51; }
+.simple_info ~ .dot_tit_list .dot_list > li { font-size: 16px; color: #484b51; }
+.simple_info ~ .dot_tit_list .desc_txt { margin-top: 16px; }
+.simple_info ~ .dot_tit_list .btn_type01 { margin-left: 16px; }
+.simple_info ~ .dot_tit_list:last-child { padding-bottom: 30px; }
+
+.progress { position: relative; margin: -20px -24px 0; width: calc(100% + 48px); height: 2px; background: #fff; }
+.progress_bar { position: absolute; display: block; content: ''; top: 0; left: 0; width: 25%; height: 100%; background: #619bf1; }
+.progress + div { margin-top: 24px; }
+.progress + .agree_box { margin-top: 7px; }
+
+.simple .agree_box .gray_info_box { margin-top: 16px; padding: 12px 20px; }
+.simple .agree_box + .form_area { margin-top: 46px; } 
+.simple .white_border_box ~ .form_area { margin-top: 40px; }
+.simple .gray_info_box .form_type { padding: 8px 0; }
+.simple .gray_info_box .form_type input[type="checkbox"] { top: 7px; }
+
+.simple_ico { margin-top: 100px; text-align: center; line-height: 25px; }
+.simple_ico_main { padding-top: 104px; font-size: 18px; font-weight: bold; background: url(../images/icon/ico_success.png) no-repeat center top / 80px auto; }
+.simple_ico_more { margin-top: 28px; }
+.simple_ico_main.unlock { padding-top: 164px; background-image: url(../images/icon/ico_unlock.png); background-size: 140px auto; }
