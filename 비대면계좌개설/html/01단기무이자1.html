@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+	<html lang="ko">
+	<head>
+		<meta charset="euc-kr">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>IBK 투자증권</title>
+		<link rel="stylesheet" href="../css/default.css">
+		<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="../js/common_ui.js"></script>
+	</head>
+	<body>
+		<div id="wrap">
+            <div class="header">
+                <button type="button" class="back_btn"><span class="hidden">뒤로가기</span></button>
+                <h2>단기무이자</h2>
+                <button type="button" class="gnb_btn"><span class="hidden">전체메뉴 열기</span></button>
+            </div>
+			<div class="contents credit_loan">
+				<div class="tab_wrap">
+					<ul class="tab_list">
+						<li class="tab_on"><button type="button" onclick="common_ui.tabToggle(this)">안내</button></li>
+						<li><button type="button" onclick="common_ui.tabToggle(this)">가입/해지</button></li>
+					</ul>
+					<div class="tab_cont" id="tabCont01">
+						<div class="ico_info free_info">
+							<div class="ico_info_txt">
+								<p class="ico_info_main">7일 이내 사용시 신용융자 이자율 0%</p>
+								<p class="ico_info_sub">단기 무이자 신용 서비스</p>
+							</div>
+						</div>
+						<dl class="dot_tit_list02">
+							<dt class="tit02">서비스 주요내용</dt>
+							<dd>
+								<ul class="dot_list">
+									<li>7일 이내 사용시 이자율 0%, 8일째부터 연 9.5%가 적용되는 서비스입니다.</li>
+									<li>해당 서비스는 신용거래 이용신청 후 가입 가능합니다.</li>
+									<li>해당 서비스는 7일 이내 단기로 사용시 유리한 서비스로 대출일로부터 달력 기준으로 7일까지 0%가 적용되며, 8일째부터 연 9.5%가 적용됩니다.</li>
+									<li>서비스 가입을 위해서는 고객 투자성향이 공격투자형이어야 합니다.</li>
+									<li>담보비율이 회사가 정한 최소담보유지비율에 미달하는 경우 추가담보납부 또는 반대매매가 발생될 수 있습니다.</li>
+								</ul>
+							</dd>
+						</dl>
+						<dl class="dot_tit_list02">
+							<dt class="tit02">이자율</dt>
+							<dd>
+								<div class="table_box tdCenter">
+									<table>
+										<colgroup>
+											<col style="width: 50%;">
+											<col>
+										</colgroup>
+										<tbody>
+											<tr>
+												<th scope="col">1일 이상 7일 이하</th>
+												<th scope="col">8일 이상</th>
+											</tr>
+											<tr>
+												<td>0%</td>
+												<td>연 9.5%</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<p class="desc_txt mt">연체이자율 : 적용이자율 +3%p (단, 연 9.5%를 초과하지 않음)</p>
+								<p class="desc_txt mt">해당 서비스 가입일 이전에 매수한 신용융자 잔고에 대해서는 당사 신용융자 표준 이자율이 적용됩니다.</p>
+								<p class="desc_txt mt">단기 무이자 신용융자 잔고를 보유 중이더라도 해당 서비스 가입 전 매수한 신용융자 잔고에 대해서는 단기 무이자 서비스 이자율이 적용되지 않습니다.</p>
+								<p class="desc_txt mt">이자적용방식 : 체차방식</p>
+								<p class="desc_txt mt">체차방식이란?<br />
+								신용매수시점부터 상환시점까지 보유기간에 따라 기간별로 이자율을 다르게 적용하여 합산하는 방식입니다.</p>
+								<p class="desc_txt mt">당사 신용융자 기본 이자율은 최고 연 8.5%~최저 연 5.4%이며, CD(91일) 기준금리 + 가산금리로 구성됩니다.</p>
+							</dd>
+						</dl>
+						<dl class="dot_tit_list02">
+							<dt class="tit02">서비스가입 가능계좌</dt>
+							<dd>
+								<ul class="dot_list">
+									<li>은행개설계좌, 스마트폰 비대면 개설계좌 중 신용거래 이용 신청계좌</li>
+									<li>계좌별 신청가능</li>
+									<li>디지털영업부가 관리점이거나, 디지털영업부 소속 직원이 관리자인 경우는 가입 가능</li>
+								</ul>
+							</dd>
+						</dl>
+						<dl class="dot_tit_list02">
+							<dt class="tit02">서비스가입 불가계좌</dt>
+							<dd>
+								<ul class="dot_list">
+									<li>지점개설계좌</li>
+									<li>은행개설계좌, 스마트폰 비대면 개설계좌 중 관리점 또는 관리자가 지점 소속인 계좌</li>
+									<li>신용 협의금리 적용 계좌</li>
+									<li>가입일 당일 신용매수 체결된 내역이 있는 계좌 (미체결 주문만 있는 경우 취소주문 후 가입 가능)</li>
+								</ul>
+							</dd>
+						</dl>
+						<dl class="dot_tit_list02">
+							<dt class="tit02">참고사항</dt>
+							<dd>
+								<ul class="dot_list">
+									<li>단기 무이자 신용융자 이자율이 적용된 신용잔고가 있는 경우 서비스 해지가 불가합니다.</li>
+									<li>신용매도 상환시 수도결제일(D+2일) 이후 해지 가능합니다.</li>
+									<li>서비스 해지시 해지일 당일에는 재가입 불가합니다.</li>
+									<li>해당 서비스 가입 후 단기 무이자 신용융자 이자율이 적용된 잔고 보유시 지점이관이 불가합니다. (해당 신용잔고 상환 및 서비스 약정 해지 후 지점이관 가능)</li>
+									<li>신용융자가능종목, 융자기간, 보증금율, 담보비율 등은 당사 신용융자 제도와 동일하게 적용됩니다.</li>
+									<li>단기무이자 신용융자 서비스는 당사 초기 설정한도 금액 초과시 가입이 불가할 수 있습니다.</li>
+									<li>신용거래는 대출성 상품으로 신용/대출고객정보확인서를 작성하셔야 합니다.</li>
+									<li>신용거래가 불가한 고객 : 신용연체정보 등록고객, 핸드폰번호 미등록 계좌(담보부족 발생사실 SMS 통보를 위해 필요), 전자금융사기계좌, 반송등록계좌, 사고등록계좌, 위탁증거금 면제계좌, 법인, 단체, 외국인(내국민대우 외국인 포함), 재외국인, 미성년자, 성년후견?한정후견개 시 심판을 받은 자</li>
+									<li>종목의 신용가능여부는 수시 변경됩니다. 신용가능 종목 여부를 반드시 확인하시기 바랍니다.</li>
+									<li>기타 자세한 문의사항은 고객센터(1588-0030/1544-0050)로 연락주시기 바랍니다.</li>
+								</ul>
+							</dd>
+						</dl>
+						<div class="gray_border">
+							<h3 class="info_txt02">투자유의사항</h3>
+							<ul class="dot_list">
+								<li>투자자는 계약(신용융자 또는 주식담보대출)에 대하여 IBK투자증권으로부터 충분한 설명을 받을 권리가있으며, 계약 전 상품설명서 및 약관을 반드시 읽어보시기 바랍니다.</li>
+								<li>상환능력에 비해 대출금이 과도한 경우 개인신용평점이 하락할 수 있으며, 이로 인해 금융거래와 관련된 불이익이 발생할 수 있습니다.</li>
+								<li>금융투자상품은 예금자보호법에 따라 예금보험공사가 보호하지 않으며, 원금손실이 발생할 수 있습니다.</li>
+								<li>적정 담보비율 미달 시 기한 내 추가담보를 제공하지 않으면 담보증권이 임의 처분될 수 있습니다.</li>
+								<li>당사 신용융자 기본 이자율은 최고 연 8.5% ~ 최저 연 5.4%이며, 자세한 사항은 홈페이지를 참조하시기 바랍니다.</li>
+							</ul>
+							<p class="info_right_txt">
+								준법감시인 사전확인필 제2021-37호<br />
+								(2021.09.06~2022.09.05)
+							</p>
+						</div>
+						<div class="btn_fixed">
+							<div class="btn_area">
+								<span><button type="button">서비스 가입 바로가기</button></span>
+							</div>
+						</div>
+					</div>
+					<div class="tab_cont" id="tabCont02" style="display: none;">
+						<div class="tit_cont">
+							<div class="top_select">
+								<button type="button" class="select_btn">510-00-123456 [종합] 홍길동</button>
+							</div>
+							<p class="desc_txt mt">단기무이자 서비스에 가입되어 있지 않습니다.</p>
+						</div>
+						<dl class="dot_tit_list02">
+							<dt class="tit02">서비스 안내</dt>
+							<dd>
+								<p class="txt03">해당 서비스는 <span class=point02>신용약정 등록계좌에 한해 가입 가능</span>합니다. 해당 서비스는 <span class=point02>7일 이내 단기로 사용 시 유리한 서비스</span>로 대출일로부터 달력기준으로 7일까지 0%가 적용되며, 8일부터 연 9.5%가 적용됩니다. 약정 등록을 위해서는 고객성향이 <span class=point02>공격투자형</span>이어야 합니다. 담보 평가 금액의 비율이 회사가 정한 유지 비율에 미달하는 경우 추가납부 또는 반대매매가 발생될 수 있습니다.
+								</p>
+							</dd>
+						</dl>
+						<dl class="dot_tit_list02">
+							<dt class="tit02">해당 서비스에 가입하려면?</dt>
+							<dd>
+								<div class="level_box">
+									<div class="level_box_border">신용신청<br />바로가기</div>
+									<p class="level_plus_ico"><span class="hidden">더하기</span></p>
+									<div class="level_box_border">고객투자성향<br />공격투자형<br />(내 투자성향 확인)</div>
+								</div>
+								<p class="desc_txt mt">아래의 서비스 주요내용을 충분히 숙지하신 후 이용하기 바랍니다.</p>
+							</dd>
+						</dl>
+						<dl class="dot_tit_list02">
+							<dt class="tit02">서비스가입 불가계좌</dt>
+							<dd>
+								<ul class="dot_list">
+									<li>지점개설계좌</li>
+									<li>은행개설계좌, 스마트폰 비대면 개설계좌 중 관리점 또는 관리자가 지점 소속인 계좌</li>
+									<li>신용 협의금리 적용 계좌</li>
+									<li>가입일 당일 신용매수 체결된 내역이 있는 계좌 (미체결 주문만 있는 경우 취소주문 후 가입 가능)</li>
+								</ul>
+							</dd>
+						</dl>
+						<dl class="dot_tit_list02">
+							<dt class="tit02">이용안내</dt>
+							<dd>
+								<ul class="dot_list">
+									<li class="point02">신용 무이자 서비스가 가입된 주식투자통장계좌는 신용융자 금리 7% 단일적용 서비스 혜택이 적용되지 않으며, 주식거래캐시백통장 계좌는 연 4.9% 우대 혜택이 적용되지 않습니다.</li>
+									<li>신용 무이자서비스 이자율이 적용된 신용잔고가 있는 경우 서비스 해지가 불가합니다. (신용매도 상환시 수도결제일(D+2일) 이후 해지가능)</li>
+									<li class="point02">서비스 해지 시 해지일 당일에는 재가입이 불가합니다.</li>
+									<li>해당 서비스 가입 후 신용 무이자서비스 이자율이 적용된 잔고 보유 시 지점이관이 불가합니다. (해당 신용잔고 상환 및 서비스 약정 해지 후 지점이관 가능)</li>
+									<li>신용융자가능종목, 융자기간, 보조금율, 담보비율 등은 당사 신용동일하게 적용됩니다.</li>
+									<li>신용 무이자 서비스는 당사 초기 설정한도 금액 초과 시 가입이 불가할 수 있습니다.</li>
+								</ul>
+							</dd>
+						</dl>
+						<div class="agree_box">
+							<div class="form_type tit">
+								<input type="checkbox" id="agree01">
+								<label for="agree01">약관 전체동의</label>
+							</div>
+							<ul class="agree_list">
+								<li><a href="#" class="checked">서비스 주요내용</a></li>
+								<li><a href="#">신용거래 약관 동의</a></li>
+								<li><a href="#">신용거래 설명서</a></li>
+								<li><a href="#">신용거래융자 핵심설명서</a></li>
+								<li>
+									<div class="agree_ipt">
+										<input type="checkbox" id="agree02">
+										<label for="agree02">상기 내용을 확인하고, 신용거래에 대한 내용을 이해하였으며, 본 서비스 이용에 동의합니다.</label>
+									</div>
+								</li>
+								<li>
+									<div class="agree_ipt">
+										<input type="checkbox" id="agree03">
+										<label for="agree03">본인은 신용거래를 위한 신용거래약관, 신용거래융자 핵심설명서 및 신용거래 설명서를 제공받고 이해하였습니다.</label>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="btn_fixed">
+							<div class="btn_area">
+								<span><button type="button">확인</button></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
