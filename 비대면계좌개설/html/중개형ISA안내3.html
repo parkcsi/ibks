@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+	<html lang="ko">
+	<head>
+		<meta charset="euc-kr">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>IBK 투자증권</title>
+		<link rel="stylesheet" href="../css/default.css">
+		<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="../js/common_ui.js"></script>
+	</head>
+	<body>
+		<div id="wrap">
+            <div class="header">
+                <button type="button" class="back_btn"><span class="hidden">뒤로가기</span></button>
+                <h2>중개형ISA 안내</h2>
+                <button type="button" class="gnb_btn"><span class="hidden">전체메뉴 열기</span></button>
+            </div>
+			<div class="contents">
+				<div class="tab_wrap">
+					<ul class="tab_list">
+						<li><button type="button" onclick="common_ui.tabToggle(this)">중개형ISA란?</button></li>
+						<li class="tab_on"><button type="button" onclick="common_ui.tabToggle(this)">세제혜택</button></li>
+						<li><button type="button" onclick="common_ui.tabToggle(this)">가입절차</button></li>
+					</ul>
+					<div class="tab_cont" id="tabCont01" style="display: none;">
+						1
+					</div>
+					<div class="tab_cont" id="tabCont02">
+                        <div class="gray_border">
+                            <h4>“비과세+분리과세”와 투자상품 손익통산까지 가능</h4>
+                            <ul class="dot_list">
+                                <li><p class="txt03">순수익 200만원까지 비과세, 초과 금액에 대해서는 9.9% 분리과세 적용</p></li>
+                                <li><p class="txt03">손실이 발생해도 다른 금융상품 수익과 상계하여 절세 가능</p></li>
+                            </ul>
+                            <div class="table_box">
+                                <table>
+                                    <colgroup>
+                                        <col style="width: 80px;">
+                                        <col>
+                                        <col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">구분</th>
+                                            <th scope="col">IBK투자증권<br/>중개형ISA계좌</th>
+                                            <th scope="col">일반계좌</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="center">국내주식</td>
+                                            <td class="center">비과세</td>
+                                            <td class="center">비과세</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ETN/ETF</td>
+                                            <td>순이익 200만원까지 비과세(일반형)</td>
+                                            <td rowspan="4">
+                                                <p class="m_txt">원천징수 15.4%</p>
+                                                <p class="s_txt">(금융소득 2천만원 초과 시 최대 49.5%)</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>해외펀드</td>
+                                            <td>-서민형, 농어민은 순이익 400만원까지 비과세</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ELS/ELB/<br/>DLS/DLB</td>
+                                            <td>200만원 초과 시 9.9% 분리과세(일반형)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>RP/리츠</td>
+                                            <td>-서민형, 농어민은 400만원까지 초과 시 분리과세</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="gray_border">
+                            <h4>중개형ISA로 국내 주식에 투자해 손실이 발생한 경우 다른금융상품 운용 손익을 합산(손익통산)해서 세금절약이 가능</h4>
+							<p class="txt03">(예시) 해외주식형 펀드에서 1,000만원 이익, 국내주식에서 500만원 손실이라면?</p>
+                            <h4>의무가입기간</h4>
+                            <ul class="dot_list">
+                                <li><p class="txt03">3년</p></li>
+                            </ul>
+                            <h4>편입상품</h4>
+                            <div class="table_box">
+                                <table>
+                                    <colgroup>
+                                        <col style="width: 80px;">
+                                        <col>
+                                        <col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">구분</th>
+                                            <th scope="col">IBK투자증권<br/>중개형ISA계좌</th>
+                                            <th scope="col">일반계좌</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="center">과세대상<br/>수익</td>
+                                            <td>
+                                                <p class="m_txt">500만원</p>
+                                                <p class="s_txt">(국내주식 양도차손 500만원은 손실상계)</p>
+                                                <p class="m_txt">500만원</p>
+                                                <p class="s_txt">200만원(비과세) + 300만원(분리과세)</p>
+                                            </td>
+                                            <td class="center">1,000만원</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="center">세율</td>
+                                            <td class="center">9.9%(분리과세)</td>
+                                            <td class="center">원천징수 15.4%</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="center">세금</td>
+                                            <td class="center"><span class="point02">29.7만원</span></td>
+                                            <td class="center">154만원</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <h4>금융상품별 손익통산 대상 손익</h4>
+                            <ul class="dot_list">
+                                <li><p class="txt03">RP, 예탁이용료 등 : 이자소득(실질소득)</p></li>
+                                <li><p class="txt03">펀드 : 과표기준가로 산출된 손익(과세소득)</p></li>
+                                <li><p class="txt03">주식 : 양도차손(다만, 대주주의 양도차손은 제외)</p></li>
+                                <li><p class="txt03">파생결합증권(ELB, DLB 포함) : 배당손익(실질소득)</p></li>
+                                <li><p class="txt03">RP, 예탁이용료 등 : 이자소득(실질소득)</p></li>
+                            </ul>
+                        </div>
+					</div>
+					<div class="tab_cont" id="tabCont03" style="display: none;">
+						3
+					</div>
+				</div>
+                <div class="btn_fixed">
+                    <div class="btn_area">
+                        <span><button type="button" onclick="common_ui.modalOpen('#sample1');">중개형ISA 비대면 계좌개설 바로가기</button></span>
+                    </div>
+                </div>
+			</div>
+		</div>
+		<div class="modal" id="sample1">
+			<div class="modal_inner">
+				<div class="modal_header">
+					<h2>IBK FARM 이용 서비스 알림</h2>
+				</div>
+				<div class="modal_cont">
+					<div class="noti">선택하신 화면은 IBK FARM에서 이용 가능한 서비스입니다. 진행을 선택하시면 IBK FARM내의 서비스 페이지로 이동됩니다.</div>
+					<div class="noti">IBK FARM을 아직 설치하지 않으신 고객님께서는 App 설치를 먼저 진행하여 주십시오.</div>
+				</div>
+				<div class="modal_btns">
+					<button type="button">App 설치 페이지로</button>
+					<button type="button">IBK FARM에서 계속</button>
+				</div>
+				<button type="button" class="modal_close"><span class="hidden">닫기</span></button>
+			</div>
+		</div>
+	</body>
+</html>

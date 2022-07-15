@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+	<html lang="ko">
+	<head>
+		<meta charset="euc-kr">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>IBK 투자증권</title>
+		<link rel="stylesheet" href="../css/default.css">
+		<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="../js/common_ui.js"></script>
+	</head>
+	<body>
+		<div id="wrap">
+            <div class="header">
+                <button type="button" class="back_btn"><span class="hidden">뒤로가기</span></button>
+                <h2>중개형ISA 안내</h2>
+                <button type="button" class="gnb_btn"><span class="hidden">전체메뉴 열기</span></button>
+            </div>
+			<div class="contents">
+				<div class="tab_wrap">
+					<ul class="tab_list">
+						<li class="tab_on"><button type="button" onclick="common_ui.tabToggle(this)">중개형ISA란?</button></li>
+						<li><button type="button" onclick="common_ui.tabToggle(this)">세제혜택</button></li>
+						<li><button type="button" onclick="common_ui.tabToggle(this)">가입절차</button></li>
+					</ul>
+					<div class="tab_cont" id="tabCont01">
+						<div class="gray_border">
+							<h4>중개형ISA(Individual Savings Account) : 개인종합자산관리계좌)란?</h4>
+							<p class="txt03">
+								하나의 계좌로 다양한 금융상품을 시장상황에 맞게 
+								자유롭게 관리하면서, 절세혜택도 누릴 수 있는
+								“통합계좌” 입니다.<br/>
+								투자수익 최대 400만원까지 비과세, 초과분은
+								9.9% 분리 과세 적용
+								만기 후 연금계좌로 이전시 납입액의 10%(300만원
+								한도)까지 추가 세액 공제
+							</p>
+						</div>
+						<div class="gray_border">
+							<h4>가입자격</h4>
+							<ul class="dot_list">
+								<li><p class="txt03">19세 이상(근로소득자는 15세 이상)의 거주자/전 금융기관 1인 1계좌</p></li>
+							</ul>
+							<h4>세제혜택</h4>
+							<ul class="dot_list">
+								<li><p class="txt03">계좌에서 발생한 운용손익 통산 후 200만원까지 비과세, 초과금액은 9.9% 분리과세</p></li>
+								<li><p class="txt03">서민형(총급여 5,000만원 이하 또는 종합소득금액 3,800만원)은 소득 400만원까지 비과세</p></li>
+								<li><p class="txt03">농어민(종합소득 3,500만원 이하)은 소득 400만원까지 비과세</p></li>
+							</ul>
+							<h4>의무가입기간</h4>
+							<ul class="dot_list">
+								<li><p class="txt03">3년</p></li>
+							</ul>
+							<h4>편입상품</h4>
+							<ul class="dot_list">
+								<li><p class="txt03">파생결합증권(ELS,DLS,ETN 등), 펀드(ETF포함), 국내상장주식, RP, 리츠 등</p></li>
+							</ul>
+							<h4>납입한도</h4>
+							<ul class="dot_list">
+								<li><p class="txt03">연 2,000만원(총 1억원)</p></li>
+								<li><p class="txt03">미불입한도 다음연도 이월</p></li>
+								<li><p class="txt03">기존 재형저축 및 소장펀드 납입한도 합산</p></li>
+							</ul>
+						</div>
+						<div class="gray_border">
+							<h3 class="info_txt02">유의사항</h3>
+							<ul class="dot_list">
+								<li>신용융자, 담보대출, 미수거래, 입고, 출고는 불가합니다.</li>
+								<li>제휴모바일(증권통, 증권플러스)을 통한 주문은 불가합니다.</li>
+								<li>ISA에 VUSDLQEHLS RMA융쌍품 중 예금보호 대상으로운용되는 금융상품에 한하여 예금자보호법에 따라 예금보험공사가 보호하되, 보호 한도는 금융상품을 판매한 금융회사별로 모든 예금보호대상 금융상품의 원금과 소정의 이자를 GKQ하여 “최고 5천만원“이며, 5천만원 초과하는 나머지 금액은 보호하지 않습니다.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="tab_cont" id="tabCont02" style="display: none;">
+						2
+					</div>
+					<div class="tab_cont" id="tabCont03" style="display: none;">
+						3
+					</div>
+				</div>
+				<div class="btn_fixed">
+					<div class="btn_area">
+						<span><button type="button" onclick="common_ui.modalOpen('#sample1');">중개형ISA 비대면 계좌개설 바로가기</button></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal" id="sample1">
+			<div class="modal_inner">
+				<div class="modal_header">
+					<h2>IBK FARM 이용 서비스 알림</h2>
+				</div>
+				<div class="modal_cont">
+					<div class="noti">선택하신 화면은 IBK FARM에서 이용 가능한 서비스입니다. 진행을 선택하시면 IBK FARM내의 서비스 페이지로 이동됩니다.</div>
+					<div class="noti">IBK FARM을 아직 설치하지 않으신 고객님께서는 App 설치를 먼저 진행하여 주십시오.</div>
+				</div>
+				<div class="modal_btns">
+					<button type="button">App 설치 페이지로</button>
+					<button type="button">IBK FARM에서 계속</button>
+				</div>
+				<button type="button" class="modal_close"><span class="hidden">닫기</span></button>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+	<html lang="ko">
+	<head>
+		<meta charset="euc-kr">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>IBK 투자증권</title>
+		<link rel="stylesheet" href="../css/default.css">
+		<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="../js/common_ui.js"></script>
+	</head>
+	<body>
+		<div id="wrap">
+            <div class="header">
+                <button type="button" class="back_btn"><span class="hidden">뒤로가기</span></button>
+                <h2>중개형ISA 안내</h2>
+                <button type="button" class="gnb_btn"><span class="hidden">전체메뉴 열기</span></button>
+            </div>
+			<div class="contents">
+				<div class="tab_wrap">
+					<ul class="tab_list">
+						<li><button type="button" onclick="common_ui.tabToggle(this)">중개형ISA란?</button></li>
+						<li><button type="button" onclick="common_ui.tabToggle(this)">세제혜택</button></li>
+						<li class="tab_on"><button type="button" onclick="common_ui.tabToggle(this)">가입절차</button></li>
+					</ul>
+					<div class="tab_cont" id="tabCont01" style="display: none;">
+						1
+					</div>
+					<div class="tab_cont" id="tabCont02" style="display: none;">
+                        2
+					</div>
+					<div class="tab_cont" id="tabCont03">
+                        <div class="gray_border">
+                            <h3>영업점 가입</h3>
+                            <ul class="step_list">
+                                <li>
+                                    <span class="num">STEP 01</span>
+                                    <span class="txt">구비서류 준비</span>
+                                    <button type="button" class="btn_link" onclick="common_ui.modalOpen('#sample2');">구비서류 보기</button>
+                                </li>
+                                <li>
+                                    <span class="num">STEP 02</span>
+                                    <span class="txt">영업점 방문</span>
+                                </li>
+                                <li>
+                                    <span class="num">STEP 03</span>
+                                    <span class="txt">계좌개설</span>
+                                </li>
+                                <li>
+                                    <span class="num">STEP 04</span>
+                                    <span class="txt">입금</span>
+                                </li>
+                                <li>
+                                    <span class="num">STEP 05</span>
+                                    <span class="txt">거래시작</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="gray_border">
+                            <h3>비대면 가입<span class="s_tit">(19세 이상 일반형만 가능)</span></h3>
+                            <ul class="step_list">
+                                <li>
+                                    <span class="num">STEP 01</span>
+                                    <span class="txt">신분증 준비 & 비대면 APP 접속</span>
+                                </li>
+                                <li>
+                                    <span class="num">STEP 02</span>
+                                    <span class="txt">본인명의 스마트폰 인증</span>
+                                </li>
+                                <li>
+                                    <span class="num">STEP 03</span>
+                                    <span class="txt">신분증 촬영 &<br/>중개형ISA 계좌개설 선택</span>
+                                </li>
+                                <li>
+                                    <span class="num">STEP 04</span>
+                                    <span class="txt">자동입금(1원)</span>
+                                </li>
+                                <li>
+                                    <span class="num">STEP 05</span>
+                                    <span class="txt">거래시작</span>
+                                </li>
+                            </ul>
+                        </div>
+					</div>
+				</div>
+                <div class="btn_fixed">
+                    <div class="btn_area">
+                        <span><button type="button" onclick="common_ui.modalOpen('#sample1');">중개형ISA 비대면 계좌개설 바로가기</button></span>
+                    </div>
+                </div>
+			</div>
+		</div>
+		<div class="modal" id="sample1">
+			<div class="modal_inner">
+				<div class="modal_header">
+					<h2>IBK FARM 이용 서비스 알림</h2>
+				</div>
+				<div class="modal_cont">
+					<div class="noti">선택하신 화면은 IBK FARM에서 이용 가능한 서비스입니다. 진행을 선택하시면 IBK FARM내의 서비스 페이지로 이동됩니다.</div>
+					<div class="noti">IBK FARM을 아직 설치하지 않으신 고객님께서는 App 설치를 먼저 진행하여 주십시오.</div>
+				</div>
+				<div class="modal_btns">
+					<button type="button">App 설치 페이지로</button>
+					<button type="button">IBK FARM에서 계속</button>
+				</div>
+				<button type="button" class="modal_close"><span class="hidden">닫기</span></button>
+			</div>
+		</div>
+		<div class="modal" id="sample2">
+			<div class="modal_inner">
+				<div class="modal_header">
+					<h2>구비서류</h2>
+				</div>
+				<div class="modal_cont">
+                    <div class="table_box">
+                        <table>
+                            <colgroup>
+                                <col style="width: 75px;">
+                                <col style="width: 65px;">
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col" colspan="2">구분</th>
+                                    <th scope="col">서류</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="center" rowspan="2">19세 이상<br/>거주자</td>
+                                    <td class="center">일반형</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td class="center line">서민형</td>
+                                    <td>개인종합자산관리 계좌<br/>가입용 소득확인 증명서</td>
+                                </tr>
+                                <tr>
+                                    <td class="center" rowspan="2">14~19세<br/>미만<br/>거주자</td>
+                                    <td class="center">일반형</td>
+                                    <td>개인종합자산관리 계좌<br/>가입용 소득확인 증명서</td>
+                                </tr>
+                                <tr>
+                                    <td class="center line">서민형</td>
+                                    <td>개인종합자산관리 계좌<br/>가입용 소득확인 증명서</td>
+                                </tr>
+                                <tr>
+                                    <td class="center">농어민</td>
+                                    <td colspan="2">농어업인확인서 + 개인종합자산<br/>관리계좌 가입용 소득학인 증명서</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+				</div>
+				<div class="modal_btns">
+					<button type="button">확인</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

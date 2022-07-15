@@ -14,50 +14,76 @@
 	</head>
 	<body>
 		<div id="wrap" class="guide">
-            <h2>버튼 1개</h2>
-			<div class="btn_area">
-				<span><button type="button" onclick="">Button  기본형</button></span>
-			</div>
-            <h2>버튼 확인/취소형</h2>
-			<div class="btn_area">
-				<span class="btn_color01"><button type="button" onclick="">Button  취소</button></span>
-				<span><button type="button" onclick="">Button  기본형</button></span>
-			</div>
-            <h2>버튼 color </h2>
-			<div class="btn_area">
-				<span><button type="button" onclick="">확인</button></span>
-			</div>
-			<div class="btn_area">
-				<span class="btn_color01"><button type="button" onclick="">취소</button></span>
-			</div>
-			<div class="btn_area">
-				<span class="btn_color02"><button type="button" onclick="">확인(disabled)</button></span>
-			</div>
-			<div class="btn_area">
-				<span class="btn_color03"><button type="button" onclick="">취소(disabled)</button></span>
-			</div>
-			<div class="btn_area">
-				<span class="btn_line01"><button type="button" onclick="">MTS 다운로드</button></span>
-			</div>
-			<h2>버튼 2줄</h2>
-			<div class="btn_fixed line2">
-				<!-- 가이드문서에서 fixed 방지를 위해 position static 추가 -->
-				<div class="btn_area" style="position:static;">
-					<span class="btn_line01"><button type="button">MTS 다운로드</button></span>
-					<span class="btn_line01"><button type="button">간편인증 등록</button></span>
-					<span><button type="button">다음</button></span>
+            <h2>하단 고정버튼</h2>
+			<div>
+				<h3>버튼 확인/취소형</h3>
+				<div class="btn_area">
+					<span><button type="button" onclick="">Button  기본형</button></span>
+				</div>
+				<h3>버튼 확인/취소형</h3>
+				<div class="btn_area">
+					<span class="btn_color01"><button type="button" onclick="">Button  취소</button></span>
+					<span><button type="button" onclick="">Button  기본형</button></span>
+				</div>
+				<h3>버튼 확인/취소형(50:50)</h3>
+				<div class="btn_area half">
+					<span class="btn_color01"><button type="button" onclick="">Button  취소</button></span>
+					<span><button type="button" onclick="">Button  기본형</button></span>
+				</div>
+				<h3>버튼 color </h3>
+				<div class="btn_area">
+					<span><button type="button" onclick="">확인</button></span>
+				</div>
+				<div class="btn_area">
+					<span class="btn_color01"><button type="button" onclick="">취소</button></span>
+				</div>
+				<div class="btn_area">
+					<span class="btn_color02"><button type="button" onclick="">확인(disabled)</button></span>
+				</div>
+				<div class="btn_area">
+					<span class="btn_color03"><button type="button" onclick="">취소(disabled)</button></span>
+				</div>
+				<div class="btn_area">
+					<span class="btn_line01"><button type="button" onclick="">MTS 다운로드</button></span>
+				</div>
+				<h3>버튼 2줄</h3>
+				<div class="btn_fixed line2">
+					<!-- 가이드문서에서 fixed 방지를 위해 position static 추가 -->
+					<div class="btn_area" style="position:static;">
+						<span class="btn_line01"><button type="button">MTS 다운로드</button></span>
+						<span class="btn_line01"><button type="button">간편인증 등록</button></span>
+						<span><button type="button">다음</button></span>
+					</div>
 				</div>
 			</div>
             <h2>버튼들</h2>
             <div>
-                <h3>버튼 타입1</h3>
+                <h3>아이콘버튼</h3>
                 <button type="button" class="btn_type01 call">고객센터</button>
 
-                <h3>버튼 타입2</h3>
+				<h3>더보기</h3>
+				<button type="button" class="btn_type02">더보기<span>(10/1000)</span></button>
+
+                <h3>인풋 내 버튼</h3>
                 <button type="button" class="ipt_btn">인증번호 받기</button>
 
-                <h3>버튼 타입3</h3>
+                <h3>링크이동 버튼</h3>
                 <button type="button" class="btn_link">투자자정보확인서 등록하기</button>
+                <button type="button" class="btn_link point01">투자자정보확인서 등록하기</button>
+
+                <h3>탭 버튼</h3>
+				<div class="tab_wrap">
+					<ul class="tab_list">
+						<li class="tab_on"><button type="button" onclick="common_ui.tabToggle(this)">도로명</button></li>
+						<li><button type="button" onclick="common_ui.tabToggle(this)">지번(구주소)</button></li>
+					</ul>
+					<div class="tab_cont" id="tabCont01">
+						1
+					</div>
+					<div class="tab_cont" id="tabCont02" style="display:none;">
+						2
+					</div>
+				</div>
             </div>
 		</div>
 	</body>
