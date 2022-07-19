@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+	<html lang="ko">
+	<head>
+		<meta charset="euc-kr">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>IBK 투자증권</title>
+		<link rel="stylesheet" href="../css/default.css">
+		<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="../js/common_ui.js"></script>
+	</head>
+	<body>
+		<div id="wrap">
+            <div class="header">
+                <button type="button" class="back_btn"><span class="hidden">뒤로가기</span></button>
+                <h2>공지사항</h2>
+                <button type="button" class="gnb_btn"><span class="hidden">전체메뉴 열기</span></button>
+            </div>
+			<div class="contents">
+				<div class="tab_wrap">
+					<ul class="tab_list">
+						<li class="tab_on"><button type="button" onclick="common_ui.tabToggle(this)">공지사항</button></li>
+						<li><button type="button" onclick="common_ui.tabToggle(this)">해외주식 공지사항</button></li>
+					</ul>
+					<div class="tab_cont" id="tabCont01">
+						<div class="address_srch">
+							<input type="text" title="검색어입력" placeholder="검색어를 입력하세요">
+							<!-- <button type="button" class="remove"><span class="hidden">검색어삭제</span></button> -->
+							<button type="button" class="search"><span class="hidden">검색</span></button>
+						</div>
+                        <ul class="board_list">
+                            <li>
+                                <a class="text">
+                                    <p class="tit">
+										<span class="ico">TOP</span>아이비케이에스 제18호기업인수목적㈜ 코스닥 공모주 청약안내
+									</p>
+                                    <p class="txt">
+                                        <span class="date">2022.05.30</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="tit">
+										<span class="ico">TOP</span>비플라이소프트 주식회사 코스닥상장 공모주 청약 안내										
+									</p>
+                                    <p class="txt">
+                                        <span class="date">2022.05.18</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="tit">
+										<span class="ico">TOP</span>[이용안내] 주식시세화면 종목명 앞 기호 표시 의미
+									</p>
+                                    <p class="txt">
+                                        <span class="date">2017.01.31</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="tit">파생상품 증거금률 정기 변경 안내</p>
+                                    <p class="txt">
+                                        <span class="date">2022.07.01</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="tit">CMA/RP 금리 변경안내(5/27 변경시행)</p>
+                                    <p class="txt">
+                                        <span class="date">2022.06.30</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="tit">코넥스 시장 제도 변경 안내</p>
+                                    <p class="txt">
+                                        <span class="date">2022.06.28</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="tit">종목등급 변경안내(맘스터치)</p>
+                                    <p class="txt">
+                                        <span class="date">2022.06.28</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="tit">종목등급 변경안내(얼라인드)</p>
+                                    <p class="txt">
+                                        <span class="date">2022.06.27</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="tit">영업점 명침변경 및 통합 운영 안내</p>
+                                    <p class="txt">
+                                        <span class="date">2022.06.27</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="tit">종목등급 변경안내(한화솔루션)</p>
+                                    <p class="txt">
+                                        <span class="date">2022.06.21</span>
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
+                        <button type="button" class="btn_type02">더보기<span>(10/1000)</span></button>
+					</div>
+					<div class="tab_cont" id="tabCont02" style="display: none;">
+						<div class="address_srch">
+							<input type="text" title="검색어입력" placeholder="검색어를 입력하세요">
+							<!-- <button type="button" class="remove"><span class="hidden">검색어삭제</span></button> -->
+							<button type="button" class="search"><span class="hidden">검색</span></button>
+						</div>
+                        <ul class="board_list">
+                            <li>
+                                <a class="text">
+                                    <p class="tit">
+										<span class="ico">TOP</span>[미국주식]pre-market 시작시간 변경안내
+									</p>
+                                    <p class="txt">
+                                        <span class="date">2022.05.30</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="tit">[해외주식] 상장폐지 안내(심볼: 02944 외 1개 종목)</p>
+                                    <p class="txt">
+                                        <span class="date">2022.07.06</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="tit">[해외주식] 분할/병합에 의한 거래정지 안내(심볼: 00601 외 1개 종목)</p>
+                                    <p class="txt">
+                                        <span class="date">2017.07.06</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="tit">[해외주식] 심볼/거래소 변경 안내(심볼: 02977 종목)</p>
+                                    <p class="txt">
+                                        <span class="date">2022.07.06</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="tit">[해외주식] 분할/병합에 의한 거래정지 안내(심볼: GOOGL 종목)</p>
+                                    <p class="txt">
+                                        <span class="date">2022.07.05</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="tit">[해외주식] 심볼/거래소 변경 안내(심볼: 08580 종목)</p>
+                                    <p class="txt">
+                                        <span class="date">2022.07.01</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="tit">[해외주식] 상장폐지 안내(심볼: 01589 종목)</p>
+                                    <p class="txt">
+                                        <span class="date">2022.07.01</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="tit">[해외주식] 분할/병합에 의한 거래정지 안내(심볼: 08045 종목)</p>
+                                    <p class="txt">
+                                        <span class="date">2022.06.30</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="tit">[해외주식] 심볼/거래소 변경 안내(심볼: RYLD 외 1개 종목)</p>
+                                    <p class="txt">
+                                        <span class="date">2022.06.28</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="tit">[해외주식] 분할/병합에 의한 거래정지 안내(심볼: 08460 종목)</p>
+                                    <p class="txt">
+                                        <span class="date">2022.06.27</span>
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
+                        <button type="button" class="btn_type02">더보기<span>(10/1000)</span></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
