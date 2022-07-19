@@ -1402,10 +1402,10 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
 
 .contents.sub > .toplank_contents { padding: 20px 0 36px; }
 .toplank_contents .title_area { padding: 0 20px; }
-/* 20220714 : 수정 */
+/* 20220718 : 수정 */
 .toplank_contents .title_area h2 { display: inline-block; margin:10px 0 20px; line-height:1.4; }
 .toplank_contents .toplank_ttbtn { margin-top: 17px; }
-/* // 20220714 : 수정 */
+/* // 20220718 : 수정 */
 .toplank_contents div[data-role="tooltip"].title_tip.active div[data-role="tooltip-cont"] { width: 100%; top: 35px; left: 0; }
 .toplank_tab { position: relative; padding: 0 20px 0 0; }
 .toplank_tab > .scroll { padding: 0 0 0 20px; overflow-x: scroll; overflow-y: hidden; position: relative; }

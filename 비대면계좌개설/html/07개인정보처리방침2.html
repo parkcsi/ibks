@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+	<html lang="ko">
+	<head>
+		<meta charset="euc-kr">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>IBK 투자증권</title>
+		<link rel="stylesheet" href="../css/default.css">
+		<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="../js/common_ui.js"></script>
+	</head>
+	<body>
+		<div id="wrap">
+			<div class="contents">
+			</div>
+		</div>
+        <div class="full_popup" style="display:block;">
+			<div class="pop_header">
+				<h2>개인정보제공업체</h2>
+			</div>
+			<div class="pop_contents">
+                <h3>개인(신용)정보 제공 현황</h3>
+                <div class="table_box">
+					<table>
+						<colgroup>
+							<col style="width: 25%;">
+							<col style="width: 25%;">
+							<col style="width: 25%;">
+							<col>
+						</colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">개인정보를 제공받는 자</th>
+                                <th scope="col">제공받는자의 개인정보 이용목적</th>
+                                <th scope="col">제공하는 개인정보 항목</th>
+                                <th scope="col">제공받는자의 보유, 이용기간</th>
+                            </tr>
+                        </thead>
+						<tbody>
+							<tr>
+								<td class="center">신용정보집중기관(한국신용정보원)</td>
+								<td>
+                                    -신용정보 조회<br/>
+                                    -신용정보의집중관리 및활용
+                                </td>
+								<td rowspan="2">실명번호 등 고유식별번호,고객명,생년월일,전화번호,핸드폰번호,계좌번호 미수,연체 및 해소정보 및 신용거래정보</td>
+								<td rowspan="2">법령상의 보존기간에 따름</td>
+							</tr>
+							<tr>
+								<td class="center">신용조회회사(NICE신용 평가정보 등)</td>
+								<td>
+                                    -신용정보 조회<br/>
+                                    -본인신용판단 및 본인확인
+                                </td>
+							</tr>
+							<tr>
+								<td class="center">중소기업은행</td>
+								<td>CMA제휴(체크,신용)카드</td>
+								<td>실명번호 등 고유식별번호,고객명,핸드폰번호,자택전화번호,이메일주소,직장명,부서명,직위,결제은행,계좌번호</td>
+								<td>발급해지 등 본인과 제공받는 자 간의(금융)거래 종료시까지</td>
+							</tr>
+							<tr>
+								<td class="center">보험사(IBK연금,알리안츠,신한,하나,한화,삼성생명 등)</td>
+								<td>보험계약 체결</td>
+								<td>실명번호 등 고유식별번호,성명,주소,연락처,직업,결제은행,계좌번호,병력사항</td>
+								<td>동의 철회 시 또는 제공 목적 달성할 때까지</td>
+							</tr>
+							<tr>
+								<td class="center">금융결제원</td>
+								<td>
+                                    -CMS출금이체 및 출금동의 확인<br/>
+                                    -출금이체 신규등록 및 해지사실 통지
+                                </td>
+								<td>계좌번호,계좌명,은행명,은행계좌번호,생년월일,전화번호,휴대폰번호</td>
+								<td>CMS출금이체 서비스 제공 및 출금동의 확인 목적을 달성할 때까지</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+                <p class="desc_txt mt">발급대상 : 내국인 개인 고객(외국인, 법인 불가)</p>
+				<div class="btn_fixed">
+					<div class="btn_area">
+						<span><button type="button">닫기</button></span>
+					</div>
+				</div>
+			</div>
+			<button type="button" class="pop_close"><span class="hidden">팝업 닫기</span></button>
+		</div>
+	</body>
+</html>
