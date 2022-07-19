@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+	<html lang="ko">
+	<head>
+		<meta charset="euc-kr">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>IBK 투자증권</title>
+		<link rel="stylesheet" href="../css/default.css">
+		<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="../js/common_ui.js"></script>
+	</head>
+	<body>
+		<div id="wrap">
+            <div class="header">
+                <button type="button" class="back_btn"><span class="hidden">뒤로가기</span></button>
+                <h2>이벤트</h2>
+                <button type="button" class="gnb_btn"><span class="hidden">전체메뉴 열기</span></button>
+            </div>
+			<div class="contents">
+				<div class="tab_wrap">
+					<ul class="tab_list">
+						<li><button type="button" onclick="common_ui.tabToggle(this)">진행중인 이벤트</button></li>
+						<li class="tab_on"><button type="button" onclick="common_ui.tabToggle(this)">당첨자 발표</button></li>
+					</ul>
+					<div class="tab_cont" id="tabCont01" style="display: none;">
+						<div class="address_srch">
+							<input type="text" title="검색어입력" placeholder="검색어를 입력하세요">
+							<!-- <button type="button" class="remove"><span class="hidden">검색어삭제</span></button> -->
+							<button type="button" class="search"><span class="hidden">검색</span></button>
+						</div>
+                        <ul class="board_list thum">
+                            <li>
+                                <div class="image">
+                                    <img src="../images/content/img_tendency_01.png">
+                                </div>
+                                <a class="text">
+                                    <p class="tit">이벤트 타이틀 제목 영역
+                                    </p>
+                                    <p class="txt">
+                                        <span class="date">2022.05.30 ~ 2022.07.30</span>
+                                    </p>
+                                    <p class="state point01">진행중</p>
+                                </a>
+                            </li>
+                            <li>
+                                <div class="image">
+                                    <img src="../images/temp/@sample_idcard.png">
+                                </div>
+                                <a class="text">
+                                    <p class="tit">이벤트 타이틀 제목 영역
+                                    </p>
+                                    <p class="txt">
+                                        <span class="date">2022.05.30 ~ 2022.07.30</span>
+                                    </p>
+                                    <p class="state point01">진행중</p>
+                                </a>
+                            </li>
+                            <li>
+                                <div class="image">
+                                    <img src="../images/temp/@sample_idcard.png">
+                                </div>
+                                <a class="text">
+                                    <p class="tit">이벤트 타이틀 제목 영역
+                                    </p>
+                                    <p class="txt">
+                                        <span class="date">2022.05.30 ~ 2022.07.30</span>
+                                    </p>
+                                    <p class="state point01">진행중</p>
+                                </a>
+                            </li>
+                        </ul>
+                        <button type="button" class="btn_type02">더보기<span>(10/1000)</span></button>
+					</div>
+					<div class="tab_cont" id="tabCont02">
+						<div class="address_srch">
+							<input type="text" title="검색어입력" placeholder="검색어를 입력하세요">
+							<!-- <button type="button" class="remove"><span class="hidden">검색어삭제</span></button> -->
+							<button type="button" class="search"><span class="hidden">검색</span></button>
+						</div>
+                        <ul class="board_list thum">
+                            <li>
+                                <div class="image">
+                                    <img src="../images/content/img_tendency_01.png">
+                                    <div class="winner">
+                                        <button type="button" onclick="">당첨자 확인</button>
+                                    </div>
+                                </div>
+                                <a class="text">
+                                    <p class="tit">이벤트 타이틀 제목 영역
+                                    </p>
+                                    <p class="txt">
+                                        <span class="date">2022.05.30 ~ 2022.07.30</span>
+                                    </p>
+                                    <p class="state">종료</p>
+                                </a>
+                            </li>
+                            <li>
+                                <div class="image">
+                                    <img src="../images/temp/@sample_idcard.png">
+                                    <div class="winner">
+                                        <button type="button" onclick="">당첨자 확인</button>
+                                    </div>
+                                </div>
+                                <a class="text">
+                                    <p class="tit">이벤트 타이틀 제목 영역
+                                    </p>
+                                    <p class="txt">
+                                        <span class="date">2022.05.30 ~ 2022.07.30</span>
+                                    </p>
+                                    <p class="state">종료</p>
+                                </a>
+                            </li>
+                            <li>
+                                <div class="image">
+                                    <img src="../images/temp/@sample_idcard.png">
+                                    <div class="winner">
+                                        <button type="button" onclick="">당첨자 확인</button>
+                                    </div>
+                                </div>
+                                <a class="text">
+                                    <p class="tit">이벤트 타이틀 제목 영역
+                                    </p>
+                                    <p class="txt">
+                                        <span class="date">2022.05.30 ~ 2022.07.30</span>
+                                    </p>
+                                    <p class="state">종료</p>
+                                </a>
+                            </li>
+                        </ul>
+                        <button type="button" class="btn_type02">더보기<span>(10/1000)</span></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

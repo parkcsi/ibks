@@ -271,17 +271,6 @@ div.form_type input[type="radio"] ~ label{display:inline-block;padding-left:38px
 .slash_list > li {position:relative; margin-top:9px; padding-left:10px; font-size:15px; color:#8c949e;}
 .slash_list > li:before{content:'-'; position:absolute; left:0px; top:0;background:none;}
 
-.square_list > li {margin-top:15px;}
-.square_list > li .name {position:relative; padding:0 7px 0 15px; color:#225094;}
-.square_list > li .name:before {position:absolute; display: block; content:''; width:10px; height:10px; top:5px; left: 0; background:#225094;}
-.square_list > li .name:after {position:absolute; display: block; height:100%; content:':'; top:0; right:0; }
-.square_list > li.cont .name:after {display:none;}
-.square_list > li .cont_list {margin-top:15px; padding-left:15px;}
-.square_list > li .cont_list > .desc_txt {font-size:16px;}
-.square_list > li .cont_list > .desc_txt + .desc_txt,
-.square_list > li .cont_list .slash_list > li {margin-top:0;} 
-.square_list > li .cont_list .slash_list {margin-top:15px;}
-
 .defin_list li ~ li{margin-top:16px;}
 .defin_list li.line{padding-bottom:20px; border-bottom:1px solid #8c949e;}
 .defin_list li dl{display:flex; justify-content: space-between; font-size:16px;}
@@ -340,6 +329,14 @@ div.form_type input[type="radio"] ~ label{display:inline-block;padding-left:38px
 .board_list > li .text .txt{color:#696e76;}
 .board_list > li .text .txt span{display:inline-block; margin-right:10px;}
 .board_list > li .down{flex-shrink:0; flex-basis:30px; width:30px; height:30px; margin-left:5px; background:url(../images/icon/ico_file_down.png) no-repeat center center; background-size:20px auto;}
+.board_list.thum > li {flex-direction: column; align-items:normal;}
+.board_list.thum > li .image {position:relative; height:160px; border-radius:8px; text-align:center; overflow:hidden;}
+.board_list.thum > li .image img {width:auto; height:100%;}
+.board_list.thum > li .image .winner {position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(255, 255, 255, 0.4);}
+.board_list.thum > li .image .winner button {position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:117px; height:40px; font-size:16px; font-weight:bold; text-align:center; color:#ffffff; background:#619bf1; border-radius:8px;}
+.board_list.thum > li .text {position:relative; margin-top:16px;}
+.board_list.thum > li .text .tit {padding-right:50px;}
+.board_list.thum > li .text .state {position:absolute; top:1px; right:0; color:#aab0b8;}
 
 .board_detail{margin-top:-20px; padding-bottom:30px;}
 .board_detail .board_top{display:flex; justify-content:space-between; align-items:center; padding-bottom:18px; border-bottom:1px solid #ebeef0;}
@@ -705,3 +702,14 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
 .level_next_ico { width: 16.5px; height: 16.5px; background: url(../images/icon/ico_arrow02.png) no-repeat center center / 7.5px auto; }
 
 .table_box .btn_type01 {margin: 12px 0 0;}
+
+.square_list > li {margin-top:15px;}
+.square_list > li .name {position:relative; padding:0 7px 0 15px; color:#225094;}
+.square_list > li .name:before {position:absolute; display: block; content:''; width:10px; height:10px; top:5px; left: 0; background:#225094;}
+.square_list > li .name:after {position:absolute; display: block; height:100%; content:':'; top:0; right:0; }
+.square_list > li.cont .name:after {display:none;}
+.square_list > li .cont_list {margin-top:15px; padding-left:15px;}
+.square_list > li .cont_list > .desc_txt {font-size:16px;}
+.square_list > li .cont_list > .desc_txt + .desc_txt,
+.square_list > li .cont_list .slash_list > li {margin-top:0;} 
+.square_list > li .cont_list .slash_list {margin-top:15px;}
