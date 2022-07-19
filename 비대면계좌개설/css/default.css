@@ -140,6 +140,7 @@ h4 + p[class^="txt0"]{margin-top:20px;}
 .full_popup{display:none;position:fixed;left:0;top:0;width:100%;height:100%;background:#fff;letter-spacing:-1px;z-index:11;}
 .full_popup .pop_header{display:flex;align-items:center;min-height:60px;padding:12px 24px;}
 .full_popup .pop_header h2{margin:0;padding-right:25px;font-size:18px;font-weight:400;}
+.full_popup .pop_header h2 .cate{font-size:14px; margin:7px 0 3px;}
 .full_popup .pop_contents{position:relative;overflow:auto;height:calc(100% - 60px);padding:20px 24px 30px;}
 .full_popup .pop_close{position:absolute;right:24px;top:19px;width:20px;height:20px;background:url(../images/icon/btn_pop_close.png) no-repeat center center;background-size:19px auto;}
 
