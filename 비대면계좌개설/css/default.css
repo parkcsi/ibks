@@ -324,19 +324,20 @@ div.form_type input[type="radio"] ~ label{display:inline-block;padding-left:38px
 .board_list > li{display:flex; justify-content:space-between; align-items:center; padding:20px 0; border-bottom:1px solid #ebeef0;}
 .board_list > li:first-child{border-top:1px solid #ebeef0;}
 .board_list > li .text{display:block; flex-basis:auto;}
+.board_list > li .text .cate{margin-bottom:4px;}
 .board_list > li .text .tit{margin-bottom:8px; font-size:16px;}
-.board_list > li .text .tit .ico {display:inline-block; margin-right:5px; width:34px; height:18px; font-size:13px; color:#ffffff; background:#619bf1; text-align:center; line-height:18px; border-radius:2px;}
+.board_list > li .text .tit .ico{display:inline-block; margin-right:5px; width:34px; height:18px; font-size:13px; color:#ffffff; background:#619bf1; text-align:center; line-height:18px; border-radius:2px;}
 .board_list > li .text .txt{color:#696e76;}
 .board_list > li .text .txt span{display:inline-block; margin-right:10px;}
 .board_list > li .down{flex-shrink:0; flex-basis:30px; width:30px; height:30px; margin-left:5px; background:url(../images/icon/ico_file_down.png) no-repeat center center; background-size:20px auto;}
-.board_list.thum > li {flex-direction: column; align-items:normal;}
-.board_list.thum > li .image {position:relative; height:160px; border-radius:8px; text-align:center; overflow:hidden;}
-.board_list.thum > li .image img {width:auto; height:100%;}
-.board_list.thum > li .image .winner {position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(255, 255, 255, 0.4);}
-.board_list.thum > li .image .winner button {position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:117px; height:40px; font-size:16px; font-weight:bold; text-align:center; color:#ffffff; background:#619bf1; border-radius:8px;}
-.board_list.thum > li .text {position:relative; margin-top:16px;}
-.board_list.thum > li .text .tit {padding-right:50px;}
-.board_list.thum > li .text .state {position:absolute; top:1px; right:0; color:#aab0b8;}
+.board_list.thum > li{flex-direction: column; align-items:normal;}
+.board_list.thum > li .image{position:relative; height:160px; border-radius:8px; text-align:center; overflow:hidden;}
+.board_list.thum > li .image img{width:auto; height:100%;}
+.board_list.thum > li .image .winner{position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(255, 255, 255, 0.4);}
+.board_list.thum > li .image .winner button{position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:117px; height:40px; font-size:16px; font-weight:bold; text-align:center; color:#ffffff; background:#619bf1; border-radius:8px;}
+.board_list.thum > li .text{position:relative; margin-top:16px;}
+.board_list.thum > li .text .tit{padding-right:50px;}
+.board_list.thum > li .text .state{position:absolute; top:1px; right:0; color:#aab0b8;}
 
 .board_detail{margin-top:-20px; padding-bottom:30px;}
 .board_detail .board_top{display:flex; justify-content:space-between; align-items:center; padding-bottom:18px; border-bottom:1px solid #ebeef0;}

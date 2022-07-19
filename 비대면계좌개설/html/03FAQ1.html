@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+	<html lang="ko">
+	<head>
+		<meta charset="euc-kr">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>IBK 투자증권</title>
+		<link rel="stylesheet" href="../css/default.css">
+		<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="../js/common_ui.js"></script>
+	</head>
+	<body>
+		<div id="wrap">
+            <div class="header">
+                <button type="button" class="back_btn"><span class="hidden">뒤로가기</span></button>
+                <h2>자주묻는 질문</h2>
+                <button type="button" class="gnb_btn"><span class="hidden">전체메뉴 열기</span></button>
+            </div>
+			<div class="contents">
+				<div class="tab_wrap">
+					<ul class="tab_list">
+						<li class="tab_on"><button type="button" onclick="common_ui.tabToggle(this)">전체</button></li>
+						<li><button type="button" onclick="common_ui.tabToggle(this)">HTS/MTS</button></li>
+                        <li><button type="button" onclick="common_ui.tabToggle(this)">증권업무</button></li>
+                        <li><button type="button" onclick="common_ui.tabToggle(this)">금융상품</button></li>
+					</ul>
+					<div class="tab_cont" id="tabCont01">
+						<div class="address_srch">
+							<input type="text" title="검색어입력" placeholder="검색어를 입력하세요">
+							<!-- <button type="button" class="remove"><span class="hidden">검색어삭제</span></button> -->
+							<button type="button" class="search"><span class="hidden">검색</span></button>
+						</div>
+                        <ul class="board_list">
+                            <li>
+                                <a class="text">
+                                    <p class="cate point01">금융상품</p>
+                                    <p class="tit">[펀드세금] 수익률이 마이너스인데 세금을 내는 이유는 왜인가요?</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="cate point01">금융상품</p>
+                                    <p class="tit">[펀드세금] 펀드의 세금은 얼마나 되나요?</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="cate point01">금융상품</p>
+                                    <p class="tit">[펀드가입/환매] 환매수수료는 신규일로부터 90일만 지나면 없나요?</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="cate point01">금융상품</p>
+                                    <p class="tit">[펀드가입/환매] 적립식 펀드의 경우 만기 이후에도 입금이 가능한지와 만기 시에 자동으로 환매되나요?</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="cate point01">금융상품</p>
+                                    <p class="tit">[펀드가입/환매] 펀드를 해지(환매)  하려면 어떻게 하나요?</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="cate point01">금융상품</p>
+                                    <p class="tit">[펀드가입/환매] 적립식 펀드 자동이체 신청시 언제부터 자동이체출금이 되나요?</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="cate point01">금융상품</p>
+                                    <p class="tit">[펀드가입/환매] 미성년(만 19세 미만)인 자녀 펀드를 가입하고 싶은데 온라인에서 가능한가요?</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="cate point01">금융상품</p>
+                                    <p class="tit">[펀드상품] 펀드에 가입하면 운용보고서를 받을 수 있다고 하던데 어떻게 받을 수 있나요?</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="cate point01">금융상품</p>
+                                    <p class="tit">[펀드상품] 펀드의 보수와 수수료는 무엇인가요?</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="cate point01">금융상품</p>
+                                    <p class="tit">[펀드상품] 펀드 투자원금, 잔고좌수, 평가금액은 무엇을 의미하나요?</p>
+                                </a>
+                            </li>
+                        </ul>
+                        <button type="button" class="btn_type02">더보기<span>(10/1000)</span></button>
+					</div>
+					<div class="tab_cont" id="tabCont02" style="display:none;">
+						<div class="address_srch">
+							<input type="text" title="검색어입력" placeholder="검색어를 입력하세요">
+							<!-- <button type="button" class="remove"><span class="hidden">검색어삭제</span></button> -->
+							<button type="button" class="search"><span class="hidden">검색</span></button>
+						</div>
+                        <ul class="board_list">
+                            <li>
+                                <a class="text">
+                                    <p class="cate point01">HTS/MTS</p>
+                                    <p class="tit">[펀드세금] 수익률이 마이너스인데 세금을 내는 이유는 왜인가요?</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="cate point01">금융상품</p>
+                                    <p class="tit">[펀드세금] 펀드의 세금은 얼마나 되나요?</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="cate point01">금융상품</p>
+                                    <p class="tit">[펀드가입/환매] 환매수수료는 신규일로부터 90일만 지나면 없나요?</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="cate point01">금융상품</p>
+                                    <p class="tit">[펀드가입/환매] 적립식 펀드의 경우 만기 이후에도 입금이 가능한지와 만기 시에 자동으로 환매되나요?</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="cate point01">금융상품</p>
+                                    <p class="tit">[펀드가입/환매] 펀드를 해지(환매)  하려면 어떻게 하나요?</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="cate point01">금융상품</p>
+                                    <p class="tit">[펀드가입/환매] 적립식 펀드 자동이체 신청시 언제부터 자동이체출금이 되나요?</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="cate point01">금융상품</p>
+                                    <p class="tit">[펀드가입/환매] 미성년(만 19세 미만)인 자녀 펀드를 가입하고 싶은데 온라인에서 가능한가요?</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="cate point01">금융상품</p>
+                                    <p class="tit">[펀드상품] 펀드에 가입하면 운용보고서를 받을 수 있다고 하던데 어떻게 받을 수 있나요?</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="cate point01">금융상품</p>
+                                    <p class="tit">[펀드상품] 펀드의 보수와 수수료는 무엇인가요?</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="cate point01">금융상품</p>
+                                    <p class="tit">[펀드상품] 펀드 투자원금, 잔고좌수, 평가금액은 무엇을 의미하나요?</p>
+                                </a>
+                            </li>
+                        </ul>
+                        <button type="button" class="btn_type02">더보기<span>(10/1000)</span></button>
+					</div>
+                    <div class="tab_cont" id="tabCont03" style="display:none;">
+						<div class="address_srch">
+							<input type="text" title="검색어입력" placeholder="검색어를 입력하세요">
+							<!-- <button type="button" class="remove"><span class="hidden">검색어삭제</span></button> -->
+							<button type="button" class="search"><span class="hidden">검색</span></button>
+						</div>
+                        <ul class="board_list">
+                            <li>
+                                <a class="text">
+                                    <p class="cate point01">증권업무</p>
+                                    <p class="tit">[펀드세금] 수익률이 마이너스인데 세금을 내는 이유는 왜인가요?</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="cate point01">금융상품</p>
+                                    <p class="tit">[펀드세금] 펀드의 세금은 얼마나 되나요?</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="cate point01">금융상품</p>
+                                    <p class="tit">[펀드가입/환매] 환매수수료는 신규일로부터 90일만 지나면 없나요?</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="cate point01">금융상품</p>
+                                    <p class="tit">[펀드가입/환매] 적립식 펀드의 경우 만기 이후에도 입금이 가능한지와 만기 시에 자동으로 환매되나요?</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="cate point01">금융상품</p>
+                                    <p class="tit">[펀드가입/환매] 펀드를 해지(환매)  하려면 어떻게 하나요?</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="cate point01">금융상품</p>
+                                    <p class="tit">[펀드가입/환매] 적립식 펀드 자동이체 신청시 언제부터 자동이체출금이 되나요?</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="cate point01">금융상품</p>
+                                    <p class="tit">[펀드가입/환매] 미성년(만 19세 미만)인 자녀 펀드를 가입하고 싶은데 온라인에서 가능한가요?</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="cate point01">금융상품</p>
+                                    <p class="tit">[펀드상품] 펀드에 가입하면 운용보고서를 받을 수 있다고 하던데 어떻게 받을 수 있나요?</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="cate point01">금융상품</p>
+                                    <p class="tit">[펀드상품] 펀드의 보수와 수수료는 무엇인가요?</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="cate point01">금융상품</p>
+                                    <p class="tit">[펀드상품] 펀드 투자원금, 잔고좌수, 평가금액은 무엇을 의미하나요?</p>
+                                </a>
+                            </li>
+                        </ul>
+                        <button type="button" class="btn_type02">더보기<span>(10/1000)</span></button>
+					</div>
+                    <div class="tab_cont" id="tabCont04" style="display:none;">
+						<div class="address_srch">
+							<input type="text" title="검색어입력" placeholder="검색어를 입력하세요">
+							<!-- <button type="button" class="remove"><span class="hidden">검색어삭제</span></button> -->
+							<button type="button" class="search"><span class="hidden">검색</span></button>
+						</div>
+                        <ul class="board_list">
+                            <li>
+                                <a class="text">
+                                    <p class="cate point01">금융상품</p>
+                                    <p class="tit">[펀드세금] 수익률이 마이너스인데 세금을 내는 이유는 왜인가요?</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="cate point01">금융상품</p>
+                                    <p class="tit">[펀드세금] 펀드의 세금은 얼마나 되나요?</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="cate point01">금융상품</p>
+                                    <p class="tit">[펀드가입/환매] 환매수수료는 신규일로부터 90일만 지나면 없나요?</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="cate point01">금융상품</p>
+                                    <p class="tit">[펀드가입/환매] 적립식 펀드의 경우 만기 이후에도 입금이 가능한지와 만기 시에 자동으로 환매되나요?</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="cate point01">금융상품</p>
+                                    <p class="tit">[펀드가입/환매] 펀드를 해지(환매)  하려면 어떻게 하나요?</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="cate point01">금융상품</p>
+                                    <p class="tit">[펀드가입/환매] 적립식 펀드 자동이체 신청시 언제부터 자동이체출금이 되나요?</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="cate point01">금융상품</p>
+                                    <p class="tit">[펀드가입/환매] 미성년(만 19세 미만)인 자녀 펀드를 가입하고 싶은데 온라인에서 가능한가요?</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="cate point01">금융상품</p>
+                                    <p class="tit">[펀드상품] 펀드에 가입하면 운용보고서를 받을 수 있다고 하던데 어떻게 받을 수 있나요?</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="cate point01">금융상품</p>
+                                    <p class="tit">[펀드상품] 펀드의 보수와 수수료는 무엇인가요?</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text">
+                                    <p class="cate point01">금융상품</p>
+                                    <p class="tit">[펀드상품] 펀드 투자원금, 잔고좌수, 평가금액은 무엇을 의미하나요?</p>
+                                </a>
+                            </li>
+                        </ul>
+                        <button type="button" class="btn_type02">더보기<span>(10/1000)</span></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
