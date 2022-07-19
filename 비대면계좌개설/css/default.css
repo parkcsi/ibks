@@ -134,6 +134,8 @@ h4 + p[class^="txt0"]{margin-top:20px;}
 .desc_txt + .desc_txt{margin-top:16px;}
 .desc_txt.mt{margin-top:12px; color: #8c949e; }
 .desc_txt .btn_link{margin-top:5px; }
+.reference_txt{position:relative; padding-left:20px; font-size:16px;}
+.reference_txt:before{content:'\203B'; position:absolute; top:0; left:0;}
 
 .full_popup{display:none;position:fixed;left:0;top:0;width:100%;height:100%;background:#fff;letter-spacing:-1px;z-index:11;}
 .full_popup .pop_header{display:flex;align-items:center;min-height:60px;padding:12px 24px;}
@@ -269,6 +271,16 @@ div.form_type input[type="radio"] ~ label{display:inline-block;padding-left:38px
 .slash_list > li {position:relative; margin-top:9px; padding-left:10px; font-size:15px; color:#8c949e;}
 .slash_list > li:before{content:'-'; position:absolute; left:0px; top:0;background:none;}
 
+.square_list > li {margin-top:15px;}
+.square_list > li .name {position:relative; padding:0 7px 0 15px; color:#225094;}
+.square_list > li .name:before {position:absolute; display: block; content:''; width:10px; height:10px; top:5px; left: 0; background:#225094;}
+.square_list > li .name:after {position:absolute; display: block; height:100%; content:':'; top:0; right:0; }
+.square_list > li.cont .name:after {display:none;}
+.square_list > li .cont_list {margin-top:15px; padding-left:15px;}
+.square_list > li .cont_list > .desc_txt {font-size:16px;}
+.square_list > li .cont_list > .desc_txt + .desc_txt,
+.square_list > li .cont_list .slash_list > li {margin-top:0;} 
+.square_list > li .cont_list .slash_list {margin-top:15px;}
 
 .defin_list li ~ li{margin-top:16px;}
 .defin_list li.line{padding-bottom:20px; border-bottom:1px solid #8c949e;}
