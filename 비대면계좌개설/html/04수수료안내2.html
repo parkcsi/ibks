@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+	<html lang="ko">
+	<head>
+		<meta charset="euc-kr">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>IBK 투자증권</title>
+		<link rel="stylesheet" href="../css/default.css">
+		<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="../js/common_ui.js"></script>
+	</head>
+	<body>
+		<div id="wrap">
+            <div class="header">
+                <button type="button" class="back_btn"><span class="hidden">뒤로가기</span></button>
+                <h2>수수료 안내</h2>
+                <button type="button" class="gnb_btn"><span class="hidden">전체메뉴 열기</span></button>
+            </div>
+			<div class="contents">
+				<div class="tab_wrap">
+					<ul class="tab_list scroll_list">
+						<li><button type="button" onclick="common_ui.tabToggle(this)">은행/비대면개설</button></li>
+						<li class="tab_on"><button type="button" onclick="common_ui.tabToggle(this)">영업점개설</button></li>
+						<li><button type="button" onclick="common_ui.tabToggle(this)">해외주식</button></li>
+						<li><button type="button" onclick="common_ui.tabToggle(this)">업무수수료</button></li>
+					</ul>
+					<div class="tab_cont" id="tabCont01" style="display:none;">
+                        <h3>주식/선물/옵션</h3>
+                        <h4>모바일(IBK FARM, 제휴모바일) / HTS / 홈페이지</h4>
+                        <div class="table_box">
+                            <table>
+                                <colgroup>
+                                    <col style="width:56px">
+                                    <col style="width:102px">
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="col" colspan="2">구분</th>
+                                        <th scope="col">모바일</th>
+                                        <th scope="col">HTS/<br>홈페이지</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="center" scope="rowgroup" rowspan="2">주식</td>
+                                        <td class="center" scope="row">주식,ELW</td>
+                                        <td class="center">0.1%</td>
+                                        <td class="center">0.1%</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center line" scope="row">K-OTC</td>
+                                        <td class="center">0.15%</td>
+                                        <td class="center">0.15%</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center" scope="rowgroup" rowspan="4">선물</td>
+                                        <td class="center" scope="row">K200/<br>K200미니</td>
+                                        <td class="center">0.0015%</td>
+                                        <td class="center">0.0015%</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center line" scope="row">개별주식</td>
+                                        <td class="center">0.007%</td>
+                                        <td class="center">0.007%</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center line" scope="row">3/5/10년 국채</td>
+                                        <td class="center">-</td>
+                                        <td class="center">5,000원</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center line" scope="row">미국달러/엔/<br>유로/위안</td>
+                                        <td class="center">-</td>
+                                        <td class="center">1,000원</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center" scope="row">옵션</td>
+                                        <td class="center">K200/K200<br>
+                                            미니/위클리</td>
+                                        <td class="center">0.05%</td>
+                                        <td class="center">0.05%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p class="desc_txt mt">비대면 계좌 약정조건 충족시 <span class="point02">HTS/홈페이지 0.015%</span> 적용</p>
+                            <p class="desc_txt mt">제휴 모바일(증권플러스, 증권통)으로 매매시 협의수수료 및 우대수수료 쿠폰 적용 불가</p>
+                        </div>
+                        <h4>ARS</h4>
+                        <div class="table_box">
+                            <table>
+                                <colgroup>
+                                    <col style="width:56px">
+                                    <col style="width:102px">
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="col" colspan="2">구분</th>
+                                        <th scope="col">모바일</th>
+                                        <th scope="col">HTS/<br>홈페이지</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="center" scope="rowgroup" rowspan="2">주식</td>
+                                        <td class="center" scope="row">주식,ELW</td>
+                                        <td class="center">0.1%</td>
+                                        <td class="center">0.1%</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center line" scope="row">K-OTC</td>
+                                        <td class="center">0.15%</td>
+                                        <td class="center">0.15%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <h4>영업점/고객센터</h4>
+                        <div class="table_box">
+                            <table>
+                                <colgroup>
+                                    <col style="width:56px">
+                                    <col style="width:102px">
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="col" colspan="2">구분</th>
+                                        <th scope="col">금액구분</th>
+                                        <th scope="col">수수료</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="center" scope="rowgroup" rowspan="2">주식</td>
+                                        <td class="center" scope="row">주식,ELW</td>
+                                        <td class="center">-</td>
+                                        <td class="center">0.5%</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center line" scope="row">K-OTC</td>
+                                        <td class="center">-</td>
+                                        <td class="center">0.5%</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center" scope="rowgroup" rowspan="7">선물</td>
+                                        <td class="center" scope="rowgroup" rowspan="5">K200/<br>K200미니/<br>개별주식</td>
+                                        <td class="center" scope="row">5억이하</td>
+                                        <td class="center">0.05%</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center line" scope="row">5억초과<br>10억이하</td>
+                                        <td class="center">0.045%+<br>25,000원</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center line" scope="row">10억초과<br>25억이하</td>
+                                        <td class="center">0.040%+<br>75,000원</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center line" scope="row">25억초과<br>50억이하</td>
+                                        <td class="center">0.035%+<br>200,000원</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center line" scope="row">50억초과</td>
+                                        <td class="center">0.030%+<br>450,000원</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center line" scope="row">3/5/10년 국채</td>
+                                        <td class="center" scope="row">-</td>
+                                        <td class="center">8,000원</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center line" scope="row">미국달러/엔/<br>유로/위안</td>
+                                        <td class="center" scope="row">-</td>
+                                        <td class="center">1,600원</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center" scope="rowgroup" rowspan="2">옵션</td>
+                                        <td class="center" scope="rowgroup" rowspan="2">K200/K200<br>미니/위클리</td>
+                                        <td class="center" scope="row">1천만원<br>이하</td>
+                                        <td class="center">1.5%</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center line" scope="row">1천만원<br>초과</td>
+                                        <td class="center">1.0%+<br>50,000원</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="gray_border">
+                            <h3>KSM (KRX START-UP MARKET)</h3>
+                            <div class="table_box">
+                                <table>
+                                    <colgroup>
+                                        <col style="width:56px">
+                                        <col style="width:102px">
+                                        <col>
+                                        <col>
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="col" colspan="2">구분</th>
+                                            <th scope="col">모바일</th>
+                                            <th scope="col">HTS/<br>홈페이지</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="center" scope="rowgroup" rowspan="2">주식</td>
+                                            <td class="center" scope="rowgroup" rowspan="2">KSM</td>
+                                            <td class="center">500만원<br>미만</td>
+                                            <td class="center">0.1%+<br>500원</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="center line">500만원<br>이상</td>
+                                            <td class="center">0.1%+</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p class="desc_txt mt">거래소 KSM APP을 이용한 거래</p>
+                            </div>
+                        </div>
+                        <div class="gray_border">
+                            <h3>채권</h3>
+                            <div class="table_box">
+                                <table>
+                                    <colgroup>
+                                        <col>
+                                        <col>
+                                        <col>
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="col">구분</th>
+                                            <th scope="col">모바일</th>
+                                            <th scope="col">HTS/<br>홈페이지</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="center" scope="rowgroup" rowspan="4">장내채권/<br>주식관련사채</td>
+                                            <td class="center" scope="row">3개월미만</td>
+                                            <td class="center">0.006%</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="center line" scope="row">1년미만</td>
+                                            <td class="center">0.10%</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="center line" scope="row">1년이상 2년미만</td>
+                                            <td class="center">0.20%</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="center line" scope="row">2년이상</td>
+                                            <td class="center">0.30%</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="center" scope="row">소액첨가부채권</td>
+                                            <td class="center">-</td>
+                                            <td class="center">0.60%</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="center" scope="rowgroup" rowspan="4">해외채권</td>
+                                            <td class="center" scope="row">1년미만</td>
+                                            <td class="center">0.5% 이하</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="center line" scope="row">1년이상 3년미만</td>
+                                            <td class="center">2.0% 이하</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="center line" scope="row">3년이상 5년미만</td>
+                                            <td class="center">3.5% 이하</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="center line" scope="row">5년이상</td>
+                                            <td class="center">5.0% 이하</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p class="desc_txt mt">매체별 수수료율 동일</p>
+                                <p class="desc_txt mt">해외채권 종류별로 기준범위 안에서 별도 적용, 거래금액에 수수료 적용</p>
+                            </div>
+                        </div>
+                        <div class="gray_border">
+                            <h3>협의수수료</h3>
+                            <p class="txt03">협의 수수료 관련 상세 정보는 하단 버튼을 눌러 확인하실 수 있습니다.</p>
+                            <button type="button" class="btn_type01 document block">협의수수료 안내</button>
+                        </div>
+                        <div class="gray_border">
+                            <h3>참고사항</h3>
+                            <ul class="dot_list">
+                                <li><p class="txt03">반대매매, 만기 자동청산, 결제행사시 영업점 수수료 적용</p></li>
+                                <li><p class="txt03">통화선물 만기청산(실물인수도) 수수료 : 1,800원</p></li>
+                                <li>
+                                    <p class="txt03">매도시 세금</p>
+                                    <ul class="slash_list mt">
+                                        <li>거래소 : 거래세 0.08% + 농특세 0.15%</li>
+                                        <li>코스닥 : 거래세 0.23%</li>
+                                        <li>코넥스 : 거래세 0.1%</li>
+                                        <li>K-OTC : 거래세 0.23%</li>
+                                        <li>KSM : 거래세 0.43%</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+					</div>
+					<div class="tab_cont" id="tabCont02">
+						<h3>주식/선물/옵션</h3>
+                        <h4>모바일(IBK FARM, 제휴모바일) / HTS / 홈페이지</h4>
+                        <div class="table_box">
+                            <table>
+                                <colgroup>
+                                    <col style="width:56px">
+                                    <col style="width:102px">
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="col" colspan="2">구분</th>
+                                        <th scope="col">모바일</th>
+                                        <th scope="col">HTS/<br>홈페이지</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="center" scope="rowgroup" rowspan="2">주식</td>
+                                        <td class="center" scope="row">주식,ELW</td>
+                                        <td class="center">0.1%</td>
+                                        <td class="center">0.1%</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center line" scope="row">K-OTC</td>
+                                        <td class="center">0.15%</td>
+                                        <td class="center">0.15%</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center" scope="rowgroup" rowspan="4">선물</td>
+                                        <td class="center" scope="row">K200/<br>K200미니</td>
+                                        <td class="center">0.01%</td>
+                                        <td class="center">0.01%</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center line" scope="row">개별주식</td>
+                                        <td class="center">0.01%</td>
+                                        <td class="center">0.01%</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center line" scope="row">3/5/10년 국채</td>
+                                        <td class="center">-</td>
+                                        <td class="center">5,000원</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center line" scope="row">미국달러/엔/<br>유로/위안</td>
+                                        <td class="center">-</td>
+                                        <td class="center">1,000원</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center" scope="row">옵션</td>
+                                        <td class="center">K200/K200<br>
+                                            미니/위클리</td>
+                                        <td class="center">0.30%</td>
+                                        <td class="center">1천만원 이하: 0.50%<br>1천만원 초과: 0.30%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p class="desc_txt mt">제휴 모바일(증권플러스, 증권통)으로 매매시 협의수수료 및 우대수수료 쿠폰 적용 불가</p>
+                        </div>
+                        <h4>ARS</h4>
+                        <div class="table_box">
+                            <table>
+                                <colgroup>
+                                    <col style="width:17.13%">
+                                    <col style="width:32.87%">
+                                    <col>
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="col" colspan="2">구분</th>
+                                        <th scope="col">수수료</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="center" scope="rowgroup" rowspan="2">주식</td>
+                                        <td class="center" scope="row">주식,ELW</td>
+                                        <td class="center">0.25%</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center line" scope="row">K-OTC</td>
+                                        <td class="center">0.25%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <h4>영업점/고객센터</h4>
+                        <div class="table_box">
+                            <table>
+                                <colgroup>
+                                    <col style="width:56px">
+                                    <col style="width:102px">
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="col" colspan="2">구분</th>
+                                        <th scope="col">금액구분</th>
+                                        <th scope="col">수수료</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="center" scope="rowgroup" rowspan="2">주식</td>
+                                        <td class="center" scope="row">주식,ELW</td>
+                                        <td class="center">-</td>
+                                        <td class="center">0.5%</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center line" scope="row">K-OTC</td>
+                                        <td class="center">-</td>
+                                        <td class="center">0.5%</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center" scope="rowgroup" rowspan="7">선물</td>
+                                        <td class="center" scope="rowgroup" rowspan="5">K200/<br>K200미니/<br>개별주식</td>
+                                        <td class="center" scope="row">5억이하</td>
+                                        <td class="center">0.05%</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center line" scope="row">5억초과<br>10억이하</td>
+                                        <td class="center">0.045%+<br>25,000원</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center line" scope="row">10억초과<br>25억이하</td>
+                                        <td class="center">0.040%+<br>75,000원</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center line" scope="row">25억초과<br>50억이하</td>
+                                        <td class="center">0.035%+<br>200,000원</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center line" scope="row">50억초과</td>
+                                        <td class="center">0.030%+<br>450,000원</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center line" scope="row">3/5/10년 국채</td>
+                                        <td class="center" scope="row">-</td>
+                                        <td class="center">8,000원</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center line" scope="row">미국달러/엔/<br>유로/위안</td>
+                                        <td class="center" scope="row">-</td>
+                                        <td class="center">1,600원</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center" scope="rowgroup" rowspan="2">옵션</td>
+                                        <td class="center" scope="rowgroup" rowspan="2">K200/K200<br>미니/위클리</td>
+                                        <td class="center" scope="row">1천만원<br>이하</td>
+                                        <td class="center">1.5%</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center line" scope="row">1천만원<br>초과</td>
+                                        <td class="center">1.0%+<br>50,000원</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="gray_border">
+                            <h3>KSM (KRX START-UP MARKET)</h3>
+                            <div class="table_box">
+                                <table>
+                                    <colgroup>
+                                        <col style="width:56px">
+                                        <col style="width:102px">
+                                        <col>
+                                        <col>
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="col" colspan="2">구분</th>
+                                            <th scope="col">모바일</th>
+                                            <th scope="col">HTS/<br>홈페이지</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="center" scope="rowgroup" rowspan="2">주식</td>
+                                            <td class="center" scope="rowgroup" rowspan="2">KSM</td>
+                                            <td class="center">500만원<br>미만</td>
+                                            <td class="center">0.1%+<br>500원</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="center line">500만원<br>이상</td>
+                                            <td class="center">0.1%+</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p class="desc_txt mt">거래소 KSM APP을 이용한 거래</p>
+                            </div>
+                        </div>
+                        <div class="gray_border">
+                            <h3>채권</h3>
+                            <div class="table_box">
+                                <table>
+                                    <colgroup>
+                                        <col>
+                                        <col>
+                                        <col>
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="col">구분</th>
+                                            <th scope="col">모바일</th>
+                                            <th scope="col">HTS/<br>홈페이지</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="center" scope="rowgroup" rowspan="4">장내채권/<br>주식관련사채</td>
+                                            <td class="center" scope="row">3개월미만</td>
+                                            <td class="center">0.006%</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="center line" scope="row">1년미만</td>
+                                            <td class="center">0.10%</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="center line" scope="row">1년이상 2년미만</td>
+                                            <td class="center">0.20%</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="center line" scope="row">2년이상</td>
+                                            <td class="center">0.30%</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="center" scope="row">소액첨가부채권</td>
+                                            <td class="center">-</td>
+                                            <td class="center">0.60%</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="center" scope="rowgroup" rowspan="4">해외채권</td>
+                                            <td class="center" scope="row">1년미만</td>
+                                            <td class="center">0.5% 이하</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="center line" scope="row">1년이상 3년미만</td>
+                                            <td class="center">2.0% 이하</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="center line" scope="row">3년이상 5년미만</td>
+                                            <td class="center">3.5% 이하</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="center line" scope="row">5년이상</td>
+                                            <td class="center">5.0% 이하</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p class="desc_txt mt">매체별 수수료율 동일</p>
+                                <p class="desc_txt mt">해외채권 종류별로 기준범위 안에서 별도 적용, 거래금액에 수수료 적용</p>
+                            </div>
+                        </div>
+                        <div class="gray_border">
+                            <h3>협의수수료</h3>
+                            <p class="txt03">협의 수수료 관련 상세 정보는 하단 버튼을 눌러 확인하실 수 있습니다.</p>
+                            <button type="button" class="btn_type01 document block">협의수수료 안내</button>
+                        </div>
+                        <div class="gray_border">
+                            <h3>참고사항</h3>
+                            <ul class="dot_list">
+                                <li><p class="txt03">반대매매, 만기 자동청산, 결제행사시 영업점 수수료 적용</p></li>
+                                <li><p class="txt03">통화선물 만기청산(실물인수도) 수수료 : 1,800원</p></li>
+                                <li>
+                                    <p class="txt03">매도시 세금</p>
+                                    <ul class="slash_list mt">
+                                        <li>거래소 : 거래세 0.08% + 농특세 0.15%</li>
+                                        <li>코스닥 : 거래세 0.23%</li>
+                                        <li>코넥스 : 거래세 0.1%</li>
+                                        <li>K-OTC : 거래세 0.23%</li>
+                                        <li>KSM : 거래세 0.43%</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+					</div>
+                    <div class="tab_cont" id="tabCont03" style="display:none;">
+						<h3 class="ico_tit">미국주식 매매 수수료</h3>
+                        <div class="table_box">
+                            <table>
+                                <colgroup>
+                                    <col>
+                                    <col>
+                                    <col style="width:50%">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="col">구분</th>
+                                        <th scope="col">모바일</th>
+                                        <th scope="col">세금 및 기타비용</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="center" scope="row">MTS/HTS</td>
+                                        <td class="center">0.25%</td>
+                                        <td class="center" rowspan="2">Sec Fee : 매도 시<br>0.00229% 부과</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center" scope="row">영업점/<br>고객센터</td>
+                                        <td class="center">0.50%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p class="desc_txt mt">제휴 모바일(증권플러스, 증권통)으로 매매시 협의수수료 및 우대수수료 쿠폰 적용 불가</p>
+                        </div>
+                        <h3 class="ico_tit hongkong">홍콩주식 매매 수수료</h3>
+                        <div class="table_box">
+                            <table>
+                                <colgroup>
+                                    <col>
+                                    <col>
+                                    <col style="width:50%">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="col">구분</th>
+                                        <th scope="col">모바일</th>
+                                        <th scope="col">세금 및 기타비용</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="center" scope="row">MTS/HTS</td>
+                                        <td class="center">0.30%</td>
+                                        <td rowspan="2">
+                                            <ul>
+                                                <li>인지세 : 0.13%</li>
+                                                <li>거래수수료 : 0.005%</li>
+                                                <li>거래소부과금: 0.0027%</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center" scope="row">영업점/<br>고객센터</td>
+                                        <td class="center">0.50%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p class="desc_txt mt">1913 종목 매수 시 IFTT Fee 0.2% 증가</p>
+                        </div>
+                        <h3 class="ico_tit china">중국주식 매매 수수료</h3>
+                        <div class="table_box">
+                            <table>
+                                <colgroup>
+                                    <col>
+                                    <col>
+                                    <col style="width:50%">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="col">구분</th>
+                                        <th scope="col">모바일</th>
+                                        <th scope="col">세금 및 기타비용</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="center" scope="row">MTS/HTS</td>
+                                        <td class="center">0.30%</td>
+                                        <td rowspan="2">
+                                            <ul>
+                                                <li>인지세 : 0.1%(매도 시)</li>
+                                                <li>취급수수료 : 0.00487%</li>
+                                                <li>주식보관료 : 0.002%</li>
+                                                <li>송금수수료 : 0.003%</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center" scope="row">영업점/<br>고객센터</td>
+                                        <td class="center">0.50%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <h3>참고사항</h3>
+                        <ul class="dot_list">
+                            <li><p class=txt03>세금 및 기타비용은 수수료 이외에 별도 부과됩니다.</p></li>
+                            <li><p class=txt03>기타 업무(청약,이관 등)에 대하여 별도 협의하에 수수료를 징구할 수 있습니다.</p></li>
+                            <li><p class=txt03>외화에 대한 예탁금이용료는 지급되지 않습니다.</p></li>
+                            <li><p class=txt03>미국에 상장된 프랑스ADR 일부 종목에 대해 매수 거래세 0.3%가 부과됩니다.</p></li>
+                            <li><p class=txt03>홍콩에 상장된 일부 이탈리아 주식 매수 시 IFTT 세금 0.2%가 부과됩니다.</p></li>
+                        </ul>
+                        <div class="gray_border">
+                            <h3>협의수수료 적용기준</h3>
+                            <div class="table_box">
+                                <table>
+                                    <colgroup>
+                                        <col style="width:31%">
+                                        <col>
+                                        <col>
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="col" rowspan="2">해외주식<br>매매금액<br>(3개월 평균)</th>
+                                            <th scope="col" colspan="2">협의수수료율</th>
+                                        </tr>
+                                        <tr>
+                                            <th class="center" scope="col">MTS/HTS</th>
+                                            <th class="center" scope="col">영업점/고객센터</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="center" scope="row">3천만원</td>
+                                            <td class="center">0.40%</td>
+                                            <td class="center">0.20%</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="center" scope="row">5천만원</td>
+                                            <td class="center">0.30%</td>
+                                            <td class="center">0.18%</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="center" scope="row">1억원</td>
+                                            <td class="center">0.20%</td>
+                                            <td class="center">0.15%</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="center" scope="row">5억원</td>
+                                            <td class="center">0.10%</td>
+                                            <td class="center">0.10%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p class="desc_txt mt">미국, 홍콩, 중국주식 동일 적용</p>
+                                <p class="desc_txt mt">6개월 단위로 적용</p>
+                            </div>
+                            <h3>협의수수료 적용절차</h3>
+                            <ul class="step_list_arrow">
+                                <li>
+                                    <div>
+                                        <p class="num">STEP 01</p>
+                                        <p class="txt">고객 요청</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <p class="num">STEP 02</p>
+                                        <p class="txt">접수 및 검토</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <p class="num">STEP 03</p>
+                                        <p class="txt">승인</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <p class="num">STEP 04</p>
+                                        <p class="txt">정산처리 고객통보</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+					</div>
+                    <div class="tab_cont" id="tabCont04" style="display:none;">
+						<h3>업무수수료</h3>
+                        <h4>은행이체 / 주식출고</h4>
+                        <div class="table_box">
+                            <table>
+                                <colgroup>
+                                    <col style="width:56px">
+                                    <col style="width:74px">
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="col" colspan="3">구분</th>
+                                        <th scope="col">수수료</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="center" scope="rowgroup" rowspan="6">재증명 발급</td>
+                                        <td class="center" scope="rowgroup" rowspan="2">영업점/<br>고객센터</td>
+                                        <td class="center">기업은행<br>우리은행</td>
+                                        <td class="center">무료</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center line">기업/우리 外</td>
+                                        <td class="center">1,000원</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center line" scope="rowgroup" rowspan="2">온라인</td>
+                                        <td class="center">기업은행<br>우리은행</td>
+                                        <td class="center">무료</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center line">기업/우리 外</td>
+                                        <td class="center">500원</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center line" scope="rowgroup" rowspan="2">CD기</td>
+                                        <td class="center">가상계좌와 동일한 은행</td>
+                                        <td class="center">무료</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center line">가상계좌와 상이한 은행</td>
+                                        <td class="center">처리한 은행의 수수료 징수</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center" scope="rowgroup" rowspan="3">주식 출고</td>
+                                        <td class="center" colspan="2">실물출고</td>
+                                        <td class="center">5,000원</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center line" colspan="2">타사대체출고
+                                        </td>
+                                        <td class="center">2,000원</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center line" colspan="2">공모주 타사대체출고<br>(6개월 이내 출고시)</td>
+                                        <td class="center">5,000원</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p class="desc_txt mt">은행개설계좌는 개설시 약정한 은행 및 기업/우리은행으로 은행이체 수수료 무료</p>
+                        </div>
+                        <h4>공모주청약 (실권주포함)</h4>
+                        <div class="table_box">
+                            <table>
+                                <colgroup>
+                                    <col style="width:56px">
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="col" colspan="2">구분</th>
+                                        <th scope="col">수수료</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="center" scope="rowgroup" rowspan="3">공모주 실권주</td>
+                                        <td class="center">영업점 창구</td>
+                                        <td class="center" rowspan="2">우대고객 3,000원<br>일반고객 5,000원</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center line">유선(지점/콜센터)</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center line">온라인/ARS</td>
+                                        <td class="center">무료</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p class="desc_txt mt">주식관련 채권(CB/BW 등) 청약시 면제</p>
+                            <button type="button" class="btn_type01 block">공모주청약 우대고객 요건</button>
+                        </div>
+                        <h4>카드/통장 재발급</h4>
+                        <div class="table_box">
+                            <table>
+                                <colgroup>
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="col">구분</th>
+                                        <th scope="col">수수료</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="center">증권카드 재발급</td>
+                                        <td class="center">2,000원</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center">보안카드 재발급</td>
+                                        <td class="center">1,000원</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center">통장 재발급</td>
+                                        <td class="center">2,000원</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p class="desc_txt mt">훼손 사유시 면제</p>
+                        </div>
+                        <h4>재증명 발급 / 기타</h4>
+                        <div class="table_box">
+                            <table>
+                                <colgroup>
+                                    <col style="width:56px">
+                                    <col>
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="col" colspan="3">구분</th>
+                                        <th scope="col">수수료</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="center" scope="rowgroup" rowspan="4">재증명 발급</td>
+                                        <td class="center" scope="rowgroup" rowspan="3">잔고증명서<br>거래내역서</td>
+                                        <td class="center">창구</td>
+                                        <td class="center">1,000원</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center line">온라인<br>즉시발급</td>
+                                        <td class="center">무료</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center line">온라인<br>우편신청</td>
+                                        <td class="center">2,000원</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center line" scope="row">납입증명서</td>
+                                        <td class="center">영업점 창구/<br>온라인</td>
+                                        <td class="center">무료</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center" scope="rowgroup" rowspan="2">주식 출고</td>
+                                        <td class="center" colspan="2">보호예수지정</td>
+                                        <td class="center">5,000원</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center line" colspan="2">질권설정</td>
+                                        <td class="center">5,000원</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="gray_border">
+                            <h3>예탁금이용료</h3>
+                            <div class="table_box">
+                                <table>
+                                    <colgroup>
+                                        <col>
+                                        <col>
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="col">예탁금 평잔</th>
+                                            <th scope="col">수수료</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="center">50만원 이상</td>
+                                            <td class="center">연 0.25%</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="center">50만원 미만</td>
+                                            <td class="center">연 0.10%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p class="desc_txt mt">위탁자 예탁금, 선물옵션 예탁금,일반 수익자 예탁금은 분기(3개월) 평잔을 기준으로 1/4/7/10월의 둘째 일요일 익영업일에 지급</p>
+                                <p class="desc_txt mt">계좌폐쇄시에는 최근 이용료 지급일부터 계좌폐쇄일까지의 평잔을 적용하여 지급</p>
+                            </div>
+                        </div>
+					</div>
+				</div>
+			</div>
+		</div>
+        <div class="modal" id="sample1">
+			<div class="modal_inner">
+				<div class="modal_header">
+					<h2>청약우대 고객요건</h2>
+				</div>
+				<div class="modal_cont">
+					<div class="noti">
+                        <p class="desc_txt point02">아래 요건 중 한가지만 충족되면 해당</p>
+                        <h4>200% 우대 기준</h4>
+                        <ul class="dot_list">
+                            <li><p class="txt03">청약시작일 전월로부터 <span class="point02">과거 3개월간 수수료 합계 10만원 이상 고객</span></p></li>
+                            <li><p class="txt03">청약시작일 전월로부터 <span class="point02">과거 12개월간 예탁자산 일 평잔 1억원 이상 고객</span></p></li>
+                            <li><p class="txt03">CMS 이체금액 1백만원 이상 약정 계좌 중 청약초일 전월로부터<span class="point02">과거 3개월간 총 3백만원(누적기준) 이상을 펀드에 대체한 고객</span></p></li>
+                            <li><p class="txt03">지정일 자동대체 1백만원 이상 약정 계좌 중 청약초일 전월로부터 <span class="point02">과거 3개월간 총 3백만원(누적기준) 이상을 펀드에 대체한 고객</span></p></li>
+                        </ul>
+                        <h4>150% 우대 기준</h4>
+                        <p class="txt03">청약시작일 전일까지 비대면 개설고객<span class="desc_txt"></span> 또는 청약시작일 전월로부터 3개월 이전 영업점 계좌개설 완료 고객이 MTS/HTS/홈페이지/ARS를 이용하여 청약</p>
+                        <p class="desc_txt mt">비대면 개설 고객이란?<br>IBK투자증권 비대면 계좌개설 APP 또는 IBK기업은행 i-ONE Bank APP을 통한 증권계좌 개설 고객</p>
+                    </div>
+				</div>
+				<button type="button" class="modal_close"><span class="hidden">닫기</span></button>
+			</div>
+		</div>
+	</body>
+</html>
