@@ -1,7 +1,7 @@
 @charset "euc-kr";
 
 /*
-	@@ IBK ������°���
+	@@ IBK ������°���?
 */
 
 /* === Reset === */
@@ -107,6 +107,9 @@ body{font-size:14px;line-height:1.4;font-weight:400;}
 .btn_type01.call:before{content:''; display:inline-block; width:14px; height:14px; margin-top:-3px; margin-right:3px; background:url(../images/icon/ico_call.png) no-repeat; background-size:14px; vertical-align:middle;}
 .btn_type01.document:before{content:''; display:inline-block; width:14px; height:14px; margin-top:-3px; margin-right:3px; background:url(../images/icon/ico_document.png) no-repeat; background-size:10px; vertical-align:middle;}
 .btn_type01.map:before{content:''; display:inline-block; width:10px; height:14px; margin-top:-3px; margin-right:3px; background:url(../images/icon/ico_map_btn.png) no-repeat; background-size:10px; vertical-align:middle;}
+.btn_type01.down:before{content:''; display:inline-block; width:12px; height:12px; margin-top:-3px; margin-right:3px; background:url(../images/icon/ico_download.png) no-repeat; background-size:12px; vertical-align:middle;}
+.btn_type01.arrow:before{display:none;}
+.btn_type01.arrow:after{content:''; display:inline-block; width:11px; height:8px; margin-top:-3px; margin-left:3px; background:url(../images/icon/ico_arrow04.png) no-repeat; background-size:11px; vertical-align:middle;}
 .btn_type01.block{display:block; margin-left:0; margin-top:12px;}
 .btn_type02{display:block; width:100%; height:50px; margin-top:15px; font-size:17px; color:#484b51; text-align:center; line-height:50px; background:#ebeef0;}
 .btn_type02 span{display:inline-block; margin-left:5px; font-size:15px;}
@@ -122,6 +125,7 @@ h4,.tit03{font-size:16px; font-weight:bold;}
 
 .txt01{font-size:15px;}
 .txt02{font-size:16px; color:#696e76;}
+.txt02.mt{margin-top:30px;}
 .txt03{font-size:16px; color:#484b51;}
 
 h2 ~ .txt01{margin-top:20px;}
@@ -141,8 +145,6 @@ h3 + h4{margin-top:20px;}
 .desc_txt + .desc_txt{margin-top:16px;}
 .desc_txt.mt{margin-top:12px; color: #8c949e; }
 .desc_txt .btn_link{margin-top:5px; }
-.reference_txt{position:relative; padding-left:20px; font-size:16px;}
-.reference_txt:before{content:'\203B'; position:absolute; top:0; left:0;}
 
 .full_popup{display:none;position:fixed;left:0;top:0;width:100%;height:100%;background:#fff;letter-spacing:-1px;z-index:11;}
 .full_popup .pop_header{display:flex;align-items:center;min-height:60px;padding:12px 24px;}
@@ -345,6 +347,9 @@ div.form_type input[type="radio"] ~ label{display:inline-block;padding-left:38px
 .board_list > li .text .txt{color:#696e76;}
 .board_list > li .text .txt span{display:inline-block; margin-right:10px;}
 .board_list > li .down{flex-shrink:0; flex-basis:30px; width:30px; height:30px; margin-left:5px; background:url(../images/icon/ico_file_down.png) no-repeat center center; background-size:20px auto;}
+.board_list > li .board_btn{margin-top:12px;}
+.board_list > li .board_btn button:first-child{margin-left:0;}
+.board_list > li.first{border-top:0; padding-top:0;}
 .board_list.thum > li{flex-direction: column; align-items:normal;}
 .board_list.thum > li .image{position:relative; height:160px; border-radius:8px; text-align:center; overflow:hidden;}
 .board_list.thum > li .image img{width:auto; height:100%;}
@@ -364,6 +369,7 @@ div.form_type input[type="radio"] ~ label{display:inline-block;padding-left:38px
 .board_detail .board_cont .tit{margin-top:40px; font-size:18px; font-weight:bold;}
 .board_detail .board_cont .s_tit{margin-top:24px; font-weight:bold;}
 .board_detail .board_cont .txt{margin-top:16px;}
+.board_detail .board_cont .s_txt{margin-top:5px; font-size:15px;}
 .board_detail .board_cont .txt + .s_tit{margin-top:40px;}
 .board_detail .board_cont .txt + .txt{margin-top:20px;}
 .board_detail .board_cont .tit + .txt{margin-top:24px;}
@@ -489,9 +495,10 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
 .main_tit{font-size:32px; margin-top:14px; font-weight:bold;}
 .main_txt{font-size:16px;}
 
+h3 + .thum_info_list{margin-top:20px;}
 .thum_info_list > li{display:flex;}
 .thum_info_list > li ~ li{margin-top:36px;}
-.thum_info_list > li .thum{width:42px; height:42px; margin-right:12px;}
+.thum_info_list > li .thum{flex-shrink:0; width:42px; height:42px; margin-right:12px;}
 .thum_info_list > li .thum img{width:100%;}
 .thum_info_list > li dl dt{margin-top:8px; font-size:16px;}
 .thum_info_list > li dl dd{margin-top:5px;}
@@ -553,6 +560,10 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
 .address_result_list > li { padding: 20px 0; border-bottom: 1px solid #ebeef0; }
 .address_result_list > li > p { margin-top: 10px; }
 .address_none > p { padding-top: 64px; margin-top: 120px; font-size: 16px; text-align: center; background: url(../images/icon/ico_error.png) no-repeat center top / 48px auto; }
+.address_none ~ .bottom_link{position:absolute; bottom:60px; left:24px;}
+
+.address_srch.type02 > input { background: #ffffff; border-bottom: 2px solid #d9d9d9; border-radius: 0; }
+.address_srch.type02 .select_btn { height:47px; background: #ffffff; border-bottom: 2px solid #d9d9d9; border-radius: 0; }
 
 .form_info_txt { margin-top: 30px; font-size: 16px; color: #484b51; }
 .form_info_txt ~ .form_info_txt { margin-top: 20px; }
@@ -697,6 +708,10 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
 .ico_info.credit_info > .ico_info_txt { background-image: url(../images/content/ico_info_03.png); background-size: 110px auto; }
 .ico_info.stock_info > .ico_info_txt { padding-right: 100px; background-image: url(../images/content/ico_info_04.png); background-size: 108px auto; }
 .ico_info.guarantee_info > .ico_info_txt { padding-right: 100px; background-image: url(../images/content/ico_info_05.png); background-size: 100px auto; }
+.ico_info.app_info{background:#6488d0 url(../images/content/ico_info_06.png) no-repeat 24px bottom / 84px auto;}
+.ico_info.app_info .ico_info_txt{background:none; padding-right:0; padding-left:113px; color:#ffffff;}
+.ico_info.untact_info{margin-top:60px; background:#0574d9 url(../images/content/ico_info_07.png) no-repeat 24px bottom / 84px auto;}
+.ico_info.untact_info .ico_info_txt{background:none; padding-right:0; padding-left:113px; color:#ffffff;}
 .ico_info_txt > .ico_info_main { font-size: 20px; font-weight: bold; }
 .ico_info_txt > .ico_info_sub { margin-top: 7px; font-size: 16px; }
 
@@ -765,3 +780,5 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
 .step_list_arrow > li + li:before{position:absolute; display:block; content:''; top:4px; left:50%; transform:translateX(-50%); width:14px; height:14px; background:url(../images/icon/ico_arrow03.png) no-repeat center center / 12px auto; }
 .step_list_arrow > li .num{padding:3px 0; background:#f7f7f8;}
 .step_list_arrow > li .txt{padding:7px 0;}
+
+.map_area{margin-top:20px;}
