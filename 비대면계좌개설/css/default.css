@@ -498,7 +498,7 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
 
 h3 + .thum_info_list{margin-top:20px;}
 .thum_info_list > li{display:flex;}
-.thum_info_list.center > li{align-items: center;}
+.thum_info_list.link > li > a{display:flex; align-items: center; width:100%;}
 .thum_info_list > li ~ li{margin-top:36px;}
 .thum_info_list > li .thum{flex-shrink:0; width:42px; height:42px; margin-right:12px;}
 .thum_info_list > li .thum.big{margin-right:24px; width:76px; height:76px;}
@@ -807,16 +807,18 @@ h3 + .thum_info_list{margin-top:20px;}
 
 .contents.main .thum_info_list{margin-top:30px;}
 
-.main_noti{display: flex; justify-content:space-between; margin:30px -24px 0; padding:0 24px; height:48px;  background:#f7f7f8; overflow:hidden;}
+.main_noti{display: flex; margin:30px -24px 0; padding:0 24px; height:48px;  background:#f7f7f8; overflow:hidden;}
 .main_noti > .noti_tit{padding-left:28px; margin-right:15px; line-height:48px; background:url(../images/icon/ico_noti.png) no-repeat center left/20px auto;}
-.main_noti .noti_list{position:relative; top:0; left:0; width:calc(100% - 95px); transition:.5s;}
-.main_noti .noti_list > li > p{white-space: nowrap; text-overflow: ellipsis; overflow:hidden; line-height:48px;}
-.main_noti .noti_more{width:20px; height:100%; background:url(../images/icon/ico_arrow05.png) no-repeat center right/6px auto;}
+.main_noti .noti_list{position:relative; transition:.3s; width:calc(100% - 73px)}
+.main_noti .noti_list > li > a{position:relative; display: block; width:100%; height:100%;}
+.main_noti .noti_list > li p{width:calc(100% - 20px); white-space: nowrap; text-overflow: ellipsis; overflow:hidden; line-height:48px;}
+.main_noti .noti_more{position:absolute; top:0; right:0; width:20px; height:100%; background:url(../images/icon/ico_arrow05.png) no-repeat center right/6px auto;}
 
 .main_banner{width:auto; margin:48px -24px 0;}
 .main_banner img{width:100%;}
 
-.slide_box{margin:15px -24px 0 0;}
+.slide_box{margin:15px -24px 0;}
+.slide_box .swiper-container{width:100%; padding:0 24px;}
 .earth_slide .swiper-slide{width:280px;}
 .earth_slide .earth_img{height:158px; border-radius:8px; overflow:hidden;}
 .earth_slide .earth_txt{padding:14px 0 0 8px;}
