@@ -47,6 +47,21 @@
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
+                <script>
+                    if($('.main_slide .swiper-slide').length>1){
+                        var swiper1 = new Swiper(".main_slide", {
+                            autoHeight : true,
+                            autoplay: {
+                                delay: 5000,
+                            },
+                            pagination: {
+                                el: '.swiper-pagination',
+                                clickable: true,
+                            },
+                            loop : true // true or false
+                        });
+                    }
+                </script>
                 <ul class="thum_info_list link">
 					<li>
 						<a href="javascript:;">
@@ -94,6 +109,36 @@
                             </a>
                         </li>
                     </ul>
+                    <script>
+                        const notiBox = document.querySelector('.noti_list');
+                        const notiList = document.querySelectorAll('.noti_list > li');
+                        if($(notiBox).length>0){
+                            const cloneFirst = notiList[0].cloneNode(true);
+                            notiBox.appendChild(cloneFirst);
+                            
+                            let i = 0;
+                            let count = 0;
+                            
+                            function notiMove() {
+                                if (count < notiList.length) {
+                                    notiBox.style.transition = '.3s';
+                                    i += 48;
+                                    count++;
+                                    setTimeout('notiMove()', 5000);
+                                } else {
+                                    notiBox.style.transition = '.0s';
+                                i = 0;
+                                count = 0;
+                                setTimeout('notiMove()', 0);
+                                }
+                                notiBox.style.transform = 'translateY('+ '-' + i + 'px)';
+                            }
+                        
+                            setTimeout(function() {
+                                notiMove();
+                            }, 5000);
+                        }
+                    </script>
                 </div>
                 <h2>모바일 지점</h2>
                 <ul class="thum_info_list link">
@@ -173,6 +218,18 @@
                             </div>
                         </div>
                     </div>
+                    <script>
+                        if($('.earth_slide .swiper-slide').length>1){
+                            var swiper2 = new Swiper(".earth_slide", {
+                                slidesPerView: "auto",
+                                spaceBetween: 20,
+                                pagination: {
+                                    clickable: true,
+                                },
+                                loop : false // true or false
+                            });
+                        }
+                    </script>
                 </div>
                 <div class="gray_border">
                     <h2>주요 서비스 안내</h2>
@@ -199,6 +256,18 @@
                                 </div>
                             </div>
                         </div>
+                        <script>
+                            if($('.service_slide .swiper-slide').length>1){
+                                var swiper3 = new Swiper(".service_slide", {
+                                    slidesPerView: "auto",
+                                    spaceBetween: 10,
+                                    pagination: {
+                                        clickable: true,
+                                    },
+                                    loop : false // true or false
+                                });
+                            }
+                        </script>
                     </div>
                 </div>
 			</div>
@@ -219,67 +288,5 @@
                 </div>
             </div>
 		</div>
-        <script>
-            if($('.main_slide .swiper-slide').length>1){
-                var swiper1 = new Swiper(".main_slide", {
-                autoHeight : true,
-                autoplay: {
-                    delay: 5000,
-                },
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                },
-                loop : true // true or false
-                });
-            }
-
-            /*main_noti*/
-            const notiBox = document.querySelector('.noti_list');
-            const notiList = document.querySelectorAll('.noti_list > li');
-
-            const cloneFirst = notiList[0].cloneNode(true);
-            notiBox.appendChild(cloneFirst);
-            
-            let i = 0;
-            let count = 0;
-
-            function notiMove() {
-                if (count < notiList.length) {
-                    notiBox.style.transition = '.3s';
-                    i += 48;
-                    count++;
-                    setTimeout('notiMove()', 5000);
-                } else {
-                    notiBox.style.transition = '.0s';
-                    i = 0;
-                    count = 0;
-                    setTimeout('notiMove()', 0);
-                }
-                notiBox.style.transform = 'translateY('+ '-' + i + 'px)';
-            }
-
-            setTimeout(function() {
-                notiMove();
-            }, 5000);
-            
-            var swiper2 = new Swiper(".earth_slide", {
-                slidesPerView: "auto",
-                spaceBetween: 20,
-                pagination: {
-                    clickable: true,
-                },
-                loop : false // true or false
-            });
-
-            var swiper3 = new Swiper(".service_slide", {
-                slidesPerView: "auto",
-                spaceBetween: 10,
-                pagination: {
-                    clickable: true,
-                },
-                loop : false // true or false
-            });
-        </script>
 	</body>
 </html>

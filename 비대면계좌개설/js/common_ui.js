@@ -84,12 +84,16 @@ var common_ui = {
 			list.addClass("show");
 		}
 	},
-	tabScroll : function(el){
+	tabScroll : function(){
 		var _this = $(".tab_list.scroll_list");
 		var list = _this.find(".tab_on");
 		if(_this.length>0){
 			_this.scrollLeft(list.offset().left - 24)
 		}
+	},
+	gnbToggle : function(el){
+		var _this = $(el);
+		_this.closest("li").addClass("active").siblings("li").removeClass("active");
 	}
 }
 
