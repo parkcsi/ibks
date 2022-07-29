@@ -13,8 +13,7 @@ var htmlLinkIndex = 6,    // html 링크 부여 할 셀 index
 	  schCanIndex = 5;;    // 검색 할 텍스트 찾을 범위의 셀 index
 	  filterInd = 0;
 var trLen ,compLen,inCompLen, progressPer;     // publishing staus  에 들어갈 항목 변수 설정
-var columnWid = ['100px','10%','12%','13%','12%','80px','15%','100px','auto'];   // 셀 순서 대로 width 지정  , colgroup로 width 지정하지 않음.
-//var columnWid = ['8%','13%','13%','10%','7%','170px','12%','7%','7%','auto'];
+var columnWid = ['10%','20%','20%','10%','20%','10%','10%'];   // 셀 순서 대로 width 지정  , colgroup로 width 지정하지 않음.
 var $filterHtml ='';           // 1depth filtering을 삽입할 html 변수 지정
 var $searchHtml = '';     // 검색 영역을 삽입할 html 변수 지정
 var $statusHtml = '';      // 퍼블리싱 현황 영역을 삽입할 html 변수 지정
